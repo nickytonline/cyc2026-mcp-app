@@ -26,7 +26,14 @@ export default function Schedule({
 }: {
   app?: AppLike<GetScheduleOutput>;
 }) {
-  const { toolOutput, hostContext, activeApp } = useWidgetApp('Schedule', app);
+  const {
+    toolOutput,
+    hostContext,
+    activeApp,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  } = useWidgetApp('Schedule', app);
   const [pickedDay, setPickedDay] = useState<number | null>(null);
   const schedule = isSchedule(toolOutput) ? toolOutput : null;
   const searching =
@@ -49,6 +56,9 @@ export default function Schedule({
         title={title}
         hostContext={hostContext}
         fill
+        displayMode={displayMode}
+        canToggleFullscreen={canToggleFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       >
         <div className="mb-3 shrink-0">
           <DayPicker

@@ -1,6 +1,11 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { App } from '@modelcontextprotocol/ext-apps';
-import type { AppLike, HostContext, ToolResultPayload } from '../types/mcp-app';
+import type {
+  AppLike,
+  DisplayMode,
+  HostContext,
+  ToolResultPayload,
+} from '../types/mcp-app';
 
 export function useWidgetApp<T>(
   name: string,
@@ -9,6 +14,9 @@ export function useWidgetApp<T>(
   toolOutput: T | null;
   hostContext: HostContext | null | undefined;
   activeApp: AppLike<T>;
+  displayMode: DisplayMode;
+  canToggleFullscreen: boolean;
+  toggleFullscreen: () => Promise<void>;
 } {
   const defaultApp = useMemo(
     () => new App({ name, version: '1.0.0' }) as unknown as AppLike<T>,
@@ -45,7 +53,41 @@ export function useWidgetApp<T>(
     };
   }, [activeApp, name]);
 
-  return { toolOutput, hostContext, activeApp };
+  const displayMode = hostContext?.displayMode ?? 'inline';
+
+  const canToggleFullscreen = useMemo(() => {
+    const available = hostContext?.availableDisplayModes;
+    if (!available) return true;
+    return (
+      available.includes('fullscreen') ||
+      displayMode === 'fullscreen'
+    );
+  }, [displayMode, hostContext?.availableDisplayModes]);
+
+  const toggleFullscreen = useCallback(async () => {
+    const target: DisplayMode =
+      displayMode === 'fullscreen' ? 'inline' : 'fullscreen';
+    const available = hostContext?.availableDisplayModes;
+    if (available && !available.includes(target)) return;
+
+    try {
+      const result = await activeApp.requestDisplayMode({ mode: target });
+      setHostContext((prev) =>
+        prev ? { ...prev, displayMode: result.mode } : prev
+      );
+    } catch (err) {
+      console.error(`Failed to toggle fullscreen for ${name}:`, err);
+    }
+  }, [activeApp, displayMode, hostContext?.availableDisplayModes, name]);
+
+  return {
+    toolOutput,
+    hostContext,
+    activeApp,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  };
 }
 
 export function hostPadding(hostContext: HostContext | null | undefined) {

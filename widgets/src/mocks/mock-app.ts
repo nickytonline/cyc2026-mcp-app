@@ -48,9 +48,12 @@ export function createMockApp<TStructured>(
       })),
     requestDisplayMode: async (params: {
       mode: HostContext['displayMode'];
-    }) => ({
-      mode: params.mode!,
-    }),
+    }) => {
+      const mode = params.mode ?? hostContext.displayMode ?? 'inline';
+      hostContext = { ...hostContext, displayMode: mode };
+      mock.onhostcontextchanged?.(hostContext);
+      return { mode };
+    },
     openLink: async () => ({}),
     sendMessage: options.sendMessage ?? (async () => ({})),
     updateModelContext: async () => ({}),

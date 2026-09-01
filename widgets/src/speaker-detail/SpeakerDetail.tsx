@@ -14,10 +14,14 @@ export default function SpeakerDetail({
 }: {
   app?: AppLike<GetSpeakerOutput>;
 }) {
-  const { toolOutput, hostContext, activeApp } = useWidgetApp(
-    'SpeakerDetail',
-    app
-  );
+  const {
+    toolOutput,
+    hostContext,
+    activeApp,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  } = useWidgetApp('SpeakerDetail', app);
   const speaker = toolOutput?.speaker;
   const sessions = toolOutput?.sessions ?? [];
 
@@ -27,6 +31,9 @@ export default function SpeakerDetail({
         kicker="CYC26 / Speaker"
         title="Speaker"
         hostContext={hostContext}
+        displayMode={displayMode}
+        canToggleFullscreen={canToggleFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       >
         <p className="text-sm text-[var(--cyc-muted)]">
           Ask for a speaker by id to load their card.
@@ -40,6 +47,9 @@ export default function SpeakerDetail({
       kicker="CYC26 / Speaker"
       title={speaker.name}
       hostContext={hostContext}
+      displayMode={displayMode}
+      canToggleFullscreen={canToggleFullscreen}
+      onToggleFullscreen={toggleFullscreen}
     >
       <div className="grid gap-4 sm:grid-cols-[140px_minmax(0,1fr)]">
         <SpeakerPhoto

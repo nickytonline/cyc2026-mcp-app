@@ -17,10 +17,14 @@ export default function SessionDetail({
 }: {
   app?: AppLike<ViewScheduleItemOutput>;
 }) {
-  const { toolOutput, hostContext, activeApp } = useWidgetApp(
-    'SessionDetail',
-    app
-  );
+  const {
+    toolOutput,
+    hostContext,
+    activeApp,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  } = useWidgetApp('SessionDetail', app);
   const session = toolOutput?.session;
   const speakers = toolOutput?.speakers ?? session?.speakers ?? [];
 
@@ -30,6 +34,9 @@ export default function SessionDetail({
         kicker="CYC26 / Session"
         title="Session"
         hostContext={hostContext}
+        displayMode={displayMode}
+        canToggleFullscreen={canToggleFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       >
         <p className="text-sm text-[var(--cyc-muted)]">
           Ask for a session by id to load the abstract.
@@ -44,6 +51,9 @@ export default function SessionDetail({
       title={session.title}
       hostContext={hostContext}
       fill
+      displayMode={displayMode}
+      canToggleFullscreen={canToggleFullscreen}
+      onToggleFullscreen={toggleFullscreen}
     >
       <div
         className="cyc-scroll min-h-0 flex-1 pr-1"

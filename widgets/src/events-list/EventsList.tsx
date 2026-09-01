@@ -10,7 +10,13 @@ export default function EventsList({
 }: {
   app?: AppLike<ListEventsOutput>;
 }) {
-  const { toolOutput, hostContext } = useWidgetApp('EventsList', app);
+  const {
+    toolOutput,
+    hostContext,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  } = useWidgetApp('EventsList', app);
   const events = toolOutput?.events ?? [];
 
   return (
@@ -19,6 +25,9 @@ export default function EventsList({
       title="Beyond the code."
       hostContext={hostContext}
       fill
+      displayMode={displayMode}
+      canToggleFullscreen={canToggleFullscreen}
+      onToggleFullscreen={toggleFullscreen}
     >
       <ul
         className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"

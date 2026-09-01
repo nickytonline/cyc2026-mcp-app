@@ -24,10 +24,14 @@ export default function SpeakersList({
 }: {
   app?: AppLike<ListSpeakersOutput>;
 }) {
-  const { toolOutput, hostContext, activeApp } = useWidgetApp(
-    'SpeakersList',
-    app
-  );
+  const {
+    toolOutput,
+    hostContext,
+    activeApp,
+    displayMode,
+    canToggleFullscreen,
+    toggleFullscreen,
+  } = useWidgetApp('SpeakersList', app);
   const [filtered, setFiltered] = useState<ListSpeakersOutput | null>(null);
   const [applied, setApplied] = useState<string[] | null>(null);
   const hostList = isSpeakerList(toolOutput) ? toolOutput : null;
@@ -58,6 +62,9 @@ export default function SpeakersList({
         title="This year's speakers"
         hostContext={hostContext}
         fill
+        displayMode={displayMode}
+        canToggleFullscreen={canToggleFullscreen}
+        onToggleFullscreen={toggleFullscreen}
       >
         <div className="mb-3 flex shrink-0 items-center justify-end">
           {list ? (

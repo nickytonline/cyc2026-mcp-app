@@ -240,4 +240,34 @@ describe('SpeakersList', () => {
     expect(await screen.findByText('Anupama Pathirage')).toBeTruthy();
     expect(screen.queryByText('Nick Taylor')).toBeNull();
   });
+
+  it('toggles fullscreen from the widget header', async () => {
+    const user = userEvent.setup();
+    const mockApp = createMockApp({
+      toolOutput: nickSpeakersList,
+      callServerTool: mockConferenceTools,
+      hostContext: {
+        theme: 'light',
+        displayMode: 'inline',
+        availableDisplayModes: ['inline', 'fullscreen'],
+        containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+      },
+    });
+
+    render(<SpeakersList app={mockApp} />);
+    await screen.findByText('Nick Taylor');
+
+    const fullscreenButton = screen.getByRole('button', {
+      name: 'Full screen',
+    });
+    await user.click(fullscreenButton);
+
+    expect(mockApp.getHostContext()?.displayMode).toBe('fullscreen');
+    expect(
+      screen.getByRole('button', { name: 'Exit full screen' })
+    ).toBeTruthy();
+
+    await user.click(screen.getByRole('button', { name: 'Exit full screen' }));
+    expect(mockApp.getHostContext()?.displayMode).toBe('inline');
+  });
 });
