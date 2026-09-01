@@ -22,6 +22,7 @@ import { type WidgetDescriptor } from './types.js';
 import { registerConferenceTools } from './conference-tools.js';
 import {
   buildDevBootstrapHtml,
+  buildProductionWidgetHtml,
   clientMatches,
   CYC_PHOTO_DOMAINS,
   getClientIdentity,
@@ -223,7 +224,16 @@ async function readWidgetHtml(widgetId: string): Promise<string> {
         `Failed to fetch widget HTML from ${url}: ${response.statusText}`
       );
     }
-    return response.text();
+    const html = await response.text();
+    if (NODE_ENV === 'production') {
+      const css = fs
+        .readdirSync(ASSETS_DIR)
+        .filter((file) => file.endsWith('.css'))
+        .map((file) => fs.readFileSync(path.join(ASSETS_DIR, file), 'utf-8'))
+        .join('\n');
+      return buildProductionWidgetHtml(html, widgetId, BASE_URL, css);
+    }
+    return html;
   }
 
   if (!fs.existsSync(ASSETS_DIR)) {

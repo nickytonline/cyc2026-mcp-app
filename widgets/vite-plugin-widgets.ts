@@ -222,30 +222,30 @@ import ${JSON.stringify(widgetPath)};`,
 
       widgets.forEach((widget) => {
         const jsPath = path.join(outDir, `${widget.name}.js`);
-        const cssPath = path.join(outDir, `${widget.name}.css`);
-
+        const cssPath = [
+          path.join(outDir, widget.name + '.css'),
+          path.join(outDir, 'WidgetShell.css'),
+        ].find((candidate) => fs.existsSync(candidate));
         if (!fs.existsSync(jsPath)) {
           console.warn(`Warning: ${jsPath} not found after build`);
           return;
         }
 
         const jsHash = generateContentHash(jsPath);
-        const cssHash = fs.existsSync(cssPath)
-          ? generateContentHash(cssPath)
-          : null;
+        const cssHash = cssPath ? generateContentHash(cssPath) : null;
 
         const jsHashedPath = path.join(outDir, `${widget.name}-${jsHash}.js`);
         const cssHashedPath = cssHash
-          ? path.join(outDir, `${widget.name}-${cssHash}.css`)
+          ? path.join(outDir, widget.name + '-' + cssHash + '.css')
           : null;
 
         fs.copyFileSync(jsPath, jsHashedPath);
-        if (cssHash && cssHashedPath) {
+        if (cssHash && cssHashedPath && cssPath) {
           fs.copyFileSync(cssPath, cssHashedPath);
         }
 
         console.log(`  ${widget.name}.js → ${widget.name}-${jsHash}.js`);
-        if (cssHash) {
+        if (cssHash && cssHashedPath && cssPath) {
           console.log(`  ${widget.name}.css → ${widget.name}-${cssHash}.css`);
         }
 
