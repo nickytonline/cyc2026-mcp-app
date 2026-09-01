@@ -179,7 +179,7 @@ Now that your app is working, you can:
 
 - **[Customize the echo tool](#adding-new-tools)** - Modify the example tool or add your own logic
 - **[Create a new widget](#widget-development)** - Build custom UI components for your tools
-- **[Test locally](#local-testing-with-mcp-inspector)** - Use `npm run inspect` for debugging without a host
+- **[Test locally](#1-local-testing-with-mcpjam)** - Use `npm run inspect` for debugging without a host
 - **[Deploy to production](#production-deployment)** - Take your app live when ready
 
 ## Available Commands
@@ -200,7 +200,7 @@ npm run dev:server
 # Start only widget dev server
 npm run dev:widgets
 
-# Test with MCP Inspector
+# Test with MCPJam
 npm run inspect
 ```
 
@@ -261,14 +261,14 @@ npm run build:storybook
 
 ### Testing Your App
 
-#### 1. Local Testing with MCP Inspector
+#### 1. Local Testing with MCPJam
 
 ```bash
 # Start the MCP server first (npm run dev), then:
 npm run inspect
 ```
 
-This opens the official MCP Inspector against `http://localhost:8080/mcp` (no account). Use it to:
+This opens MCPJam with no server pre-configured. Add yours as Streamable HTTP at `http://localhost:8080/mcp`. Use it to:
 
 - List available tools
 - Test tool invocations
@@ -867,7 +867,7 @@ npm run test:coverage
 - Accessibility (a11y) compliance
 - MCP Apps App API mocking
 
-### MCP Inspector Workflow
+### MCPJam Workflow
 
 ```bash
 # 1. Start server
@@ -876,7 +876,7 @@ npm run dev:server
 # 2. Build widgets
 npm run build:widgets
 
-# 3. Open the official MCP Inspector (no account)
+# 3. Open MCPJam and add http://localhost:8080/mcp (Streamable HTTP)
 npm run inspect
 
 # 4. Verify:
@@ -985,7 +985,7 @@ curl http://localhost:8080/health
 **Solutions**:
 
 1. Check server logs for errors
-2. Test with MCP Inspector: `npm run inspect`
+2. Test with MCPJam: `npm run inspect` (add `http://localhost:8080/mcp` yourself)
 3. Refresh connector: Settings → Connectors → Refresh
 4. Verify tool schema is valid JSON Schema
 

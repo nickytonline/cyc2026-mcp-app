@@ -149,5 +149,5 @@ npm run test:server
 npm run dev          # start server + widget dev server
 npm run type-check   # TypeScript across all workspaces
 npm run lint         # ESLint
-npm run inspect      # official MCP Inspector against localhost:8080/mcp
+npm run inspect      # MCPJam — add http://localhost:8080/mcp yourself
 ```

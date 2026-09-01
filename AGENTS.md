@@ -54,7 +54,7 @@ npm run dev:inline        # Force inlined assets for every client (rarely needed
 npm run dev:server        # Start only MCP server (watch mode)
 npm run dev:widgets       # Start only widget dev server
 npm run dev:widgets:build # Start only the widget watch build
-npm run inspect           # Test with MCP Inspector
+npm run inspect           # Open MCPJam (add the server yourself)
 ```
 
 `npm run dev` needs no manual build step: a background `vite build --watch` keeps `assets/` fresh, and the server decides per MCP request whether to serve live dev-server modules (HMR) or fully inlined HTML, based on the requesting client (see "Per-Client Widget HTML" below).
@@ -365,7 +365,7 @@ This ensures type safety and runtime validation.
 
 ### Testing MCP Apps Hosts
 
-#### Local Testing with MCP Inspector
+#### Local Testing with MCPJam
 
 ```bash
 # 1. Start server (terminal 1)
@@ -374,11 +374,11 @@ npm run dev:server
 # 2. Build widgets (terminal 2)
 npm run build:widgets
 
-# 3. Open the official MCP Inspector (no account)
+# 3. Open MCPJam and add the server yourself
 npm run inspect
 ```
 
-`npm run inspect` launches `@modelcontextprotocol/inspector` against `http://localhost:8080/mcp`. Use it to invoke tools and verify widget resources without deploying.
+`npm run inspect` launches MCPJam with no server pre-configured. Add Streamable HTTP at `http://localhost:8080/mcp`, then invoke tools and verify widget resources without deploying.
 
 #### Connecting from ChatGPT
 
