@@ -58,7 +58,7 @@ function DrawerHeader({
   return (
     <div
       className={cn(
-        'bg-[var(--cyc-navy)] px-5 py-4 text-white',
+        'shrink-0 bg-[var(--cyc-navy)] px-5 py-4 text-white',
         className
       )}
       {...props}

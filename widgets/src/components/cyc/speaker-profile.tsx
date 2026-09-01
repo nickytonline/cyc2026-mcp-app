@@ -187,6 +187,33 @@ function CloseIcon() {
   );
 }
 
+function SpeakerProfileIdentity({
+  preview,
+  speaker,
+}: {
+  preview: SpeakerPreview;
+  speaker?: GetSpeakerOutput['speaker'];
+}) {
+  return (
+    <div className="flex gap-3">
+      <SpeakerPhoto
+        name={preview.name}
+        photoUrl={speaker?.photoUrl ?? preview.photoUrl ?? null}
+        className="size-16 shrink-0 rounded-[6px] object-cover sm:size-20"
+      />
+      <div className="min-w-0 flex-1">
+        <TrackChip track={speaker?.track ?? preview.track ?? 'CYC26'} />
+        <p className="mt-1 text-sm text-[var(--cyc-muted)]">
+          {speaker?.title ?? preview.title}
+          {(speaker?.company ?? preview.company)
+            ? ` / ${speaker?.company ?? preview.company}`
+            : ''}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function SpeakerProfileBody({
   preview,
   speaker,
@@ -205,53 +232,53 @@ function SpeakerProfileBody({
   const askId = useId();
 
   return (
-    <div className="min-h-0 flex-1 overflow-y-auto bg-[var(--cyc-cloud)] p-4 text-[var(--cyc-ink)] dark:bg-[var(--cyc-navy-soft)] dark:text-white">
-      <div className="flex gap-3">
-        <SpeakerPhoto
-          name={preview.name}
-          photoUrl={speaker?.photoUrl ?? preview.photoUrl ?? null}
-          className="size-16 shrink-0 rounded-[6px] object-cover sm:size-20"
-        />
-        <div className="min-w-0 flex-1">
-          <TrackChip track={speaker?.track ?? preview.track ?? 'CYC26'} />
-          <p className="mt-1 text-sm text-[var(--cyc-muted)]">
-            {speaker?.title ?? preview.title}
-            {(speaker?.company ?? preview.company)
-              ? ` / ${speaker?.company ?? preview.company}`
-              : ''}
-          </p>
-        </div>
+    <div className="flex min-h-0 flex-1 flex-col bg-[var(--cyc-cloud)] text-[var(--cyc-ink)] dark:bg-[var(--cyc-navy-soft)] dark:text-white">
+      <div className="shrink-0 border-b border-[var(--cyc-line)] px-4 py-4 dark:border-white/10">
+        <SpeakerProfileIdentity preview={preview} speaker={speaker} />
       </div>
-      {status === 'loading' ? (
-        <div className="mt-3 grid gap-2" aria-hidden="true">
-          <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-          <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-          <div className="h-3 w-2/3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-        </div>
-      ) : null}
-      {status === 'error' ? (
-        <p className="mt-3 text-sm text-[var(--cyc-muted)]" role="alert">
-          Couldn’t load this speaker. Close and try again.
-        </p>
-      ) : null}
-      {speaker?.bio ? (
-        <p className="mt-3 text-[0.9375rem] leading-7">{speaker.bio}</p>
-      ) : null}
-      {status === 'ready' ? (
-        <div className="mt-4 border-t border-[var(--cyc-line)] pt-4 dark:border-white/10">
-          <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
-            On the program
+      <div
+        className="cyc-scroll min-h-0 flex-1 px-4 py-4"
+        tabIndex={0}
+        role="region"
+        aria-label="Speaker details"
+      >
+        {status === 'loading' ? (
+          <div className="grid gap-2" aria-hidden="true">
+            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+            <div className="h-3 w-2/3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+          </div>
+        ) : null}
+        {status === 'error' ? (
+          <p className="text-sm text-[var(--cyc-muted)]" role="alert">
+            Couldn’t load this speaker. Close and try again.
           </p>
-          <SessionList sessions={sessions} onSelect={onSelectSession} />
+        ) : null}
+        {speaker?.bio ? (
+          <p className="text-[0.9375rem] leading-7">{speaker.bio}</p>
+        ) : null}
+        {status === 'ready' ? (
+          <div
+            className={
+              speaker?.bio
+                ? 'mt-4 border-t border-[var(--cyc-line)] pt-4 dark:border-white/10'
+                : undefined
+            }
+          >
+            <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
+              On the program
+            </p>
+            <SessionList sessions={sessions} onSelect={onSelectSession} />
+          </div>
+        ) : null}
+        <div className={speaker?.bio || status === 'ready' ? 'mt-4' : undefined}>
+          <SpeakerAskForm
+            id={askId}
+            speaker={preview}
+            onAsk={onAsk}
+            disabled={status === 'loading'}
+          />
         </div>
-      ) : null}
-      <div className="mt-4">
-        <SpeakerAskForm
-          id={askId}
-          speaker={preview}
-          onAsk={onAsk}
-          disabled={status === 'loading'}
-        />
       </div>
     </div>
   );

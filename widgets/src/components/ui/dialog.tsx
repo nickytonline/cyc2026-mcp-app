@@ -60,7 +60,7 @@ function DialogHeader({
   return (
     <div
       className={cn(
-        'bg-[var(--cyc-navy)] px-5 py-4 pr-14 text-white',
+        'shrink-0 bg-[var(--cyc-navy)] px-5 py-4 pr-14 text-white',
         className
       )}
       {...props}

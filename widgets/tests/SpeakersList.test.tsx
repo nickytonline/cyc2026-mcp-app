@@ -50,6 +50,9 @@ describe('SpeakersList', () => {
     ).toBeTruthy();
     expect(screen.getByText('On the program')).toBeTruthy();
     expect(screen.getByLabelText('Ask about this speaker')).toBeTruthy();
+    const details = screen.getByRole('region', { name: 'Speaker details' });
+    expect(details.className).toContain('cyc-scroll');
+    expect(details.textContent).toContain('Microsoft MVP');
   });
 
   it('filters speakers by track', async () => {
