@@ -1,0 +1,284 @@
+{
+  "timezone": "America/Chicago",
+  "days": [
+    {
+      "day": 0,
+      "date": "2026-09-02",
+      "label": "Day 0",
+      "slots": []
+    },
+    {
+      "day": 1,
+      "date": "2026-09-03",
+      "label": "Day 1",
+      "slots": [
+        {
+          "start": "2026-09-03T09:00:00-05:00",
+          "end": "2026-09-03T10:00:00-05:00",
+          "sessionIds": [
+            "welcome-and-opening-keynote-ynote-welcome-day1"
+          ]
+        },
+        {
+          "start": "2026-09-03T11:00:00-05:00",
+          "end": "2026-09-03T11:25:00-05:00",
+          "sessionIds": [
+            "20-years-of-frontend-lessons-architecture-decisions-that-actually-matter-h4tb1z8aixe4grzj8s",
+            "never-click-apply-get-hired-qylsthryjfcfyntwzd",
+            "data-governance-in-the-ai-age-alpz83ldei8da9qd31",
+            "documentation-in-the-age-of-ai-why-docs-are-a-product-kuteeiof80z1ega2nt",
+            "the-three-ways-ai-agents-fail-here-s-how-to-fix-yours-iubkrtqum5la6tr4z0",
+            "secure-coding-meets-critical-infrastructure-defense-in-water-systems-ue9w5djtkklq0arqfg"
+          ]
+        },
+        {
+          "start": "2026-09-03T11:30:00-05:00",
+          "end": "2026-09-03T11:55:00-05:00",
+          "sessionIds": [
+            "when-vectors-aren-t-enough-unlocking-ai-s-hidden-connections-with-graphs-jhffubcwvky0rzpcod",
+            "chaos-to-control-automating-the-identity-life-cycle-in-the-cloud-edrvkzzfxet1vxcw9l",
+            "stop-writing-the-analysis-script-let-the-data-decide-what-to-look-at-xz65mqrizxhesui3d6",
+            "ship-it-first-fix-it-later-how-a-medical-crisis-led-to-a-global-tool-gidregd9bglb0dvh68",
+            "gating-cognition-how-modern-ai-architectures-minimize-runtime-reasoning-egbygdgv3cyxa7iz64",
+            "are-mcp-servers-dead-dnywgwofmtwijmbrup"
+          ]
+        },
+        {
+          "start": "2026-09-03T13:00:00-05:00",
+          "end": "2026-09-03T13:25:00-05:00",
+          "sessionIds": [
+            "boost-developer-productivity-with-buildpacks-hnnpxmrwif7i2ai6of",
+            "this-isn-t-the-matrix-stop-letting-your-ai-agents-run-wild-eguc2r3fo59toaog5k",
+            "20-mins-to-production-a-live-ai-build-challenge-mrjgjjazynlnsmptbc",
+            "in-the-age-of-ai-if-it-s-not-accessible-it-s-not-acceptable-tbreiot5deh4gz5t26",
+            "comparing-promises-observables-and-signals-qfoqllxv91yradqtsa"
+          ]
+        },
+        {
+          "start": "2026-09-03T13:00:00-05:00",
+          "end": "2026-09-03T14:30:00-05:00",
+          "sessionIds": [
+            "close-the-tab-build-jobs-that-keep-running-e4tdhratyf5jlpamq0"
+          ]
+        },
+        {
+          "start": "2026-09-03T13:30:00-05:00",
+          "end": "2026-09-03T13:55:00-05:00",
+          "sessionIds": [
+            "gotta-feed-the-beast-data-engineering-at-scale-x09vwrbzclqep5y25p",
+            "trust-but-verify-human-in-the-loop-for-agents-that-actually-matter-lhy79bqjv4iti91r24",
+            "weights-vs-words-in-fine-tuning-and-enhancing-agentic-ai-workflows-rds1p8ile1s8tbxmvs",
+            "advanced-rag-systems-scaling-retrieval-augmented-generation-in-production-ib7kbnyzsurm25te0o",
+            "from-side-project-to-startup-lessons-learned-from-hundreds-of-builders-3zfowpwxy7s88rr1vc"
+          ]
+        },
+        {
+          "start": "2026-09-03T14:00:00-05:00",
+          "end": "2026-09-03T14:25:00-05:00",
+          "sessionIds": [
+            "give-your-sdk-superpowers-building-ai-tools-for-your-developers-with-skills-and-mcp-9bvc3u70n8miaxkry4",
+            "from-guesswork-to-governance-bringing-api-discipline-to-data-streaming-j3x7tyxu0r5ipbyaq3",
+            "the-claw-minions-of-toil-ppbydejkgzhzoj0mf0",
+            "observability-at-200mph-how-being-a-coder-makes-you-a-better-sim-racer-0m4isaklwrgqxua7m1",
+            "from-internal-innovation-to-hilton-com-building-hilton-s-first-agentic-ai-travel-planner-8kmcxefr2eh7tefzp7"
+          ]
+        },
+        {
+          "start": "2026-09-03T14:30:00-05:00",
+          "end": "2026-09-03T14:55:00-05:00",
+          "sessionIds": [
+            "your-prompt-is-not-a-unit-test-instrumenting-llm-apps-in-production-fvhaxs8ttaduwcvdmq",
+            "make-your-serverless-functions-do-more-with-durable-executions-sgoktzkkqggmu52jcj",
+            "the-playwright-cipher-writing-tests-like-a-rap-verse-jlkjpm6r7rznm1idr0",
+            "build-your-first-mcp-app-hwylh8wvaanptgcbow",
+            "the-feature-nobody-used-and-what-it-taught-me-about-product-engineering-bx7cgthkar6f9o8oc8"
+          ]
+        },
+        {
+          "start": "2026-09-03T15:30:00-05:00",
+          "end": "2026-09-03T15:55:00-05:00",
+          "sessionIds": [
+            "your-browser-has-trust-issues-why-local-devices-break-modern-web-apps-kz5slzoc3aoorhfqs5",
+            "deploy-your-own-videogen-model-j78obsyn5qyjadpxkz",
+            "open-source-voice-ai-from-chatgpt-s-infrastructure-to-your-app-kbaedf883i8q4dsu4r",
+            "herding-engineers-what-i-learned-from-horse-trainers-in-northern-texas-4gpcn5sukxhmozqclt",
+            "zero-to-production-a-simple-technical-framework-for-low-cost-scalable-infrastructure-4kehqk95lzy0vtvhfc",
+            "give-your-agent-a-second-brain-and-a-ui-to-match-dlmpx1grx7jaygwf9t"
+          ]
+        },
+        {
+          "start": "2026-09-03T16:00:00-05:00",
+          "end": "2026-09-03T16:25:00-05:00",
+          "sessionIds": [
+            "zero-trust-architecture-for-agentic-ai-securing-multi-user-access-and-third-party-integrations-1ku93sfjpxsmj8yssw",
+            "wtf-rust-for-web-development-htnryzmdymonnjxlbu",
+            "stop-prompting-start-looping-principles-of-loop-engineering-pdlwv0ag1uafawgdzo",
+            "beyond-seo-optimizing-your-web-content-for-the-age-of-ai-tvc8nbdilx4vouscnb",
+            "claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl",
+            "rm-rf-horror-stories-from-unsandboxed-ai-agents-and-how-docker-fixes-this-tdk8d1p5sgnix7pa4r"
+          ]
+        },
+        {
+          "start": "2026-09-03T16:30:00-05:00",
+          "end": "2026-09-03T16:55:00-05:00",
+          "sessionIds": [
+            "is-beauty-only-skin-deep-gkkttmmicu1jjjig8e",
+            "learn-to-code-is-at-a-5-year-high-and-ai-is-the-reason-zblqioqwb93oiypzsn",
+            "property-based-testing-for-the-browser-with-bombadil-viw218cr2lg95cgebv",
+            "when-ai-gets-manipulated-security-risks-in-llm-applications-zgznsudvvzgp6cezsp",
+            "tools-in-your-ai-s-toolbox-an-introduction-to-mcp-servers-x2bm07hsvgxulv2q3d",
+            "software-developer-to-cto-ama-ask-me-anything-nnqf9op7dy9lic8myo"
+          ]
+        },
+        {
+          "start": "2026-09-03T17:00:00-05:00",
+          "end": "2026-09-03T17:25:00-05:00",
+          "sessionIds": [
+            "design-systems-101-the-developer-approach-to-better-frontends-7j1cf2ki51givpj6nv",
+            "revolutionize-your-backend-mastering-server-actions-with-next-js-and-react-vucr7yhyr9hmof5u1f",
+            "skip-the-middleman-direct-secure-ui-to-agent-communication-with-amazon-bedrock-agentcore-nvm3kek5kxtzcbyirn",
+            "why-your-bug-rate-isn-t-a-code-problem-engineering-for-unstable-work-intake-5ruempuouhv04saia6",
+            "serverless-api-gateways-for-high-scale-systems-performance-cost-and-security-mpmtl7dyp3r8osk4di",
+            "ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-09-04",
+      "label": "Day 2",
+      "slots": [
+        {
+          "start": "2026-09-04T09:00:00-05:00",
+          "end": "2026-09-04T10:00:00-05:00",
+          "sessionIds": [
+            "keynote-with-kevin-j-scott-scott-keynote-day2"
+          ]
+        },
+        {
+          "start": "2026-09-04T11:00:00-05:00",
+          "end": "2026-09-04T11:25:00-05:00",
+          "sessionIds": [
+            "counting-exercise-repetition-using-live-camera-video-9huuyte6p1ppr8haj0",
+            "engineering-real-time-data-synchronization-across-multi-cloud-systems-ixjjocvvby9mbonzl0",
+            "oops-i-did-it-again-when-good-objects-go-toxic-k8vkzfblxellxqk9cz",
+            "the-evolution-of-divot-how-agents-earn-their-autonomy-hts1q2ex5i2ihm0fmx",
+            "build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc",
+            "ai-governance-in-financial-services-what-every-developer-should-know-7bhgxnuoqong1amy2f"
+          ]
+        },
+        {
+          "start": "2026-09-04T11:30:00-05:00",
+          "end": "2026-09-04T11:55:00-05:00",
+          "sessionIds": [
+            "5-mistakes-developers-make-when-building-java-apis-and-how-to-fix-them-i95icqsexxpm2hggmk",
+            "building-rapid-web-applications-with-laravel-filament-fakvcfv3x11aeyidpl",
+            "from-requirements-to-reality-how-solutions-architects-think-build-and-decide-ot7ey0sbncslbabslg",
+            "ai-driven-supply-chain-security-using-ai-bom-to-detect-hidden-vulnerabilities-ebda10lofmes3gowu3",
+            "fixing-potholes-and-broken-roads-devs-can-troubleshoot-the-network-with-ops-too-j8uch7a6a5hpanmmmm",
+            "unlocking-ci-performance-in-the-age-of-agentic-development-l7jizhw7e7cltgr4xq"
+          ]
+        },
+        {
+          "start": "2026-09-04T13:00:00-05:00",
+          "end": "2026-09-04T13:25:00-05:00",
+          "sessionIds": [
+            "what-happens-when-the-music-starts-the-architecture-of-browser-audio-uxvpsdozcwk7jd3d3t",
+            "beyond-the-happy-path-building-a-bdd-testing-strategy-across-microservices-osg0avohh6l1buhzkh",
+            "from-dashboards-to-data-products-a-shift-in-thinking-h8zzoei3xm7foap95e",
+            "on-device-ai-in-react-native-private-offline-llms-for-real-apps-foapl4udynrjj8qyqm",
+            "building-stelvio-an-open-source-journey-to-deploy-python-to-aws-isd9lhifeyn3guv3gg"
+          ]
+        },
+        {
+          "start": "2026-09-04T13:00:00-05:00",
+          "end": "2026-09-04T14:30:00-05:00",
+          "sessionIds": [
+            "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"
+          ]
+        },
+        {
+          "start": "2026-09-04T13:30:00-05:00",
+          "end": "2026-09-04T13:55:00-05:00",
+          "sessionIds": [
+            "cloud-based-identity-and-access-management-for-secure-federal-systems-ta4pgtaru7pggwkx0f",
+            "from-apis-to-agents-enterprise-ai-using-java-ollama-and-mcp-snk5bfkfopmwvjises",
+            "the-hidden-roi-of-caching-performance-optimization-and-mips-reduction-in-pbm-engineering-qn7p95vmfoz9glsuuf",
+            "inside-mcp-live-protocol-messages-real-time-flows-and-smarter-agents-zvvjqxgfx2pb7aneox",
+            "agents-are-not-apps-stop-building-interfaces-start-building-coworkers-qpqpmkhpa3fc4enuzz"
+          ]
+        },
+        {
+          "start": "2026-09-04T14:00:00-05:00",
+          "end": "2026-09-04T14:25:00-05:00",
+          "sessionIds": [
+            "the-node-modules-iceberg-mysteries-below-the-waterline-k771ywsry1xdqw3qfx",
+            "ai-for-java-developers-b1yca9biu15t9vsxea",
+            "good-vibes-smooth-payments-tailoring-stripe-to-any-ui-himensu5qmyesxi4hf",
+            "writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq",
+            "react-server-components-suspense-and-the-new-mental-model-fdilfxsgipnergxvfy"
+          ]
+        },
+        {
+          "start": "2026-09-04T14:30:00-05:00",
+          "end": "2026-09-04T14:55:00-05:00",
+          "sessionIds": [
+            "squeezing-java-containers-shrinking-your-kubernetes-footprint-with-jlink-cxct9uvnhi8gdgvxxo",
+            "architecting-ai-in-angular-webmcp-a2ui-and-the-agent-experience-x1cvn7kaitctkfrcuf",
+            "css-as-a-game-engine-building-playful-stateful-web-experiences-without-js-1rdsbwqjvaxly1oxdu",
+            "how-to-test-ai-features-before-your-users-do-dkcvopioefos47vew3",
+            "if-you-re-not-shipping-you-re-not-a-leader-f3b6hz3jjnpel81sem"
+          ]
+        },
+        {
+          "start": "2026-09-04T15:30:00-05:00",
+          "end": "2026-09-04T15:55:00-05:00",
+          "sessionIds": [
+            "utilising-the-javascript-abstract-syntax-tree-ast-for-automated-frontend-lifecycle-management-ukbb5ays62ra0eadkg",
+            "sociotechnical-platform-engineering-hs8koenyzkbep2s8az",
+            "thinking-architecturally-pf8osckiezzblxgoap",
+            "the-series-finale-problem-what-happens-when-your-brand-makes-a-promise-you-can-t-keep-eswxlejrubonipxrs0",
+            "building-ai-agents-in-typescript-with-mastra-fahecrkt59bcwtex43"
+          ]
+        },
+        {
+          "start": "2026-09-04T15:30:00-05:00",
+          "end": "2026-09-04T17:00:00-05:00",
+          "sessionIds": [
+            "zerops-ai-workshop-zerops-ai-workshop"
+          ]
+        },
+        {
+          "start": "2026-09-04T16:00:00-05:00",
+          "end": "2026-09-04T16:25:00-05:00",
+          "sessionIds": [
+            "baseline-magic-the-art-of-intent-driven-css-jxe7qklp61e5bao6vz",
+            "prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k",
+            "the-devil-was-never-in-the-details-code-ai-and-the-rise-of-the-deep-generalist-2whpuzlybafrueik1l",
+            "building-marvin-what-teaching-a-non-technical-marketer-to-use-mcp-taught-me-about-ai-adoption-1xbefpcbhk2ylaib2z",
+            "the-death-and-resurrection-of-the-ide-why-agents-need-semantic-understanding-26ed9kkxojdnyhi6j2"
+          ]
+        },
+        {
+          "start": "2026-09-04T16:30:00-05:00",
+          "end": "2026-09-04T16:55:00-05:00",
+          "sessionIds": [
+            "7-leadership-lessons-for-the-engineer-that-ai-can-t-replace-omt55zzdieqhsldnx8",
+            "building-intelligent-integration-flows-from-natural-language-to-execution-with-ballerina-swzlscsiwryjzkjcu3",
+            "remote-agents-or-how-i-fixed-our-page-s-performance-without-really-doing-anything-djnxa0lps6ukvhsjcj",
+            "the-put-that-sh-t-on-agent-building-multi-agent-ai-systems-that-actually-talk-to-each-other-aor1rd2jyfeuz5r0vf",
+            "how-to-use-scaffolding-to-make-your-coding-agents-less-dumb-j6fwrhfmi9xzstnnxb"
+          ]
+        },
+        {
+          "start": "2026-09-04T17:00:00-05:00",
+          "end": "2026-09-04T17:15:00-05:00",
+          "sessionIds": [
+            "closing-keynote-osing-keynote-day2"
+          ]
+        }
+      ]
+    }
+  ]
+}

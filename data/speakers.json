@@ -1,0 +1,1853 @@
+[
+  {
+    "id": "kevin-j-scott",
+    "slug": "kevin-j-scott",
+    "sequence": 1,
+    "isKeynote": true,
+    "name": "Kevin J. Scott",
+    "title": "Chief Technology Officer",
+    "company": "PGA of America",
+    "track": "Keynote",
+    "talkTitle": "Keynote",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/49Y1BiGFnWKWMyqgEEbf7D/4e4e685b28c9ac89ea2c5ee7aa8b857f/1745003353065.jpg",
+    "url": "https://www.commityourcode.com/speakers/kevin-j-scott",
+    "bio": "Kevin J. Scott is the Chief Technology Officer of the PGA of America.",
+    "sessionIds": [
+      "keynote-with-kevin-j-scott-scott-keynote-day2",
+      "keynote-ifc9xrcmf8uuactyms"
+    ]
+  },
+  {
+    "id": "leon-noel",
+    "slug": "leon-noel",
+    "sequence": 2,
+    "isKeynote": false,
+    "name": "Leon Noel",
+    "title": "Managing Director",
+    "company": "Resilient Coders",
+    "track": "JavaScript",
+    "talkTitle": "Never Click Apply. Get Hired.",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2GquIGD052oj4R81Jz5yCL/4567caeccf354397240a175706fa6510/qtQW65be_400x400.jpg",
+    "url": "https://www.commityourcode.com/speakers/leon-noel",
+    "bio": "Leon Noel is the Managing Director of Engineering at Resilient Coders, a nonprofit that trains Black and Brown engineers and places them into software engineering careers. He is best known for creating #100Devs, a free software engineering bootcamp whose global community has grown to more than 50,000 developers. Earlier in his career he co-founded SocialSci, a scientific surveying platform used by over 4,000 academic institutions, and he has guest lectured at Harvard Business School and MIT Sloan.",
+    "sessionIds": [
+      "never-click-apply-get-hired-qylsthryjfcfyntwzd"
+    ]
+  },
+  {
+    "id": "danny-thompson",
+    "slug": "danny-thompson",
+    "sequence": 3,
+    "isKeynote": false,
+    "name": "Danny Thompson",
+    "title": "Conference Organizer",
+    "company": "CYC",
+    "track": "Keynote",
+    "talkTitle": "Keynote",
+    "photoUrl": "/staff/danny_thompson.jpeg",
+    "url": "https://www.commityourcode.com/speakers/danny-thompson",
+    "bio": "Join Danny Thompson for brief closing remarks to wrap up the conference.",
+    "sessionIds": [
+      "closing-keynote-osing-keynote-day2"
+    ]
+  },
+  {
+    "id": "anupama-pathirage",
+    "slug": "anupama-pathirage",
+    "sequence": 4,
+    "isKeynote": false,
+    "name": "Anupama Pathirage",
+    "title": "Director of Engineering",
+    "company": "WSO2",
+    "track": "AI",
+    "talkTitle": "Building Intelligent Integration Flows: From Natural Language to Execution with Ballerina",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/uoGPuDwgPAN62B3TBufEp/58827c8385bb5a152c7aba86c7a43f64/anupama-pathirage.png",
+    "url": "https://www.commityourcode.com/speakers/anupama-pathirage",
+    "bio": "Anupama Pathirage is the Director and Head of Engineering – Integration at WSO2, leading the development of the Ballerina Programming Language and the WSO2 Integration Platform from Austin, Texas. With over 14 years of experience in the software industry, she has played a key role in shaping Ballerina and contributing to various software development projects.\r\n\r\nShe holds a Master’s degree in Software Architecture and a first-class honors Bachelor’s degree from the Department of Computer Science and Engineering at the University of Moratuwa. In addition to her technical work, she writes for publications such as InfoWorld, DZone, InfoQ, and Medium, and frequently speaks at international conferences.",
+    "sessionIds": [
+      "building-intelligent-integration-flows-from-natural-language-to-execution-with-ballerina-swzlscsiwryjzkjcu3"
+    ]
+  },
+  {
+    "id": "miguel-guillen",
+    "slug": "miguel-guillen",
+    "sequence": 5,
+    "isKeynote": false,
+    "name": "Miguel Guillén",
+    "title": "Sr Director Technology and Data",
+    "company": " ",
+    "track": "AI",
+    "talkTitle": "Data Governance in the AI age",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/33wYpKXTvGaueHavz5Rk8Z/32c1e4a45070732683e1cbc9092ed4f6/miguel-guillen.jpg",
+    "url": "https://www.commityourcode.com/speakers/miguel-guillen",
+    "bio": "Miguel Guillen Sr Director Technology and Data",
+    "sessionIds": [
+      "data-governance-in-the-ai-age-alpz83ldei8da9qd31"
+    ]
+  },
+  {
+    "id": "bree-hall",
+    "slug": "bree-hall",
+    "sequence": 6,
+    "isKeynote": false,
+    "name": "Bree Hall",
+    "title": "Senior Developer Content Lead",
+    "company": "Sanity",
+    "track": "JavaScript",
+    "talkTitle": "Give Your Agent a Second Brain (and a UI to Match)",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/23If5MsWML4Pw6trATPt6E/9275e6ccb38a0e37ab29d8c7fe595dad/BREE-HALL.jpg",
+    "url": "https://www.commityourcode.com/speakers/bree-hall",
+    "bio": "Bree is a frontend Software Engineer turned Developer Advocate at HubSpot. She has a passion for coding and making technology more accessible to everyone. Bree creates technical content to help developers create and build autonomously. When she isn't working for the Developer Advocacy team at HubSpot, you can find her playing video games, baking, or traveling to magical destinations.",
+    "sessionIds": [
+      "give-your-agent-a-second-brain-and-a-ui-to-match-dlmpx1grx7jaygwf9t"
+    ]
+  },
+  {
+    "id": "alexander-crettenand",
+    "slug": "alexander-crettenand",
+    "sequence": 7,
+    "isKeynote": false,
+    "name": "Alexander Crettenand",
+    "title": "Vice President of Software Engineering",
+    "company": "ADT",
+    "track": "Leadership",
+    "talkTitle": "Herding Engineers: What I learned from Horse Trainers In Northern Texas",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6hbonHXndi5jwDoNGIfayk/6808788d18e0bd45b2ab9f1072425a32/1753227022136.jpg",
+    "url": "https://www.commityourcode.com/speakers/alexander-crettenand",
+    "bio": "Alexander Crettenand is Vice President of Software Engineering at ADT, where he leads software engineering for the company's smart home security platform. In 2026 he became one of ADT's representatives on the Board of Directors of the Connectivity Standards Alliance — the organization behind Matter, Zigbee, and Aliro — sitting alongside representatives from Apple, Google, Amazon, and Samsung. Before ADT he spent roughly a decade at Google as a Senior Engineering Manager.",
+    "sessionIds": [
+      "herding-engineers-what-i-learned-from-horse-trainers-in-northern-texas-4gpcn5sukxhmozqclt"
+    ]
+  },
+  {
+    "id": "patrick-hulce",
+    "slug": "patrick-hulce",
+    "sequence": 8,
+    "isKeynote": false,
+    "name": "Patrick Hulce",
+    "title": "ML Architect",
+    "company": "Netflix",
+    "track": "AI",
+    "talkTitle": "Deploy Your Own VideoGen Model",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3pmTZ7RMul0Og6hV6I4r4V/6fd404f3d122f56bd90cac88a0d55bc4/patrick-hulce.jpg",
+    "url": "https://www.commityourcode.com/speakers/patrick-hulce",
+    "bio": "Patrick has been working at the intersection of AI, visual media, and the web for nearly 20 years. An avid open source contributor with over 30 million downloads and a dozen projects to his name, Patrick now serves as an ML Architect for Studio Media Algorithms at Netflix where he works on the next generation of content creation tools.",
+    "sessionIds": [
+      "deploy-your-own-videogen-model-j78obsyn5qyjadpxkz"
+    ]
+  },
+  {
+    "id": "zackary-chapple",
+    "slug": "zackary-chapple",
+    "sequence": 9,
+    "isKeynote": false,
+    "name": "Zackary Chapple",
+    "title": "Co-Founder & CEO",
+    "company": "Zephyr Cloud",
+    "track": "Leadership",
+    "talkTitle": "If You’re Not Shipping, You’re Not a Leader",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5wW2CrXiWFe3wSkf1H4pV0/a3a810d44651be33ac72687717718362/1757446361199.jpg",
+    "url": "https://www.commityourcode.com/speakers/zackary-chapple",
+    "bio": "Zackary Chapple is the Co-Founder and CEO of Zephyr Cloud, a platform for deploying, orchestrating, and observing micro-frontends at global scale. A veteran of the JavaScript tooling ecosystem, he serves on the Module Federation core team and the Tauri board, and contributes to Rspack. His earlier career spans enterprise architecture at CareerBuilder and a stint as Chief Revenue Officer at Valor Software, giving him a rare dual perspective on engineering at massive scale and scaling a startup from zero to one.",
+    "sessionIds": [
+      "if-you-re-not-shipping-you-re-not-a-leader-f3b6hz3jjnpel81sem"
+    ]
+  },
+  {
+    "id": "amanda-mayfield",
+    "slug": "amanda-mayfield",
+    "sequence": 10,
+    "isKeynote": false,
+    "name": "Amanda Mayfield",
+    "title": "Software Engineer",
+    "company": "O'Reilly",
+    "track": "JavaScript",
+    "talkTitle": "In the age of AI: if it's not Accessible, it's not Acceptable",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2jrR7wokELlK2y2EMPafEA/3bd3d0479fc4bae6632b2a60e46552ef/amanda-mayfield.jpg",
+    "url": "https://www.commityourcode.com/speakers/amanda-mayfield",
+    "bio": "Amanda Mayfield is a Senior Software Engineer in the DFW area whose passions include Accessibility, Test Driven Development, and Chips & Queso.",
+    "sessionIds": [
+      "in-the-age-of-ai-if-it-s-not-accessible-it-s-not-acceptable-tbreiot5deh4gz5t26"
+    ]
+  },
+  {
+    "id": "yodit-weldegeorgise",
+    "slug": "yodit-weldegeorgise",
+    "sequence": 11,
+    "isKeynote": false,
+    "name": "Yodit Weldegeorgise",
+    "title": "Java Software Engineer",
+    "company": "Unknown Company",
+    "track": "Java",
+    "talkTitle": "5 Mistakes Developers Make When Building Java APIs (and How to Fix Them)",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1KEpGNY5Nr2JhTENWr3bEe/f3b0691bb223d7926a76e8a9c4c2e942/yodit-weldegeorgise.jpg",
+    "url": "https://www.commityourcode.com/speakers/yodit-weldegeorgise",
+    "bio": "Yodit Weldegeorgise is a software engineer focused on backend development using Java and modern web technologies. She enjoys building backend services and exploring practical engineering practices that improve system reliability and maintainability.\r\n\r\nShe actively participates in developer communities, technical meetups, and engineering collaborations where she works with other developers on real-world applications. Through these experiences, she has developed a strong interest in clean API design and backend architecture.\r\n\r\nYodit enjoys sharing practical lessons that help developers write clearer code and design better backend systems.",
+    "sessionIds": [
+      "5-mistakes-developers-make-when-building-java-apis-and-how-to-fix-them-i95icqsexxpm2hggmk"
+    ]
+  },
+  {
+    "id": "chris-edgington",
+    "slug": "chris-edgington",
+    "sequence": 12,
+    "isKeynote": false,
+    "name": "Chris Edgington",
+    "title": "CEO",
+    "company": "EdgeCraft Studio",
+    "track": "JavaScript",
+    "talkTitle": "Your Browser Has Trust Issues: Why Local Devices Break Modern Web Apps",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1uNYITq5MiZbXqb5bD0JKZ/784a53aaede47f11c38adb0791739681/chris-edgington__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-edgington",
+    "bio": "Chris Edgington is a software engineer based in Central Indiana with 33 years of experience - from device drivers for graphics chips and fast cars, to solving the hard problems of integrating modern software with legacy systems. He's the creator of ProxyBox and spends most of his time these days helping businesses integrate modern software with existing processes across multiple vendors through integration layers and reverse engineering of legacy systems. When not writing code, Chris loves to spend time with family and friends playing ultimate frisbee and KanJam.",
+    "sessionIds": [
+      "your-browser-has-trust-issues-why-local-devices-break-modern-web-apps-kz5slzoc3aoorhfqs5"
+    ]
+  },
+  {
+    "id": "prathap-raghavan",
+    "slug": "prathap-raghavan",
+    "sequence": 13,
+    "isKeynote": false,
+    "name": "Prathap Raghavan",
+    "title": "Director of Product management",
+    "company": "Santander Consumer USA",
+    "track": "Java",
+    "talkTitle": "From APIs to Agents: Enterprise AI using Java, Ollama & MCP",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7kf8D1YUO2Ip8GqAKiO3e8/8da42a56990bd47d1971efe55d2d2a9b/prathap-raghavan.png",
+    "url": "https://www.commityourcode.com/speakers/prathap-raghavan",
+    "bio": "Prathap is a seasoned IT professional with over 21 years of experience in system analysis, enterprise software design, development, and testing within complex digital environments. His expertise spans the complete software development lifecycle—from architectural planning to the deployment of scalable, mission-critical applications. He excels at engaging cross-functional stakeholders to define product vision, translating business goals into actionable technology strategies, and aligning initiatives with evolving market demands. His approach is data-driven, consistently leveraging key performance indicators (KPIs) to assess product success, user engagement, and customer satisfaction.\r\nA recognized leader in conversational AI, Prathap has architected and implemented advanced chatbot solutions using Natural Language Processing (NLP) and Machine Learning (ML), enabling highly contextual and human-like user experiences. He has also developed dynamic pricing engines that adjust loan rates in real time, driven by behavioral analytics and real-time risk assessment models. His technical skill set includes strong proficiency in Java, Visual C#, JavaScript, VBScript, and Node.js, alongside extensive experience with integration platforms such as IBM Integration Bus (IIB) and Service-Oriented Architecture (SOA).\r\nIn the automation space, Prathap is adept in Robotic Process Automation (RPA) with UiPath, as well as test automation using Selenium (C# and Java) and UFT. His solid command of SQL and NoSQL databases further supports his ability to deliver agile, data-centric solutions across diverse environments.\r\nBeyond technical delivery, Prathap has contributed to the industry through published articles on topics including AI-driven chatbots, AI-based credit risk flows, automation strategy, and transitioning from legacy QA to continuous quality. He has also served as a mentor and judge at hackathons and has peer-reviewed IEEE technical papers. His blend of deep technical expertise, innovation leadership, and industry engagement positions him as a key contributor to enterprise digital transformation.",
+    "sessionIds": [
+      "from-apis-to-agents-enterprise-ai-using-java-ollama-and-mcp-snk5bfkfopmwvjises"
+    ]
+  },
+  {
+    "id": "jerry-reghunadh",
+    "slug": "jerry-reghunadh",
+    "sequence": 14,
+    "isKeynote": false,
+    "name": "Jerry Reghunadh",
+    "title": "Senior Director",
+    "company": "DataNimbus",
+    "track": "Leadership",
+    "talkTitle": "TBA",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/eAPw35nXd8CU1eEmbI5BW/ea1f730e8d58ee880def1cacf52158d5/jerry.png",
+    "url": "https://www.commityourcode.com/speakers/jerry-reghunadh",
+    "bio": "I’m an engineer, a passionate problem-solver and lifelong learner.",
+    "sessionIds": [
+      "20-mins-to-production-a-live-ai-build-challenge-mrjgjjazynlnsmptbc"
+    ]
+  },
+  {
+    "id": "noah-harris",
+    "slug": "noah-harris",
+    "sequence": 15,
+    "isKeynote": false,
+    "name": "Noah Harris",
+    "title": "Managing Director",
+    "company": "Radial Agency",
+    "track": "JavaScript",
+    "talkTitle": "Is Beauty Only Skin Deep?",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/19nT8JllakNZCSvEaWUNRP/a4f9b5015c187b831bb187ba32948ceb/noah-harris.jpg",
+    "url": "https://www.commityourcode.com/speakers/noah-harris",
+    "bio": "Noah is the Managing Director at Radial Agency, an AI consulting firm based in Buffalo, NY. He works at the intersection of engineering execution and executive decision-making, helping organizations adopt AI with the governance, ownership, and delivery rigor required in real businesses. His work spans Fortune 500 and high-growth teams across energy, retail, financial services, automotive, and manufacturing.\r\n\r\nOriginally from Atlanta, Noah studied Computer Engineering at Georgia Tech. He began his career in 2014 in defense and government-adjacent environments, moved into startups in 2016, and has since supported teams across the country through consulting and hands-on delivery. Today, he advises leaders, builds high-performing teams, and helps engineers turn skill into career momentum through mentorship and meaningful connections.",
+    "sessionIds": [
+      "is-beauty-only-skin-deep-gkkttmmicu1jjjig8e"
+    ]
+  },
+  {
+    "id": "soujanya-vummannagari",
+    "slug": "soujanya-vummannagari",
+    "sequence": 16,
+    "isKeynote": false,
+    "name": "Soujanya Vummannagari",
+    "title": "Senior Delivery Manager",
+    "company": "GalaxE an Endava Company",
+    "track": "Cloud",
+    "talkTitle": "The Hidden ROI of Caching: Performance Optimization and MIPS Reduction in PBM Engineering",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2RwTDqB4V7kJI6gQbGQ6MI/90d224b89f8b099623f966e7a9ada34e/soujanya-vummannagari__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/soujanya-vummannagari",
+    "bio": "Soujanya Vummannagari is an accomplished Senior Product/Delivery Manager with over 20 years of experience driving digital transformation across healthcare, retail, finance, and insurance industries. Currently serving as Senior Development Consultant  at Evernorth/Express Scripts through Endava Solutions, she leads a comprehensive product portfolio encompassing 50+ Spring Boot services and 400+ DataPower/Mainframe services while managing a 30+ member global team.\r\nHer expertise spans the full technology spectrum, from legacy mainframe systems (PLI, CICS, COBOL) to modern cloud-native architectures using Java, Spring Boot,Openshift and AWS. Soujanya has demonstrated exceptional leadership in large-scale system modernization, successfully migrating monolithic systems to microservices architectures, achieving 1300+ MIPS savings and delivering $2.5M in license cost reductions through strategic technology transitions.\r\nNotable achievements include developing innovative certification frameworks that contributed to $1.75M in cost savings, building analytics platforms that drove incremental revenue growth, and leading FHIR API migrations that enhanced healthcare data interoperability across multiple organizations. Her technical proficiency extends to DevOps practices, utilizing tools like Jenkins, Git, and Pivotal Cloud Foundry, while maintaining robust monitoring and security standards through Grafana, Splunk, newrelic , and Dynatrace.\r\nPrior to her current role, Soujanya held key positions at Clopay Doors, PNC Healthcare, State Farm Insurance, and Citigroup, where she consistently delivered scalable solutions and led cross-functional teams to achieve strategic business objectives. Her experience includes extensive work with HIPAA compliance, EDI transaction processing, and claims management systems.\r\nSoujanya holds a Bachelor's degree in Electrical Engineering and maintains Project Management Professional (PMP) certification alongside OBIEE Foundation Suite 11G certification, reflecting her commitment to continuous professional development and excellence in technology leadership.",
+    "sessionIds": [
+      "the-hidden-roi-of-caching-performance-optimization-and-mips-reduction-in-pbm-engineering-qn7p95vmfoz9glsuuf"
+    ]
+  },
+  {
+    "id": "nachiket-desai",
+    "slug": "nachiket-desai",
+    "sequence": 17,
+    "isKeynote": false,
+    "name": "Nachiket Desai",
+    "title": "VP of Applications Engineering and Data",
+    "company": "Smile Doctors",
+    "track": "Leadership",
+    "talkTitle": "7 Leadership lessons for the engineer that AI can't replace",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/T5ESMUZoasXOk3n0NGZUI/7453880e4cbf03bb016a591d386f8fa4/1761945973924.jpg",
+    "url": "https://www.commityourcode.com/speakers/nachiket-desai",
+    "bio": "Nachiket Desai is VP of Applications Engineering and Data at Smile Doctors, the largest orthodontics-focused dental support organization in the United States, headquartered in Dallas with more than 580 affiliated practices across 36 states. A Dallas-area technology leader, he speaks on applying AI in the enterprise.",
+    "sessionIds": [
+      "7-leadership-lessons-for-the-engineer-that-ai-can-t-replace-omt55zzdieqhsldnx8"
+    ]
+  },
+  {
+    "id": "belle-duran",
+    "slug": "belle-duran",
+    "sequence": 18,
+    "isKeynote": false,
+    "name": "Belle Duran",
+    "title": "Data Risk & Compliance Analyst",
+    "company": "Texas Capital",
+    "track": "AI",
+    "talkTitle": "AI Governance in Financial Services: What Every Developer Should Know",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1e5Zpy63DDuokO6YcPDxNO/72b743288987b80ec650fdaba10c1780/belle-duran.jpg",
+    "url": "https://www.commityourcode.com/speakers/belle-duran",
+    "bio": "I am a Risk and Compliance Analyst at Texas Capital Bank, where I support operational risk assessments, analytics, and governance frameworks. As a career pivoter with over seven years in financial services, i transitioned from a Business Analyst to a Data Analyst, building expertise in SQL, Python, Tableau, and GRC platforms like RSA Archer. Outside of work, she spoils the most rotten kittens in the world",
+    "sessionIds": [
+      "ai-governance-in-financial-services-what-every-developer-should-know-7bhgxnuoqong1amy2f"
+    ]
+  },
+  {
+    "id": "caleb-jenkins",
+    "slug": "caleb-jenkins",
+    "sequence": 19,
+    "isKeynote": false,
+    "name": "Caleb Jenkins",
+    "title": "Chief Technology Officer",
+    "company": "DebtBlue",
+    "track": "Leadership",
+    "talkTitle": "Software Developer To CTO: AMA! (Ask Me Anything!)",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7HNhzLmquyGC7NlLJQOJDw/c1bd062e981c2d2914da45668465dbca/1747327961787.jpg",
+    "url": "https://www.commityourcode.com/speakers/caleb-jenkins",
+    "bio": "Caleb Jenkins is the Chief Technology Officer at DebtBlue, with prior engineering leadership roles at Microsoft, Charles Schwab, Sabre, and Rocket Mortgage, including leading Developer Experience at Schwab. An international speaker and six-time Microsoft MVP, he has been building with .NET since its beta and is a longtime agile coach and mentor in the developer community. Based in the Dallas-Fort Worth area, he authored the automated unit testing chapter of the Wrox book Real World .NET, C# and Silverlight.",
+    "sessionIds": [
+      "software-developer-to-cto-ama-ask-me-anything-nnqf9op7dy9lic8myo"
+    ]
+  },
+  {
+    "id": "ankita-sood",
+    "slug": "ankita-sood",
+    "sequence": 20,
+    "isKeynote": false,
+    "name": "Ankita Sood",
+    "title": "Senior Principal Engineer",
+    "company": "Secureworks ",
+    "track": "JavaScript",
+    "talkTitle": "Architecting AI in Angular: WebMCP, A2UI, and the Agent Experience",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5mYYBbX5e2rWd3wL5lk4l2/2b28699dafc295c2b4fd0979bcbdbd3a/ankita-sood.png",
+    "url": "https://www.commityourcode.com/speakers/ankita-sood",
+    "bio": "Ankita is a Google Developer Expert in Angular, currently adulting in Austin, Texas . Depending on the weather, she can be found outdoors hiking, biking, paddle boarding, trying to pet other peoples' dogs OR staying indoors reading a book. She has an avid interest in all things Design and Angular. She's been a frontend engineer all her adult working life, which is approximately either 10 years or 100 years, because she has lost sense of time since the pandemic.",
+    "sessionIds": [
+      "architecting-ai-in-angular-webmcp-a2ui-and-the-agent-experience-x1cvn7kaitctkfrcuf"
+    ]
+  },
+  {
+    "id": "chris-sean-dabatos",
+    "slug": "chris-sean-dabatos",
+    "sequence": 21,
+    "isKeynote": false,
+    "name": "Chris Sean Dabatos",
+    "title": "Staff Developer Relations",
+    "company": "Fly.io",
+    "track": "AI",
+    "talkTitle": "AI Memory Is Broken And How I Fixed It",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5JwpUXczY7ucq8wAsAnEc3/c3dd062058fd2978a8f2e060f9d6cb6a/chris-sean-dabatos__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-sean-dabatos",
+    "bio": "Chris is a developer advocate at TiDB with a focus on AI & data infrastructure. He spends a lot of time building AI agents that he actually uses and speaking at meetups and conferences. He’s big on showing, not just telling. So expect real world examples and maybe a few stories about what didn’t work. Outside of work, he runs a YouTube channel, helps organize hackathons, and lives in Las Vegas.",
+    "sessionIds": [
+      "ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f"
+    ]
+  },
+  {
+    "id": "dennis-ivy",
+    "slug": "dennis-ivy",
+    "sequence": 22,
+    "isKeynote": false,
+    "name": "Dennis Ivy",
+    "title": "Developer Advocate",
+    "company": "PostHog",
+    "track": "JavaScript",
+    "talkTitle": "Learn to Code Is at a 5-Year High, and AI Is the Reason",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/79sfSJE7dMK1MPt78Cn8SY/2c3ec69066a8f7f436fa713c24970cb6/dennis-ivy__2_.jpg",
+    "url": "https://www.commityourcode.com/speakers/dennis-ivy",
+    "bio": "YouTuber, contributor at Traversy Media, developer advocate at Appwrite and online instructor.",
+    "sessionIds": [
+      "learn-to-code-is-at-a-5-year-high-and-ai-is-the-reason-zblqioqwb93oiypzsn"
+    ]
+  },
+  {
+    "id": "nyah-macklin",
+    "slug": "nyah-macklin",
+    "sequence": 23,
+    "isKeynote": false,
+    "name": "Nyah Macklin",
+    "title": "Senior Developer Advocate, Artificial Intelligence",
+    "company": "Neo4j",
+    "track": "AI",
+    "talkTitle": "When Vectors Aren’t Enough: Unlocking AI’s Hidden Connections with Graphs",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/NG4Ny6vLynAEAfD89Y10V/d1a3bef2297203d24364f4cbbae51de0/nyah-macklin.jpg",
+    "url": "https://www.commityourcode.com/speakers/nyah-macklin",
+    "bio": "Nyah Macklin is a seasoned researcher and speaker on topics around AI, ML, Ethics, Governance, and Responsibility. Nyah serves as a Senior Developer Advocate for Artificial Intelligence at Neo4j, specializing in context engineering, knowledge graphs, and AI-driven developer tooling where Nyah has built high-impact technical communities and led initiatives that advance a critical understanding of AI and its use cases. They are also the Founder & CTO of Afros in AI, a technical community dedicated to showcasing the multifaceted nature of artificial intelligence. Beyond Nyah's technical expertise, Nyah has a background in government leadership and technology policy, having served as Chief of Staff in the U.S. state government, where they helped shape tech-driven legislative initiatives and equity-driven legislation. When not immersed in their work, Nyah cares about empowering, teaching, and tutoring engineers, live-streaming technical deep dives, and building open-source tools that make software more accessible, explainable, and community-driven.",
+    "sessionIds": [
+      "when-vectors-aren-t-enough-unlocking-ai-s-hidden-connections-with-graphs-jhffubcwvky0rzpcod"
+    ]
+  },
+  {
+    "id": "marino-wijay",
+    "slug": "marino-wijay",
+    "sequence": 24,
+    "isKeynote": false,
+    "name": "Marino Wijay",
+    "title": "Solutions Engineer",
+    "company": "Isovalent",
+    "track": "Cloud",
+    "talkTitle": "Fixing Potholes And Broken Roads: Devs Can Troubleshoot the Network With Ops Too!",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4iTkmW3sHM6sZYSWHRKsvv/dfeb7f344e8a9e6a00322d8bcfe0ec8e/marino-wijay.jpg",
+    "url": "https://www.commityourcode.com/speakers/marino-wijay",
+    "bio": "Marino Wijay is a Canadian, Traveller, International Speaker, and Open Source Advocate and Architect for AI, API Platforms, Service Mesh, Kubernetes, and Networking. He is a CNCF Ambassador,  Organizer for KCD Toronto, and Founder of EmpathyOps. He is passionate about technology and modern distributed systems. He will always fall back to the patterns of Networking and the ways of the OSI. Community building is his driving force; A modern Jedi Academy.",
+    "sessionIds": [
+      "fixing-potholes-and-broken-roads-devs-can-troubleshoot-the-network-with-ops-too-j8uch7a6a5hpanmmmm"
+    ]
+  },
+  {
+    "id": "roxy-rodriguez-becker",
+    "slug": "roxy-rodriguez-becker",
+    "sequence": 25,
+    "isKeynote": false,
+    "name": "Roxy Rodriguez-Becker",
+    "title": "software engineer, developer advocate",
+    "company": "Torc",
+    "track": "JavaScript",
+    "talkTitle": "Ship It First, Fix It Later: How a Medical Crisis Led to a Global Tool",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2a42m61kh3okhOQ0mdStiT/a41abeb0ba9ba44a2406370b38273567/roxy-rodriguez-becker.png",
+    "url": "https://www.commityourcode.com/speakers/roxy-rodriguez-becker",
+    "bio": "Roxy Rodriguez-Becker is a freelance web developer with a background in math education and library science. She created the Tube Feed Tracker PWA for a niche part of the medical community to help thousands of families around the world. Roxy is a Cuban American mother of 3 living in Houston, Texas. She enjoys working out, doing handstands, listening to tech podcasts, and is looking for her next role in tech.",
+    "sessionIds": [
+      "ship-it-first-fix-it-later-how-a-medical-crisis-led-to-a-global-tool-gidregd9bglb0dvh68"
+    ]
+  },
+  {
+    "id": "aaron-krauss",
+    "slug": "aaron-krauss",
+    "sequence": 26,
+    "isKeynote": false,
+    "name": "Aaron Krauss",
+    "title": "Techlahoma Organizer & Technical Lead",
+    "company": "Clevyr",
+    "track": "AI",
+    "talkTitle": "Building Rapid Web Applications with Laravel + Filament",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/TLjclMFv4LCnpLNXNhaES/8ab4bb864aafbffa316b1b6baa9df660/aaron-krauss__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/aaron-krauss",
+    "bio": "Hi, I’m from Oklahoma City, OK, and I’m a technical lead at Clevyr with well over 15 years of experience as a developer. My favorite projects are those that are workflow-heavy involving Laravel, Vue, Tailwind, Flutter, A11y, Ruby, Go, Python, SQL, Swift, Docker, CI/CD, Kubernetes, and more. I'm a big believer in Spec-Driven Development alongside AI tools like Claude Code and Cursor as well.\r\n\r\nI organize one of Oklahoma City's largest development-related meetup groups called OKC WebDevs, and have been an active member in the Oklahoma tech community (managed through the non-profit group Techlahoma, with over 8k members) for over a decade now, including as a speaker, organizer, and board member.\r\n\r\nPersonal project-wise, I'm most actively working on Simple Slides and The Krauss Haus Bar Menu, at least until the next side project comes along.\r\n\r\nOther than coding, I like brewing a hot cup of tea, making cocktails, longboarding, eating nutella, and hanging out with my wife and two sons.",
+    "sessionIds": [
+      "building-rapid-web-applications-with-laravel-filament-fakvcfv3x11aeyidpl"
+    ]
+  },
+  {
+    "id": "avindra-fernando",
+    "slug": "avindra-fernando",
+    "sequence": 27,
+    "isKeynote": false,
+    "name": "Avindra Fernando",
+    "title": "Principal Architect | Fractional CTO",
+    "company": "Taprobane Consulting",
+    "track": "JavaScript",
+    "talkTitle": "Revolutionize Your Backend: Mastering Server Actions with Next.js and React",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6X6Z2DrjFKPhn5erNgVLDS/d4bef3a196501be43b032b3ff2eaf2cc/avindra-fernando__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/avindra-fernando",
+    "bio": "Avindra Fernando is a software consultant with over 13 years of experience helping teams build scalable, modern web applications. In 2021, he founded Taprobane Consulting to guide clients through architectural decisions, migrations to newer tech stacks, and the implementation of robust AI-powered development and testing strategies that ensure quality and performance.\r\n\r\nHe actively mentors engineering teams, leads workshops, and delivers hands-on training. As a regular speaker at tech conferences, Avindra shares practical lessons on concepts and technologies such as Software Architecture, AI-driven development, React, Next.js, E2E Testing, and TypeScript. He leverages his experience to shape future technology direction and accelerate the growth of companies across industries.",
+    "sessionIds": [
+      "revolutionize-your-backend-mastering-server-actions-with-next-js-and-react-vucr7yhyr9hmof5u1f"
+    ]
+  },
+  {
+    "id": "braydon-coyer",
+    "slug": "braydon-coyer",
+    "sequence": 28,
+    "isKeynote": false,
+    "name": "Braydon Coyer",
+    "title": "Senior Frontend Engineer /",
+    "company": "",
+    "track": "JavaScript",
+    "talkTitle": "Develop Your First Mobile Game Easily with GameSalad",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4kHKTLDLmE54hI7NSImxfa/25510b421c43d70d43b13b8b936ef408/Braydon_Coyer.jpg",
+    "url": "https://www.commityourcode.com/speakers/braydon-coyer",
+    "bio": "",
+    "sessionIds": []
+  },
+  {
+    "id": "ramiro-beltran",
+    "slug": "ramiro-beltran",
+    "sequence": 29,
+    "isKeynote": false,
+    "name": "Ramiro Beltran",
+    "title": "Senior Software Engineer",
+    "company": "HEB",
+    "track": "JavaScript",
+    "talkTitle": "Build Failed Startups—Not Side Projects",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1uSomGa2kCemzUccRETzUB/87915674295b9729fcf59b880bb1600b/ramiro-beltran.png",
+    "url": "https://www.commityourcode.com/speakers/ramiro-beltran",
+    "bio": "Ram is a Senior/Staff/Lead Frontend Engineer with ten years across the full startup spectrum — from pre-product early-stage to enterprise scale. He builds with a single obsession: the end user. That means reliable systems, clean code, and interfaces that don't make people feel stupid.\r\n\r\nHe has also spent a decade watching talented engineers and leaders get quietly destroyed by the environments they were planted in — not by a lack of skill, but by a lack of the right conditions. That pattern became the foundation for his upcoming book, Avocado Serial Killer, a leadership memoir about how tech companies lose their best people and what it takes to stop.\r\n\r\nHe mentors when he can, teaches when he's asked, and is still keeping his avocado trees alive.",
+    "sessionIds": [
+      "build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc"
+    ]
+  },
+  {
+    "id": "sara-baqla",
+    "slug": "sara-baqla",
+    "sequence": 30,
+    "isKeynote": false,
+    "name": "Sara Baqla",
+    "title": "Software Engineer",
+    "company": "Artemis Bytes",
+    "track": "JavaScript",
+    "talkTitle": "Prickly by Nature: TanStack in the Wild",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7aHephtlXTmri0TKeqPbfI/8a663c44acb4b666c2a862526c5da4c6/sara-baqla.jpg",
+    "url": "https://www.commityourcode.com/speakers/sara-baqla",
+    "bio": "Sara Baqla holds a Bachelor's and Master's in Ecology and Evolutionary Biology and spent years as an educator before making the leap into software development in 2022. Since then, she has worked across a startup, a creative agency, and now runs her own consultancy, Artemis Bytes LLC, where she builds full stack web and mobile applications for a range of clients.",
+    "sessionIds": [
+      "prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k"
+    ]
+  },
+  {
+    "id": "danyal-mahmud",
+    "slug": "danyal-mahmud",
+    "sequence": 31,
+    "isKeynote": false,
+    "name": "Danyal Mahmud",
+    "title": "Principal Consultant",
+    "company": "Improving",
+    "track": "JavaScript",
+    "talkTitle": "From Side Project to Startup: Lessons Learned from Hundreds of Builders",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6AvBFVde9KgQdJB255vuIh/93ee9d30307014ee337629bf4a3832a2/danyal-mahmud__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/danyal-mahmud",
+    "bio": "Danyal Mahmud is a software consultant and the founder of Side Project Society, a community for builders turning side projects into real products and businesses. Over the past four years, he has led the community through monthly meetups, workshops, and community events supporting hundreds of founders, developers, designers, and creators.\r\n\r\nWith a background in full-stack software development and community building, Danyal brings a practical perspective on what helps early-stage builders move from idea to launch while working full time. His work sits at the intersection of technology, entrepreneurship, and execution.",
+    "sessionIds": [
+      "from-side-project-to-startup-lessons-learned-from-hundreds-of-builders-3zfowpwxy7s88rr1vc"
+    ]
+  },
+  {
+    "id": "eunice-kamau",
+    "slug": "eunice-kamau",
+    "sequence": 32,
+    "isKeynote": false,
+    "name": "Eunice Kamau",
+    "title": "Technical Lead",
+    "company": "HCLTech",
+    "track": "Cloud",
+    "talkTitle": "Engineering Real-Time Data Synchronization Across Multi-Cloud Systems",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7L0cIdnAjjsztP1HIPulq1/6651d3a8a7a7fa5ee1a0cbda1f03999e/eunice-kamau.png",
+    "url": "https://www.commityourcode.com/speakers/eunice-kamau",
+    "bio": "Eunice Kamau is a distributed systems architect and technical lead with experience designing cloud-based, event-driven, and mission-critical systems across finance, telecommunications, healthcare, and airline environments. Her work focuses on distributed systems architecture, cloud automation, secure data synchronization, reliability, and governance for high-availability platforms.\r\n\r\nShe is the author of peer-reviewed research on real-time data synchronization in multi-cloud environments, including a published conceptual model addressing latency, consistency, security, interoperability, AI-assisted conflict detection, and secure synchronization across heterogeneous cloud platforms.",
+    "sessionIds": [
+      "engineering-real-time-data-synchronization-across-multi-cloud-systems-ixjjocvvby9mbonzl0"
+    ]
+  },
+  {
+    "id": "srikanth-maru",
+    "slug": "srikanth-maru",
+    "sequence": 33,
+    "isKeynote": false,
+    "name": "Srikanth Maru",
+    "title": "Sr Manager, Data Engineering",
+    "company": "Cricut Inc",
+    "track": "AI",
+    "talkTitle": "From Dashboards to Data Products: A Shift in Thinking",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2agqGwCOCTYDqJYEgkhxLV/ab5db97db6c84076da4a70b80aa31f7a/srikanth-maru__1_.png",
+    "url": "https://www.commityourcode.com/speakers/srikanth-maru",
+    "bio": "Srikanth Maru is a distinguished Data Engineering and Architecture Leader with over 17 years of experience transforming data platforms across Fortune 500 enterprises and innovative startups. Currently serving as Senior Manager of Data Engineering & Principal Architect at Cricut Inc., he leads the migration from legacy systems to modern cloud-based platforms that enable advanced AI/ML use cases while managing a team of five data engineers focused on enhancing customer engagement.\r\nHis career spans leadership roles at cutting-edge companies including Aeva Inc., where he built data platforms from scratch to support FMCW LiDAR hardware manufacturing, and Samsung Electronics America, where he served as Director of ML Architecture, designing e-commerce data solutions that drove significant revenue growth and developing proprietary forecasting algorithms that reduced stockouts by 20%.\r\nAt T-Mobile, Srikanth pioneered custom Hadoop-based ingestion frameworks before commercial data orchestration tools became mainstream, while his tenure at Tata Consultancy Services saw him leading Big Data Centers of Excellence and delivering technical education across global markets including the UK, Australia, and Malaysia.\r\nSrikanth's technical expertise encompasses cloud platforms (AWS, GCP, Azure), big data technologies (Hadoop, Spark, Kafka), and modern data tools (Databricks, Snowflake, Airflow). He holds a Bachelor of Engineering from Anna University, India, and is recognized as an early adopter of open-source data frameworks.\r\nHis notable achievements include contributing to Walmart's Customer Knowledge Platform serving 200+ million profiles, scaling data platforms for 100+ million customers, and mentoring numerous engineers throughout his career. Srikanth's combination of technical depth, leadership acumen, and international perspective makes him a sought-after architect for enterprise data transformation initiatives.",
+    "sessionIds": [
+      "from-dashboards-to-data-products-a-shift-in-thinking-h8zzoei3xm7foap95e"
+    ]
+  },
+  {
+    "id": "michael-liendo",
+    "slug": "michael-liendo",
+    "sequence": 34,
+    "isKeynote": false,
+    "name": "Michael Liendo",
+    "title": "Staff Developer Advocate",
+    "company": "Auth0",
+    "track": "AI",
+    "talkTitle": "Trust, But Verify: Human-in-the-Loop for Agents That Actually Matter",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7mPX0R9l8BOqmqZVjQgVtA/749626df797ebfa13862ebeef19e6fff/michael-liendo__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/michael-liendo",
+    "bio": "As a Staff Developer Advocate at Auth0, I’ve had the opportunity to build applications, develop architectures, and speak around the world as a way to remain customer obsessed. \r\n\r\nSince my beginnings as a self-taught developer, I’ve been focused on simplifying complex scenarios so the barrier to entry becomes a door easily opened for new developers.",
+    "sessionIds": [
+      "trust-but-verify-human-in-the-loop-for-agents-that-actually-matter-lhy79bqjv4iti91r24"
+    ]
+  },
+  {
+    "id": "anitha-dakamarri",
+    "slug": "anitha-dakamarri",
+    "sequence": 35,
+    "isKeynote": false,
+    "name": "Anitha Dakamarri",
+    "title": "Lead Security Engineer",
+    "company": "DFIN",
+    "track": "AI",
+    "talkTitle": "AI-Driven Supply Chain Security: Using AI-BOM to Detect Hidden Vulnerabilities",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6gLqdttBCcfhJs9JXanTfU/af9d401cd3909d78a48c4a9bae86cea9/anitha-dakamarri.jpg",
+    "url": "https://www.commityourcode.com/speakers/anitha-dakamarri",
+    "bio": "I am Anitha Dakamarri, a seasoned IT professional with over 19 years of experience in the field of information security. Over the years, I have honed my skills in various domains, including threat modeling, application security assessments, and network security assessments. My work experience spans across reputable organizations like DFIN, USCELLULAR, and Syntel Inc., where I have led teams, developed security standards, and implemented robust security frameworks. hold several industry certifications like CISSP,CISM,CEH,CHFI, which reflect my commitment to continuous learning and professional growth. My passion for security extends beyond technical assessments; I have also initiated and conducted security awareness workshops to educate and empower others. Im active speaker and volunteer at ISACA(CISM Exam development, Mentor ), ISC2(Exam development and UBK panel) OWASP(Contributor),Women4Cyber(Mentor) and WiCys(Mentor).",
+    "sessionIds": [
+      "ai-driven-supply-chain-security-using-ai-bom-to-detect-hidden-vulnerabilities-ebda10lofmes3gowu3"
+    ]
+  },
+  {
+    "id": "lawrence-lockhart",
+    "slug": "lawrence-lockhart",
+    "sequence": 36,
+    "isKeynote": false,
+    "name": "Lawrence Lockhart",
+    "title": "Senior Developer Advocate",
+    "company": " ",
+    "track": "AI",
+    "talkTitle": "This Isn't The Matrix: Stop Letting Your AI Agents Run Wild",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3BW2zovdLUEaQbUxsrI8gX/a4b9870d39c25eddf5eae78ea32dec6e/lawrence-lockhart__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/lawrence-lockhart",
+    "bio": "Lawrence Lockhart, Senior Developer Advocate, has been a technologist for 8 years and helping developers reach their goals along the way.  As a mid-life career changer, he appreciates the struggles other adults seeking to transition to tech experience and speaks to those struggles in his content creation on Twitter, TikTok, and Youtube.  He's a saved family man who's truly humbled by where his journey has brought him.",
+    "sessionIds": [
+      "this-isn-t-the-matrix-stop-letting-your-ai-agents-run-wild-eguc2r3fo59toaog5k"
+    ]
+  },
+  {
+    "id": "whittington-w",
+    "slug": "whittington-w",
+    "sequence": 37,
+    "isKeynote": false,
+    "name": "Whittington W",
+    "title": "Staff Software Engineer",
+    "company": "Grubhub",
+    "track": "Cloud",
+    "talkTitle": "Zero to Production: A Simple Technical Framework for Low-Cost Scalable Infrastructure",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4iahns7IgFeqzvGl5SmCwB/d9b7219357c51ed79a08a00b5977991e/DSCF9988.jpg",
+    "url": "https://www.commityourcode.com/speakers/whittington-w",
+    "bio": "Army veteran turned software engineer",
+    "sessionIds": [
+      "zero-to-production-a-simple-technical-framework-for-low-cost-scalable-infrastructure-4kehqk95lzy0vtvhfc"
+    ]
+  },
+  {
+    "id": "briana-valmont",
+    "slug": "briana-valmont",
+    "sequence": 38,
+    "isKeynote": false,
+    "name": "Briana Valmont",
+    "title": "Senior Engineer",
+    "company": "Citi",
+    "track": "Java",
+    "talkTitle": "Beyond The Happy Path: Building a BDD Testing Strategy Across Microservices",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/8TaIbt0odGvgygeBQRbKQ/a82a5b245f5340f9869ef4c7feee53c0/briana-valmont.png",
+    "url": "https://www.commityourcode.com/speakers/briana-valmont",
+    "bio": "Briana is an Engineering Team Lead at Citi, where she leads STAR Platform Reliability — driving automated testing strategy across distributed microservices, managing CI/CD pipelines, and mentoring an engineering team. A former Google engineer (Google Pay/Play), she brings deep Java/Spring Boot expertise alongside a full-stack and DevOps toolkit spanning Python, TypeScript, Kubernetes, Kafka, Docker, and BDD frameworks. She is passionate about building systems that scale — both in code and in people — and mentors emerging engineers through CodePath, and TX HerScript. Briana is a community ambassador for Karat BBM as well as TORC, and is the local Austin chapter head for FOSTR.",
+    "sessionIds": [
+      "beyond-the-happy-path-building-a-bdd-testing-strategy-across-microservices-osg0avohh6l1buhzkh"
+    ]
+  },
+  {
+    "id": "chris-demars",
+    "slug": "chris-demars",
+    "sequence": 39,
+    "isKeynote": false,
+    "name": "Chris DeMars",
+    "title": "Senior Developer Advocate",
+    "company": "TuxCare",
+    "track": "JavaScript",
+    "talkTitle": "The node_modules Iceberg: Mysteries Below the Waterline",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/57UXjmaqV5KOL1fWBv111z/c3bb4af52605c64cd3481102edd35349/9a90-400o400o2-DZTrRVmXSXXmBCc1HeyCNF.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-demars",
+    "bio": "Chris DeMars is a Senior Developer Advocate with over 20 years of technical experience. He speaks all over the world on web accessibility, feature flags, A/B testing, and CSS. For his community contributions, he holds awards as a Progress Champion and former Microsoft MVP, Google Developer Expert, Cloudinary Media Developer Expert, and Auth0 Ambassador. When he is not working on making the web great and accessible you can find him fishing, on the paintball field, rating Detroit Style pizza, and looking for UFO's.",
+    "sessionIds": [
+      "the-node-modules-iceberg-mysteries-below-the-waterline-k771ywsry1xdqw3qfx"
+    ]
+  },
+  {
+    "id": "scott-mcallister",
+    "slug": "scott-mcallister",
+    "sequence": 40,
+    "isKeynote": false,
+    "name": "Scott McAllister",
+    "title": "Community Evangelist",
+    "company": "F5",
+    "track": "Cloud",
+    "talkTitle": "Unlocking CI Performance in the Age of Agentic Development",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/mvwbgy7uMRY0fJgYHc2jL/c97f58fe39eee9685cd2a7920ad9ad55/scott-mcallister.jpg",
+    "url": "https://www.commityourcode.com/speakers/scott-mcallister",
+    "bio": "Scott McAllister is a Developer Advocate for Depot. He has been building web applications in several industries for over a decade. Now he's helping others learn about a wide range of web and infrastructure technologies. When he's not coding, writing or speaking he enjoys long walks with his wife, skipping rocks with his kids, and is happy whenever  Seattle Sounders FC, Manchester City, St. Louis Cardinals, Seattle Mariners, Chicago Bulls, Seattle Storm, Seattle Seahawks, Seattle Reign FC, St. Louis Blues, Seattle Kraken, Barcelona, Fiorentina, Borussia Dortmund or Mainz 05 can manage a win.",
+    "sessionIds": [
+      "unlocking-ci-performance-in-the-age-of-agentic-development-l7jizhw7e7cltgr4xq"
+    ]
+  },
+  {
+    "id": "bethany-ann",
+    "slug": "bethany-ann",
+    "sequence": 41,
+    "isKeynote": false,
+    "name": "Bethany Ann",
+    "title": "Software Engineer",
+    "company": "Buildertrend",
+    "track": "JavaScript",
+    "talkTitle": "The Feature Nobody Used & What It Taught Me About Product Engineering",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1EaBLiNkhc0dcyxT17LEFD/271ead959827687814496c9a36c07d5a/bethany-ann.jpg",
+    "url": "https://www.commityourcode.com/speakers/bethany-ann",
+    "bio": "Bethany is a software engineer who meandered her way into tech after an initial career in art and design. She finally found her happy place when she combined her creative roots with software engineering, discovering a passion for the intersection of creativity and technology. As a product engineer, she enjoys building thoughtful, user-centered products and championing good design along the way. Outside of work, she enjoys spending time mentoring developers through various volunteer programs or frolicking in the great outdoors.",
+    "sessionIds": [
+      "the-feature-nobody-used-and-what-it-taught-me-about-product-engineering-bx7cgthkar6f9o8oc8"
+    ]
+  },
+  {
+    "id": "moeez-khan",
+    "slug": "moeez-khan",
+    "sequence": 42,
+    "isKeynote": false,
+    "name": "Moeez Khan",
+    "title": "Software Engineer",
+    "company": "Amazon Web Services Agentic AI",
+    "track": "AI",
+    "talkTitle": "The Three Ways AI Agents Fail. Here's How to Fix Yours.",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3XMxAFXbrq7qhrvgNq5YYj/499f89436361dc72c08f66693ed9c3d9/moeez-khan.jpg",
+    "url": "https://www.commityourcode.com/speakers/moeez-khan",
+    "bio": "Moeez, a first-generation learner from a small Asian village, has built a dynamic and multidisciplinary journey through technology, education, and leadership. During college, Moeez completed 6 software engineering internships, collaborated with 9 international educational institutions to teach over 2200 underrepresented and privileged students, founded both a tech education and an e-commerce start-up, led 6 college student bodies, pursued 2 global sports semi-professionally, and developed over 85 technical projects before graduating in the class of 2024. \r\n\r\nCurrently, Moeez is building AWS Transform, an Agentic AI service focused on transforming .NET, mainframe, and VMware workloads. This work centers on accelerating enterprise modernization across full-stack Windows, mainframe, and VMware systems, alongside enabling custom transformations of APIs, codebases, frameworks, and more.\r\n\r\nAside from technical responsibilities, Moeez actively participates in Amazon hackathons and mentors junior engineers, finding fulfillment in guiding their career paths. Moeez also champions diversity and inclusion, advocating for greater equality within the tech industry. Through these efforts, Moeez positions himself not only as a technical contributor but also as a catalyst for meaningful and lasting change.",
+    "sessionIds": [
+      "the-three-ways-ai-agents-fail-here-s-how-to-fix-yours-iubkrtqum5la6tr4z0"
+    ]
+  },
+  {
+    "id": "william-hill",
+    "slug": "william-hill",
+    "sequence": 43,
+    "isKeynote": false,
+    "name": "William Hill",
+    "title": "Forward Deployed Engineer",
+    "company": "RenderATL",
+    "track": "AI",
+    "talkTitle": "The Put That Sh*t On Agent: Building Multi-Agent AI Systems That Actually Talk to Each Other*",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2f6pQQFKsMf4tkMT3ffkZN/e36d9d66811586d8e816add35113905c/1774-0o0o0-J7goviNSZR1MHYrheoHzf4.jpg",
+    "url": "https://www.commityourcode.com/speakers/william-hill",
+    "bio": "Everyone's building AI agents. But most of them can't talk to each other. They're islands. In this session, we'll walk through a real multi-agent system built with Google's Agent Development Kit and the Agent2Agent (A2A) protocol: a wardrobe recommendation app that pulls live weather data, reasons a...",
+    "sessionIds": [
+      "the-put-that-sh-t-on-agent-building-multi-agent-ai-systems-that-actually-talk-to-each-other-aor1rd2jyfeuz5r0vf"
+    ]
+  },
+  {
+    "id": "corey-weathers",
+    "slug": "corey-weathers",
+    "sequence": 44,
+    "isKeynote": false,
+    "name": "Corey Weathers",
+    "title": "Sr Engineer Manager - DevRel",
+    "company": "Deepgram",
+    "track": "Workshops",
+    "talkTitle": "Teach Your To-Do List to Listen",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4kDztFP2OC3A4RkmkuEzQX/4f51b76b6381b0241fc3a61de993b945/image__79_.png",
+    "url": "https://www.commityourcode.com/speakers/corey-weathers",
+    "bio": "The to-do list is one of the classic first projects for developers. In this hands-on workshop, we will make it talk back to us. Using JavaScript and Deepgram's Voice Agent API, you'll wire speech-to-text, an LLM, and text-to-speech together over a single WebSocket, then add items by voice, interrupt...",
+    "sessionIds": [
+      "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"
+    ]
+  },
+  {
+    "id": "ojus-save",
+    "slug": "ojus-save",
+    "sequence": 45,
+    "isKeynote": false,
+    "name": "Ojus Save",
+    "title": "Developer Relations",
+    "company": "Render",
+    "track": "AI",
+    "talkTitle": "Close the Tab: Build Jobs That Keep Running",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7pKdqn2ojcOqIU1JtxVokg/a2932edaa581c03d0e435e09b3d37e54/ojus.jpg",
+    "url": "https://www.commityourcode.com/speakers/ojus-save",
+    "bio": "Ojus Save is a Developer Relations engineer at Render, the cloud platform for deploying full-stack apps and, increasingly, AI workloads. Before Render, he was a Developer Advocate at Zoom, where he championed developers building on the Zoom Developer Platform and worked across REST APIs, authorization, and the app marketplace. An active community member and member of the Postman Leader Program, he is a frequent conference and meetup speaker, and runs his personal site at saveoj.us — his own name, reversed into a domain.",
+    "sessionIds": [
+      "close-the-tab-build-jobs-that-keep-running-e4tdhratyf5jlpamq0"
+    ]
+  },
+  {
+    "id": "stacy-haven",
+    "slug": "stacy-haven",
+    "sequence": 46,
+    "isKeynote": false,
+    "name": "Stacy Haven",
+    "title": "VP of Engineering",
+    "company": "SAP",
+    "track": "AI",
+    "talkTitle": "Stop Writing the Analysis Script: Let the Data Decide What to Look At",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4ag81VvQlYcddMmmIRopQN/55ef94513606305d731c995734513b29/abce5ce5-aeeb-4c6b-a7e9-0cacb144ee9c.png",
+    "url": "https://www.commityourcode.com/speakers/stacy-haven",
+    "bio": "Stacy Haven is VP of Engineering at SAP. Outside of work he runs a market-data platform he originally built for a family member — a system that has been quietly collecting minute-by-minute data for years, which is how he ended up caring a great deal about what to do with more data than anyone can read.",
+    "sessionIds": [
+      "stop-writing-the-analysis-script-let-the-data-decide-what-to-look-at-xz65mqrizxhesui3d6"
+    ]
+  },
+  {
+    "id": "eric-bible",
+    "slug": "eric-bible",
+    "sequence": 47,
+    "isKeynote": false,
+    "name": "Eric Bible",
+    "title": "Software Engineer III",
+    "company": "Vertex IT Systems",
+    "track": "JavaScript",
+    "talkTitle": "Why Your Bug Rate Isn’t a Code Problem: Engineering for Unstable Work Intake",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5qW3pGfOnuWIirXD9bDhhr/3460caa875aa92ccbc5783fe5ce5370d/eric-bible.jpg",
+    "url": "https://www.commityourcode.com/speakers/eric-bible",
+    "bio": "Eric is a Senior Frontend Engineer working on high-traffic e-commerce platforms, focused on delivery systems, release stability, and cross-team integration challenges.\r\n\r\nWith over 15 years of experience across ops and project management intersecting with frontend development and system design, he specializes since 2020 in building resilient workflows in environments where requirements, dependencies, and priorities are constantly shifting.\r\n\r\nHis work centers on improving delivery predictability through CI/CD strategy, content decoupling, and intake validation systems — helping teams ship faster by reducing rework and instability.\r\n\r\nOutside of his day job, Eric consults on web and low-code solutions for regional businesses and is passionate about applying engineering systems thinking to real-world problems.",
+    "sessionIds": [
+      "why-your-bug-rate-isn-t-a-code-problem-engineering-for-unstable-work-intake-5ruempuouhv04saia6"
+    ]
+  },
+  {
+    "id": "quincy-larson",
+    "slug": "quincy-larson",
+    "sequence": 48,
+    "isKeynote": false,
+    "name": "Quincy Larson",
+    "title": "Founder",
+    "company": "FreeCodeCamp",
+    "track": "JavaScript",
+    "talkTitle": "How to Use Scaffolding to Make Your Coding Agents Less Dumb",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4fJEFbdYQRgvSyLq5zHBU7/1880806ba03fcf6ddf41b3ed02d80735/image__51_.png",
+    "url": "https://www.commityourcode.com/speakers/quincy-larson",
+    "bio": "Quincy Larson is the founder of freeCodeCamp.org, a nonprofit that has helped millions of people around the world learn to code for free through its open-source curriculum, publication, and YouTube channel with over 11 million subscribers. A teacher at heart, he worked as a school director for six years before teaching himself to code, then launched freeCodeCamp in 2014. He also hosts the freeCodeCamp Podcast, where he interviews developers and founders about their journeys into tech.",
+    "sessionIds": [
+      "how-to-use-scaffolding-to-make-your-coding-agents-less-dumb-j6fwrhfmi9xzstnnxb"
+    ]
+  },
+  {
+    "id": "jacob-orshalick",
+    "slug": "jacob-orshalick",
+    "sequence": 49,
+    "isKeynote": false,
+    "name": "Jacob Orshalick",
+    "title": "Principal Consultant",
+    "company": "Focus DEV Solutions",
+    "track": "AI",
+    "talkTitle": "Claude Skills: Automate the Boring Stuff",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/50uvKdlzTN1faWCCy1PUFw/0f55bfbb9efc453d4c875360d48e9f89/jacob-orshalick.png",
+    "url": "https://www.commityourcode.com/speakers/jacob-orshalick",
+    "bio": "Founder of Focus DEV Solutions with software consulting experience spanning over 2 decades.  Author, speaker, and award winning open source contributor.  Helped launch, grow, turn around, and stabilize software projects during periods of organizational change and market disruption.",
+    "sessionIds": [
+      "claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl"
+    ]
+  },
+  {
+    "id": "michael-gyarmathy",
+    "slug": "michael-gyarmathy",
+    "sequence": 50,
+    "isKeynote": false,
+    "name": "Michael Gyarmathy",
+    "title": "Principal Software Engineer",
+    "company": "PGA of America",
+    "track": "AI",
+    "talkTitle": "The Evolution of Divot: How Agents Earn Their Autonomy",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3GAfvUwHZLma9o71jIJ2X8/456a8c6cd7bb06e18acb7108fa5e5501/michael-gyarmathy-headshot.png",
+    "url": "https://www.commityourcode.com/speakers/michael-gyarmathy",
+    "bio": "Michael Gyarmathy is a Principal Software Engineer at PGA of America, based at the association's home in Frisco, Texas, where he joined in 2020 to help stand up a new digital products team. He leads development on PGA Coach, a platform that helps golf teaching professionals run and modernize their businesses, after spending roughly five years in software consulting across a range of industries. Notably, he wasn't a golfer when PGA of America hired him — he deliberately immersed himself in the game to understand his customers firsthand, an approach he credits as central to his customer-obsession engineering philosophy. Outside of work, he enjoys live music, distance running, and breakfast for dinner.",
+    "sessionIds": [
+      "the-evolution-of-divot-how-agents-earn-their-autonomy-hts1q2ex5i2ihm0fmx"
+    ]
+  },
+  {
+    "id": "derrick-bozkurt",
+    "slug": "derrick-bozkurt",
+    "sequence": 51,
+    "isKeynote": false,
+    "name": "Derrick Bozkurt",
+    "title": "SRE Manager",
+    "company": "RingCentral ",
+    "track": "AI",
+    "talkTitle": "Stop Prompting, Start Looping: Principles of Loop Engineering",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4jtvxevJLXfdv9U9DWe9Ag/7d9578104a67dd34b908220460b6198c/Headshot.jpeg",
+    "url": "https://www.commityourcode.com/speakers/derrick-bozkurt",
+    "bio": "Derrick Bozkurt is a Site Reliability Engineering Manager at RingCentral, where he leads teams keeping large-scale cloud communications infrastructure running reliably. Based in the Dallas-Fort Worth area, he brings a practitioner's perspective on applying agentic AI workflows to real infrastructure and operations work.",
+    "sessionIds": [
+      "stop-prompting-start-looping-principles-of-loop-engineering-pdlwv0ag1uafawgdzo"
+    ]
+  },
+  {
+    "id": "nick-taylor",
+    "slug": "nick-taylor",
+    "sequence": 52,
+    "isKeynote": false,
+    "name": "Nick Taylor",
+    "title": "Developer Advocate",
+    "company": "Pomerium",
+    "track": "JavaScript",
+    "talkTitle": "Build your First MCP App",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3C4oz376JUYcFAhntVVHwb/57ed6ba9bcb0701e4b1633d90e97c3d0/nick-taylor.jpg",
+    "url": "https://www.commityourcode.com/speakers/nick-taylor",
+    "bio": "Nick is a Microsoft MVP, GitHub Star, AWS Community Builder, Software Developer, and Developer Advocate. With over two decades in technology and a decade of open source contributions, plus six years of professional open source work at companies like OpenSauced, dev.to, Netlify and now Pomerium, he brings deep community knowledge to his work. You'll often find him live streaming tech content, either solo or with friends from the community.",
+    "sessionIds": [
+      "build-your-first-mcp-app-hwylh8wvaanptgcbow"
+    ]
+  },
+  {
+    "id": "mark-mackenzie",
+    "slug": "mark-mackenzie",
+    "sequence": 53,
+    "isKeynote": false,
+    "name": "Mark Mackenzie",
+    "title": "Principal Software Engineer",
+    "company": "Noetic",
+    "track": "Java",
+    "talkTitle": "Squeezing Java Containers: Shrinking Your Kubernetes Footprint with jlink",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3qYFGOXhGKkgHEQPdVMDkH/7ba6711ef04b781a4c26b418101b36d4/mark-mackenzie.jpg",
+    "url": "https://www.commityourcode.com/speakers/mark-mackenzie",
+    "bio": "Mark Mackenzie is the Lead Software Engineer for an enterprise encryption gateway at OpenText (formerly Zix), serving financial, healthcare, and government customers. He recently drove a 225% throughput improvement by rewriting critical paths in Rust and C++17, and leads modernization across deployment, observability, and cryptographic agility. Mark writes production code in Java, C++, Go and Rust, and has spent nearly three decades building secure distributed systems at Nortel, Avaya, and Zix.",
+    "sessionIds": [
+      "squeezing-java-containers-shrinking-your-kubernetes-footprint-with-jlink-cxct9uvnhi8gdgvxxo"
+    ]
+  },
+  {
+    "id": "tim-damen",
+    "slug": "tim-damen",
+    "sequence": 54,
+    "isKeynote": false,
+    "name": "Tim Damen",
+    "title": "Frontend Chapter Lead & Accessibility lead",
+    "company": "Focusring.io",
+    "track": "JavaScript",
+    "talkTitle": "Utilising the JavaScript Abstract Syntax Tree (AST) for Automated Frontend Lifecycle Management",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1Dbn3mMhgeg7KBEWgQS3Td/d8e5b6110bcd92b85a2e494353335418/tim-damen.jpg",
+    "url": "https://www.commityourcode.com/speakers/tim-damen",
+    "bio": "Driven by the mission to make people's lives easier, Tim Damen actively advocates for and builds a web that serves everyone equally. Tim is a frontend developer, web accessibility specialist, and engineering manager from Amsterdam, the Netherlands 🇳🇱. With over a decade of experience, primarily at major financial institutions, Tim has spoken at various conferences and meetups. He also hosts \"focustrap,\" a podcast about digital accessibility.",
+    "sessionIds": [
+      "utilising-the-javascript-abstract-syntax-tree-ast-for-automated-frontend-lifecycle-management-ukbb5ays62ra0eadkg"
+    ]
+  },
+  {
+    "id": "kerline-moncy",
+    "slug": "kerline-moncy",
+    "sequence": 55,
+    "isKeynote": false,
+    "name": "Kerline Moncy",
+    "title": "Software Engineer",
+    "company": " ",
+    "track": "JavaScript",
+    "talkTitle": "What Happens When the Music Starts? The Architecture of Browser Audio",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5ip7p6pJMaJXmi5upccrg2/e723879bf0ce92888c226105ddb9feb8/kerline-moncy.png",
+    "url": "https://www.commityourcode.com/speakers/kerline-moncy",
+    "bio": "Kerline Moncy is a Software Engineer with a decade of experience in technical audio. Her career spans working on automotive sound systems and engine sound synthesis to testing home audio smart speakers and Dolby Atmos spatial sound technology. \r\nCurrently focused on web development and agentic AI systems, Kerline is an active contributor to the open-source community through Code for Boston and participates in weekly AI prototype builds at Sundai Club. She is driven by building non-intrusive tools that solve real-world pain points. \r\nOutside of software, Kerline plays guitar and bass, enjoys traveling, and loves learning languages.",
+    "sessionIds": [
+      "what-happens-when-the-music-starts-the-architecture-of-browser-audio-uxvpsdozcwk7jd3d3t"
+    ]
+  },
+  {
+    "id": "jeremy-morgan",
+    "slug": "jeremy-morgan",
+    "sequence": 56,
+    "isKeynote": false,
+    "name": "Jeremy Morgan",
+    "title": "Senior Training Architect",
+    "company": "Neo4j",
+    "track": "Cloud",
+    "talkTitle": "Observability at 200mph: How being a coder makes you a better sim racer",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1zv9MlxgrAnOZ7eedY8OcM/cab3d4f7c6b77748a613a5cb82ad50a0/jeremy-morgan.png",
+    "url": "https://www.commityourcode.com/speakers/jeremy-morgan",
+    "bio": "Jeremy Morgan is a Senior Training Architect with endless enthusiasm for learning and sharing knowledge. He's passionate about DevOps, Linux, Computer Vision, and Generative AI. Jeremy actively shares his expertise through videos, articles, talks, and his tech blog, which attracts 9,000 daily readers. His work has been featured on Lifehacker, Wired, Hacker News, and Reddit.",
+    "sessionIds": [
+      "observability-at-200mph-how-being-a-coder-makes-you-a-better-sim-racer-0m4isaklwrgqxua7m1"
+    ]
+  },
+  {
+    "id": "joey-brown",
+    "slug": "joey-brown",
+    "sequence": 57,
+    "isKeynote": false,
+    "name": "Joey Brown",
+    "title": "Software Consultant",
+    "company": " ",
+    "track": "Cloud",
+    "talkTitle": "Boost Developer Productivity with Buildpacks",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3ngVJFZotUpLtM9FfId3r9/1d2fa2106ece62d9b992e2b3fe92ebde/joey-brown.png",
+    "url": "https://www.commityourcode.com/speakers/joey-brown",
+    "bio": "Over the past decade, Joey Brown has helped organizations across many industries evolve their software platforms. He is a comprehensive developer that enjoys building at all levels of the stack. He likes teaching and helping people and organizations grow.",
+    "sessionIds": [
+      "boost-developer-productivity-with-buildpacks-hnnpxmrwif7i2ai6of"
+    ]
+  },
+  {
+    "id": "raja-krishna",
+    "slug": "raja-krishna",
+    "sequence": 58,
+    "isKeynote": false,
+    "name": "Raja Krishna",
+    "title": "Senior Software Engineer",
+    "company": "OnePay",
+    "track": "AI",
+    "talkTitle": "Building AI Agents in TypeScript with Mastra",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4z67TnKaxG2CiPVdH08gZx/2270c9a6a192a22c29fb0c471837e59e/raja-krishna.png",
+    "url": "https://www.commityourcode.com/speakers/raja-krishna",
+    "bio": "I am a Senior Software Engineer at OnePay, where I design, build, and optimize web applications using React, TypeScript, and GraphQL.",
+    "sessionIds": [
+      "building-ai-agents-in-typescript-with-mastra-fahecrkt59bcwtex43"
+    ]
+  },
+  {
+    "id": "gokul-prabagaren",
+    "slug": "gokul-prabagaren",
+    "sequence": 59,
+    "isKeynote": false,
+    "name": "Gokul Prabagaren",
+    "title": "Lead Software Engineer /",
+    "company": "",
+    "track": "Cloud",
+    "talkTitle": "The Autonomous Pipeline: Using Agentic AI to Automate FCRA Compliance from API Spec to Production.",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/538ufEzITFgqCNe0YfCVmV/886dbc5f95dce7245b33e9b4a43a8b17/gokul-prabagaren.png",
+    "url": "https://www.commityourcode.com/speakers/gokul-prabagaren",
+    "bio": "",
+    "sessionIds": []
+  },
+  {
+    "id": "venkata-kartheek-reddy-somasani",
+    "slug": "venkata-kartheek-reddy-somasani",
+    "sequence": 60,
+    "isKeynote": false,
+    "name": "Venkata Kartheek Reddy Somasani",
+    "title": "Information Technology Security Engineer",
+    "company": "City of Dallas",
+    "track": "JavaScript",
+    "talkTitle": "Secure Coding Meets Critical Infrastructure Defense in Water Systems",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6np4ymhUKlJ6emft5Sqf6J/bb844b4843320048d3f2fa1cd27544ce/69da-0o0o0-KFx1UEWZrGBrt9xuNJzwfh.jpg",
+    "url": "https://www.commityourcode.com/speakers/venkata-kartheek-reddy-somasani",
+    "bio": "Venkata Kartheek Reddy Somasani is an accomplished Information Technology Security and Cybersecurity Engineer with over nine years of specialized experience designing, implementing, and securing enterprise-scale network infrastructures across on-premises and cloud environments. Based in Dallas, Texas, he has built a distinguished career focused on protecting critical public sector systems and safeguarding sensitive government operations.\r\nSince May 2018, Venkata has served the City of Dallas through KC Synergy Solutions Inc., where he plays a pivotal role in securing vital municipal infrastructure. His responsibilities include comprehensive cybersecurity defense for the Dallas Police Department and Criminal Justice Information Services (CJIS), ensuring the protection of sensitive law enforcement data through multi-layered security controls such as OKTA two-factor authentication, advanced VPN architectures, and strict CJIS compliance. He has engineered secure, disaster-resilient communication channels between CAD911 dispatch systems and the Texas Department of Public Safety, ensuring uninterrupted emergency response coordination statewide.\r\nOne of Venkata’s most significant accomplishments is the architecture of a secure, multi-zoned SCADA network for Dallas’s freshwater, wastewater, and stormwater treatment facilities. By implementing air-gapped environments, zero-internet-access zones, and IDS/IPS protections, he has directly safeguarded critical public health infrastructure from cyber threats. His expertise was further demonstrated during a major ransomware incident, where he successfully detected, contained, and eradicated malware by isolating compromised systems and blocking communication with the Royal ransomware group.\r\nVenkata’s technical expertise spans Cisco ASA, Firepower Threat Defense, SD-WAN, Palo Alto firewalls, F5 BIG-IP, and web application firewalls. He has architected secure hybrid cloud environments using AWS Direct Connect, Azure ExpressRoute, and IPSEC tunnels, supported by AWS architect level certifications. He holds a Master’s degree in Information Assurance and maintains advanced certifications, including CJIS Level 4 and Cisco Firepower NGFW, consistently ensuring compliance with NIST and federal cybersecurity standards.",
+    "sessionIds": [
+      "secure-coding-meets-critical-infrastructure-defense-in-water-systems-ue9w5djtkklq0arqfg"
+    ]
+  },
+  {
+    "id": "nathaniel-schutta",
+    "slug": "nathaniel-schutta",
+    "sequence": 61,
+    "isKeynote": false,
+    "name": "Nathaniel Schutta",
+    "title": "Software Architect",
+    "company": "Thoughtworks",
+    "track": "Java",
+    "talkTitle": "Thinking Architecturally",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/13vUYB0O3lK3I3dOh1Qe1h/5a15323c4afc48454b5a254a693b064b/1f9b-0o0o0-1c-0021-4d6e-af47-0013ecbaeb33.f4c9ca12-a99f-4989-81dc-d20dbbfb8f9b.png",
+    "url": "https://www.commityourcode.com/speakers/nathaniel-schutta",
+    "bio": "Nathaniel T. Schutta is a software architect and Java Champion focused on cloud computing, developer happiness and building usable applications. A proponent of polyglot programming, Nate has written multiple books, appeared in countless videos and many podcasts. He’s also a seasoned speaker who regularly presents at worldwide conferences, meetups, universities, and user groups. In addition to his day job, Nate is an adjunct professor at the University of Minnesota, where he teaches students to embrace (and evaluate) technical change. Driven to rid the world of bad presentations, he coauthored the book Presentation Patterns with Neal Ford and Matthew McCullough, and he also published Thinking Architecturally and Responsible Microservices available from O’Reilly. His latest book, Fundamentals of Software Engineering is now available.",
+    "sessionIds": [
+      "thinking-architecturally-pf8osckiezzblxgoap"
+    ]
+  },
+  {
+    "id": "jesse-hall",
+    "slug": "jesse-hall",
+    "sequence": 62,
+    "isKeynote": false,
+    "name": "Jesse Hall",
+    "title": "@codeSTACKr & Staff Developer Advocate",
+    "company": "LiveKit",
+    "track": "AI",
+    "talkTitle": "Open Source Voice AI: From ChatGPT's Infrastructure to Your App",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3hDq3ywWqWy2dd3DluC1s7/3d5ed54f4b6eff92b89e88a11a0d4137/jesse-hall.png",
+    "url": "https://www.commityourcode.com/speakers/jesse-hall",
+    "bio": "Jesse Hall, aka @codeSTACKr, is a Staff Developer Advocate at LiveKit.io and a full-stack developer who specializes in teaching web development. He creates articles, videos, and interactive presentations that help developers build AI-powered web applications. Jesse focuses on TypeScript ecosystems and real-time communication technologies. As a self-taught developer, he understands the challenges developers face and breaks down complex topics into clear, actionable content for developers at all skill levels.",
+    "sessionIds": [
+      "open-source-voice-ai-from-chatgpt-s-infrastructure-to-your-app-kbaedf883i8q4dsu4r"
+    ]
+  },
+  {
+    "id": "francesco-ciulla",
+    "slug": "francesco-ciulla",
+    "sequence": 63,
+    "isKeynote": false,
+    "name": "Francesco Ciulla",
+    "title": "Head of Developer Relations",
+    "company": "Zerops",
+    "track": "JavaScript",
+    "talkTitle": "WTF, Rust for Web Development??",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2d6VcpKrVqv9XRBdJlhXyI/c5a6b576ac6b5a066baf6f26541cf40f/francesco-ciulla.jpg",
+    "url": "https://www.commityourcode.com/speakers/francesco-ciulla",
+    "bio": "Hi, I'm Francesco, based in Rome, Italy. I'm a Computer Scientist, and from 2017 to 2020, I contributed to the European Space Agency's Copernicus project.\r\n\r\nI'm an active presence in online developer communities, especially on Twitter, YouTube, and Discord. Recognized as a Docker Captain, I've hosted official Docker events and appeared on their YouTube channel. Professionally, I focus on roles within developer relations, centered around content strategy and community engagement.\r\n\r\nCurrently, my main creative efforts are directed towards my YouTube channel, where I've interviewed over 250 developers. My content primarily covers Rust, Blockchain technologies, DevOps practices, and Web Development. I also enjoy engaging with the community through live streams",
+    "sessionIds": [
+      "wtf-rust-for-web-development-htnryzmdymonnjxlbu",
+      "zerops-ai-workshop-zerops-ai-workshop"
+    ]
+  },
+  {
+    "id": "linda-thompson",
+    "slug": "linda-thompson",
+    "sequence": 64,
+    "isKeynote": false,
+    "name": "Linda Thompson",
+    "title": "Software Engineer",
+    "company": "This Dot Labs",
+    "track": "JavaScript",
+    "talkTitle": "Baseline Magic: The Art of Intent-Driven CSS",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2zRFHhKsQMBqYjCL4bkAd1/bfbfea7295533837e61a24c2ad663b98/linda-thompson.png",
+    "url": "https://www.commityourcode.com/speakers/linda-thompson",
+    "bio": "Software Engineer focused on elevating teams and shipping high-quality, inclusive code.",
+    "sessionIds": [
+      "baseline-magic-the-art-of-intent-driven-css-jxe7qklp61e5bao6vz"
+    ]
+  },
+  {
+    "id": "lance-finney",
+    "slug": "lance-finney",
+    "sequence": 65,
+    "isKeynote": false,
+    "name": "Lance Finney",
+    "title": "Senior Software Developer",
+    "company": "INFICON",
+    "track": "Cloud",
+    "talkTitle": "Comparing Promises, Observables, and Signals",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5MPPuXxo0UWiwofPjEU8zU/fbd57c50a871f25a541b4f1c91546231/lance-finney.jpg",
+    "url": "https://www.commityourcode.com/speakers/lance-finney",
+    "bio": "After more than a decade focused on the Java desktop world, I've been in the Angular/JavaScript/TypeScript space since 2014.\r\n\r\nAs an Angular Google Developer Expert, I develop Angular projects and mentor junior Angular developers on my projects, and I used to be an instructor with Angular Boot Camp. Father of two, software developer, and world traveler (when I can sneak it in).",
+    "sessionIds": [
+      "comparing-promises-observables-and-signals-qfoqllxv91yradqtsa"
+    ]
+  },
+  {
+    "id": "anna-spysz",
+    "slug": "anna-spysz",
+    "sequence": 66,
+    "isKeynote": false,
+    "name": "Anna Spysz",
+    "title": "Developer Advocate",
+    "company": "Stripe",
+    "track": "JavaScript",
+    "talkTitle": "Good vibes, smooth payments: Tailoring Stripe to any UI",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/a9IKpSs1bRJHmsNoTkzlP/c729ee9db00698f4586c9b9ce840b84a/anna-spysz.jpg",
+    "url": "https://www.commityourcode.com/speakers/anna-spysz",
+    "bio": "Anna is a Developer Advocate at Stripe based in Portland, Oregon. Previously, she was a Frontend Engineer at AWS, where she helped build products simplifying serverless development. Before switching careers into tech, she also spent a decade working as a writer, translator, and tech journalist. She is passionate about making modern application development accessible to users at all levels, particularly beginners and those from non-traditional backgrounds.",
+    "sessionIds": [
+      "good-vibes-smooth-payments-tailoring-stripe-to-any-ui-himensu5qmyesxi4hf"
+    ]
+  },
+  {
+    "id": "sayeed-mohammad",
+    "slug": "sayeed-mohammad",
+    "sequence": 67,
+    "isKeynote": false,
+    "name": "Sayeed Mohammad",
+    "title": "Principal Frontend Architect",
+    "company": "Ascendion",
+    "track": "JavaScript",
+    "talkTitle": "20 Years of Frontend Lessons: Architecture Decisions That Actually Matter",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/MFpW4OLkukqpQI4Ibzasm/7eb27c2055bb9fd44db93f21763597a8/sayeed-mohammad.jpg",
+    "url": "https://www.commityourcode.com/speakers/sayeed-mohammad",
+    "bio": "Sayeed Mohammad is a Principal Frontend Architect and Senior Engineering Manager with over 20 years of experience building large-scale enterprise web applications across financial services, healthcare, airlines, and government sectors.\r\n\r\nSpecializing in Angular, TypeScript, RxJS, and NgRx, Sayeed has led frontend architecture decisions for major organizations including work near Westlake, TX's financial services corridor. He is deeply experienced in Nx monorepos, microfrontend architecture with Module Federation, and guiding teams through complex Angular migrations including the modern shift to Signals and zoneless change detection.\r\n\r\nMore recently, Sayeed has been exploring the intersection of AI and frontend development, integrating LLM APIs into developer workflows and pursuing AWS AI Practitioner certification. He is passionate about sharing hard-won lessons from the trenches of enterprise frontend and helping developers make architecture decisions that scale.",
+    "sessionIds": [
+      "20-years-of-frontend-lessons-architecture-decisions-that-actually-matter-h4tb1z8aixe4grzj8s"
+    ]
+  },
+  {
+    "id": "nick-guzman",
+    "slug": "nick-guzman",
+    "sequence": 68,
+    "isKeynote": false,
+    "name": "Nick Guzmán",
+    "title": "Lead Software Engineer",
+    "company": "Tuvu",
+    "track": "AI",
+    "talkTitle": "On-Device AI in React Native: Private, Offline LLMs for Real Apps",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4oMiqsWegExn7gL6orSqgc/818900d6f43d50f5d310d3fe8670fc99/nick-guzman__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/nick-guzman",
+    "bio": "Nick is a seasoned software engineer with over 12 years of experience developing mobile and web applications for startups, enterprises, and non-profits. He began his career building mobile apps for fast-paced startups, later expanding his expertise into cloud migrations and modern web technologies, including React, React Native, PHP, and Node.js.\r\n\r\nCurrently, Nick leads the frontend development team at Tuvu, a family-oriented social media platform, working with React Native, React and Next.js. In this role, he collaborates closely with designers and backend engineers to create scalable, high-performance user interfaces, focusing on delivering intuitive and engaging community-driven features.\r\n\r\nBeyond work, Nick is a board game enthusiast, hamburger connoisseur, and self-proclaimed beard expert. His passion for problem-solving and creative design extends into his personal life, where he enjoys analyzing games and crafting the perfect burger.",
+    "sessionIds": [
+      "on-device-ai-in-react-native-private-offline-llms-for-real-apps-foapl4udynrjj8qyqm"
+    ]
+  },
+  {
+    "id": "david-kea",
+    "slug": "david-kea",
+    "sequence": 69,
+    "isKeynote": false,
+    "name": "David Kea",
+    "title": "Technology Business Specialist",
+    "company": "PNC",
+    "track": "JavaScript",
+    "talkTitle": "React - Server Components, Suspense, and the new mental model",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/GbYPHPK2JHhQKss3ejQMp/d9f13eb9e83e2b877f65a541b6fd8c13/david-kea__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/david-kea",
+    "bio": "David Kea, Jr., MBA, is a Technology Business Specialist from Detroit with a background that bridges enterprise operations, software engineering, and risk governance. His career has taken him from IT support and Java development to enterprise resiliency work supporting critical banking systems, giving him a unique perspective on how technology, business, and people work together at scale.\r\n\r\nAt PNC, David partners with Site Reliability Engineering teams to strengthen compliance, reduce risk, and support the reliability of enterprise applications. His earlier experience includes software engineering at TEKsystems, where he contributed to development, testing, and Agile delivery, as well as long-standing work in IT support and public-sector operations. Across every role, he has focused on solving real problems, improving systems, and making complex technology more practical and accessible.\r\n\r\nDavid’s educational background includes an MBA, a Bachelor’s degree in Finance and Management, and additional training in cybersecurity and IT. He is especially interested in modern software development, generative AI, and the evolving role of technology in helping organizations move faster while staying reliable and resilient.",
+    "sessionIds": [
+      "react-server-components-suspense-and-the-new-mental-model-fdilfxsgipnergxvfy"
+    ]
+  },
+  {
+    "id": "eric-karschner",
+    "slug": "eric-karschner",
+    "sequence": 70,
+    "isKeynote": false,
+    "name": "Eric Karschner",
+    "title": "Software Engineer",
+    "company": "Datadog",
+    "track": "JavaScript",
+    "talkTitle": "Remote Agents, or: How I Fixed Our Page's Performance Without Really Doing Anything",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/15CbJOao5g4f8fu9HlF7Df/5a2a91d6b091c481c2c128f1532fa76b/eric-karschner.jpg",
+    "url": "https://www.commityourcode.com/speakers/eric-karschner",
+    "bio": "Eric is a software engineer at Datadog; he started out his career in standard frontend roles with a major focus on performance. Over time, and as the scope of \"performance\" changed, he started doing full-stack engineering, and now (with his best buddy Claude) oversees full end-to-end features and ensures they feel fast and slick.",
+    "sessionIds": [
+      "remote-agents-or-how-i-fixed-our-page-s-performance-without-really-doing-anything-djnxa0lps6ukvhsjcj"
+    ]
+  },
+  {
+    "id": "noah-jenkins",
+    "slug": "noah-jenkins",
+    "sequence": 71,
+    "isKeynote": false,
+    "name": "Noah Jenkins",
+    "title": "Software Developer",
+    "company": "The Middleby Corporation",
+    "track": "Cloud",
+    "talkTitle": "Chaos to Control: Automating the Identity Life Cycle in the Cloud",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4UOAc0Q3qyjyBcr9g3ORyn/9a7bd9284af9f1344614862907e3b3e9/noah-jenkins.jpg",
+    "url": "https://www.commityourcode.com/speakers/noah-jenkins",
+    "bio": "Noah Jenkins is a Cloud Engineer at Middleby with deep roots in Azure administration, infrastructure automation, and full-stack development across Python, TypeScript, React, and Node.js.\r\n\r\nWith a career spanning cybersecurity, clinical robotics, and fintech, Noah brings a uniquely cross-domain perspective to solving hard engineering problems.\r\n\r\nWhen he's not in the cloud, Noah lends his voice to character and commercial projects as a freelance Voice Over Artist. If you ask him to do a voice, he just might!",
+    "sessionIds": [
+      "chaos-to-control-automating-the-identity-life-cycle-in-the-cloud-edrvkzzfxet1vxcw9l"
+    ]
+  },
+  {
+    "id": "erik-hanchett",
+    "slug": "erik-hanchett",
+    "sequence": 72,
+    "isKeynote": false,
+    "name": "Erik Hanchett",
+    "title": "Developer Advocate",
+    "company": "AWS",
+    "track": "Cloud",
+    "talkTitle": "Make Your Serverless Functions Do More with Durable Executions",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3f35CXfcDzTKrBDBnp6QkD/010d053be6c2a42ceee2b1c65fba62f9/erik-hanchett.jpg",
+    "url": "https://www.commityourcode.com/speakers/erik-hanchett",
+    "bio": "I'm a software developer from Reno, NV. I'm an author of Vue.js in Action by Manning and the Ember.js Cookbook. I'm also a huge fan of teaching, at my YouTube channel Program With Erik.",
+    "sessionIds": [
+      "make-your-serverless-functions-do-more-with-durable-executions-sgoktzkkqggmu52jcj"
+    ]
+  },
+  {
+    "id": "michael-duren",
+    "slug": "michael-duren",
+    "sequence": 73,
+    "isKeynote": false,
+    "name": "Michael Duren",
+    "title": "Site Reliability Engineer",
+    "company": "Target",
+    "track": "Cloud",
+    "talkTitle": "Writing a Container Runtime in Go",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/72SsL9s9vpC0x4Xz8itK4l/6d37fb7e1617bb197817b54733387827/michael-duren.jpg",
+    "url": "https://www.commityourcode.com/speakers/michael-duren",
+    "bio": "Michael Duren is a Site Reliability Engineer at Target, where he builds Go-based infrastructure tooling for CI/CD pipelines and CDN systems on Kubernetes. Previously at Maximus, he built observability infrastructure from the ground up and engineered Go CLI tools that streamlined deployments across healthcare systems. Michael is a regular presenter at the Go MN meetup, where he's spoken on TinyGo and Go for developer tools. He's passionate about systems programming, lower-level networking, and understanding what's really happening beneath the abstractions we use every day.",
+    "sessionIds": [
+      "writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq"
+    ]
+  },
+  {
+    "id": "chris-corriere",
+    "slug": "chris-corriere",
+    "sequence": 74,
+    "isKeynote": false,
+    "name": "Chris Corriere",
+    "title": "Systems Engineer",
+    "company": "Ecology Computing",
+    "track": "Cloud",
+    "talkTitle": "Sociotechnical Platform Engineering",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5r6895cGPIciQ97inzeutc/e6480038c01598194d60675e3d28a266/chris-corriere.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-corriere",
+    "bio": "Chris Corriere has been working with data, phones, networks and writing software for over 20 years. His background in mathematics and engineering has allowed him to adapt to new and industry specific technologies and provided many unique consulting opportunities. As a devOps practitioner Chris is committed to culture, automation, learning, sharing, and having a good time while getting work done.",
+    "sessionIds": [
+      "sociotechnical-platform-engineering-hs8koenyzkbep2s8az"
+    ]
+  },
+  {
+    "id": "sujeeth-reddy-pasham",
+    "slug": "sujeeth-reddy-pasham",
+    "sequence": 75,
+    "isKeynote": false,
+    "name": "Sujeeth Reddy Pasham",
+    "title": "Senior Software Engineer",
+    "company": "Microsoft",
+    "track": "JavaScript",
+    "talkTitle": "Serverless API Gateways for High Scale Systems Performance Cost and Security",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7vc7O6NXIdkvrzfto9jcCP/e8a0a0b688ede3b36ed56e052a8e5865/sujeeth-reddy-pasham.jpg",
+    "url": "https://www.commityourcode.com/speakers/sujeeth-reddy-pasham",
+    "bio": "Sujeeth Reddy Pasham is a Senior Software Engineer with over a decade of experience designing and building scalable, distributed cloud systems. Currently at Microsoft, he works on Azure Entra and Microsoft Graph, leading the development of Multi-Tenant Organizations and Cross-Tenant Sync solutions that enable secure, seamless collaboration across customer tenants. The architects distributed APIs, scalable data models, and resilient cloud services that support millions of users while maintaining high availability and performance.\r\nPreviously at Amazon Web Services, Sujeeth contributed to Amazon S3 Glacier, where he designed and optimized large-scale data retrieval systems for enterprise customers. He developed asynchronous and byte-range retrieval capabilities that significantly reduced retrieval time and cost, improved billing accuracy, and enhanced system scalability and operational stability. His work supported highly durable storage systems while ensuring strong security and compliance standards.\r\nEarlier, at Oracle Cerner, he built analytics and access management solutions that improved application performance and streamlined administrative workflows.\r\nThroughout his career, Sujeeth has driven improvements in reliability, observability, and deployment automation, consistently achieving high service availability. He is passionate about solving complex engineering challenges, mentoring teams, and delivering cloud solutions that create measurable business impact.",
+    "sessionIds": [
+      "serverless-api-gateways-for-high-scale-systems-performance-cost-and-security-mpmtl7dyp3r8osk4di"
+    ]
+  },
+  {
+    "id": "trey-clark",
+    "slug": "trey-clark",
+    "sequence": 76,
+    "isKeynote": false,
+    "name": "Trey Clark",
+    "title": "Software Engineer",
+    "company": "University of North Texas",
+    "track": "Java",
+    "talkTitle": "OOPs!... I Did it Again: When Good Objects Go Toxic",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3YkU3Y2MtnrYLerDpsGG13/aedb9e4b42e694550a2d85d27b22d3ef/trey-clark.jpg",
+    "url": "https://www.commityourcode.com/speakers/trey-clark",
+    "bio": "Trey Clark is a software engineer and former educator who’s spent his career building systems while fixing the ones that didn’t age well. At the University of North Texas, he develops and maintains large-scale digital infrastructure used by researchers nationwide. Trey specializes in backend development, system design, and turning real-world engineering problems into practical lessons for developers.",
+    "sessionIds": [
+      "oops-i-did-it-again-when-good-objects-go-toxic-k8vkzfblxellxqk9cz"
+    ]
+  },
+  {
+    "id": "hunter-long",
+    "slug": "hunter-long",
+    "sequence": 77,
+    "isKeynote": false,
+    "name": "Hunter Long",
+    "title": "Generative AI Engineer",
+    "company": "AAA",
+    "track": "AI",
+    "talkTitle": "Gating Cognition: How Modern AI Architectures Minimize Runtime Reasoning",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/lx9aCJtEWVHUsZTsPnFUS/4567f50e1a8c03368544e453e9bc01c6/hunter-long.jpg",
+    "url": "https://www.commityourcode.com/speakers/hunter-long",
+    "bio": "I'm a Generative AI Engineer at AAA, where I work on building and optimizing AI agent architectures for production systems. I came to software engineering through an unconventional path — I originally studied music before making the switch to tech. I'm passionate about making AI systems faster, cheaper, and more reliable without sacrificing capability.",
+    "sessionIds": [
+      "gating-cognition-how-modern-ai-architectures-minimize-runtime-reasoning-egbygdgv3cyxa7iz64"
+    ]
+  },
+  {
+    "id": "chris-nowicki",
+    "slug": "chris-nowicki",
+    "sequence": 78,
+    "isKeynote": false,
+    "name": "Chris Nowicki",
+    "title": "Developer Experience Engineer",
+    "company": "Commerce",
+    "track": "AI",
+    "talkTitle": "Documentation in the Age of AI: Why Docs Are a Product",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4Mf8T6nbMZgHlfcrGihWvS/cfa48b0def0304fb13e339ed14006cc1/chris-nowicki.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-nowicki",
+    "bio": "Chris Nowicki is a DevEx Engineer and Product Lead of Documentation at Commerce, with responsibilities spanning BigCommerce, Makeswift, and Feedonomics. Before software, Chris spent 18 years in aerospace before transitioning to a career he's deeply passionate about. He has previously spoken at THAT Conference and is fueled primarily by coffee and cheeseburgers.",
+    "sessionIds": [
+      "documentation-in-the-age-of-ai-why-docs-are-a-product-kuteeiof80z1ega2nt"
+    ]
+  },
+  {
+    "id": "boston-cartwright",
+    "slug": "boston-cartwright",
+    "sequence": 79,
+    "isKeynote": false,
+    "name": "Boston Cartwright",
+    "title": "Head of Agentic AI",
+    "company": "Patch Retention",
+    "track": "AI",
+    "talkTitle": "Agents are not Apps: Stop building interfaces, Start building coworkers",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4Ht9gjKaLVZGdzEk9vQhIp/735a06aff8e4b9b82a2790ad8ad91c65/boston-cartwright.png",
+    "url": "https://www.commityourcode.com/speakers/boston-cartwright",
+    "bio": "Contributed to engineering and software management as a Software Engineering Manager and Senior Software Engineer Team Lead, showcasing leadership and technical acumen in software solution management. Proficient in engineering management and AI technologies, with a focus on creating impactful solutions in collaboration with cross-functional teams to drive innovation and operational success. He has a strong proficiency in Golang, TypeScript and has been actively involved in the engineer community, having spoken at conferences such as GoWest, GoLab, BSidesRedRocks and Commit Your Code Conference. Based in St. George, UT, Boston loves spending time with his kids and playing deck-building board games.",
+    "sessionIds": [
+      "agents-are-not-apps-stop-building-interfaces-start-building-coworkers-qpqpmkhpa3fc4enuzz"
+    ]
+  },
+  {
+    "id": "tim-rayburn",
+    "slug": "tim-rayburn",
+    "sequence": 80,
+    "isKeynote": false,
+    "name": "Tim Rayburn",
+    "title": "Vice President of Consulting",
+    "company": "Improving",
+    "track": "AI",
+    "talkTitle": "Tools in your AI's Toolbox : An introduction to MCP Servers",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1UG4MEizLtg71EgWzyG9IU/e8c7a796aefb59ce88e67e784fd8a6d9/tim-rayburn.jpg",
+    "url": "https://www.commityourcode.com/speakers/tim-rayburn",
+    "bio": "Tim Rayburn is a Vice President of Consulting with Improving Enterprises, a software and project management consulting company in Dallas, TX. He is a passionate advocate of apprenticeship and mentorship in corporate environments. He has been awarded the Microsoft MVP in recognition of his expertise and community leadership 11 times. He is also a conference organizer, an author, and can be found speaking across the nation on agile processes, software design, and career management. He lives in the North Dallas area with his amazing wife Kate and their loyal dogs Dresden and Radagast.",
+    "sessionIds": [
+      "tools-in-your-ai-s-toolbox-an-introduction-to-mcp-servers-x2bm07hsvgxulv2q3d"
+    ]
+  },
+  {
+    "id": "paul-coroneos",
+    "slug": "paul-coroneos",
+    "sequence": 81,
+    "isKeynote": false,
+    "name": "Paul Coroneos",
+    "title": "Principal Platform Architect",
+    "company": "Hilton",
+    "track": "CYC26",
+    "talkTitle": "From Internal Innovation to Hilton.com: Building Hilton’s First Agentic AI Travel Planner",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2K8GXDl7IsVKTir0zdw5Sz/657ff338ba8d391e3ac7b9bd4688fb84/paul-coroneos.jpg",
+    "url": "https://www.commityourcode.com/speakers/paul-coroneos",
+    "bio": "I'm a Principal Platform Engineer focused on agentic AI, systems where models reason, plan, and take action rather than just respond. I started in front-end engineering and grew into full-system design across TypeScript, Python, and AWS, which means I've had to think about the whole stack, not just the interesting parts.\r\n\r\nMost of my work right now lives at the intersection of reliability and autonomy: how do you build systems that can act independently without becoming unpredictable? I collaborate closely across engineering, product, and data to take ambiguous ideas to production, and I care a lot about doing that well, not just fast.\r\n\r\nOutside of work, I'm a triathlete and a community band trombonist. I enjoy a good challenge in whatever form it takes.",
+    "sessionIds": [
+      "from-internal-innovation-to-hilton-com-building-hilton-s-first-agentic-ai-travel-planner-8kmcxefr2eh7tefzp7"
+    ]
+  },
+  {
+    "id": "brian-munz",
+    "slug": "brian-munz",
+    "sequence": 82,
+    "isKeynote": false,
+    "name": "Brian Munz",
+    "title": "Developer Advocate",
+    "company": "Prismatic",
+    "track": "AI",
+    "talkTitle": "Give Your SDK Superpowers: Building AI Tools for Your Developers with Skills and MCP",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/58GlpbmHGCS0ZbyYm6XZ6R/6feaa62133cd977dd72542513313f20f/brian-munz.jpg",
+    "url": "https://www.commityourcode.com/speakers/brian-munz",
+    "bio": "Brian Munz is the founding Developer Advocate at Prismatic. He's had a long career wrangling data, enabling and educating developers, and building integrations across complex SaaS platforms. When he's not elbow-deep in iPaas architecture, you might find him playing music and wandering the Pennsylvania woods.",
+    "sessionIds": [
+      "give-your-sdk-superpowers-building-ai-tools-for-your-developers-with-skills-and-mcp-9bvc3u70n8miaxkry4"
+    ]
+  },
+  {
+    "id": "sterling-chin",
+    "slug": "sterling-chin",
+    "sequence": 83,
+    "isKeynote": false,
+    "name": "Sterling Chin",
+    "title": "Founding Developer Relations",
+    "company": "Inngest",
+    "track": "AI",
+    "talkTitle": "Building MARVIN: What Teaching a Non-Technical Marketer to Use MCP Taught Me About AI Adoption",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5p6bGLwkQ2LvA6b0vkAEtD/7cc47c236d2835b9335d768f88ceb28f/sterling-chin.jpg",
+    "url": "https://www.commityourcode.com/speakers/sterling-chin",
+    "bio": "Sterling Chin is a Developer Advocate and AI Engineer who has created an AI chief of staff called MARVIN that's been used across hundreds of sessions to manage his daily workflow. He open-sourced the patterns as marvin-template (900+ GitHub stars) and built Clara, an open-source API agent-readiness analyzer. He speaks regularly on AI agents, MCP, and agent-ready API design. Star Trek over Star Wars, always.\r\n\r\nSocial Links\r\nLinkedIn: https://www.linkedin.com/in/sterlingchin/\r\nTwitter: https://x.com/SilverJaw82",
+    "sessionIds": [
+      "building-marvin-what-teaching-a-non-technical-marketer-to-use-mcp-taught-me-about-ai-adoption-1xbefpcbhk2ylaib2z"
+    ]
+  },
+  {
+    "id": "claire-bourdon",
+    "slug": "claire-bourdon",
+    "sequence": 84,
+    "isKeynote": false,
+    "name": "Claire Bourdon",
+    "title": "Sr. Data Engineer",
+    "company": "Neogenomics Laboratories",
+    "track": "AI",
+    "talkTitle": "Gotta Feed the Beast - Data Engineering at Scale",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/HXlR2Us736vvDO4CArxft/a188c7e134334145f2341f631d124f60/PXL_20250913_211251756.PORTRAIT2_2.jpg",
+    "url": "https://www.commityourcode.com/speakers/claire-bourdon",
+    "bio": "Claire is a real data enthusiast with over a decade of experience in data engineering and analytics. She enjoys solving enterprise-scale challenges and ensuring that customers get the data they need, when they need it. She has worked in a variety of industries including insurance, e-commerce, higher education, and healthcare. \r\n\r\nWhen not at her day job, Claire can be found teaching Pilates at the local gym or hiking with her dog. She is also a huge nerd who loves Star Trek, sci-fi novels, D&D, and cosplaying at conventions.",
+    "sessionIds": [
+      "gotta-feed-the-beast-data-engineering-at-scale-x09vwrbzclqep5y25p"
+    ]
+  },
+  {
+    "id": "dan-vega",
+    "slug": "dan-vega",
+    "sequence": 85,
+    "isKeynote": false,
+    "name": "Dan Vega",
+    "title": "Spring Developer Advocate",
+    "company": "VMware Tanzu",
+    "track": "Java",
+    "talkTitle": "AI for Java Developers",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2Z1UJpWT1MFZSGjWZYkY3y/5bed682e501298a186d6616e0a87a82f/dan-vega.png",
+    "url": "https://www.commityourcode.com/speakers/dan-vega",
+    "bio": "Dan Vega is a Spring Developer Advocate at VMware Tanzu. He has been developing software for the web for over 20 years and his superpower is problem-solving. Dan is a blogger, YouTuber, course creator, and speaker. He is a lifelong learner and his passion is sharing his knowledge with the developer community. Dan lives near Cleveland Ohio with his beautiful wife and 2 daughters. When he isn’t writing code or teaching he enjoys spending time with his family, lifting weights, running, or reading a good book.",
+    "sessionIds": [
+      "ai-for-java-developers-b1yca9biu15t9vsxea"
+    ]
+  },
+  {
+    "id": "kyle-taylor",
+    "slug": "kyle-taylor",
+    "sequence": 86,
+    "isKeynote": false,
+    "name": "Kyle Taylor",
+    "title": "Senior Solutions Engineer",
+    "company": "Datadog",
+    "track": "AI",
+    "talkTitle": "Your Prompt Is Not a Unit Test — instrumenting LLM apps in production",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7s3AAeaycCsH3i2fVX1msf/6ed5f76f8c829fed00b4ae6bca70b98f/kyle-taylor.png",
+    "url": "https://www.commityourcode.com/speakers/kyle-taylor",
+    "bio": "Based in Denton Texas, I'm a Senior Solutions Engineer at Datadog spending my days helping engineering teams understand what's actually happening inside their production systems. I've instrumented everything from single-page apps and distributed microservices to LLM inference pipelines and IoT hardware — and I have the war stories to prove it. Outside of work, I'm a hardware tinkerer, open source hacker, civic data advocate, and dumb idea generator.",
+    "sessionIds": [
+      "your-prompt-is-not-a-unit-test-instrumenting-llm-apps-in-production-fvhaxs8ttaduwcvdmq"
+    ]
+  },
+  {
+    "id": "sandon-jacobs",
+    "slug": "sandon-jacobs",
+    "sequence": 87,
+    "isKeynote": false,
+    "name": "Sandon Jacobs",
+    "title": "Senior Developer Advocate",
+    "company": "Confluent",
+    "track": "Java",
+    "talkTitle": "From Guesswork to Governance: Bringing API Discipline to Data Streaming",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6d6QzqOZFxzYS6tdapK1FE/b180ac544c962ff078de13e67a433a60/sandon-jacobs.jpg",
+    "url": "https://www.commityourcode.com/speakers/sandon-jacobs",
+    "bio": "Sandon Jacobs is a Developer Advocate at Confluent, based in Raleigh, NC. Sandon has two decades of experience designing and building applications, primarily on the JVM. His data streaming journey began while building data pipelines for real-time bidding on mobile advertising exchanges—and Apache Kafka was the platform to meet that need. Later work in television media and the energy sector included Kafka Streams, Kafka Connect, and provisioning Kafka infrastructure with various infrastructure as code frameworks.\r\n\r\nOutside of work, Sandon is actively involved in his Indigenous tribal community. He serves on the NC American Indian Heritage Commission, and also as a powwow singer and emcee at many celebrations around North America. Follow Sandon on Twitter @SandonJacobs or Instagram @_sandonjacobs, where he posts about his powwow travels, family, golf, and more.",
+    "sessionIds": [
+      "from-guesswork-to-governance-bringing-api-discipline-to-data-streaming-j3x7tyxu0r5ipbyaq3"
+    ]
+  },
+  {
+    "id": "bas-steins",
+    "slug": "bas-steins",
+    "sequence": 88,
+    "isKeynote": false,
+    "name": "Bas Steins",
+    "title": "Software Developer",
+    "company": "Miltenyi Biotec",
+    "track": "Cloud",
+    "talkTitle": "Building Stelvio: An Open Source Journey to Deploy Python to AWS",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/58a0PnrC9Ykwffmuxwzs8Y/d804a9539d94849d54f0145ab9244b2a/bas-steins.jpg",
+    "url": "https://www.commityourcode.com/speakers/bas-steins",
+    "bio": "Passionate Software Developer for 20 years. Web, DevOps, embedded Software. Currently in biotech",
+    "sessionIds": [
+      "building-stelvio-an-open-source-journey-to-deploy-python-to-aws-isd9lhifeyn3guv3gg"
+    ]
+  },
+  {
+    "id": "naveen-parameshwarappa",
+    "slug": "naveen-parameshwarappa",
+    "sequence": 89,
+    "isKeynote": false,
+    "name": "Naveen Parameshwarappa",
+    "title": "Architect",
+    "company": "Deloitte Digital",
+    "track": "Cloud",
+    "talkTitle": "Cloud-Based Identity and Access Management for Secure Federal Systems",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/atvf56WZbScD2lOt8BXWo/542777cbfaa8b39ee9f01fbd57bd14a8/naveen-parameshwarappa.jpg",
+    "url": "https://www.commityourcode.com/speakers/naveen-parameshwarappa",
+    "bio": "Naveen Parameshwarappa is a technology professional with nearly 14 years of experience in web and cloud technologies, currently working as an Architect and Project Manager at Deloitte Consulting LLC in Dallas, Texas. His expertise focuses on Salesforce, Java, and J2EE technologies, with particular experience in government and healthcare projects.\r\nAt Deloitte, Naveen has worked on major government modernization initiatives including projects for the New York State Department of Health's Medicaid Eligibility Modernization system serving more than 8 million individuals, the Illinois Department of Public Health's Long-Term Licensing & Certification System, and the CDC's Vaccine Administration Management System supporting 13 million vaccine administrations across multiple jurisdictions. His work on the Illinois licensing system helped reduce application completion time by 35% through improved OmniScript flows and automation.\r\nPrior to Deloitte, Naveen spent several years at Tata Consultancy Services working on banking and financial services projects for Bank of America. His contributions included developing mobile payment solutions for over 4 million digital wallet customers, enhancing security frameworks that achieved a 45% reduction in fraudulent activities, and building mobile remote check deposit capabilities serving 4 million active mobile users.\r\nNaveen is currently pursuing a Master's degree in Engineering Management at Cornell University. He holds a Bachelor of Engineering in Information Science from Siddaganga Institute of Technology and completed executive education in Product Management at UC Berkeley's Haas School of Business. His professional certifications include Project Management Professional (PMP), multiple Salesforce certifications including Sales Cloud and App Builder, AWS Certified Developer Associate, and SAFe 4 Certified Practitioner. He has also published research on digital image watermarking using empirical mode decomposition.",
+    "sessionIds": [
+      "cloud-based-identity-and-access-management-for-secure-federal-systems-ta4pgtaru7pggwkx0f"
+    ]
+  },
+  {
+    "id": "reece-iriye",
+    "slug": "reece-iriye",
+    "sequence": 90,
+    "isKeynote": false,
+    "name": "Reece Iriye",
+    "title": "Software Engineer - AI Labs",
+    "company": "Capital One",
+    "track": "CYC26",
+    "talkTitle": "Weights vs. Words in Fine-Tuning & Enhancing Agentic AI Workflows",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6la5NITfbOQxFc3qVDwXVE/dd77af91201964e0a8f09c79f2887171/reece-iriye__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/reece-iriye",
+    "bio": "Reece Iriye is a Software Engineer at Capital One, where he builds platform tooling that enables engineers to design and deploy agentic AI workflows. Previously, he was a Site Reliability Engineer at Verizon, owning application-based and DNS-based routing infrastructure for high-demand 5G applications serving millions of users and filing 2 approved patents in the process. Reece has also conducted research evaluating whether LoRA fine-tuning can be used to mitigate bias in Stable Diffusion models. He is passionate about merging infrastructure engineering with emerging AI capabilities to solve meaningful problems at scale.",
+    "sessionIds": [
+      "weights-vs-words-in-fine-tuning-and-enhancing-agentic-ai-workflows-rds1p8ile1s8tbxmvs"
+    ]
+  },
+  {
+    "id": "borko-djurkovic",
+    "slug": "borko-djurkovic",
+    "sequence": 91,
+    "isKeynote": false,
+    "name": "Borko Djurkovic",
+    "title": "Member of Technical Staff",
+    "company": "Cohere",
+    "track": "AI",
+    "talkTitle": "Zero-Trust Architecture for Agentic AI: Securing Multi-User Access and Third-Party Integrations",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2946qcZfAaCjNtg1kYaukp/3deec4a9f59e22aba8a60daf9fd7161d/Borko_Djurkovic.jpg",
+    "url": "https://www.commityourcode.com/speakers/borko-djurkovic",
+    "bio": "As a member of the technical staff at Cohere, Borko help clients deploy secure, enterprise-grade AI solutions at scale. Borko is a constant learner with passion for all things related to Kubernetes and cloud native technologies. In his free time, he enjoys listening to podcasts, and running along the beautiful Rideau Canal in Ottawa, Canada.",
+    "sessionIds": [
+      "zero-trust-architecture-for-agentic-ai-securing-multi-user-access-and-third-party-integrations-1ku93sfjpxsmj8yssw"
+    ]
+  },
+  {
+    "id": "chris-griffing",
+    "slug": "chris-griffing",
+    "sequence": 92,
+    "isKeynote": false,
+    "name": "Chris Griffing",
+    "title": "Developer Advocate",
+    "company": "GitKraken",
+    "track": "AI",
+    "talkTitle": "Are MCP Servers Dead?",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3YAOngE0Wl8xWil2MMDCi9/8cc0523fef9230008175d5eb3d4ef235/chris-griffing.jpg",
+    "url": "https://www.commityourcode.com/speakers/chris-griffing",
+    "bio": "I like to make things and share them with people.",
+    "sessionIds": [
+      "are-mcp-servers-dead-dnywgwofmtwijmbrup"
+    ]
+  },
+  {
+    "id": "rishab-kumar",
+    "slug": "rishab-kumar",
+    "sequence": 93,
+    "isKeynote": false,
+    "name": "Rishab Kumar",
+    "title": "Staff Developer Evangelist",
+    "company": "Twilio",
+    "track": "CYC26",
+    "talkTitle": "rm -rf: Horror Stories From Unsandboxed AI Agents (and How Docker Fixes This)",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1JxlzR8aJS3Y9hvlAFHEba/dc6236feeca87d0eb8c95c7fccad813b/rishab-kumar__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/rishab-kumar",
+    "bio": "Rishab is a Staff Developer Evangelist at Twilio, part-time cloud professor at St. Lawrence College, co-author of Learn to Cloud, GitHub Star, Google Developer Expert and AWS Community Builder. He is passionate about helping people get into cloud and sharing his learnings from his time in cloud, DevOps and now AI.",
+    "sessionIds": [
+      "rm-rf-horror-stories-from-unsandboxed-ai-agents-and-how-docker-fixes-this-tdk8d1p5sgnix7pa4r"
+    ]
+  },
+  {
+    "id": "andres-moreno",
+    "slug": "andres-moreno",
+    "sequence": 94,
+    "isKeynote": false,
+    "name": "Andres Moreno",
+    "title": "Principal Software Architect",
+    "company": "Caylent",
+    "track": "AI",
+    "talkTitle": "Skip the Middleman: Direct, Secure UI-to-Agent Communication with Amazon Bedrock AgentCore",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7hAIomRa1PpjD471C5uCHn/a44f9f7f34128984acae43e4bd49e423/andres-moreno.png",
+    "url": "https://www.commityourcode.com/speakers/andres-moreno",
+    "bio": "Andres Moreno is a Principal Software Architect at Caylent. Andres has worked across many teams helping improve developer experience and processes to simplify application development.",
+    "sessionIds": [
+      "skip-the-middleman-direct-secure-ui-to-agent-communication-with-amazon-bedrock-agentcore-nvm3kek5kxtzcbyirn"
+    ]
+  },
+  {
+    "id": "pranav-puranik",
+    "slug": "pranav-puranik",
+    "sequence": 95,
+    "isKeynote": false,
+    "name": "Pranav Puranik",
+    "title": "AI Engineer",
+    "company": "ARM",
+    "track": "AI",
+    "talkTitle": "Advanced RAG Systems: Scaling Retrieval-Augmented Generation in Production",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2vmhFwydl4xN965lczoPNw/32afe0dc46582a727d55690b6825917e/pranav-puranik.jpg",
+    "url": "https://www.commityourcode.com/speakers/pranav-puranik",
+    "bio": "Pranav Puranik is an AI Engineer with 5 years of industry experience across companies including Amazon, Blue Cross Blue Shield, and Arm.\r\n\r\nHe specializes in building large-scale AI systems, particularly Retrieval-Augmented Generation pipelines for document intelligence and healthcare applications. His work includes designing production-grade LLM systems that process high-volume data, improve model reliability, and reduce operational costs.\r\n\r\nOutside of his professional work, Pranav actively contributes to open source and research collaborations. He was a top contributor to Mem0, a AI agent memory project that gained significant traction in the developer community and raised $24M in funding.\r\n\r\nHe has also been recognized with a National Interest Waiver (NIW) by USCIS for his contributions to AI engineering open source and applied research.\r\n\r\nThrough this session, he aims to share practical insights, real-world architectures, and interview-relevant knowledge to help others build and scale effective RAG systems.",
+    "sessionIds": [
+      "advanced-rag-systems-scaling-retrieval-augmented-generation-in-production-ib7kbnyzsurm25te0o"
+    ]
+  },
+  {
+    "id": "raviteja-sankuratri",
+    "slug": "raviteja-sankuratri",
+    "sequence": 96,
+    "isKeynote": false,
+    "name": "Raviteja Sankuratri",
+    "title": "Software Engineer",
+    "company": "QuartetAI",
+    "track": "Cloud",
+    "talkTitle": "From Requirements to Reality: How Solutions Architects Think, Build & Decide",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/Zc9vbO0BcJPWCnYK4R9OS/8b9afa4ef3c629d9b22697d5c11872a3/raviteja-sankuratri.jpg",
+    "url": "https://www.commityourcode.com/speakers/raviteja-sankuratri",
+    "bio": "I started my journey as a cloud engineer with AWS then transferred as software engineer at Quartet AI",
+    "sessionIds": [
+      "from-requirements-to-reality-how-solutions-architects-think-build-and-decide-ot7ey0sbncslbabslg"
+    ]
+  },
+  {
+    "id": "jeremy-barger",
+    "slug": "jeremy-barger",
+    "sequence": 97,
+    "isKeynote": false,
+    "name": "Jeremy Barger",
+    "title": "Director Of Software Engineering & Founder",
+    "company": "ELITE Academy",
+    "track": "Leadership",
+    "talkTitle": "The Series Finale Problem: What Happens When Your Brand Makes a Promise You Can't Keep",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2iWsr6NJMaJIprPYtMNSKF/871080982c4cb9a7c56b61d632032d83/jeremy-barger.png",
+    "url": "https://www.commityourcode.com/speakers/jeremy-barger",
+    "bio": "Jeremy transforms organizational performance by understanding what truly drives human behavior in the workplace. With more than 15 years leading software engineering teams across 20 countries on 5 continents, Jeremy has guided technical governance and mobile application delivery for organizations ranging from ambitious startups to global corporations. His unique ability to build cohesive, distributed teams stems from deep expertise in the psychological and cultural factors that influence team dynamics and individual motivation. As a prominent speaker and trainer, Jeremy specializes in emotional intelligence and behavioral leadership, helping organizations develop the adaptive capabilities essential for success in today's complex work environment. His audiences gain practical, psychology-based frameworks for building trust, driving engagement, and creating sustainable team dynamics that transcend geographic and cultural boundaries.",
+    "sessionIds": [
+      "the-series-finale-problem-what-happens-when-your-brand-makes-a-promise-you-can-t-keep-eswxlejrubonipxrs0"
+    ]
+  },
+  {
+    "id": "jason-torres",
+    "slug": "jason-torres",
+    "sequence": 98,
+    "isKeynote": false,
+    "name": "Jason Torres",
+    "title": "Developer Advocate",
+    "company": "JetBrains",
+    "track": "JavaScript",
+    "talkTitle": "The Death & Resurrection of the IDE: Why Agents Need Semantic Understanding",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/QGWZrYKc3Jlk5xomJxy4I/44fb474bc39be0d78df8e875d4ea6b3a/WVo3PCEx_400x400.jpg",
+    "url": "https://www.commityourcode.com/speakers/jason-torres",
+    "bio": "After 15 years as a unit production manager in the film and television industry, I’ve made the pivot to tech. Here to share  my journey and insight with fellow pivoters!",
+    "sessionIds": [
+      "the-death-and-resurrection-of-the-ide-why-agents-need-semantic-understanding-26ed9kkxojdnyhi6j2"
+    ]
+  },
+  {
+    "id": "ron-dagdag",
+    "slug": "ron-dagdag",
+    "sequence": 99,
+    "isKeynote": false,
+    "name": "Ron Dagdag",
+    "title": "Research Engineering Manager",
+    "company": "Thomson Reuters",
+    "track": "AI",
+    "talkTitle": "How to Test AI Features Before Your Users Do",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/6C3FOfjIA0Vwif6q7HPsvX/dd18cd88f81d9e0e5e929eb0644ee0c2/ron-dagdag.jpg",
+    "url": "https://www.commityourcode.com/speakers/ron-dagdag",
+    "bio": "Ron Dagdag brings over 25 years of experience as a software artisan to his role as Research Engineering Manager at Thomson Reuters, where he leads teams to develop transformative AI solutions. In addition to his professional responsibilities, Ron is an active member of the tech community, recognized as a Microsoft MVP in AI, Mixed Reality, and IoT. Ron is an international speaker, sharing his knowledge at industry events, and remains an active maker and tinkerer with a passion for Augmented Intelligence.\r\n🚀 Code > Create > Coach > Repeat.",
+    "sessionIds": [
+      "how-to-test-ai-features-before-your-users-do-dkcvopioefos47vew3"
+    ]
+  },
+  {
+    "id": "tim-banks",
+    "slug": "tim-banks",
+    "sequence": 100,
+    "isKeynote": false,
+    "name": "Tim Banks",
+    "title": "Solutions Architect",
+    "company": "Caylent",
+    "track": "AI",
+    "talkTitle": "The Devil Was Never in the Details: Code, AI, and the Rise of the Deep Generalist",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2euIaFK4C37YCmYx8UUVXS/72e158897f54d6a198eed8de3f525055/tim-banks.jpg",
+    "url": "https://www.commityourcode.com/speakers/tim-banks",
+    "bio": "Tim’s tech career spans over 25 years through large corporate environments and in small startups, honing his skills in systems administration, automation, architecture, and operations for large cloud-based datastores.\r\nToday, Tim leverages his years in data, DevOps, and Site Reliability Engineering to advise and consult the open source and cloud computing communities in his current role. Tim is also a competitive Brazilian Jiu-Jitsu practitioner, having won over 10 international championships.",
+    "sessionIds": [
+      "the-devil-was-never-in-the-details-code-ai-and-the-rise-of-the-deep-generalist-2whpuzlybafrueik1l"
+    ]
+  },
+  {
+    "id": "wayne-jones",
+    "slug": "wayne-jones",
+    "sequence": 101,
+    "isKeynote": false,
+    "name": "Wayne Jones",
+    "title": "Senior Software Engineer",
+    "company": "Capital One",
+    "track": "JavaScript",
+    "talkTitle": "The Playwright Cipher: Writing Tests Like a Rap Verse",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/72ywrngPjdtPzhwdR7tHq4/e4928be3f3d6e0da0c96307ddcc80dad/wayne-jones.jpg",
+    "url": "https://www.commityourcode.com/speakers/wayne-jones",
+    "bio": "Wayne Jones is a web developer born and raised in New York. He has a background as a full-stack developer working and building websites with JavaScript and React. When he's not coding, he's volunteering and organizes events for NYC Gaymers, a 501c3 non-profit whose mission is to empower gamers across the intersections of orientation, identity, expression, race, and ability, in order to uplift and center our most marginalized community members through education, advocacy, and the creation of safer spaces.",
+    "sessionIds": [
+      "the-playwright-cipher-writing-tests-like-a-rap-verse-jlkjpm6r7rznm1idr0"
+    ]
+  },
+  {
+    "id": "vishnu-ramineni",
+    "slug": "vishnu-ramineni",
+    "sequence": 102,
+    "isKeynote": false,
+    "name": "Vishnu Ramineni",
+    "title": "Sr. Staff Software Engineer",
+    "company": "Albertsons Companies",
+    "track": "AI",
+    "talkTitle": "When AI Gets Manipulated: Security Risks in LLM Applications",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5BC85XgC2q18EfJvYkaukf/9d9ade3886609e32c9e3f2527fed97c4/vishnu-ramineni__1_.jpg",
+    "url": "https://www.commityourcode.com/speakers/vishnu-ramineni",
+    "bio": "I am Vishnu Ramineni, and I am an accomplished frontend developer. With over 8 yrs of experience in the industry, I have developed a deep expertise in modern web technologies. In addition to my development skills, I am an active member of the tech community, regularly sharing my knowledge and insights as a tech talk speaker at prestigious events such as @ReactJS Dalls and @ReactJS Bangalore. I take great pride in contributing to the growth and advancement of the industry, fostering collaboration and knowledge-sharing among fellow professionals.",
+    "sessionIds": [
+      "when-ai-gets-manipulated-security-risks-in-llm-applications-zgznsudvvzgp6cezsp"
+    ]
+  },
+  {
+    "id": "nerando-johnson",
+    "slug": "nerando-johnson",
+    "sequence": 103,
+    "isKeynote": false,
+    "name": "Nerando Johnson",
+    "title": "Software Developer",
+    "company": "Hygiena",
+    "track": "JavaScript",
+    "talkTitle": "Beyond SEO: Optimizing Your Web Content for the Age of AI",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5twmvgCEBU9QKE5d13g6Zh/230d8ba16e87cc57e3500601d5cd664f/nerando-johnson.jpg",
+    "url": "https://www.commityourcode.com/speakers/nerando-johnson",
+    "bio": "Current Atlanta freeCodeCamp Organizer | Software Developer",
+    "sessionIds": [
+      "beyond-seo-optimizing-your-web-content-for-the-age-of-ai-tvc8nbdilx4vouscnb"
+    ]
+  },
+  {
+    "id": "nate-custer",
+    "slug": "nate-custer",
+    "sequence": 104,
+    "isKeynote": false,
+    "name": "Nate Custer",
+    "title": "Principal Technologist",
+    "company": "TTC Global",
+    "track": "JavaScript",
+    "talkTitle": "Property Based Testing for the Browser with Bombadil",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1GUXy9z6QMwE3F4XkaUFkf/e1ecdb1f04003ccc70e9d322e7e41317/nate-custer.jpg",
+    "url": "https://www.commityourcode.com/speakers/nate-custer",
+    "bio": "Having worked as a Systems Architect, QA Automation Lead, Application Developer, Developer of Tools and Testing Harnesses for QA teams, and as Principal Consultant with TTC Global for Fortune 500 organizations – Nate is passionate about helping teams deliver quality software. When he is not at a computer, you’ll most likely find him reading a book of philosophy, sipping scotch, or talking with his friends about Manchester United.",
+    "sessionIds": [
+      "property-based-testing-for-the-browser-with-bombadil-viw218cr2lg95cgebv"
+    ]
+  },
+  {
+    "id": "kaleb-garner",
+    "slug": "kaleb-garner",
+    "sequence": 105,
+    "isKeynote": false,
+    "name": "Kaleb Garner",
+    "title": "Fullstack Developer",
+    "company": "HaloMD",
+    "track": "JavaScript",
+    "talkTitle": "Design Systems 101: The Developer Approach to Better Frontends",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1h6qztvnKpvSxl3zMDrxsQ/3a255657ab60005d3443b31156948195/kaleb-garner.jpg",
+    "url": "https://www.commityourcode.com/speakers/kaleb-garner",
+    "bio": "Developer specializing in building human-centered solutions in the healthcare industry. My experience spans from leading design direction for large medical sites serving over 40,000+ daily patients to creating full-stack applications that directly impact thousands of practitioners across the nation. Creating content around the intersection of technology and healthcare.",
+    "sessionIds": [
+      "design-systems-101-the-developer-approach-to-better-frontends-7j1cf2ki51givpj6nv"
+    ]
+  },
+  {
+    "id": "joel-hooks",
+    "slug": "joel-hooks",
+    "sequence": 106,
+    "isKeynote": false,
+    "name": "Joel Hooks",
+    "title": "lvl 16 Half-Orc Nerd - Purveyor of Artisanal Slop working",
+    "company": "Badass Courses",
+    "track": "AI",
+    "talkTitle": "The Claw: Minions of Toil",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1QpJVE9rpIKv5kqpjDAVMu/ea402f14d0f919dfb5538e813d493af4/joel-hooks.jpg",
+    "url": "https://www.commityourcode.com/speakers/joel-hooks",
+    "bio": "lvl 16 Half-Orc Nerd - Purveyor of Artisanal Slop working on Badass Courses",
+    "sessionIds": [
+      "the-claw-minions-of-toil-ppbydejkgzhzoj0mf0"
+    ]
+  },
+  {
+    "id": "david-parry",
+    "slug": "david-parry",
+    "sequence": 107,
+    "isKeynote": false,
+    "name": "David Parry",
+    "title": "Principal Architect",
+    "company": "Qodo",
+    "track": "AI",
+    "talkTitle": "Inside MCP: Live Protocol Messages, Real-Time Flows, and Smarter Agents",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1GHyWUfC4Y6ltnPZPWOSsQ/e8f449abe0e547ab72213068057cc282/david-parry.png",
+    "url": "https://www.commityourcode.com/speakers/david-parry",
+    "bio": "David Parry is an accomplished Principal Architect with over 25 years of experience in software development, spanning enterprise systems, cloud architecture, and emerging AI integration technologies. His journey began in 1996 when he discovered the fascinating world of programming through Java applets—a technology that, while now obsolete, sparked a lifelong passion for building software that connects people to information and services.\r\nThroughout his illustrious career, David has been involved in numerous high-profile projects that demonstrate his ability to deliver scalable, reliable systems under demanding conditions. He has successfully built and implemented content management systems for a wide range of global clients, including the prestigious Johnnie Walker brand and its renowned keepwalking.com platform. These projects required not only deep technical expertise but also an understanding of how technology serves brand storytelling and customer engagement at scale.\r\nAs a consultant at a Big 4 firm, David played a pivotal role in solving critical issues for enterprise customers across industries. He developed a reputation for diagnosing complex problems in high-traffic web platforms and architecting solutions that balanced immediate business needs with long-term technical sustainability. This consulting experience sharpened his ability to communicate technical concepts to non-technical stakeholders and to navigate the organizational dynamics that often determine whether technology initiatives succeed or fail.\r\nNever one to shy away from innovation, David has continuously expanded his skills to embrace emerging technologies. He has worked extensively on mobile applications and embedded Android TV systems, delivering streaming services that provide customers with exceptional viewing experiences. These projects demanded expertise in performance optimization, real-time data handling, and the unique constraints of embedded environments—skills that translate directly to modern distributed systems and edge computing architectures.\r\nCurrently, David holds the position of Principal Architect at Qodo.ai, where he oversees strategic planning and execution of architectural designs for customers building AI-powered development tools. His current focus includes integrating large language model APIs with enterprise Java systems using Spring AI, designing Model Context Protocol server architectures, and building the infrastructure that enables AI agents to interact securely with external tools and data sources. This work sits at the intersection of his deep Java expertise and the rapidly evolving landscape of AI-assisted software development.\r\nDavid is passionate about sharing knowledge with the developer community. He actively contributes to open-source projects and speaks at conferences about practical approaches to AI integration, cloud architecture, and Java development patterns. His workshop on building MCP servers from scratch reflects his teaching philosophy: developers learn best by building real systems, understanding protocols at the wire level, and debugging their way to mastery.\r\nHaving witnessed the evolution of Java development from applets to microservices to AI-native architectures, David brings a rare combination of historical perspective and forward-looking vision to every project. His wealth of experience, strategic mindset, and hands-on technical skills make him an invaluable asset to any organization navigating the complexities of modern software architecture. When he's not architecting systems, David enjoys mentoring junior developers and exploring how AI can augment—rather than replace—human creativity in software development.",
+    "sessionIds": [
+      "inside-mcp-live-protocol-messages-real-time-flows-and-smarter-agents-zvvjqxgfx2pb7aneox"
+    ]
+  },
+  {
+    "id": "alvaro-montoro",
+    "slug": "alvaro-montoro",
+    "sequence": 108,
+    "isKeynote": false,
+    "name": "Alvaro Montoro",
+    "title": "Senior Software Engineer | Microsoft MVP",
+    "company": "Self",
+    "track": "JavaScript",
+    "talkTitle": "CSS as a Game Engine: Building Playful, Stateful Web Experiences Without JS",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3Uw5waqTtKqF0Cpntfb113/221e969153129fb73cf2e2c1a2cd7860/alvaroMontoro.jpg",
+    "url": "https://www.commityourcode.com/speakers/alvaro-montoro",
+    "bio": "Alvaro Montoro is a Senior Software Engineer with a background in Computer Science and a passion for web technologies. Over the years, he has turned this passion into his \"way of life,\" immersing himself in HTML, CSS, and JavaScript, and actively contributing to online communities. Alvaro's dedication extends beyond his professional work; he enjoys experimenting with creative applications of CSS, such as art and games, and exploring cutting-edge web features.\r\n\r\nBased in Austin, Texas, Alvaro balances his professional career with a fulfilling personal life. He cherishes time with his family, enjoys music and literature, and volunteers in STEM education initiatives at local schools.",
+    "sessionIds": [
+      "css-as-a-game-engine-building-playful-stateful-web-experiences-without-js-1rdsbwqjvaxly1oxdu"
+    ]
+  },
+  {
+    "id": "alexey-inkin",
+    "slug": "alexey-inkin",
+    "sequence": 109,
+    "isKeynote": false,
+    "name": "Alexey Inkin",
+    "title": "Google Developer Expert & Consultant",
+    "company": "Self",
+    "track": "AI",
+    "talkTitle": "Counting exercise repetition using live camera video",
+    "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1HrZbP8u0DKkafWxLl97Xy/1579c30c48699f89a12628e997775e0f/alexey-inkin.jpg",
+    "url": "https://www.commityourcode.com/speakers/alexey-inkin",
+    "bio": "Google Developer Expert in Flutter. EB-1A extraordinary ability immigrant.",
+    "sessionIds": [
+      "counting-exercise-repetition-using-live-camera-video-9huuyte6p1ppr8haj0"
+    ]
+  }
+]

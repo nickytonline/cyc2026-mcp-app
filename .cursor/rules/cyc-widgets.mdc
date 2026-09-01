@@ -1,0 +1,16 @@
+---
+description: Keep MCP widgets on the Commit Your Code 2026 visual language
+globs: widgets/**/*.{tsx,css}
+alwaysApply: false
+---
+
+# CYC widget look and feel
+
+Match [commityourcode.com](https://www.commityourcode.com/). Tokens live in `widgets/src/index.css` as `--cyc-*`.
+
+- Geist Sans for headings/body, Geist Mono for kickers (`01 / LABEL`), indexes, times
+- Navy `#031227`, ink `#07152e`, accent `#0868f7`, cloud `#f5f8fc`, line `#dce5f0`, radius 8px
+- Numbered speaker cards, hairline rules, track pills with a color dot
+- Dark theme uses navy paper, not generic zinc
+- No Inter, no purple gradients, no fake browser chrome
+- Photos from the catalog (Contentful); fallback to initials on navy

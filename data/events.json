@@ -1,0 +1,44 @@
+[
+  {
+    "id": "day-0-pickleball-at-ace",
+    "title": "Day[0] Pickleball at Ace!",
+    "when": "September 2nd 1:00pm - 3:00pm",
+    "description": "Kick off CYC at Ace Pickleball Club in Frisco. Whether you're brand new or ready to run games, join us on the courts before the conference on Wednesday!",
+    "url": "https://www.commityourcode.com/events"
+  },
+  {
+    "id": "day-0-pre-conference-party",
+    "title": "Day[0] Pre Conference party",
+    "when": "September 2nd 6:00pm - 9:00pm",
+    "description": "Don't miss the Truck Yard after party! Join us for food, drinks, karaoke, and networking!",
+    "url": "https://www.commityourcode.com/events"
+  },
+  {
+    "id": "day-1-morning-connect",
+    "title": "Day[1] Morning Connect",
+    "when": "September 3rd 8:00am - 9:00am",
+    "description": "Start your day right with a coffee from the coffee cart we have brought on site from 'The Bean Guys'! With your coffee, have a 10 minute coffee chat with a fellow attendee you are randomly assigned to!",
+    "url": "https://www.commityourcode.com/events"
+  },
+  {
+    "id": "day-1-conference-after-party",
+    "title": "Day[1] Conference After Party",
+    "when": "September 3rd 6:30pm - 9:30pm",
+    "description": "Don't miss the after party at The Puttery at Grandscape! Enjoy immersive indoor mini golf with themed courses, plus games, music, craft cocktails, and food while you network with the CYC community!",
+    "url": "https://www.commityourcode.com/events"
+  },
+  {
+    "id": "day-2-morning-connect",
+    "title": "Day[2] Morning Connect",
+    "when": "September 4th 8:00am - 9:00am",
+    "description": "Start your day right with a coffee from the coffee cart we have brought on site from 'The Bean Guys'! With your coffee, have a 10 minute coffee chat with a fellow attendee you are randomly assigned to!",
+    "url": "https://www.commityourcode.com/events"
+  },
+  {
+    "id": "closing-ceremony-networking",
+    "title": "Closing Ceremony & Networking",
+    "when": "September 4th 4:00pm - 5:30pm",
+    "description": "Join us for the conference closing ceremony, award presentations, and final networking opportunities. Don't miss the surprise announcements!",
+    "url": "https://www.commityourcode.com/events"
+  }
+]

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "@fontsource/geist-sans/index.css";
+@import "@fontsource/geist-mono/index.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --cyc-navy: #031227;
+  --cyc-navy-soft: #0a2345;
+  --cyc-ink: #07152e;
+  --cyc-blue: #0868f7;
+  --cyc-blue-dark: #0056d8;
+  --cyc-cloud: #f5f8fc;
+  --cyc-line: #dce5f0;
+  --cyc-muted: #5f6e83;
+  --cyc-green: #079455;
+  --cyc-radius: 8px;
+  --background: 0 0% 100%;
+  --foreground: 222 74% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 74% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 74% 10%;
+  --primary: 217 94% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 33% 97%;
+  --secondary-foreground: 222 74% 10%;
+  --muted: 210 33% 97%;
+  --muted-foreground: 215 16% 44%;
+  --accent: 217 94% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 214 33% 90%;
+  --input: 214 33% 90%;
+  --ring: 217 94% 50%;
+  --radius: 8px;
+}
+
+.dark {
+  --background: 218 86% 8%;
+  --foreground: 210 40% 98%;
+  --card: 217 75% 15%;
+  --card-foreground: 210 40% 98%;
+  --popover: 217 75% 15%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217 94% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217 75% 15%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 50% 18%;
+  --muted-foreground: 213 20% 72%;
+  --accent: 217 94% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 45%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 217 40% 24%;
+  --input: 217 40% 24%;
+  --ring: 217 94% 62%;
+}
+
+@theme inline {
+  --font-sans: "Geist Sans", system-ui, sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-cyc-navy: var(--cyc-navy);
+  --color-cyc-navy-soft: var(--cyc-navy-soft);
+  --color-cyc-ink: var(--cyc-ink);
+  --color-cyc-blue: var(--cyc-blue);
+  --color-cyc-cloud: var(--cyc-cloud);
+  --color-cyc-line: var(--cyc-line);
+  --color-cyc-muted: var(--cyc-muted);
+  --color-cyc-green: var(--cyc-green);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+#speakers-list-root,
+#speaker-detail-root,
+#schedule-root,
+#session-detail-root,
+#events-list-root {
+  min-height: 100%;
+  width: 100%;
+}

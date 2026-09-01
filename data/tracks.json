@@ -1,0 +1,85 @@
+{
+  "tracks": [
+    {
+      "id": "ai",
+      "name": "Artificial Intelligence",
+      "shortName": "AI",
+      "color": "#0868f7",
+      "blurb": "Production AI from engineers who ship, not hype decks."
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud & Infrastructure",
+      "shortName": "Cloud",
+      "color": "#0ea5e9",
+      "blurb": "Architecture, pipelines, and strategies that survive scale."
+    },
+    {
+      "id": "javascript",
+      "name": "Fullstack JavaScript",
+      "shortName": "JavaScript",
+      "color": "#079455",
+      "blurb": "React, Node, and performance, straight from framework contributors."
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "shortName": "Java",
+      "color": "#f97316",
+      "blurb": "Spring, enterprise architecture, and battle-tested backend patterns."
+    },
+    {
+      "id": "leadership",
+      "name": "Entrepreneurship & Leadership",
+      "shortName": "Leadership",
+      "color": "#7c3aed",
+      "blurb": "Side project to real company, from founders who have done it."
+    },
+    {
+      "id": "workshops",
+      "name": "90-Minute Workshops",
+      "shortName": "Workshops",
+      "color": "#ef4444",
+      "blurb": "Build something real. Leave with working code."
+    },
+    {
+      "id": "keynote",
+      "name": "Keynote",
+      "shortName": "Keynote",
+      "color": "#0868f7",
+      "blurb": "Main-stage sessions for the whole conference."
+    }
+  ],
+  "rooms": [
+    {
+      "id": "1d",
+      "name": "Room 1D",
+      "color": "#ec4899"
+    },
+    {
+      "id": "2a",
+      "name": "Room 2A",
+      "color": "#0868f7"
+    },
+    {
+      "id": "2b",
+      "name": "Room 2B",
+      "color": "#079455"
+    },
+    {
+      "id": "2c",
+      "name": "Room 2C",
+      "color": "#f97316"
+    },
+    {
+      "id": "2d",
+      "name": "Room 2D",
+      "color": "#ef4444"
+    },
+    {
+      "id": "2e",
+      "name": "Room 2E",
+      "color": "#7c3aed"
+    }
+  ]
+}

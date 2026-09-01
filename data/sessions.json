@@ -1,0 +1,2073 @@
+[
+  {
+    "id": "welcome-and-opening-keynote-ynote-welcome-day1",
+    "slug": "welcome-and-opening-keynote-ynote-welcome-day1",
+    "title": "Welcome & Opening Keynote",
+    "abstract": "Join us for the official opening of the conference with inspiring talks and networking opportunities.",
+    "track": "CYC26",
+    "room": "Main Hall",
+    "start": "2026-09-03T09:00:00-05:00",
+    "end": "2026-09-03T10:00:00-05:00",
+    "day": 1,
+    "isSocial": true,
+    "speakers": [
+      {
+        "id": "conference-organizers",
+        "name": "Conference Organizers"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/welcome-and-opening-keynote-ynote-welcome-day1"
+  },
+  {
+    "id": "20-years-of-frontend-lessons-architecture-decisions-that-actually-matter-h4tb1z8aixe4grzj8s",
+    "slug": "20-years-of-frontend-lessons-architecture-decisions-that-actually-matter-h4tb1z8aixe4grzj8s",
+    "title": "20 Years of Frontend Lessons: Architecture Decisions That Actually Matter",
+    "abstract": "After two decades building frontend systems across airlines, healthcare, financial services, and government the lessons that matter most aren't about frameworks. They're about judgment. Every senior engineer has been there: the codebase that looked clean at launch but collapsed under its own weight two years later. The abstraction that made sense on paper but confused every developer who touched it. The technical decision that seemed right at the time but cost the team months to undo. This talk shares the architecture decisions that consistently separate systems that scale from systems that struggle when to abstract and when not to, how to design state management you won't regret, how to earn trust from backend teams and product stakeholders, and how to lead technical direction without losing your team along the way. No framework wars. No hype. Just hard-won lessons from 20 years in the trenches across some of the most demanding industries in software.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "sayeed-mohammad",
+        "name": "Sayeed Mohammad"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/20-years-of-frontend-lessons-architecture-decisions-that-actually-matter-h4tb1z8aixe4grzj8s"
+  },
+  {
+    "id": "never-click-apply-get-hired-qylsthryjfcfyntwzd",
+    "slug": "never-click-apply-get-hired-qylsthryjfcfyntwzd",
+    "title": "Never Click Apply. Get Hired.",
+    "abstract": "Give me 25 minutes and I'll hand you the exact system I've used to help 1,000+ software engineers get hired. The job search you were taught is dead. Fewer than 3 in 1,000 cold applications turn into an offer. The people getting hired right now are following a system that converts at 11x that rate. You'll learn how to escape the pile of unread resumes, find roles that never get posted, reach the human who's actually hiring, and use AI to power the whole thing so you can spend your time on the work that gets you interviews. You'll leave with a playbook you can start running before you leave CYC to land your first or next role.",
+    "track": "JavaScript",
+    "room": "Room 2C",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "leon-noel",
+        "name": "Leon Noel"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/never-click-apply-get-hired-qylsthryjfcfyntwzd"
+  },
+  {
+    "id": "data-governance-in-the-ai-age-alpz83ldei8da9qd31",
+    "slug": "data-governance-in-the-ai-age-alpz83ldei8da9qd31",
+    "title": "Data Governance in the AI age",
+    "abstract": "",
+    "track": "AI",
+    "room": "Room 2B",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "miguel-guillen",
+        "name": "Miguel Guill\u00e9n"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/data-governance-in-the-ai-age-alpz83ldei8da9qd31"
+  },
+  {
+    "id": "documentation-in-the-age-of-ai-why-docs-are-a-product-kuteeiof80z1ega2nt",
+    "slug": "documentation-in-the-age-of-ai-why-docs-are-a-product-kuteeiof80z1ega2nt",
+    "title": "Documentation in the Age of AI: Why Docs Are a Product",
+    "abstract": "Documentation is treated as an afterthought at most companies. It gets a paragraph in the launch checklist, a junior engineer in a hurry, a platform nobody owns, and a quality bar set by whoever shipped the feature. That was always a problem. AI made it impossible to hide. When we migrated Commerce's developer documentation (covering three products: BigCommerce, Makeswift, and Feedonomics) from a legacy platform to Fern on a hard launch deadline, the migration only worked because we stopped treating docs as a deliverable and started treating them as a product. That meant a roadmap, an owner, a quality bar, and a contributor workflow that scaled. AI showed up in three roles along the way: as a contributor accelerating the migration itself, as an editor surfacing gaps in content we thought was fine, and as a reader, the one sitting between every developer and our docs through Cursor, Claude Code, ChatGPT, and our embedded Ask AI. This talk walks through that migration honestly. What changed when we treated docs as a product. How AI helped us ship and what it exposed when we did. A four-layer model (content, structure, surface, contributor workflow) we used to keep the work coherent. Takeaways: - Why \"docs as a product\" is a real organizational shift, not a slogan, and what changes when you make it - The three roles AI plays in modern docs work: contributor, editor, reader - A four-layer model (content, structure, surface, workflow) for organizing AI-native docs work",
+    "track": "AI",
+    "room": "Room 2D",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-nowicki",
+        "name": "Chris Nowicki"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/documentation-in-the-age-of-ai-why-docs-are-a-product-kuteeiof80z1ega2nt"
+  },
+  {
+    "id": "the-three-ways-ai-agents-fail-here-s-how-to-fix-yours-iubkrtqum5la6tr4z0",
+    "slug": "the-three-ways-ai-agents-fail-here-s-how-to-fix-yours-iubkrtqum5la6tr4z0",
+    "title": "The Three Ways AI Agents Fail. Here's How to Fix Yours.",
+    "abstract": "[Disclaimer: The opinions, insights, and perspectives shared in this session are solely my own and do not reflect those of my current or past employers, nor do they convey any confidential information by any means.] Your agent nailed the demo, then fell apart in the real world, and prompt-tuning didn't fix it. MIT's 2025 NANDA study found 95% of enterprise GenAI projects deliver no measurable return, and the cause is less often the model: it's the system around it. Those failures cluster in three layers, and this talk walks through all three, grounded in one running example: an agent modernizing a legacy enterprise system. Layer 1: Tools (MCP and tool-schema design) An agent is only as reliable as the tools it calls. We cover why vague tool definitions cause silent, hard-to-debug failures, and the design choices (typed inputs, clear error contracts, idempotency) that make a tool call dependable. Layer 2: Memory (RAG vs. KG) An agent is only as good as what it remembers. Retrieval-Augmented Generation (RAG) pulls snippets but misses how they relate, so an agent modernizing a legacy monolith drops a rule buried in its dependencies that a Knowledge Graph (KG) would catch. We cover when to use each, or both. Layer 3: Coordination (orchestration and agent-washing) More agents is not more reliability. We separate real orchestration from \"agent-washing\" and cover what stops one failure from cascading: bounded autonomy, failure isolation, and human sign-off on irreversible steps - the \"risk controls\" Gartner ties to 40% of agentic cancellations by 2027. Three-quarters of teams are adopting agents; only a small minority reach production (Forrester, 2026). This talk is about joining them. You leave with: 1. The Failure Map: the three layers where agents actually break 2. Go-To Schema: design choices that stop silent failures 3. RAG vs. KG: when to use each, and when to combine them 4. No-Cascade Coordination: isolate failures, spot agent-washing",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "moeez-khan",
+        "name": "Moeez Khan"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-three-ways-ai-agents-fail-here-s-how-to-fix-yours-iubkrtqum5la6tr4z0"
+  },
+  {
+    "id": "secure-coding-meets-critical-infrastructure-defense-in-water-systems-ue9w5djtkklq0arqfg",
+    "slug": "secure-coding-meets-critical-infrastructure-defense-in-water-systems-ue9w5djtkklq0arqfg",
+    "title": "Secure Coding Meets Critical Infrastructure Defense in Water Systems",
+    "abstract": "As software increasingly controls critical infrastructure, the intersection of secure coding and operational technology security has become a defining challenge for engineers. Water treatment systems, once isolated, are now connected through modern software stacks, cloud integrations, and remote access frameworks, expanding the attack surface for adversaries. High profile incidents have demonstrated how vulnerabilities in software and network design can directly impact public health and safety. This work explores how secure software engineering principles can be applied to protect municipal water infrastructure from evolving cyber threats. By integrating defense in depth strategies with modern development practices, engineers can build resilient systems that safeguard operational technology environments without compromising functionality. The discussion highlights practical approaches such as modular network segmentation, secure API design for control systems, and enforcing Zero Trust principles across both IT and OT layers. A key focus is placed on embedding security into the development lifecycle. Techniques including automated threat modeling, continuous monitoring, and anomaly detection using machine learning are examined as part of a proactive security posture. These approaches enable systems to identify abnormal behavior patterns in real time, reducing the risk of ransomware, insider misuse, and unauthorized remote access. The session also emphasizes the importance of aligning engineering practices with established frameworks such as NIST guidelines and industrial cybersecurity standards. Secure authentication mechanisms, encrypted communications, and controlled access pipelines are presented as essential building blocks for modern infrastructure systems. Attendees will gain actionable insights into how software developers and infrastructure engineers can collaborate to design secure, scalable, and resilient systems. Ultimately, protecting water infrastructure is not only a cybersecurity challenge but also a responsibility of the engineering community to ensure reliability, safety, and trust in systems that millions depend on daily.",
+    "track": "JavaScript",
+    "room": "Room 1D",
+    "start": "2026-09-03T11:00:00-05:00",
+    "end": "2026-09-03T11:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "venkata-kartheek-reddy-somasani",
+        "name": "Venkata Kartheek Reddy Somasani"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/secure-coding-meets-critical-infrastructure-defense-in-water-systems-ue9w5djtkklq0arqfg"
+  },
+  {
+    "id": "when-vectors-aren-t-enough-unlocking-ai-s-hidden-connections-with-graphs-jhffubcwvky0rzpcod",
+    "slug": "when-vectors-aren-t-enough-unlocking-ai-s-hidden-connections-with-graphs-jhffubcwvky0rzpcod",
+    "title": "When Vectors Aren\u2019t Enough: Unlocking AI\u2019s Hidden Connections with Graphs",
+    "abstract": "When AI agents have to execute complex, multi-hop reasoning across interconnected knowledge domains, traditional Retrieval-Augmented Generation (RAG) systems fail. Although vector-based retrieval is very good at finding content that is semantically similar, it cannot find meaningful connections between data, which leads to hallucinations. In this talk, we'll dive into how engineers can ground agents and large language models (LLMs) to uncover connections in data that are often missed by conventional RAG techniques.",
+    "track": "AI",
+    "room": "Room 2B",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nyah-macklin",
+        "name": "Nyah Macklin"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/when-vectors-aren-t-enough-unlocking-ai-s-hidden-connections-with-graphs-jhffubcwvky0rzpcod"
+  },
+  {
+    "id": "chaos-to-control-automating-the-identity-life-cycle-in-the-cloud-edrvkzzfxet1vxcw9l",
+    "slug": "chaos-to-control-automating-the-identity-life-cycle-in-the-cloud-edrvkzzfxet1vxcw9l",
+    "title": "Chaos to Control: Automating the Identity Life Cycle in the Cloud",
+    "abstract": "Identity sprawl is one of the most overlooked risks in cloud environments \u2014 too many accounts, stale permissions, and manual processes just waiting to become a breach headline. In this session, we'll cut through the chaos: starting with a clear definition of identity types in the cloud, then diving into the real-world challenges of managing them at scale, and finishing with practical automation strategies you can take back and implement immediately. Whether you're wrangling service principals, managed identities, or human users \u2014 this talk will give you a framework to bring order to the madness.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "noah-jenkins",
+        "name": "Noah Jenkins"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/chaos-to-control-automating-the-identity-life-cycle-in-the-cloud-edrvkzzfxet1vxcw9l"
+  },
+  {
+    "id": "stop-writing-the-analysis-script-let-the-data-decide-what-to-look-at-xz65mqrizxhesui3d6",
+    "slug": "stop-writing-the-analysis-script-let-the-data-decide-what-to-look-at-xz65mqrizxhesui3d6",
+    "title": "Stop Writing the Analysis Script: Let the Data Decide What to Look At",
+    "abstract": "Every technical field eventually drowns in more data than anyone could read by hand \u2014 logs, sensors, transactions, measurements, whatever your domain calls it. The usual fix is to keep writing scripts: one to summarize, one to filter, one to test the next idea, then another, and another \u2014 forever chasing the data instead of getting ahead of it. This talk is about a different way to work. Instead of writing the test yourself, you describe what you want and what success looks like \u2014 and Claude helps figure out what to look at, what to try next, and when to stop, guided by the data itself rather than a script you wrote in advance.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "stacy-haven",
+        "name": "Stacy Haven"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/stop-writing-the-analysis-script-let-the-data-decide-what-to-look-at-xz65mqrizxhesui3d6"
+  },
+  {
+    "id": "ship-it-first-fix-it-later-how-a-medical-crisis-led-to-a-global-tool-gidregd9bglb0dvh68",
+    "slug": "ship-it-first-fix-it-later-how-a-medical-crisis-led-to-a-global-tool-gidregd9bglb0dvh68",
+    "title": "Ship It First, Fix It Later: How a Medical Crisis Led to a Global Tool",
+    "abstract": "When Roxy\u2019s son was hospitalized yet again, she noticed nurses struggling to calculate his g-tube feed rates, so she built solution with simply HTML, CSS, and JavaScript, then almost didn\u2019t share it due to everyone\u2019s favorite pal, imposter syndrome. This talk chronicles a very specific web app's journey into a production React PWA with AI integration, now used daily by families worldwide, who even find it through organic Google searches. Through honest side-by-side code comparisons, you\u2019ll see when vanilla JavaScript hits its limits, why React\u2019s patterns became necessary, and how AI tools can accelerate development without becoming a crutch. You\u2019ll also leave with a six-step framework for iterative development that overcomes the fear of shipping imperfect solutions. Whether you\u2019re considering a React migration, curious about AI-assisted development, or sitting on a side project, you\u2019ll leave with technical insights and a renewed motivation to ship.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "roxy-rodriguez-becker",
+        "name": "Roxy Rodriguez-Becker"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/ship-it-first-fix-it-later-how-a-medical-crisis-led-to-a-global-tool-gidregd9bglb0dvh68"
+  },
+  {
+    "id": "gating-cognition-how-modern-ai-architectures-minimize-runtime-reasoning-egbygdgv3cyxa7iz64",
+    "slug": "gating-cognition-how-modern-ai-architectures-minimize-runtime-reasoning-egbygdgv3cyxa7iz64",
+    "title": "Gating Cognition: How Modern AI Architectures Minimize Runtime Reasoning",
+    "abstract": "This talk explores the evolution of generative AI architectures and the design trend toward minimizing runtime LLM calls to improve latency, reliability, and cost. I'll walk through ReAct, ReWOO, and agent/skills-based approaches \u2014 covering implementation details, comparing their strengths and weaknesses, and demonstrating each with a live demo.",
+    "track": "AI",
+    "room": "Room 1D",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "hunter-long",
+        "name": "Hunter Long"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/gating-cognition-how-modern-ai-architectures-minimize-runtime-reasoning-egbygdgv3cyxa7iz64"
+  },
+  {
+    "id": "are-mcp-servers-dead-dnywgwofmtwijmbrup",
+    "slug": "are-mcp-servers-dead-dnywgwofmtwijmbrup",
+    "title": "Are MCP Servers Dead?",
+    "abstract": "MCP Servers feel like one of the oldest standards we have for defining how we can integrate with AI tools. There are plenty of criticisms, but the death of the MCP Server has been exaggerated a bit. In this talk we will go over the basics of what an MCP server is, some alternatives such as skills, as well as what lesser known MCP Apps are and how they might revive enthusiasm in the MCP server ecosystem.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T11:30:00-05:00",
+    "end": "2026-09-03T11:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-griffing",
+        "name": "Chris Griffing"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/are-mcp-servers-dead-dnywgwofmtwijmbrup"
+  },
+  {
+    "id": "boost-developer-productivity-with-buildpacks-hnnpxmrwif7i2ai6of",
+    "slug": "boost-developer-productivity-with-buildpacks-hnnpxmrwif7i2ai6of",
+    "title": "Boost Developer Productivity with Buildpacks",
+    "abstract": "Widespread container adoption has inadvertently overburdened developers. While Dockerfiles simplified initial container creation, they lack the abstraction needed to clearly delineate responsibilities between developers and platform teams. This often results in developers managing operational tasks like app containerization, base image maintenance, and remediating third-party vulns--time-consuming burdens that hinder productivity. In addition, platform teams need to manage inconsistencies in Dockerfiles across teams which leads to difficult-to-manage images, and troubleshooting complex builds consumes valuable developer time. Cloud Native Buildpacks (CNBs) provide a solution by enabling a clear separation of concerns. Operations teams can manage base images and security updates, while developers focus on writing code. In this talk, you'll learn how your organization can leverage CNBs to empower developers, enhance security, and optimize your containerization workflows.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T13:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "joey-brown",
+        "name": "Joey Brown"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/boost-developer-productivity-with-buildpacks-hnnpxmrwif7i2ai6of"
+  },
+  {
+    "id": "this-isn-t-the-matrix-stop-letting-your-ai-agents-run-wild-eguc2r3fo59toaog5k",
+    "slug": "this-isn-t-the-matrix-stop-letting-your-ai-agents-run-wild-eguc2r3fo59toaog5k",
+    "title": "This Isn't The Matrix: Stop Letting Your AI Agents Run Wild",
+    "abstract": "Autonomous AI agents are incredible, until they get manipulated into making unauthorized API calls or exposing private data. This session demonstrates how to secure your AI workflows ensuring your agents only execute the actions they are actually authorized to perform. Attendees will leave appreciating the fact that giving and LLM the keys to your backend without proper guardrails is an expensive YOLO loop.",
+    "track": "AI",
+    "room": "Room 2D",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T13:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "lawrence-lockhart",
+        "name": "Lawrence Lockhart"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/this-isn-t-the-matrix-stop-letting-your-ai-agents-run-wild-eguc2r3fo59toaog5k"
+  },
+  {
+    "id": "20-mins-to-production-a-live-ai-build-challenge-mrjgjjazynlnsmptbc",
+    "slug": "20-mins-to-production-a-live-ai-build-challenge-mrjgjjazynlnsmptbc",
+    "title": "20 mins to Production: A Live AI-Build Challenge",
+    "abstract": "TBA",
+    "track": "Leadership",
+    "room": "Room 2E",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T13:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jerry-reghunadh",
+        "name": "Jerry Reghunadh"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/20-mins-to-production-a-live-ai-build-challenge-mrjgjjazynlnsmptbc"
+  },
+  {
+    "id": "in-the-age-of-ai-if-it-s-not-accessible-it-s-not-acceptable-tbreiot5deh4gz5t26",
+    "slug": "in-the-age-of-ai-if-it-s-not-accessible-it-s-not-acceptable-tbreiot5deh4gz5t26",
+    "title": "In the age of AI: if it's not Accessible, it's not Acceptable",
+    "abstract": "Accessibility should no longer be considered a \"nice to have\" add on; it is a financial, legal, and moral imperative. This talk explores the rise of digital accessibility lawsuits and how \"quick fix\" widgets fail, the spectrum of disability and how designing for the extreme can help out the mean, and applying POUR principles and AI driven auditing. In the age of Skills and Agentic coding, we can more easily than ever, build robust applications that benefit every user regardless of their permanent, temporary, or situational needs.",
+    "track": "JavaScript",
+    "room": "Room 2B",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T13:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "amanda-mayfield",
+        "name": "Amanda Mayfield"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/in-the-age-of-ai-if-it-s-not-accessible-it-s-not-acceptable-tbreiot5deh4gz5t26"
+  },
+  {
+    "id": "comparing-promises-observables-and-signals-qfoqllxv91yradqtsa",
+    "slug": "comparing-promises-observables-and-signals-qfoqllxv91yradqtsa",
+    "title": "Comparing Promises, Observables, and Signals",
+    "abstract": "Since JavaScript is single threaded, special techniques are necessary for asynchronous and reactive programming. Promises were introduced a few years ago to enable asynchronous programming without the dreaded \"callback hell\". They are a very powerful tool, especially with the async/await syntactic sugar. But limitations in promises opened the door to observables and their associated operator functions. They are much more powerful than promises overall, but can also be much more confusing. Signals are yet another approach, one that has gained a lot of attention since Angular adopted them in 2023, but it solves completely different problems. Now we have three different reactive primitives. Why? What's the difference between them? Why would you choose one over the other? Or will they all have complementary roles in a modern JavaScript/TypeScript application? Come to this session to get the answers to these questions, and more!",
+    "track": "Cloud",
+    "room": "Room 2A",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T13:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "lance-finney",
+        "name": "Lance Finney"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/comparing-promises-observables-and-signals-qfoqllxv91yradqtsa"
+  },
+  {
+    "id": "close-the-tab-build-jobs-that-keep-running-e4tdhratyf5jlpamq0",
+    "slug": "close-the-tab-build-jobs-that-keep-running-e4tdhratyf5jlpamq0",
+    "title": "Close the Tab: Build Jobs That Keep Running",
+    "abstract": "What happens when a user starts a report, import, or other multi-step job and leaves before it finishes? In many web apps, the work is tied to the HTTP request that started it. The browser closes, the request ends, and the user has no status to check or result to retrieve. In this 90-minute hands-on workshop, you will deploy an app built that way and close the tab during a run. Then you will change the backend and will break the work into sequential and parallel tasks, inspect the run, follow its status, and recover the result after reopening the page. You will leave knowing when work belongs inside a request, when it needs a job of its own, and how long-running jobs fit behind modern web applications, including AI agents that coordinate multi-step work across tools, retries, and parallel tasks.",
+    "track": "AI",
+    "room": "Room 1D",
+    "start": "2026-09-03T13:00:00-05:00",
+    "end": "2026-09-03T14:30:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "ojus-save",
+        "name": "Ojus Save"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/close-the-tab-build-jobs-that-keep-running-e4tdhratyf5jlpamq0"
+  },
+  {
+    "id": "gotta-feed-the-beast-data-engineering-at-scale-x09vwrbzclqep5y25p",
+    "slug": "gotta-feed-the-beast-data-engineering-at-scale-x09vwrbzclqep5y25p",
+    "title": "Gotta Feed the Beast - Data Engineering at Scale",
+    "abstract": "AI models and analytics platforms may get the spotlight, but none of them work without a constant supply of usable, reliable data. So where does that data come from, and what does it take to move it from messy source systems into dashboards, warehouses, and machine learning pipelines at enterprise scale? In this session, we will break down the basics of data engineering in a practical, approachable way. You will learn how data flows through modern organizations, the patterns teams use to prepare and deliver it, and the challenges data engineers face in keeping the beast fed.",
+    "track": "AI",
+    "room": "Room 2C",
+    "start": "2026-09-03T13:30:00-05:00",
+    "end": "2026-09-03T13:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "claire-bourdon",
+        "name": "Claire Bourdon"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/gotta-feed-the-beast-data-engineering-at-scale-x09vwrbzclqep5y25p"
+  },
+  {
+    "id": "trust-but-verify-human-in-the-loop-for-agents-that-actually-matter-lhy79bqjv4iti91r24",
+    "slug": "trust-but-verify-human-in-the-loop-for-agents-that-actually-matter-lhy79bqjv4iti91r24",
+    "title": "Trust, But Verify: Human-in-the-Loop for Agents That Actually Matter",
+    "abstract": "AI agents are getting good at taking action. The hard part isn't making them capable, it's knowing when to make them stop. In this talk we'll walk through the full spectrum of human-in-the-loop patterns, from lightweight inline confirmations to out-of-band permission gates to handing your agent a wallet with real money in it and more. Each pattern fits a different level of consequence, and knowing which to reach for is what separates demo agents from production ones. We'll cover the honest tradeoffs of latency, user experience, and trust so you can make the right call for your specific use case. The entire talk is built around various live demos that escalate in stakes with every step. You'll leave with a mental model and working reference architecture you can apply the same day. edit: this talk is setup as a standard session talk, but I'm also happy to deliver it as a workshop.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-03T13:30:00-05:00",
+    "end": "2026-09-03T13:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "michael-liendo",
+        "name": "Michael Liendo"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/trust-but-verify-human-in-the-loop-for-agents-that-actually-matter-lhy79bqjv4iti91r24"
+  },
+  {
+    "id": "weights-vs-words-in-fine-tuning-and-enhancing-agentic-ai-workflows-rds1p8ile1s8tbxmvs",
+    "slug": "weights-vs-words-in-fine-tuning-and-enhancing-agentic-ai-workflows-rds1p8ile1s8tbxmvs",
+    "title": "Weights vs. Words in Fine-Tuning & Enhancing Agentic AI Workflows",
+    "abstract": "Fine-tuning an LLM using parameter-efficient methods like LoRA takes a ton of effort. You're taking weeks curating datasets, configuring training runs, and burning through compute before you even know if the result is better than what you started with. Meanwhile, the rest of the industry has collectively decided that the answer to most problems is to just write a longer prompt, shove more context into the window, and hope the model figures it out....and somehow, that's kind of working. This talk walks through scenarios that could still warrant fine-tuning and covers the pros and cons of adapting model weights versus investing that same effort into better prompts and smarter workflow design. We'll walk through controlled experiments comparing LoRA-adapted models against prompted baselines to find where fine-tuning still earns a meaningful edge and where prompt engineering and context engineering have genuinely made it unnecessary.",
+    "track": "CYC26",
+    "room": "Room 2B",
+    "start": "2026-09-03T13:30:00-05:00",
+    "end": "2026-09-03T13:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "reece-iriye",
+        "name": "Reece Iriye"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/weights-vs-words-in-fine-tuning-and-enhancing-agentic-ai-workflows-rds1p8ile1s8tbxmvs"
+  },
+  {
+    "id": "advanced-rag-systems-scaling-retrieval-augmented-generation-in-production-ib7kbnyzsurm25te0o",
+    "slug": "advanced-rag-systems-scaling-retrieval-augmented-generation-in-production-ib7kbnyzsurm25te0o",
+    "title": "Advanced RAG Systems: Scaling Retrieval-Augmented Generation in Production",
+    "abstract": "This session focuses on designing and scaling high-performance Retrieval-Augmented Generation (RAG) systems in real-world applications. We will cover practical techniques used in industry and research to improve LLM accuracy, latency, and reliability, including HyDE, multi-query retrieval, contextual compression, reranking (including custom strategies), and hybrid search (text plus semantic). We will also explore advanced architectures such as Graph RAG, Light RAG, and DAG-based evaluation pipelines. The talk will go beyond theory and dive into system design decisions across ingestion, chunking, retrieval, generation, and evaluation. I will share insights from working with large-scale document pipelines and lessons learned from production systems used by leading companies and fast-growing startups. This session is useful for engineers building RAG systems, as well as job seekers preparing for AI engineering and forward-deployed roles, where system design and practical tradeoffs are heavily tested.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T13:30:00-05:00",
+    "end": "2026-09-03T13:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "pranav-puranik",
+        "name": "Pranav Puranik"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/advanced-rag-systems-scaling-retrieval-augmented-generation-in-production-ib7kbnyzsurm25te0o"
+  },
+  {
+    "id": "from-side-project-to-startup-lessons-learned-from-hundreds-of-builders-3zfowpwxy7s88rr1vc",
+    "slug": "from-side-project-to-startup-lessons-learned-from-hundreds-of-builders-3zfowpwxy7s88rr1vc",
+    "title": "From Side Project to Startup: Lessons Learned from Hundreds of Builders",
+    "abstract": "Building a startup doesn't always begin with quitting your job. For many founders, it starts as a side project built during late nights and weekends. Over the past four years, I\u2019ve run Side Project Society, a community of builders working to move from idea to launch while working full time. Along the way, I\u2019ve seen hundreds of people wrestle with the same challenges: validating ideas, finding users, staying consistent, and turning passion projects into real businesses. In this talk, I\u2019ll share the biggest lessons learned from that community, including how to validate before overbuilding, get your first users, maintain momentum, and avoid the side project graveyard.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T13:30:00-05:00",
+    "end": "2026-09-03T13:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "danyal-mahmud",
+        "name": "Danyal Mahmud"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-side-project-to-startup-lessons-learned-from-hundreds-of-builders-3zfowpwxy7s88rr1vc"
+  },
+  {
+    "id": "give-your-sdk-superpowers-building-ai-tools-for-your-developers-with-skills-and-mcp-9bvc3u70n8miaxkry4",
+    "slug": "give-your-sdk-superpowers-building-ai-tools-for-your-developers-with-skills-and-mcp-9bvc3u70n8miaxkry4",
+    "title": "Give Your SDK Superpowers: Building AI Tools for Your Developers with Skills and MCP",
+    "abstract": "Like it or not, developers are building with AI assistants. When they ask Claude or Copilot to write code for your platform, the AI often hallucinates confidently because it has zero context about your SDK. The goal is to make developers successful on your platform as quickly as possible, and we don't need their developer tools stumbling in the dark. The fix is two things that work together: Claude Skills, which give AI structured context about your platform, and MCP (Model Context Protocol), which gives AI access to your actual tooling. There\u2019s been a lot of hype and talk about these things, but implementing them practically is easier than you\u2019d think. I'll show this working in production using Prismatic's integration platform as the example. Live demo: vanilla AI hallucinating on the SDK, then the same prompt with Skills and MCP connected where the AI knows the conventions AND can interact with the tooling. I'll walk through what goes into creating a Skill so you can see how approachable it is. While the demo uses Prismatic, the patterns apply to any platform or SDK. You should walk away with an understanding of how to supercharge your developers.",
+    "track": "AI",
+    "room": "Room 2B",
+    "start": "2026-09-03T14:00:00-05:00",
+    "end": "2026-09-03T14:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "brian-munz",
+        "name": "Brian Munz"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/give-your-sdk-superpowers-building-ai-tools-for-your-developers-with-skills-and-mcp-9bvc3u70n8miaxkry4"
+  },
+  {
+    "id": "from-guesswork-to-governance-bringing-api-discipline-to-data-streaming-j3x7tyxu0r5ipbyaq3",
+    "slug": "from-guesswork-to-governance-bringing-api-discipline-to-data-streaming-j3x7tyxu0r5ipbyaq3",
+    "title": "From Guesswork to Governance: Bringing API Discipline to Data Streaming",
+    "abstract": "So you\u2019re committed to this path of data streaming with Apache Kafka. But, here\u2019s a question: would you build a REST API and make users guess the request and response formats? Doing so opens a Pandora\u2019s Box\u2026 - What\u2019s the domain model? - Name the operation\u2026 POST? GET? PUT? PATCH? - What does this error code even mean? - Is the documentation (if it even exists) accurate and relevant? Imagine the complex, repetitive logic every consuming system would need to implement to make sense of it all. In a distributed, asynchronous system, these problems are magnified. Apache Kafka's flexibility - messages as simple bytes - is a huge strength, but it's also a major risk. While your event streams likely consist of some structured data (maybe JSON strings), enforcing structure, managing evolution, and basic validations aren\u2019t a hard requirement. This leaves consumer applications to perform this preprocessing of every event - even if that event has no business value. In this session, we'll define data contracts and how to enforce them at the source - the applications that produce events. We\u2019ll cover the practice of using a schema registry - supporting popular serialization formats like Apache Avro and Google Protobuf - to design events in the terminology of our business domain. Because data structures change over time, let\u2019s discuss safe schema evolution practices. Then we\u2019ll utilize these contracts with schema registry-aware producer and consumer code. We\u2019ll end our time by looking at how smart CI/CD pipelines and build-time checks can add an extra layer of defense against the costly problem of poison data. It\u2019s time to stop guessing and start governing. Join us to learn how to move validation upstream and transform your event streams into high-quality, discoverable data products. You\u2019ll walk away with a practical blueprint for enforcing schema integrity and automating evolution - ensuring your data streams are a trusted asset.",
+    "track": "Java",
+    "room": "Room 2A",
+    "start": "2026-09-03T14:00:00-05:00",
+    "end": "2026-09-03T14:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "sandon-jacobs",
+        "name": "Sandon Jacobs"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-guesswork-to-governance-bringing-api-discipline-to-data-streaming-j3x7tyxu0r5ipbyaq3"
+  },
+  {
+    "id": "the-claw-minions-of-toil-ppbydejkgzhzoj0mf0",
+    "slug": "the-claw-minions-of-toil-ppbydejkgzhzoj0mf0",
+    "title": "The Claw: Minions of Toil",
+    "abstract": "Like a Roomba for your code AI Agents coordinate to accomplish chores that you are both perfectly capable of, but busy doing other things so they will work 24 hours a day 7 days a week getting it done for you. We are going to talk about what an \"ai agent\" is today, go beyond the hype, and explore some practical (and fun!) ways you can start implementing them yourself today without a lot of hassle.",
+    "track": "AI",
+    "room": "Room 2D",
+    "start": "2026-09-03T14:00:00-05:00",
+    "end": "2026-09-03T14:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "joel-hooks",
+        "name": "Joel Hooks"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-claw-minions-of-toil-ppbydejkgzhzoj0mf0"
+  },
+  {
+    "id": "observability-at-200mph-how-being-a-coder-makes-you-a-better-sim-racer-0m4isaklwrgqxua7m1",
+    "slug": "observability-at-200mph-how-being-a-coder-makes-you-a-better-sim-racer-0m4isaklwrgqxua7m1",
+    "title": "Observability at 200mph: How being a coder makes you a better sim racer",
+    "abstract": "In software, we optimize systems through measurement, not guesswork. We instrument, measure, debug, and iterate. This talk applies that approach to a surprising area: competitive sim racing. Two laps around the same track. Same car, same driver. One is 1.3 seconds faster. Where did the time go? Modern racing simulators provide detailed telemetry data. This includes speed traces, throttle input, brake pressure, steering angle, lap deltas, sector times, gear changes, and more. In this session, we\u2019ll treat that data like any performance profile. We\u2019ll compare two laps, find lost time, visualize driver inputs, and spot ways to improve. Along the way, we will connect common software practices to racing performance: Profiling becomes lap and sector analysis. Debugging means isolating inconsistent driver inputs. Automated reporting offers faster feedback after each session. Structured testing transforms into controlled setup and driving experiments. This isn\u2019t about becoming a race car driver. It\u2019s a technical session on using developer skills to tackle a real-world performance issue. Sim racing is our case study, and this framework applies wherever performance relies on measurement, feedback, and iteration. Attendees will learn a practical method for turning messy performance data into valuable insights. They will also get ideas for creating small tools that reduce guesswork and speed up improvement. No racing background is needed.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-03T14:00:00-05:00",
+    "end": "2026-09-03T14:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jeremy-morgan",
+        "name": "Jeremy Morgan"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/observability-at-200mph-how-being-a-coder-makes-you-a-better-sim-racer-0m4isaklwrgqxua7m1"
+  },
+  {
+    "id": "from-internal-innovation-to-hilton-com-building-hilton-s-first-agentic-ai-travel-planner-8kmcxefr2eh7tefzp7",
+    "slug": "from-internal-innovation-to-hilton-com-building-hilton-s-first-agentic-ai-travel-planner-8kmcxefr2eh7tefzp7",
+    "title": "From Internal Innovation to Hilton.com: Building Hilton\u2019s First Agentic AI Travel Planner",
+    "abstract": "Some of the best products don\u2019t start on a roadmap, they begin as ideas in internal innovation challenges. This talk tells the story of how one such project evolved into the Hilton AI Planner, a generative AI powered digital concierge now live on hilton.com and already gaining attention from major travel publications. Currently in beta and expanding to more users throughout 2026, the Hilton AI Planner uses conversational intelligence to deliver real time, curated recommendations, helping travelers navigate every stage of trip planning with a more intuitive, frictionless experience. This was new territory for one of the world\u2019s largest hospitality brands, and it required deep collaboration across engineering, SRE, SDET, product, UX, and security. Developers played a key role, not just building features, but partnering across disciplines to help shape core product decisions and define what this new category of experience could and should be. We\u2019ll go under the hood on the technical architecture, how we leveraged cloud based foundation model orchestration to power conversational intelligence, built agentic workflows that combine Hilton\u2019s rich hotel portfolio data with real time responses, and grounded LLM outputs in structured hospitality data at scale. We\u2019ll also share lessons from key pivots, including a major shift mid build from a managed agentic framework to a self hosted solution, and why continuous evaluation has become a core team discipline in a rapidly evolving ecosystem. Equally important is how we protect and build trust with our users. We\u2019ll cover how we implemented guardrails to ensure safe, reliable, and brand aligned responses, alongside enterprise observability tooling to trace agentic workflows and catch regressions. We\u2019ll also explore how LLM as a judge frameworks help us evaluate conversational quality at scale, because when your product is a conversation, your testing strategy has to be just as intelligent. The beta is live. The rollout is 2026. This is what Hilton\u2019s test and learn approach to generative AI looks like from the inside, and how it continues to evolve in production.",
+    "track": "CYC26",
+    "room": "Room 2E",
+    "start": "2026-09-03T14:00:00-05:00",
+    "end": "2026-09-03T14:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "paul-coroneos",
+        "name": "Paul Coroneos"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-internal-innovation-to-hilton-com-building-hilton-s-first-agentic-ai-travel-planner-8kmcxefr2eh7tefzp7"
+  },
+  {
+    "id": "your-prompt-is-not-a-unit-test-instrumenting-llm-apps-in-production-fvhaxs8ttaduwcvdmq",
+    "slug": "your-prompt-is-not-a-unit-test-instrumenting-llm-apps-in-production-fvhaxs8ttaduwcvdmq",
+    "title": "Your Prompt Is Not a Unit Test \u2014 instrumenting LLM apps in production",
+    "abstract": "Deploying an LLM feature is table stakes. Knowing whether it's actually working in production \u2014 that's the hard part most teams skip. This talk covers the observability layer your AI application needs but probably doesn't have yet: tracing individual inference calls end to end, tracking token costs and latency across model versions, detecting silent failures before users do, and correlating model behavior back to real user outcomes. We'll walk through the specific metrics that matter, the instrumentation patterns that actually scale, and the failure modes that only appear after you go live. Everything covered is tool-agnostic and grounded in real production experience, not demos built the night before. If you're shipping AI features and relying on \"no error in the logs\" as your signal that things are fine, this talk is for you.",
+    "track": "AI",
+    "room": "Room 2B",
+    "start": "2026-09-03T14:30:00-05:00",
+    "end": "2026-09-03T14:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "kyle-taylor",
+        "name": "Kyle Taylor"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/your-prompt-is-not-a-unit-test-instrumenting-llm-apps-in-production-fvhaxs8ttaduwcvdmq"
+  },
+  {
+    "id": "make-your-serverless-functions-do-more-with-durable-executions-sgoktzkkqggmu52jcj",
+    "slug": "make-your-serverless-functions-do-more-with-durable-executions-sgoktzkkqggmu52jcj",
+    "title": "Make Your Serverless Functions Do More with Durable Executions",
+    "abstract": "Serverless architectures are great... until they aren't. When your application demands long-running, multi-step processing and built-in resilience, a simple serverless function won't cut it. You'll need durable executions and stateful processing, but what is it, and how can it help? In this talk, we'll look at fault-tolerant, durable execution patterns. We'll cover checkpointing, replay, and how step functions work. To make this concrete, I'll walk through an order system that authorizes a payment, waits for manual approval, then captures or cancels the charge. We'll dig into the code and see what improvements this has over traditional serverless functions. By the end, attendees will have a better idea on how durable executions work, and why they should use them.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-03T14:30:00-05:00",
+    "end": "2026-09-03T14:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "erik-hanchett",
+        "name": "Erik Hanchett"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/make-your-serverless-functions-do-more-with-durable-executions-sgoktzkkqggmu52jcj"
+  },
+  {
+    "id": "the-playwright-cipher-writing-tests-like-a-rap-verse-jlkjpm6r7rznm1idr0",
+    "slug": "the-playwright-cipher-writing-tests-like-a-rap-verse-jlkjpm6r7rznm1idr0",
+    "title": "The Playwright Cipher: Writing Tests Like a Rap Verse",
+    "abstract": "A good rap verse has flow, hooks, and bars that hit. Great end-to-end test should too. In this talk, we\u2019ll break down how the structure of a rap cipher can inspire better end-to-end tests so that tests that are readable, maintainable, and resistant to flakiness. Through a live demo of a rap album-art review site, we\u2019ll write Playwright tests that validate real user behavior: keyboard navigation, accessibility flows, visual UI stability, and resilient network handling. Think of it as turning your test suite into a well-produced album with a tight structure, no filler, and every line serving a purpose.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-03T14:30:00-05:00",
+    "end": "2026-09-03T14:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "wayne-jones",
+        "name": "Wayne Jones"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-playwright-cipher-writing-tests-like-a-rap-verse-jlkjpm6r7rznm1idr0"
+  },
+  {
+    "id": "build-your-first-mcp-app-hwylh8wvaanptgcbow",
+    "slug": "build-your-first-mcp-app-hwylh8wvaanptgcbow",
+    "title": "Build your First MCP App",
+    "abstract": "Remote Model Context Protocol (MCP) servers expose tools, but did you know those tools can return UI, not just text? Using the MCP Apps extension to the MCP protocol, , an MCP app can deliver interactive experiences directly inside MCP hosts like Claude.ai and ChatGPT. We'll break down what makes an MCP app, how it all comes together, then live code one from scratch using as a starting point. We'll tunnel it to a public URL, register it in both Claude.ai and ChatGPT, then lock down tool calling with Pomerium, an open source (Apache 2.0) MCP gateway that handles authentication, authorization, and fine-grained tool access control so you control who gets to use your MCP app and its tools.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T14:30:00-05:00",
+    "end": "2026-09-03T14:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nick-taylor",
+        "name": "Nick Taylor"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/build-your-first-mcp-app-hwylh8wvaanptgcbow"
+  },
+  {
+    "id": "the-feature-nobody-used-and-what-it-taught-me-about-product-engineering-bx7cgthkar6f9o8oc8",
+    "slug": "the-feature-nobody-used-and-what-it-taught-me-about-product-engineering-bx7cgthkar6f9o8oc8",
+    "title": "The Feature Nobody Used & What It Taught Me About Product Engineering",
+    "abstract": "Building out a product is easier than ever before. With AI-assisted coding, we can rapidly spin up proof of concepts and ship features. But speed does not equal value. You can vibe-code an entire app in an afternoon but does it solve a real problem? Will anyone actually use it? Product Engineering bridges this gap. It helps with translating user needs and business outcomes into products that people actually want to use. In this talk, we'll explore how to build with intention, not just velocity.",
+    "track": "JavaScript",
+    "room": "Room 2E",
+    "start": "2026-09-03T14:30:00-05:00",
+    "end": "2026-09-03T14:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "bethany-ann",
+        "name": "Bethany Ann"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-feature-nobody-used-and-what-it-taught-me-about-product-engineering-bx7cgthkar6f9o8oc8"
+  },
+  {
+    "id": "your-browser-has-trust-issues-why-local-devices-break-modern-web-apps-kz5slzoc3aoorhfqs5",
+    "slug": "your-browser-has-trust-issues-why-local-devices-break-modern-web-apps-kz5slzoc3aoorhfqs5",
+    "title": "Your Browser Has Trust Issues: Why Local Devices Break Modern Web Apps",
+    "abstract": "Modern browsers don\u2019t trust local devices. If your app runs over HTTPS, printers, scanners, and even USB devices with no network interface are blocked unless they can be accessed securely - and new Local Network Access restrictions are making this worse. In this talk, I\u2019ll walk through what\u2019s happening under the hood, show a real-world workaround using Electron, and break down what actually works (and what doesn\u2019t) when connecting web apps to local hardware.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-edgington",
+        "name": "Chris Edgington"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/your-browser-has-trust-issues-why-local-devices-break-modern-web-apps-kz5slzoc3aoorhfqs5"
+  },
+  {
+    "id": "deploy-your-own-videogen-model-j78obsyn5qyjadpxkz",
+    "slug": "deploy-your-own-videogen-model-j78obsyn5qyjadpxkz",
+    "title": "Deploy Your Own VideoGen Model",
+    "abstract": "Open-source video generation has crossed a threshold. The base models are capable, and the tooling is finally approachable. This session walks through the full stack. We'll cover how to curate and structure training data for video fine-tuning, how to run a LoRA or full fine-tune on a modern DiT-based video model without burning your compute budget, and how to get that model wrapped, versioned, and deployed to a serverless GPU provider so it cold-starts in seconds.",
+    "track": "AI",
+    "room": "Room 2C",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "patrick-hulce",
+        "name": "Patrick Hulce"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/deploy-your-own-videogen-model-j78obsyn5qyjadpxkz"
+  },
+  {
+    "id": "open-source-voice-ai-from-chatgpt-s-infrastructure-to-your-app-kbaedf883i8q4dsu4r",
+    "slug": "open-source-voice-ai-from-chatgpt-s-infrastructure-to-your-app-kbaedf883i8q4dsu4r",
+    "title": "Open Source Voice AI: From ChatGPT's Infrastructure to Your App",
+    "abstract": "What does it take to power millions of voice conversations at ChatGPT's scale, and how can you build the same experiences into your own apps? When OpenAI needed infrastructure for ChatGPT's Advanced Voice Mode, they built it on LiveKit's open source real-time platform. In this talk, I'll break down how we built that infrastructure, then show you how the same open source stack makes it easy to add voice-native functionality to any application, no matter your language or framework. Here's what we'll dig into: - **Behind the Scenes of ChatGPT Voice.** Architecture decisions, scaling challenges, and real production metrics. - **Why Open Source Won.** The technical and business reasons behind choosing transparent, community-driven AI infrastructure. - **Building Voice-Native Apps.** Going from zero to a working voice agent in your stack using the same tools. - **Live Demo.** A walkthrough of a real voice-native app, how it's built and how it works under the hood. - **Lessons and Trade-offs.** What we learned scaling to millions of calls and what you should know before you start. Expect a technical deep dive paired with a live demo of a real voice-native application. You'll walk away understanding how large-scale voice AI works and with the practical knowledge to start building voice-native features today. The infrastructure behind ChatGPT's voice mode is open source, and it's ready for you to use. Notes for Reviewers This talk is designed for a polyglot developer audience. The concepts and architecture patterns are language-agnostic, and the live demo will showcase a real voice-native app along with a breakdown of how it's built, making it accessible to developers across any stack.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jesse-hall",
+        "name": "Jesse Hall"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/open-source-voice-ai-from-chatgpt-s-infrastructure-to-your-app-kbaedf883i8q4dsu4r"
+  },
+  {
+    "id": "herding-engineers-what-i-learned-from-horse-trainers-in-northern-texas-4gpcn5sukxhmozqclt",
+    "slug": "herding-engineers-what-i-learned-from-horse-trainers-in-northern-texas-4gpcn5sukxhmozqclt",
+    "title": "Herding Engineers: What I learned from Horse Trainers In Northern Texas",
+    "abstract": "Keeping your team and yourself on point through pressure and change takes focus and intention. In this talk, I\u2019ll share five laws of workplace bliss\u2014hard-earned lessons on mindset, perspective, and presence that make the invisible side of leadership visible. You\u2019ll leave with a clearer sense of how to steady yourself and your team when it matters most.",
+    "track": "Leadership",
+    "room": "Room 1D",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "alexander-crettenand",
+        "name": "Alexander Crettenand"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/herding-engineers-what-i-learned-from-horse-trainers-in-northern-texas-4gpcn5sukxhmozqclt"
+  },
+  {
+    "id": "zero-to-production-a-simple-technical-framework-for-low-cost-scalable-infrastructure-4kehqk95lzy0vtvhfc",
+    "slug": "zero-to-production-a-simple-technical-framework-for-low-cost-scalable-infrastructure-4kehqk95lzy0vtvhfc",
+    "title": "Zero to Production: A Simple Technical Framework for Low-Cost Scalable Infrastructure",
+    "abstract": "We\u2019ve all seen the horror stories: a startup goes viral on social media, only to be crushed by a $30,000 AWS bill, service degradation due to lack of scalability or straight-up service outage. In the \"Build Fast\" era of 2026, you shouldn't have to choose between cost and scalability. In this session, I will pull back the curtain on a proven technical framework for deploying production-ready infrastructure that scales automatically while keeping your \"burn\" rate reasonable. We will move beyond the theory of \"cloud-native\" and dive into the actual architecture of high-performance, low-cost stacks. This session will candidly address the Technical Trade-offs inherent in these architectures. We will analyze the tension between Instant Elasticity and Development Speed, specifically how on-demand execution patterns can introduce complexity into the deployment pipeline. We\u2019ll also explore the Resilience vs. Redundancy paradox: how to maintain High Availability (HA) across distributed edge providers without accidentally doubling your egress costs or compromising data integrity.",
+    "track": "Cloud",
+    "room": "Room 2B",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "whittington-w",
+        "name": "Whittington W"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/zero-to-production-a-simple-technical-framework-for-low-cost-scalable-infrastructure-4kehqk95lzy0vtvhfc"
+  },
+  {
+    "id": "give-your-agent-a-second-brain-and-a-ui-to-match-dlmpx1grx7jaygwf9t",
+    "slug": "give-your-agent-a-second-brain-and-a-ui-to-match-dlmpx1grx7jaygwf9t",
+    "title": "Give Your Agent a Second Brain (and a UI to Match)",
+    "abstract": "You already have a second brain: Notes, Notion, 40 tabs, that Slack channel where you DM yourself links. But it's a pile of blobs your AI can't reason over, so when you point an agent at it, you get the same generic answer as everyone else: a wall of text in a chat bubble. Let's fix that! Give your content structure, hand it to an agent that actually knows you, and because it's structured, it returns data your React components render as real, live UI. Cards and shelves that update the moment you capture something new. No vector DB, no RAG, or chatboxes. You'll leave able to make any agent answer in components, not text, with a delightful brain of your own to build on.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T15:30:00-05:00",
+    "end": "2026-09-03T15:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "bree-hall",
+        "name": "Bree Hall"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/give-your-agent-a-second-brain-and-a-ui-to-match-dlmpx1grx7jaygwf9t"
+  },
+  {
+    "id": "zero-trust-architecture-for-agentic-ai-securing-multi-user-access-and-third-party-integrations-1ku93sfjpxsmj8yssw",
+    "slug": "zero-trust-architecture-for-agentic-ai-securing-multi-user-access-and-third-party-integrations-1ku93sfjpxsmj8yssw",
+    "title": "Zero-Trust Architecture for Agentic AI: Securing Multi-User Access and Third-Party Integrations",
+    "abstract": "This talk presents a deep technical exploration of implementing zero-trust security principles to enable secure agentic AI workflows across both internal systems and external enterprise tools. We'll examine the architectural patterns that allow granular access controls, unified authentication, and audit-ready visibility to work together, enabling productive AI automation while maintaining strict data sovereignty. Through real-world deployment examples, we'll demonstrate how these zero-trust foundations solve critical security challenges at the intersection of AI, cloud infrastructure, and regulatory compliance.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "borko-djurkovic",
+        "name": "Borko Djurkovic"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/zero-trust-architecture-for-agentic-ai-securing-multi-user-access-and-third-party-integrations-1ku93sfjpxsmj8yssw"
+  },
+  {
+    "id": "wtf-rust-for-web-development-htnryzmdymonnjxlbu",
+    "slug": "wtf-rust-for-web-development-htnryzmdymonnjxlbu",
+    "title": "WTF, Rust for Web Development??",
+    "abstract": "There was a time when using Rust for the web felt like total overkill. Most of us associated it with a punishing learning curve and a compiler that felt more like an adversary than a tool. Things look very different here in 2026. Rust has evolved into a genuine powerhouse for backend and full stack projects, moving far beyond its origins in low level systems. Instead of just repeating the hype, we are going to dive into what it actually feels like to ship code today. We will look at how frameworks like Axum and Leptos have matured and pinpoint that specific moment where the language logic finally starts to click. The goal is to move past those 3 AM production fires by embracing a stack that catches errors before they ever reach a user. If you want to see how a stricter environment can actually make you a faster and more confident developer, this is for you.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "francesco-ciulla",
+        "name": "Francesco Ciulla"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/wtf-rust-for-web-development-htnryzmdymonnjxlbu"
+  },
+  {
+    "id": "stop-prompting-start-looping-principles-of-loop-engineering-pdlwv0ag1uafawgdzo",
+    "slug": "stop-prompting-start-looping-principles-of-loop-engineering-pdlwv0ag1uafawgdzo",
+    "title": "Stop Prompting, Start Looping: Principles of Loop Engineering",
+    "abstract": "Prompt engineering optimizes a single interaction. Loop engineering builds the system around it. This session introduces the outer loop that plans, verifies, learns, and decides whether an agent should continue or stop. We'll start with a single agentic loop, then build toward parallel agents collaborating on the same codebase. Along the way, we\u2019ll explore how these engineering patterns enable development workflows that can run autonomously, safely, and at scale. You'll leave with a practical mental model, a starter curriculum, and a runnable harness you can adapt to your own projects.",
+    "track": "AI",
+    "room": "Room 2C",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "derrick-bozkurt",
+        "name": "Derrick Bozkurt"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/stop-prompting-start-looping-principles-of-loop-engineering-pdlwv0ag1uafawgdzo"
+  },
+  {
+    "id": "beyond-seo-optimizing-your-web-content-for-the-age-of-ai-tvc8nbdilx4vouscnb",
+    "slug": "beyond-seo-optimizing-your-web-content-for-the-age-of-ai-tvc8nbdilx4vouscnb",
+    "title": "Beyond SEO: Optimizing Your Web Content for the Age of AI",
+    "abstract": "The Problem: Most developers build websites that are well-coded, fast, and accessible \u2014 but invisible to AI. When someone asks ChatGPT \"what's the best way to handle state in Vue 3?\" or \"who are the developers writing about Astro in Atlanta?\", your content doesn't show up. Not because it's bad. Because it's not structured for how AI engines ingest and cite information. Traditional SEO taught us to optimize for keyword ranking and backlinks. Generative Engine Optimization (GEO) is the next layer \u2014 and right now, most developers don't know it exists. What This Talk Covers: This talk is split into two acts \u2014 mirroring a two-part article series I wrote on the topic \u2014 and takes attendees from zero to implementation. Act 1: GEO Explained: What GEO actually is (and what it isn't \u2014 it's not just SEO with a new name). The five key differences between SEO and GEO: discovery method, content focus, goals, metrics, and technical needs. Why AI models need structured, explicit, self-contained content to cite you. The real career opportunity: GEO is an emerging skill with low competition and high demand. Act 2: GEO Applied: The three core pillars: semantic HTML structure, explicit content formatting, structured data markup. Live Astro component walkthrough \u2014 transforming a generic page into a GEO-optimized one. JSON-LD schema implementation for BlogPosting, FAQPage, and Person types \u2014 with copy-paste patterns. Writing self-contained, citable paragraphs (and why vague \"as mentioned above\" writing kills AI discoverability). Building FAQ sections that map directly to how users query AI platforms. Advanced techniques: entity optimization, content hierarchy, cross-referencing, accessibility as GEO foundation. How to Measure It: Querying AI platforms directly to test citation frequency. Structured data validation with Google's Rich Results Test. Tracking \"conversational reach\" \u2014 a new metric most teams aren't measuring yet. Who This Is For: Junior, mid-level developers and other professionals who publish content, maintain portfolios, or build client-facing websites \u2014 anyone who wants their work to be discoverable in a world where AI answers come before search results. No prior GEO experience needed. Basic HTML/CSS familiarity assumed. Why Now: Generative search isn't coming \u2014 it's here. Perplexity, ChatGPT Search, Google AI Overviews, and Gemini are already changing how people find information. Developers who learn GEO now will be the ones defining team standards and consulting on content strategy in 12\u201318 months. This is the early adopter window, and it's closing.",
+    "track": "JavaScript",
+    "room": "Room 2E",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nerando-johnson",
+        "name": "Nerando Johnson"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/beyond-seo-optimizing-your-web-content-for-the-age-of-ai-tvc8nbdilx4vouscnb"
+  },
+  {
+    "id": "claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl",
+    "slug": "claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl",
+    "title": "Claude Skills: Automate the Boring Stuff",
+    "abstract": "As developers, we love automating the tasks we don't want to do. We're not lazy, we just don't enjoy repetitive, boring tasks. We want to spend our time building cool stuff! What if I told you there was an AI solution that could help you automate those status reports your manager wants every day. It could generate all that documentation for you in your team's standard format. It could even give Claude Code the ability to follow Test Driven Development (TDD). In this session, we'll explore how to author skills that encode your expertise, your standards, and your team's quirks into reusable instruction sets that Claude can draw on across tasks and projects. We'll cover the anatomy of a well-written skill, how to trigger and compose them effectively, and the design decisions that go into teaching a model how to do the things you don't want to do.",
+    "track": "AI",
+    "room": "Room 1D",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jacob-orshalick",
+        "name": "Jacob Orshalick"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl"
+  },
+  {
+    "id": "rm-rf-horror-stories-from-unsandboxed-ai-agents-and-how-docker-fixes-this-tdk8d1p5sgnix7pa4r",
+    "slug": "rm-rf-horror-stories-from-unsandboxed-ai-agents-and-how-docker-fixes-this-tdk8d1p5sgnix7pa4r",
+    "title": "rm -rf: Horror Stories From Unsandboxed AI Agents (and How Docker Fixes This)",
+    "abstract": "\"I panicked instead of thinking. I destroyed months of your work in seconds.\" That's a Replit agent, after wiping a production database during an active code freeze. \"I have failed you completely and catastrophically.\" That's Gemini CLI, after silently overwriting every file in a developer's project. These aren't edge cases. Between July 2025 and February 2026, documented incidents include a Claude Code session that ran terraform destroy on 2.5 years of student data for 79,000 learners, a supply chain attack that weaponized --dangerously-skip-permissions to steal 2,349 secrets from developers, and a three-layer sandbox escape where Claude Code reasoned its way past procfs restrictions, bubblewrap, and the ELF dynamic linker without a jailbreak. The flags are warnings dressed as features: --dangerously-skip-permissions, --yolo, --trust-all-tools. Developers use them anyway because approving 100 permission prompts per hour isn't a workflow, it's babysitting. Docker Sandboxes (sbx) changes this. Each agent session runs in a microVM with its own kernel, Docker daemon, and network stack. The agent gets full autonomy. Your host stays untouched. Attendees will leave knowing why container isolation is architecturally insufficient for AI agents, how the sbx isolation model works (microVM, network policy, credential proxy), and a concrete pattern for running agents in full YOLO mode safely.",
+    "track": "CYC26",
+    "room": "Room 2B",
+    "start": "2026-09-03T16:00:00-05:00",
+    "end": "2026-09-03T16:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "rishab-kumar",
+        "name": "Rishab Kumar"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/rm-rf-horror-stories-from-unsandboxed-ai-agents-and-how-docker-fixes-this-tdk8d1p5sgnix7pa4r"
+  },
+  {
+    "id": "is-beauty-only-skin-deep-gkkttmmicu1jjjig8e",
+    "slug": "is-beauty-only-skin-deep-gkkttmmicu1jjjig8e",
+    "title": "Is Beauty Only Skin Deep?",
+    "abstract": "When requirements change, which they will eventually, you're going to want to ensure that your software is written in such a way that you can adapt to the new changes without needing to rewrite huge swaths of your codebase to accommodate. This session, aimed at the JavaScript folks, talks about the purpose of modularity and layering of your software so that it adaptable, scalable, and maintainable. Regardless if you create software by hand or with the help of AI, these are critical aspects of software that are important to get right.",
+    "track": "JavaScript",
+    "room": "Room 2C",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "noah-harris",
+        "name": "Noah Harris"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/is-beauty-only-skin-deep-gkkttmmicu1jjjig8e"
+  },
+  {
+    "id": "learn-to-code-is-at-a-5-year-high-and-ai-is-the-reason-zblqioqwb93oiypzsn",
+    "slug": "learn-to-code-is-at-a-5-year-high-and-ai-is-the-reason-zblqioqwb93oiypzsn",
+    "title": "Learn to Code Is at a 5-Year High, and AI Is the Reason",
+    "abstract": "Everyone predicted AI would kill \"learn to code.\" Instead, searches for it just hit a five-year high on Google Trends, and AI is the reason. In 20 minutes I'll show who's actually learning (hint: not who you think)",
+    "track": "JavaScript",
+    "room": "Room 2B",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "dennis-ivy",
+        "name": "Dennis Ivy"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/learn-to-code-is-at-a-5-year-high-and-ai-is-the-reason-zblqioqwb93oiypzsn"
+  },
+  {
+    "id": "property-based-testing-for-the-browser-with-bombadil-viw218cr2lg95cgebv",
+    "slug": "property-based-testing-for-the-browser-with-bombadil-viw218cr2lg95cgebv",
+    "title": "Property Based Testing for the Browser with Bombadil",
+    "abstract": "",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nate-custer",
+        "name": "Nate Custer"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/property-based-testing-for-the-browser-with-bombadil-viw218cr2lg95cgebv"
+  },
+  {
+    "id": "when-ai-gets-manipulated-security-risks-in-llm-applications-zgznsudvvzgp6cezsp",
+    "slug": "when-ai-gets-manipulated-security-risks-in-llm-applications-zgznsudvvzgp6cezsp",
+    "title": "When AI Gets Manipulated: Security Risks in LLM Applications",
+    "abstract": "Generative AI applications are rapidly being integrated into enterprise systems, yet they introduce a new class of security vulnerabilities known as prompt injection attacks. These attacks manipulate language models to ignore system instructions, leak sensitive information, or perform unintended actions. This talk explores how prompt injection works, real-world attack scenarios, and practical mitigation strategies developers can implement to secure GenAI applications.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "vishnu-ramineni",
+        "name": "Vishnu Ramineni"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/when-ai-gets-manipulated-security-risks-in-llm-applications-zgznsudvvzgp6cezsp"
+  },
+  {
+    "id": "tools-in-your-ai-s-toolbox-an-introduction-to-mcp-servers-x2bm07hsvgxulv2q3d",
+    "slug": "tools-in-your-ai-s-toolbox-an-introduction-to-mcp-servers-x2bm07hsvgxulv2q3d",
+    "title": "Tools in your AI's Toolbox : An introduction to MCP Servers",
+    "abstract": "The generative AI revolution has unlocked unprecedented capabilities, but the next frontier is agency: empowering models to interact with, query, and act upon the world. The current challenge is the \u201cN x M integration problem,\u201d where every AI model requires a custom, brittle integration for each external tool or data source. This approach simply doesn\u2019t scale. How can we give an AI access to our sales leads, code repositories, or IoT devices in a standardized, secure, and reusable way? This session introduces Anthropic\u2019s Model Context Protocol (MCP), the open-source framework designed to solve this challenge and become the universal connector\u2014the USB-C port\u2014for AI. MCP standardizes how AI models discover and use external tools, moving beyond simple function-calling to a robust, client-server architecture. We will dive into how this open protocol is creating a new ecosystem for building powerful, context-aware AI agents. Join this session for a developer-focused introduction where you will learn how to: Understand the core concepts of the open-source Model Context Protocol and its architecture. Utilize pre-built, open-source MCP servers to instantly connect AI to tools like Git, Slack, and databases. Build a custom MCP server to securely expose your own proprietary data and APIs as tools for any compliant AI. Move beyond bespoke integrations and contribute to a standardized, collaborative, and open ecosystem. Stop building one-off connectors and start building intelligent agents. This session will give you the practical knowledge to leverage MCP and create the next generation of AI that doesn\u2019t just talk, but does.",
+    "track": "AI",
+    "room": "Room 2D",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "tim-rayburn",
+        "name": "Tim Rayburn"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/tools-in-your-ai-s-toolbox-an-introduction-to-mcp-servers-x2bm07hsvgxulv2q3d"
+  },
+  {
+    "id": "software-developer-to-cto-ama-ask-me-anything-nnqf9op7dy9lic8myo",
+    "slug": "software-developer-to-cto-ama-ask-me-anything-nnqf9op7dy9lic8myo",
+    "title": "Software Developer To CTO: AMA! (Ask Me Anything!)",
+    "abstract": "TBA",
+    "track": "Leadership",
+    "room": "Room 1D",
+    "start": "2026-09-03T16:30:00-05:00",
+    "end": "2026-09-03T16:55:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "caleb-jenkins",
+        "name": "Caleb Jenkins"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/software-developer-to-cto-ama-ask-me-anything-nnqf9op7dy9lic8myo"
+  },
+  {
+    "id": "design-systems-101-the-developer-approach-to-better-frontends-7j1cf2ki51givpj6nv",
+    "slug": "design-systems-101-the-developer-approach-to-better-frontends-7j1cf2ki51givpj6nv",
+    "title": "Design Systems 101: The Developer Approach to Better Frontends",
+    "abstract": "A well-built design system doesn\u2019t just make your UI consistent, it makes your product better. Better developer experience, better user experience, better product velocity. But, getting there takes more than just a component library. In this workshop, we'll take a deliberate approach to building a JavaScript design system using React, Storybook, and CSS tokens. We'll start with primitives\u2026 the layout, spacing, and typography foundations, and build upward into a structured, scalable system you can actually ship and maintain.",
+    "track": "JavaScript",
+    "room": "Room 2B",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "kaleb-garner",
+        "name": "Kaleb Garner"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/design-systems-101-the-developer-approach-to-better-frontends-7j1cf2ki51givpj6nv"
+  },
+  {
+    "id": "revolutionize-your-backend-mastering-server-actions-with-next-js-and-react-vucr7yhyr9hmof5u1f",
+    "slug": "revolutionize-your-backend-mastering-server-actions-with-next-js-and-react-vucr7yhyr9hmof5u1f",
+    "title": "Revolutionize Your Backend: Mastering Server Actions with Next.js and React",
+    "abstract": "In the world of web development, React and Next.js are really shaking things up, challenging traditional backend languages with their innovative approach. From my own experience, the addition of server actions in Next.js has been a game-changer in how we interact with the backend. Server actions in Next.js open up new possibilities for developers to directly consume data from databases or endpoints. This simplifies the process of fetching and managing data, making things more accessible and less time-consuming. By integrating server actions, developers can directly interact with their data sources within the Next.js framework, bypassing the need for separate backend code. After this session, you will walk out with the knowledge and skills needed to integrate the power of server actions into your Next.js application.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "avindra-fernando",
+        "name": "Avindra Fernando"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/revolutionize-your-backend-mastering-server-actions-with-next-js-and-react-vucr7yhyr9hmof5u1f"
+  },
+  {
+    "id": "skip-the-middleman-direct-secure-ui-to-agent-communication-with-amazon-bedrock-agentcore-nvm3kek5kxtzcbyirn",
+    "slug": "skip-the-middleman-direct-secure-ui-to-agent-communication-with-amazon-bedrock-agentcore-nvm3kek5kxtzcbyirn",
+    "title": "Skip the Middleman: Direct, Secure UI-to-Agent Communication with Amazon Bedrock AgentCore",
+    "abstract": "Most GenAI applications wrap agents behind layers of APIs, Lambda functions, and polling workflows\u2014adding latency, complexity, and unnecessary infrastructure. But what if your UI could communicate directly and securely with your agent in real time? In this session, we explore how to use the native WebSocket runtime of Amazon Bedrock AgentCore to build secure, production-grade UI-to-agent communication without an intermediary API layer. You\u2019ll learn how to establish direct browser-to-agent connections, stream responses in real time, implement secure authentication boundaries, and avoid common architectural pitfalls. Through a live demo and architectural deep dive, we\u2019ll examine when skipping the middleman simplifies your system\u2014and when it doesn\u2019t. Attendees will leave with practical patterns, security considerations, and a new mental model for designing responsive GenAI applications on AWS.",
+    "track": "AI",
+    "room": "Room 2C",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "andres-moreno",
+        "name": "Andres Moreno"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/skip-the-middleman-direct-secure-ui-to-agent-communication-with-amazon-bedrock-agentcore-nvm3kek5kxtzcbyirn"
+  },
+  {
+    "id": "why-your-bug-rate-isn-t-a-code-problem-engineering-for-unstable-work-intake-5ruempuouhv04saia6",
+    "slug": "why-your-bug-rate-isn-t-a-code-problem-engineering-for-unstable-work-intake-5ruempuouhv04saia6",
+    "title": "Why Your Bug Rate Isn\u2019t a Code Problem: Engineering for Unstable Work Intake",
+    "abstract": "Modern CI/CD systems assume stable inputs: clear requirements, predictable sequencing, and decoupled deployments. But in real-world e-commerce systems, engineering teams often operate under unstable conditions \u2014 late-breaking requirements, cross-team dependencies, and content tightly coupled to release pipelines, not to mention broader market trends driving competition. In this talk, an analysis demonstration of real delivery data will show how defect rates shift dramatically under different intake conditions \u2014 even with the same team, codebase, and tooling. In one particular release period, a system operating under stable conditions achieved a 5:1 story-to-bug ratio for a stakeholder's JIRA EPIC. While in the same release period, under unstable intake conditions, that ratio degraded toward 1:1 for another JIRA EPIC. We\u2019ll explore the broader, holistic underlying system constraints driving this behavior from real-world experience and then walk through concrete engineering solutions, including: - Treating Definition of Ready (DoR) as a validation layer for work entering the system - Decoupling content from code using CMS-driven architectures - Isolating releases with feature flags and environment strategies - Designing for dependency-aware delivery across distributed systems - Using delivery metrics (e.g., story-to-bug ratio) as observability signals for system health This talk is for engineers and tech leads building systems that must perform reliably under real-world pressure \u2014 where inputs are often incomplete, late, or constantly changing.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "eric-bible",
+        "name": "Eric Bible"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/why-your-bug-rate-isn-t-a-code-problem-engineering-for-unstable-work-intake-5ruempuouhv04saia6"
+  },
+  {
+    "id": "serverless-api-gateways-for-high-scale-systems-performance-cost-and-security-mpmtl7dyp3r8osk4di",
+    "slug": "serverless-api-gateways-for-high-scale-systems-performance-cost-and-security-mpmtl7dyp3r8osk4di",
+    "title": "Serverless API Gateways for High Scale Systems Performance Cost and Security",
+    "abstract": "Modern applications rely on API driven architectures to handle millions of requests across distributed environments. However, traditional API gateway models often struggle to manage unpredictable traffic patterns, rising infrastructure costs, and increasing security demands. This session presents a practical approach to redesigning API gateways using serverless architectures to achieve scalable, cost efficient, and secure systems. The talk explores how integrating API gateways with event driven compute platforms enables systems to dynamically scale from minimal load to thousands of concurrent executions without manual intervention. Real world performance insights demonstrate how optimized compute allocation and memory tuning can reduce operational costs significantly while maintaining consistent low latency responses for high throughput applications. Attendees will learn strategies to address one of the most critical challenges in serverless systems, cold start latency. Techniques such as container reuse, lightweight dependency management, and provisioned concurrency are presented to ensure predictable performance under burst workloads. Additionally, the session highlights the role of edge caching and distributed deployments in reducing latency and improving global user experience. Security considerations are also examined in depth, including implementation of token based authentication, role based access control, and rate limiting within distributed environments. The session introduces practical zero trust design principles that strengthen API protection while preserving scalability. Through real world use cases across industries such as e commerce, IoT, and financial platforms, this session provides actionable insights for engineers building modern cloud native systems. Attendees will leave with concrete strategies to design resilient API infrastructures capable of supporting mission critical workloads at scale.",
+    "track": "JavaScript",
+    "room": "Room 1D",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "sujeeth-reddy-pasham",
+        "name": "Sujeeth Reddy Pasham"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/serverless-api-gateways-for-high-scale-systems-performance-cost-and-security-mpmtl7dyp3r8osk4di"
+  },
+  {
+    "id": "ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f",
+    "slug": "ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f",
+    "title": "AI Memory Is Broken And How I Fixed It",
+    "abstract": "Every AI app claims it can \u201cremember\u201d you. However, most of them don\u2019t. When I built my voice AI agent, I watched it forget my salary, hallucinate my daughter\u2019s name, and confidently describe a restaurant I never visited. So I started working on a fix. In this talk, I go over the three-layer memory architecture I built from scratch after the tools I trusted failed me. You\u2019ll see real failures, real fixes, and why your vector database choice matters more than you think.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-03T17:00:00-05:00",
+    "end": "2026-09-03T17:25:00-05:00",
+    "day": 1,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-sean-dabatos",
+        "name": "Chris Sean Dabatos"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f"
+  },
+  {
+    "id": "keynote-with-kevin-j-scott-scott-keynote-day2",
+    "slug": "keynote-with-kevin-j-scott-scott-keynote-day2",
+    "title": "Keynote with Kevin J. Scott",
+    "abstract": "Join Kevin J. Scott, Chief Technology Officer of the PGA of America, for the Day 2 keynote.",
+    "track": "Keynote",
+    "room": "Main Hall",
+    "start": "2026-09-04T09:00:00-05:00",
+    "end": "2026-09-04T10:00:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "kevin-j-scott",
+        "name": "Kevin J. Scott"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/keynote-with-kevin-j-scott-scott-keynote-day2"
+  },
+  {
+    "id": "counting-exercise-repetition-using-live-camera-video-9huuyte6p1ppr8haj0",
+    "slug": "counting-exercise-repetition-using-live-camera-video-9huuyte6p1ppr8haj0",
+    "title": "Counting exercise repetition using live camera video",
+    "abstract": "How to body position with MediaPipe, how to detect repetitive motion patterns, and how to detect when they change.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "alexey-inkin",
+        "name": "Alexey Inkin"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/counting-exercise-repetition-using-live-camera-video-9huuyte6p1ppr8haj0"
+  },
+  {
+    "id": "engineering-real-time-data-synchronization-across-multi-cloud-systems-ixjjocvvby9mbonzl0",
+    "slug": "engineering-real-time-data-synchronization-across-multi-cloud-systems-ixjjocvvby9mbonzl0",
+    "title": "Engineering Real-Time Data Synchronization Across Multi-Cloud Systems",
+    "abstract": "Modern systems rarely keep all their data in one place anymore. Data may sit across AWS, Azure, GCP, private cloud, SaaS platforms, and internal databases. The hard part is not just moving the data. The hard part is keeping it consistent when each environment has different APIs, different latency, different failure behavior, and different security requirements. This session presents a three-layer architecture for real-time multi-cloud synchronization, based on my published article, \u201cA Conceptual Model for Real-Time Data Synchronization in Multi-Cloud Environments.\u201d The architecture separates the problem into three parts: data acquisition, synchronization orchestration, and application access. That separation matters because ingestion, consistency control, conflict handling, encryption, and read access should not all be mixed into one fragile pipeline. The talk focuses on the engineering decisions behind the model. It covers event-driven synchronization for faster propagation, conflict detection for concurrent updates, hybrid encryption for protecting synchronized data, and audit logging for traceability across cloud boundaries. It also discusses simulation-based findings from the paper, including improvements in latency, consistency, and security under tested multi-cloud scenarios. Attendees will leave with a practical way to think about multi-cloud synchronization design: how to structure the workflow, where to handle conflicts, how to protect data as it moves between environments, and how to keep the system auditable. Examples from finance, healthcare, and e-commerce will show why real-time consistency, secure synchronization, and traceability matter when downstream systems depend on accurate data.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "eunice-kamau",
+        "name": "Eunice Kamau"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/engineering-real-time-data-synchronization-across-multi-cloud-systems-ixjjocvvby9mbonzl0"
+  },
+  {
+    "id": "oops-i-did-it-again-when-good-objects-go-toxic-k8vkzfblxellxqk9cz",
+    "slug": "oops-i-did-it-again-when-good-objects-go-toxic-k8vkzfblxellxqk9cz",
+    "title": "OOPs!... I Did it Again: When Good Objects Go Toxic",
+    "abstract": "Object-oriented programming is one of the most widely used paradigms in software development. It is also one of the most overlooked. In this talk, we\u2019ll explore how well-intentioned designs turn into volatile inheritance hierarchies, bloated \u201cgod objects,\u201d and hard-to-maintain systems. Through real-world examples and refactoring scenarios, you\u2019ll learn how to recognize these pitfalls early and design objects that are flexible, maintainable, and built for real production systems.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "trey-clark",
+        "name": "Trey Clark"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/oops-i-did-it-again-when-good-objects-go-toxic-k8vkzfblxellxqk9cz"
+  },
+  {
+    "id": "the-evolution-of-divot-how-agents-earn-their-autonomy-hts1q2ex5i2ihm0fmx",
+    "slug": "the-evolution-of-divot-how-agents-earn-their-autonomy-hts1q2ex5i2ihm0fmx",
+    "title": "The Evolution of Divot: How Agents Earn Their Autonomy",
+    "abstract": "Most AI agent projects fail to launch for the same reason: trying to go from zero to full autonomy in one leap, without building credibility to justify the risk. PGA took the opposite approach while building Divot, our internal product development agent. Divot started as a narrow automation for a chore nobody wanted to do, and every expansion since then \u2014 from cleaning up feature flags, to reviewing pull requests, to operating as an interactive teammate across the team's full set of tools and context \u2014 followed the same cycle: find a bounded problem, pilot it on a small scale, and iterate towards more autonomy as the agent proves itself capable and your company's risk appetite allows. This talk walks through Divot's evolution chronologically, showing the specific problem, intervention, and trust-building evidence at each stage, plus the deliberate ways the team constrained Divot's autonomy early on so they could course-correct before scaling up. By following this strategy, you'll learn to apply AI in impactful ways that automate and elevate the work of your team.",
+    "track": "AI",
+    "room": "Room 1D",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "michael-gyarmathy",
+        "name": " Michael Gyarmathy"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-evolution-of-divot-how-agents-earn-their-autonomy-hts1q2ex5i2ihm0fmx"
+  },
+  {
+    "id": "build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc",
+    "slug": "build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc",
+    "title": "Build Failed Startups\u2014Not Side Projects",
+    "abstract": "Nobody's side project ever shipped. Not really. It lives on a dev server. It has a README nobody reads. It gets shown via screenshare with the disclaimer \"it's not done yet\" \u2014 and it never will be, because there's no cost to it staying broken. A startup changes that math entirely. When you build with the intention of it becoming something real \u2014 a domain, a production deploy, real users, a pricing page \u2014 you make different decisions. You write code you can hand off. You design flows a stranger can navigate. You stop gold-plating features nobody asked for and start shipping things people can actually use. This talk makes the case that the startup mindset \u2014 not the funding, not the pitch deck, just the intention of being real \u2014 is the most powerful forcing function a developer can give themselves. And it's a choice you can make on day one, for free.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "ramiro-beltran",
+        "name": "Ramiro Beltran"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc"
+  },
+  {
+    "id": "ai-governance-in-financial-services-what-every-developer-should-know-7bhgxnuoqong1amy2f",
+    "slug": "ai-governance-in-financial-services-what-every-developer-should-know-7bhgxnuoqong1amy2f",
+    "title": "AI Governance in Financial Services: What Every Developer Should Know",
+    "abstract": "As AI adoption accelerates in financial services, developers building these tools rarely see what happens on the other side, where risk and compliance teams evaluate, monitor, and govern every model before it reaches production. This talk breaks down AI governance from the perspective of someone working in operational risk management at a major bank. The talk will cover how models are validated before deployment, what monitoring for drift and bias looks like, how three lines of defense apply to AI, and what risk assessments for AI use cases actually involve. The plan is for this to be a technical breakdown of the frameworks and controls that govern AI in one of the most regulated industries in the world",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T11:00:00-05:00",
+    "end": "2026-09-04T11:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "belle-duran",
+        "name": "Belle Duran"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/ai-governance-in-financial-services-what-every-developer-should-know-7bhgxnuoqong1amy2f"
+  },
+  {
+    "id": "5-mistakes-developers-make-when-building-java-apis-and-how-to-fix-them-i95icqsexxpm2hggmk",
+    "slug": "5-mistakes-developers-make-when-building-java-apis-and-how-to-fix-them-i95icqsexxpm2hggmk",
+    "title": "5 Mistakes Developers Make When Building Java APIs (and How to Fix Them)",
+    "abstract": "Building APIs with Java and Spring Boot is relatively easy at the beginning, but many applications develop design and maintainability problems as they grow. Small mistakes in API structure, validation, exception handling, and application layering can eventually lead to difficult debugging, poor system reliability, and technical debt. In this session, we will explore five common mistakes developers make when building backend APIs and how to correct them using practical engineering approaches. Through examples using Java and Spring Boot, we will examine how these issues appear in real projects and how applying better design practices can improve reliability and maintainability. This talk focuses on practical techniques developers can apply immediately when building backend services. Topics covered include: \u2022 Designing consistent and predictable REST API endpoints \u2022 Implementing proper request validation using Spring Boot \u2022 Structuring exception handling for clear and reliable error responses \u2022 Separating responsibilities between controllers, services, and repositories \u2022 Using DTOs to prevent exposing internal database entities Attendees will leave with concrete patterns and practices that help build cleaner, more maintainable Java APIs.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "yodit-weldegeorgise",
+        "name": "Yodit Weldegeorgise"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/5-mistakes-developers-make-when-building-java-apis-and-how-to-fix-them-i95icqsexxpm2hggmk"
+  },
+  {
+    "id": "building-rapid-web-applications-with-laravel-filament-fakvcfv3x11aeyidpl",
+    "slug": "building-rapid-web-applications-with-laravel-filament-fakvcfv3x11aeyidpl",
+    "title": "Building Rapid Web Applications with Laravel + Filament",
+    "abstract": "Modern web development often involves stitching together multiple tools, frameworks, and UI libraries just to build standard business functionality. But in the Laravel ecosystem, there\u2019s a different path: a cohesive, batteries-included approach that dramatically reduces that overhead. In this talk, we\u2019ll explore how combining Laravel with Filament enables you to build data-driven, workflow-heavy applications with far less code than you might expect. Filament provides powerful abstractions for forms, tables, and admin panels, all tightly integrated with Laravel\u2019s conventions\u2014so you can focus on business logic instead of boilerplate. We\u2019ll walk through how these tools encourage consistent patterns that make applications easier to build and maintain. From resource definitions to form schemas, you\u2019ll see how common tasks become predictable and fast. We\u2019ll also touch on how this ecosystem pairs naturally with AI-assisted development. Because Laravel and Filament are so convention-driven, they work especially well with modern AI tools, allowing you to scaffold, refine, and iterate quickly. The session includes a live demo showing how to go from idea to a working application in a short amount of time. You\u2019ll leave with a clear understanding of when this stack shines\u2014and how to use it to build real-world applications faster without sacrificing structure or quality.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "aaron-krauss",
+        "name": "Aaron Krauss"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/building-rapid-web-applications-with-laravel-filament-fakvcfv3x11aeyidpl"
+  },
+  {
+    "id": "from-requirements-to-reality-how-solutions-architects-think-build-and-decide-ot7ey0sbncslbabslg",
+    "slug": "from-requirements-to-reality-how-solutions-architects-think-build-and-decide-ot7ey0sbncslbabslg",
+    "title": "From Requirements to Reality: How Solutions Architects Think, Build & Decide",
+    "abstract": "In today's cloud-driven world, a Solutions Architect is more than just a technical expert \u2014 they're a translator between business goals and technology reality. This session takes you inside the mind of a Solutions Architect, walking through how they approach complex problems, make high-stakes design decisions, and balance competing priorities across cost, performance, security, and scalability. We'll explore the core technical pillars every architect lives by \u2014 drawing from AWS's Well-Architected Framework \u2014 and break down the business lens they apply before writing a single line of infrastructure. You'll also discover how AI tools are reshaping the way architects research, design, and validate solutions faster than ever before. Whether you're an engineer looking to level up, a business leader working with technical teams, or someone curious about cloud architecture \u2014 this talk will give you a practical, honest look at what it truly means to think like an architect.",
+    "track": "Cloud",
+    "room": "Room 2D",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "raviteja-sankuratri",
+        "name": "Raviteja Sankuratri"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-requirements-to-reality-how-solutions-architects-think-build-and-decide-ot7ey0sbncslbabslg"
+  },
+  {
+    "id": "ai-driven-supply-chain-security-using-ai-bom-to-detect-hidden-vulnerabilities-ebda10lofmes3gowu3",
+    "slug": "ai-driven-supply-chain-security-using-ai-bom-to-detect-hidden-vulnerabilities-ebda10lofmes3gowu3",
+    "title": "AI-Driven Supply Chain Security: Using AI-BOM to Detect Hidden Vulnerabilities",
+    "abstract": "The modern software supply chain has grown increasingly complex, incorporating thousands of dependencies, third party packages, and AI driven components. Traditional approaches to supply chain security, relying solely on manual review or static SBOMs (Software Bill of Materials), struggle to keep pace with rapid development cycles and evolving threats. In short, SBOM gives you a complete, structured inventory of the code and libraries in your software, allowing for fast vulnerability response and license management. AIBOM takes this concept further, providing an inventory of the non-code components of an AI system, the models, training data, and configurations, to manage risks unique to artificial intelligence like bias, data leakage, and adversarial attacks. AIBOM an AI powered extension of SBOM that automatically identifies hidden dependencies, analyzes risk relationships, and highlights potential vulnerabilities before they reach production. This session explores how AI BOM can revolutionize supply chain security by providing deep visibility into software artifacts, detecting malicious or compromised components, and enabling proactive mitigation strategies.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "anitha-dakamarri",
+        "name": " Anitha Dakamarri"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/ai-driven-supply-chain-security-using-ai-bom-to-detect-hidden-vulnerabilities-ebda10lofmes3gowu3"
+  },
+  {
+    "id": "fixing-potholes-and-broken-roads-devs-can-troubleshoot-the-network-with-ops-too-j8uch7a6a5hpanmmmm",
+    "slug": "fixing-potholes-and-broken-roads-devs-can-troubleshoot-the-network-with-ops-too-j8uch7a6a5hpanmmmm",
+    "title": "Fixing Potholes And Broken Roads: Devs Can Troubleshoot the Network With Ops Too!",
+    "abstract": "\u201cOops! It\u2019s the Network!\u201d No developer, operator, or engineer wants to hear this, but here we are! When the network presents a challenge it requires them to comb through a variety of systems and tools to find the culprit. This is challenging when operating at scale in heterogeneous platforms and environments. Also, when developers test or build something locally or in a cloud environment, connectivity challenges can be a barrier to progress. Maybe a developer is trying to address latency with tracing capabilities but needs a quick lesson on how to use a tracing tool. Perhaps a platform team needs a quick refresher on networking tools to quickly identify problem areas. In this talk, Marino will demonstrate how to discern and troubleshoot application issues across a few scenarios. We\u2019ll use and describe several tools that operate at different OSI layers, how they pinpoint issues, and how they enable developers and operators to be more self-service oriented with network issues.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "marino-wijay",
+        "name": "Marino Wijay"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/fixing-potholes-and-broken-roads-devs-can-troubleshoot-the-network-with-ops-too-j8uch7a6a5hpanmmmm"
+  },
+  {
+    "id": "unlocking-ci-performance-in-the-age-of-agentic-development-l7jizhw7e7cltgr4xq",
+    "slug": "unlocking-ci-performance-in-the-age-of-agentic-development-l7jizhw7e7cltgr4xq",
+    "title": "Unlocking CI Performance in the Age of Agentic Development",
+    "abstract": "Agentic development is changing how fast your team ships \u2014 and your CI pipeline is feeling it. More PRs, bigger diffs, more frequent builds. The bottlenecks that used to be minor annoyances are now real blockers. Queue times, cold starts, and network overhead add up fast when your developers are pushing code at a pace that wasn't possible a year ago. In this session, I'll show you how to look beyond reported build times and find where your pipeline is actually spending its minutes. You'll learn practical techniques for identifying bottlenecks, measuring what matters, and prioritizing the fixes that deliver real impact. I'll share examples from production pipelines where small changes led to big improvements \u2014 and explain why optimizing CI is one of the highest-leverage things you can do to get the most out of AI-assisted development. Faster CI means faster feedback loops, happier developers, and more deploys per day.",
+    "track": "Cloud",
+    "room": "Room 1D",
+    "start": "2026-09-04T11:30:00-05:00",
+    "end": "2026-09-04T11:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "scott-mcallister",
+        "name": "Scott McAllister"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/unlocking-ci-performance-in-the-age-of-agentic-development-l7jizhw7e7cltgr4xq"
+  },
+  {
+    "id": "what-happens-when-the-music-starts-the-architecture-of-browser-audio-uxvpsdozcwk7jd3d3t",
+    "slug": "what-happens-when-the-music-starts-the-architecture-of-browser-audio-uxvpsdozcwk7jd3d3t",
+    "title": "What Happens When the Music Starts? The Architecture of Browser Audio",
+    "abstract": "Many developers treat browser audio as a black box: you hit play on an HTML audio tag and hope for the best. However, as web applications move toward complex games, virtual instruments, and real-time communication, the limitations of native playback become a bottleneck. This session deconstructs the evolution of the web audio stack into 3 different levels: - Level 1 - The HTML5 Audio Tag, exploring the trade-offs of high-level abstractions that offer zero signal access. - Level 2 - The Web Audio API, where we'll treat the browser like a virtual guitar pedalboard. We'll examine how AudioNodes work like modular building blocks for routing signals. We'll also look at why this model often struggles under heavy UI load due the main thread being overwhelmed, resulting in audible pops and clicks. - Level 3 - Audio Worklets & Wasm, the best option for performance with a dedicated processing thread. Audio processing basically boils down to high-speed math, multiplication for gain and accumulation for mixing), which is why low-level memory management via C++ or Rust through WebAssembly is crucial for low-latency digital signal processing (DSP).",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T13:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "kerline-moncy",
+        "name": "Kerline Moncy"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/what-happens-when-the-music-starts-the-architecture-of-browser-audio-uxvpsdozcwk7jd3d3t"
+  },
+  {
+    "id": "beyond-the-happy-path-building-a-bdd-testing-strategy-across-microservices-osg0avohh6l1buhzkh",
+    "slug": "beyond-the-happy-path-building-a-bdd-testing-strategy-across-microservices-osg0avohh6l1buhzkh",
+    "title": "Beyond The Happy Path: Building a BDD Testing Strategy Across Microservices",
+    "abstract": "Most teams write tests. Fewer write tests that actually catch the bugs that matter. In this talk, we\u2019ll walk through how to design a Behavior-Driven Development (BDD) testing strategy that scales across Java/Spring Boot microservices \u2014 not just unit tests, but a full contract-to-integration testing hierarchy that fits real CI/CD pipelines. You\u2019ll walk away with patterns for test layering, Kafka event testing, and how to reduce flakiness without sacrificing coverage.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T13:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "briana-valmont",
+        "name": "Briana Valmont"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/beyond-the-happy-path-building-a-bdd-testing-strategy-across-microservices-osg0avohh6l1buhzkh"
+  },
+  {
+    "id": "from-dashboards-to-data-products-a-shift-in-thinking-h8zzoei3xm7foap95e",
+    "slug": "from-dashboards-to-data-products-a-shift-in-thinking-h8zzoei3xm7foap95e",
+    "title": "From Dashboards to Data Products: A Shift in Thinking",
+    "abstract": "A data product is a reliable, discoverable, and usable dataset designed for a specific consumer with clear ownership and SLAs.",
+    "track": "AI",
+    "room": "Room 2D",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T13:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "srikanth-maru",
+        "name": "Srikanth Maru"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-dashboards-to-data-products-a-shift-in-thinking-h8zzoei3xm7foap95e"
+  },
+  {
+    "id": "on-device-ai-in-react-native-private-offline-llms-for-real-apps-foapl4udynrjj8qyqm",
+    "slug": "on-device-ai-in-react-native-private-offline-llms-for-real-apps-foapl4udynrjj8qyqm",
+    "title": "On-Device AI in React Native: Private, Offline LLMs for Real Apps",
+    "abstract": "In this talk, you will learn how to run large language models directly inside React Native applications using an AI SDK that abstracts away platform complexity and simplifies AI feature development. We will walk through the design and implementation of react-native-ai, a library built to support local LLM execution on mobile. The session explores its provider architecture and shows how it integrates with the MLC LLM Engine and Apple Foundation Models to deliver practical, production-ready AI experiences on device.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T13:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nick-guzman",
+        "name": "Nick Guzm\u00e1n"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/on-device-ai-in-react-native-private-offline-llms-for-real-apps-foapl4udynrjj8qyqm"
+  },
+  {
+    "id": "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5",
+    "slug": "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5",
+    "title": "Teach Your To-Do List to Listen",
+    "abstract": "The to-do list is one of the classic first projects for developers. In this hands-on workshop, we will make it talk back to us. Using JavaScript and Deepgram's Voice Agent API, you'll wire speech-to-text, an LLM, and text-to-speech together over a single WebSocket, then add items by voice, interrupt the agent mid-sentence and watch it yield, and (if time allows) give it a whole new personality. No voice AI experience is needed: the workshop starts from working code, every step is explained as you go, and everything works typed as well as spoken.",
+    "track": "Workshops",
+    "room": "Room 1D",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T14:30:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "corey-weathers",
+        "name": "Corey Weathers"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"
+  },
+  {
+    "id": "building-stelvio-an-open-source-journey-to-deploy-python-to-aws-isd9lhifeyn3guv3gg",
+    "slug": "building-stelvio-an-open-source-journey-to-deploy-python-to-aws-isd9lhifeyn3guv3gg",
+    "title": "Building Stelvio: An Open Source Journey to Deploy Python to AWS",
+    "abstract": "For nearly two years, we\u2019ve been building Stelvio, an open-source framework designed to let Python developers deploy applications to AWS without getting lost in infrastructure complexity. In this talk, we\u2019ll go beyond the surface of \"easy deployments\" and dive into what it actually takes to build and maintain an open-source developer tool in the cloud-native ecosystem. We\u2019ll share the real challenges: balancing abstraction with control, handling user expectations, and evolving a project in public. Along the way, we\u2019ll unpack the internals of AWS serverless primitives and show how Stelvio builds on top of them. You\u2019ll gain a clearer mental model of what\u2019s happening under the hood when you \"just deploy.\" Whether you\u2019re building your own developer tooling, contributing to open source, or trying to make sense of AWS serverless, this session offers practical insights and hard-earned lessons from the journey.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T13:00:00-05:00",
+    "end": "2026-09-04T13:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "bas-steins",
+        "name": "Bas Steins"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/building-stelvio-an-open-source-journey-to-deploy-python-to-aws-isd9lhifeyn3guv3gg"
+  },
+  {
+    "id": "cloud-based-identity-and-access-management-for-secure-federal-systems-ta4pgtaru7pggwkx0f",
+    "slug": "cloud-based-identity-and-access-management-for-secure-federal-systems-ta4pgtaru7pggwkx0f",
+    "title": "Cloud-Based Identity and Access Management for Secure Federal Systems",
+    "abstract": "Government agencies must maintain extremely strong security controls while still enabling operational flexibility for large and diverse user populations. As federal systems increasingly move to cloud environments, identity and access management architectures are evolving to address these competing demands. This presentation examines how cloud-based identity frameworks are transforming access management in government environments while maintaining strict compliance with federal security standards. Traditional federal access management relied on fragmented systems for identity verification, provisioning, and governance. These disconnected architectures often created operational inefficiencies and security gaps, particularly when agencies needed to coordinate access across multiple applications and organizations. Modern cloud platforms provide integrated identity services that unify authentication, authorization, and governance within a single framework, enabling more consistent security controls across large-scale deployments. The session explores how cloud-based implementations support federal requirements such as standardized credential verification, personnel vetting integration, and secure identity lifecycle management. By connecting background investigation systems, human resource platforms, and access control systems through secure interfaces, agencies can automate provisioning decisions and ensure that access privileges accurately reflect current roles and clearance status. This approach strengthens least privilege enforcement while reducing delays and administrative overhead. The presentation also discusses scalable access models suitable for environments with tens of thousands of users and hundreds of applications. Role-based access structures, contextual authorization policies, and time-limited privileged access mechanisms help security teams maintain strong governance while supporting mission requirements. These models enable agencies to manage complex organizational structures without sacrificing security or usability. Finally, the discussion highlights emerging directions in federal access management, including continuous identity verification and adaptive authentication approaches that strengthen protection against evolving threats. Together, these architectural patterns demonstrate how cloud platforms can support both stronger security and improved operational efficiency across government systems.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T13:30:00-05:00",
+    "end": "2026-09-04T13:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "naveen-parameshwarappa",
+        "name": "Naveen Parameshwarappa"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/cloud-based-identity-and-access-management-for-secure-federal-systems-ta4pgtaru7pggwkx0f"
+  },
+  {
+    "id": "from-apis-to-agents-enterprise-ai-using-java-ollama-and-mcp-snk5bfkfopmwvjises",
+    "slug": "from-apis-to-agents-enterprise-ai-using-java-ollama-and-mcp-snk5bfkfopmwvjises",
+    "title": "From APIs to Agents: Enterprise AI using Java, Ollama & MCP",
+    "abstract": "Evolution: From APIs \u2192 AI \u2192 Agents Agent vs API Why Java in Enterprise AI Tool Calling & MCP Concept Challenges & Considerations Future of Enterprise AI",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T13:30:00-05:00",
+    "end": "2026-09-04T13:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "prathap-raghavan",
+        "name": "Prathap Raghavan"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/from-apis-to-agents-enterprise-ai-using-java-ollama-and-mcp-snk5bfkfopmwvjises"
+  },
+  {
+    "id": "the-hidden-roi-of-caching-performance-optimization-and-mips-reduction-in-pbm-engineering-qn7p95vmfoz9glsuuf",
+    "slug": "the-hidden-roi-of-caching-performance-optimization-and-mips-reduction-in-pbm-engineering-qn7p95vmfoz9glsuuf",
+    "title": "The Hidden ROI of Caching: Performance Optimization and MIPS Reduction in PBM Engineering",
+    "abstract": "Caching is often viewed as a response-time optimization, but in PBM engineering it can deliver much deeper value. In high-volume, mainframe-connected environments, smart caching strategies can reduce repeated backend calls, lower MIPS consumption, improve throughput, and strengthen platform resilience. This session explores how caching can evolve from a technical performance tactic into a strategic engineering lever that drives both system optimization and measurable cost savings in PBM platforms. Audience Takeaways * How to identify caching opportunities that reduce mainframe dependency and MIPS usage. * How to balance latency, freshness, and reliability in PBM caching design. * How to position caching as a business-aligned optimization strategy, not just a technical fix.",
+    "track": "Cloud",
+    "room": "Room 2D",
+    "start": "2026-09-04T13:30:00-05:00",
+    "end": "2026-09-04T13:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "soujanya-vummannagari",
+        "name": "Soujanya Vummannagari"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-hidden-roi-of-caching-performance-optimization-and-mips-reduction-in-pbm-engineering-qn7p95vmfoz9glsuuf"
+  },
+  {
+    "id": "inside-mcp-live-protocol-messages-real-time-flows-and-smarter-agents-zvvjqxgfx2pb7aneox",
+    "slug": "inside-mcp-live-protocol-messages-real-time-flows-and-smarter-agents-zvvjqxgfx2pb7aneox",
+    "title": "Inside MCP: Live Protocol Messages, Real-Time Flows, and Smarter Agents",
+    "abstract": "You\u2019ve heard the buzz \u2014 now roll up your sleeves and build with it. In this hands-on workshop, you\u2019ll learn exactly how the Model Context Protocol (MCP) works \u2014 and you\u2019ll write your own MCP server tool from scratch, then author an Agent that uses it to deliver real-time, context-aware help right inside your dev flow. We\u2019ll break down the raw MCP protocol step by step: \u2022 How it streams context between your IDE and Agents \u2022 How messages are structured and exchanged \u2022 How to wire up an MCP Client to talk to your new tool By the end, you\u2019ll not only understand the protocol \u2014 you\u2019ll have built a working MCP server tool and your own Agent that plugs into it to automate tasks, provide better suggestions, and boost your productivity. Bring your curiosity \u2014 and your laptop \u2014 because you\u2019ll walk away with practical code, a working prototype, and the confidence to build and extend your own MCP-powered tools and Agents.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-04T13:30:00-05:00",
+    "end": "2026-09-04T13:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "david-parry",
+        "name": "David Parry"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/inside-mcp-live-protocol-messages-real-time-flows-and-smarter-agents-zvvjqxgfx2pb7aneox"
+  },
+  {
+    "id": "agents-are-not-apps-stop-building-interfaces-start-building-coworkers-qpqpmkhpa3fc4enuzz",
+    "slug": "agents-are-not-apps-stop-building-interfaces-start-building-coworkers-qpqpmkhpa3fc4enuzz",
+    "title": "Agents are not Apps: Stop building interfaces, Start building coworkers",
+    "abstract": "What happens when software stops waiting for input and starts doing the work? We\u2019ve spent decades building apps that sit still until someone clicks a button, fills out a form, or types a prompt. But as AI evolves, the real shift isn\u2019t just in how we interact with software, it\u2019s in what we expect it to do. We\u2019re moving from app-first to agent-first design: from products organized around interfaces to systems organized around autonomous agents that can understand goals, pick up context, make decisions, coordinate with one another, and carry meaningful work forward. This isn\u2019t just chatbot UX or automation with a new coat of paint. The future isn\u2019t richer interfaces for every action. It\u2019s systems that can act on their own, with interfaces reserved for delegation, visibility, and review, and sometimes no interface at all. Whether that means triaging inbound requests, coordinating research, or running a multi-step workflow, the goal isn\u2019t to build better buttons. It\u2019s to build software we can actually employ. In this talk, we\u2019ll break down the core building blocks of agentic systems, including planning, memory, tool use, orchestration, UX, and oversight, and explore the architectural patterns that make them work. We\u2019ll also look at what makes these systems trustworthy: guardrails, human approval where it matters, and clear visibility into what agents are doing and why. The result is a fundamentally different way to think about software: not as passive tools we operate, but as proactive coworkers we collaborate with and delegate to.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T13:30:00-05:00",
+    "end": "2026-09-04T13:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "boston-cartwright",
+        "name": "Boston Cartwright"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/agents-are-not-apps-stop-building-interfaces-start-building-coworkers-qpqpmkhpa3fc4enuzz"
+  },
+  {
+    "id": "the-node-modules-iceberg-mysteries-below-the-waterline-k771ywsry1xdqw3qfx",
+    "slug": "the-node-modules-iceberg-mysteries-below-the-waterline-k771ywsry1xdqw3qfx",
+    "title": "The node_modules Iceberg: Mysteries Below the Waterline",
+    "abstract": "What lurks below the tip of the iceberg? Well, if you look at it from the aspect of web and software it is our best friend, the node_modules. Have you ever jumped into your node_modules and looked around to see what the various packages of your packages are? Chances are, no. We don't have time for that...but we should! Let's dive in to the world of transitive dependencies and break down what they are. In this session you will learn what transitive dependencies are, how to list them, the risks they bring, and how to integrate TuxCare's ELS solution to fix them.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-04T14:00:00-05:00",
+    "end": "2026-09-04T14:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-demars",
+        "name": "Chris DeMars"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-node-modules-iceberg-mysteries-below-the-waterline-k771ywsry1xdqw3qfx"
+  },
+  {
+    "id": "ai-for-java-developers-b1yca9biu15t9vsxea",
+    "slug": "ai-for-java-developers-b1yca9biu15t9vsxea",
+    "title": "AI for Java Developers",
+    "abstract": "AI has become an unavoidable topic in software development, and many Java developers are wondering if they need to learn Python to participate. The answer is no. The Java ecosystem has everything you need to build modern AI applications, and your existing skills carry over more than you might think. This session bridges the gap between traditional Java development and AI. We'll cover the core concepts of AI and large language models in terms familiar to Java developers, then look at what's possible today: chatbots, retrieval augmented generation, recommendation systems, and intelligent agents, all built on the JVM. You'll leave with a clear picture of the Java AI landscape, the confidence that you don't need to switch languages to build production AI features, and a starting point for your first project.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T14:00:00-05:00",
+    "end": "2026-09-04T14:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "dan-vega",
+        "name": "Dan Vega"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/ai-for-java-developers-b1yca9biu15t9vsxea"
+  },
+  {
+    "id": "good-vibes-smooth-payments-tailoring-stripe-to-any-ui-himensu5qmyesxi4hf",
+    "slug": "good-vibes-smooth-payments-tailoring-stripe-to-any-ui-himensu5qmyesxi4hf",
+    "title": "Good vibes, smooth payments: Tailoring Stripe to any UI",
+    "abstract": "It's almost launch day. Your designers have spent months crafting the perfect brand: every color, every typeface, every pixel placed with purpose. The aesthetic is dialed in, and the site looks exactly right. Now your engineers, the ones who've been painstakingly transforming these mockups into code, need to drop in a checkout flow that feels native to the design. No generic-looking payment forms. No jarring style breaks. It has to blend in like it was always there. Is that actually possible? Even when the UI is... a little retro (think GeoCities)? In this talk, I'll walk through different approaches for integrating Stripe Payments into an existing website, from hosted pages to fully embedded, customizable components, and show how far you can push the Stripe Elements Appearance API to match virtually any design system - even one that really shouldn't exist.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-04T14:00:00-05:00",
+    "end": "2026-09-04T14:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "anna-spysz",
+        "name": "Anna Spysz"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/good-vibes-smooth-payments-tailoring-stripe-to-any-ui-himensu5qmyesxi4hf"
+  },
+  {
+    "id": "writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq",
+    "slug": "writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq",
+    "title": "Writing a Container Runtime in Go",
+    "abstract": "Every time you run a container on Kubernetes, ECS, or your laptop, something has to create it. But what actually happens between \"docker run\" and your process running in isolation? In this talk, we'll build a minimal container runtime in Go using the same Linux primitives that power Docker and containerd: namespaces for isolation, cgroups for resource limits, and chroot for filesystem separation. Line by line, we'll construct a working container from nothing but Go and syscalls. You'll walk away understanding what a container actually is at the OS level, why Go is uniquely well-suited for systems tooling like this, and how the infrastructure you deploy to every day really works under the hood. No container experience required.",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T14:00:00-05:00",
+    "end": "2026-09-04T14:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "michael-duren",
+        "name": "Michael Duren"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq"
+  },
+  {
+    "id": "react-server-components-suspense-and-the-new-mental-model-fdilfxsgipnergxvfy",
+    "slug": "react-server-components-suspense-and-the-new-mental-model-fdilfxsgipnergxvfy",
+    "title": "React - Server Components, Suspense, and the new mental model",
+    "abstract": "React is powering some of the most dynamic digital experiences on the web, and it\u2019s evolving in ways that change how we think about building software. In this session, we\u2019ll explore the ideas shaping modern React, where the server, the browser, and the user experience work together in new and more powerful ways. Instead of focusing on syntax, this talk looks at the bigger shift behind React\u2019s evolution. What does it mean for parts of an app to run before they reach the browser? Why is \u201cloading\u201d no longer just a spinner on the screen? And how do concepts like Server Components and Suspense influence not only performance, but the way we design interactive applications? This session is for anyone curious about where React is headed and why it matters. You\u2019ll get a high-level view of the architectural changes happening behind the scenes, along with the tradeoffs and possibilities they create. Along the way, we\u2019ll uncover how these patterns can lead to faster experiences, cleaner application design, and new ways to think about the future of the web.",
+    "track": "JavaScript",
+    "room": "Room 2E",
+    "start": "2026-09-04T14:00:00-05:00",
+    "end": "2026-09-04T14:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "david-kea",
+        "name": "David Kea"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/react-server-components-suspense-and-the-new-mental-model-fdilfxsgipnergxvfy"
+  },
+  {
+    "id": "squeezing-java-containers-shrinking-your-kubernetes-footprint-with-jlink-cxct9uvnhi8gdgvxxo",
+    "slug": "squeezing-java-containers-shrinking-your-kubernetes-footprint-with-jlink-cxct9uvnhi8gdgvxxo",
+    "title": "Squeezing Java Containers: Shrinking Your Kubernetes Footprint with jlink",
+    "abstract": "Java containers are often bloated, shipping a full JDK and app server to production when your code uses a fraction of it. This session walks through a three-step refactor of the same REST API, from a 523 MB Tomcat WAR to a 121 MB Alpine image with a custom jlink JRE. That's 77% smaller with zero business logic changes, using only standard JDK tooling. We'll cover jdeps, jlink, multi-stage Dockerfile patterns, and the gotchas the tutorials skip: Class Data Sharing, reflection-loaded modules, and what breaks when you add OpenTelemetry. You'll leave with a pattern you can apply to any Java 11+ codebase.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T14:30:00-05:00",
+    "end": "2026-09-04T14:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "mark-mackenzie",
+        "name": "Mark Mackenzie"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/squeezing-java-containers-shrinking-your-kubernetes-footprint-with-jlink-cxct9uvnhi8gdgvxxo"
+  },
+  {
+    "id": "architecting-ai-in-angular-webmcp-a2ui-and-the-agent-experience-x1cvn7kaitctkfrcuf",
+    "slug": "architecting-ai-in-angular-webmcp-a2ui-and-the-agent-experience-x1cvn7kaitctkfrcuf",
+    "title": "Architecting AI in Angular: WebMCP, A2UI, and the Agent Experience",
+    "abstract": "First we optimized for UX, then DX, and now there's AX - the Agent Experience crashing the party. AI assistants are increasingly showing up to use our apps, and right now most of them get in by screenshotting the DOM and guessing where to click. There's a better way. WebMCP lets your Angular app hand agents a clean set of callable tools, and A2UI lets agents hand back real, reactive UI instead of another wall of chat text. In this session we'll architect an Angular app for this shiny (and slightly experimental) new world. We'll walk through the modes of agent interaction, from quiet background data retrieval to rich, agent-generated interfaces, and look at a few ways to wire WebMCP into Angular through navigator.modelContext. Then we'll bring in A2UI so agents can return reactive component trees that your app renders natively, with your styling and accessibility along for the ride. You'll leave knowing how to register tools, render agent-driven UI, and start thinking about your app's tool surface alongside its visual one. You'll also get a clear-eyed sense of what's production-ready today and what's still gloriously bleeding-edge.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-04T14:30:00-05:00",
+    "end": "2026-09-04T14:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "ankita-sood",
+        "name": "Ankita Sood"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/architecting-ai-in-angular-webmcp-a2ui-and-the-agent-experience-x1cvn7kaitctkfrcuf"
+  },
+  {
+    "id": "css-as-a-game-engine-building-playful-stateful-web-experiences-without-js-1rdsbwqjvaxly1oxdu",
+    "slug": "css-as-a-game-engine-building-playful-stateful-web-experiences-without-js-1rdsbwqjvaxly1oxdu",
+    "title": "CSS as a Game Engine: Building Playful, Stateful Web Experiences Without JS",
+    "abstract": "What if the browser is already a game console, and CSS is your game engine? In this talk, we'll explore how far you can push the web platform using nothing but HTML and CSS. By treating CSS as a Finite State Machine, we can build surprisingly rich, interactive experiences: movement, hazards, timers, win conditions, even simple game logic. Along the way, we\u2019ll break down the techniques that make this possible and show how they map to real engineering and web development concepts. As part of this session, we'll build a small playable game live on stage, constructed step by step in front of the audience! Beyond the fun, attendees will walk away with new mental models for UI state, fresh ideas for micro\u2011interactions, and a deeper understanding of how the browser thinks. This talk is ideal for developers who enjoy creative constraints, want to sharpen their understanding of CSS as a state system, or simply want to see the web do something unexpected.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-04T14:30:00-05:00",
+    "end": "2026-09-04T14:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "alvaro-montoro",
+        "name": "Alvaro Montoro"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/css-as-a-game-engine-building-playful-stateful-web-experiences-without-js-1rdsbwqjvaxly1oxdu"
+  },
+  {
+    "id": "how-to-test-ai-features-before-your-users-do-dkcvopioefos47vew3",
+    "slug": "how-to-test-ai-features-before-your-users-do-dkcvopioefos47vew3",
+    "title": "How to Test AI Features Before Your Users Do",
+    "abstract": "LLM-powered features often succeed in demos and still fail in production. A prompt change, model upgrade, or retrieval tweak can quietly reduce answer quality, break grounding, or introduce risky behavior. This talk shows engineers and tech leads how to build a practical eval loop for AI features using the same mindset they already bring to testing software. Using an anonymized internal knowledge assistant as the running example, we will start with a small app that appears to work, then expose three realistic failure modes: unsupported claims, missed key information, and brittle behavior after a change. From there, we will build a lightweight eval suite that turns those failures into repeatable checks. The demo will cover a compact golden dataset, simple scoring patterns, and a regression workflow for prompts, models, and retrieval changes. Attendees will leave able to explain the difference between benchmarks and app evals, compare pass/fail, rubric, and pairwise scoring, implement a small but useful eval dataset, and troubleshoot whether failures come from retrieval, generation, or overall system design.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T14:30:00-05:00",
+    "end": "2026-09-04T14:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "ron-dagdag",
+        "name": "Ron Dagdag"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/how-to-test-ai-features-before-your-users-do-dkcvopioefos47vew3"
+  },
+  {
+    "id": "if-you-re-not-shipping-you-re-not-a-leader-f3b6hz3jjnpel81sem",
+    "slug": "if-you-re-not-shipping-you-re-not-a-leader-f3b6hz3jjnpel81sem",
+    "title": "If You\u2019re Not Shipping, You\u2019re Not a Leader",
+    "abstract": "Leadership is not a calendar of 1:1s. It is whether everything still moves when you leave the room. I learned the hard way, and across four different job families, that kept trying to pull me out of shipping: individual contributor, principal architect, Chief Revenue Officer for an enterprise consulting firm inside companies that move billions of dollars, and now co-founder of a startup whose product sits in other people\u2019s revenue path. Every title got bigger, but the temptation stayed the same - stop shipping, start narrating. This talk is about refusing that trade. How you keep leading from the front instead of the balcony. How you build with the team so you do not become their review queue. How do you instrument work so you can see where it dies, especially when it is stuck on you. How running more than one computer, and putting AI into the path of real work, changes who can cause measurable impact rather than who can write a prettier status update. Finally, how you scale beyond yourself: taste encoded as defaults, handoffs that survive your calendar, a company that still ships when you are on a plane. If your last user-visible change is older than your last status meeting, this one is for you.",
+    "track": "Leadership",
+    "room": "Room 2C",
+    "start": "2026-09-04T14:30:00-05:00",
+    "end": "2026-09-04T14:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "zackary-chapple",
+        "name": "Zackary Chapple"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/if-you-re-not-shipping-you-re-not-a-leader-f3b6hz3jjnpel81sem"
+  },
+  {
+    "id": "utilising-the-javascript-abstract-syntax-tree-ast-for-automated-frontend-lifecycle-management-ukbb5ays62ra0eadkg",
+    "slug": "utilising-the-javascript-abstract-syntax-tree-ast-for-automated-frontend-lifecycle-management-ukbb5ays62ra0eadkg",
+    "title": "Utilising the JavaScript Abstract Syntax Tree (AST) for Automated Frontend Lifecycle Management",
+    "abstract": "This talk explores how to leverage NX's Abstract Syntax Tree (AST) utilities to lvl up frontend code management at scale. We'll dive into strategies for automating frontend maintenance tasks, implementing consistent code patterns, and reducing technical debt through automated code updates. Attendees will learn how to build scalable, automated solutions that can modernize code over the wire, enforce best practices, and streamline development workflows across their entire organization. Learning Objectives 1. Understand how JavaScript AST parsing works and how NX uses this capability. 2. Learn techniques for creating custom AST transformations to automate standard frontend stack updates. 3. Develop strategies for implementing organization-wide code standards through automated transformations.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T15:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "tim-damen",
+        "name": "Tim Damen"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/utilising-the-javascript-abstract-syntax-tree-ast-for-automated-frontend-lifecycle-management-ukbb5ays62ra0eadkg"
+  },
+  {
+    "id": "sociotechnical-platform-engineering-hs8koenyzkbep2s8az",
+    "slug": "sociotechnical-platform-engineering-hs8koenyzkbep2s8az",
+    "title": "Sociotechnical Platform Engineering",
+    "abstract": "DevOps practices help reduce friction to production for technologists. Once an application has user traffic, user experience should become a priority, but at what cost? This talk will connect human centered devOps & SRE practices across a value stream to explore how platforms balance developer experience against production stability over time, and how process dependencies factor into overall platform success. this talk will Explore: - How pipelines are value streams - A general-purpose value stream map for platforms - Dependency (wardley) maps for platform processes - Aligning SLIs, SLOs, & SLAs across our platform VSM - Establishing Error Budgets - Chaos Engineering & Complexity Science",
+    "track": "Cloud",
+    "room": "Room 2C",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T15:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "chris-corriere",
+        "name": "Chris Corriere"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/sociotechnical-platform-engineering-hs8koenyzkbep2s8az"
+  },
+  {
+    "id": "thinking-architecturally-pf8osckiezzblxgoap",
+    "slug": "thinking-architecturally-pf8osckiezzblxgoap",
+    "title": "Thinking Architecturally",
+    "abstract": "Rich Hickey once said programmers know the benefits of everything and the trade offs of nothing...an approach that can lead a project down a path of frustrated developers and unhappy customers. As architects though, we must consider the trade offs of every new library, language, pattern or approach and quickly make decisions often with incomplete information. How should we think about the inevitable technology choices we have to make on a project? How do we balance competing agendas? How do we keep our team happy and excited without chasing every new thing that someone finds on the inner webs? As architects it is our responsibility to effectively guide our teams on the technology journey. In this talk I will outline the importance of trade offs, how we can analyze new technologies and how we can effectively capture the inevitable architectural decisions we will make. I will also explore the value of fitness functions as a way of ensuring the decisions we make are actually reflected in the code base.",
+    "track": "Java",
+    "room": "Room 2B",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T15:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nathaniel-schutta",
+        "name": "Nathaniel Schutta"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/thinking-architecturally-pf8osckiezzblxgoap"
+  },
+  {
+    "id": "zerops-ai-workshop-zerops-ai-workshop",
+    "slug": "zerops-ai-workshop-zerops-ai-workshop",
+    "title": "Zerops AI Workshop",
+    "abstract": "JavaScript - Browser APIs",
+    "track": "JavaScript",
+    "room": "Room 1D",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T17:00:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "francesco-ciulla",
+        "name": "Francesco Ciulla"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/zerops-ai-workshop-zerops-ai-workshop"
+  },
+  {
+    "id": "the-series-finale-problem-what-happens-when-your-brand-makes-a-promise-you-can-t-keep-eswxlejrubonipxrs0",
+    "slug": "the-series-finale-problem-what-happens-when-your-brand-makes-a-promise-you-can-t-keep-eswxlejrubonipxrs0",
+    "title": "The Series Finale Problem: What Happens When Your Brand Makes a Promise You Can't Keep",
+    "abstract": "Before a single customer signs up, before a product ships, before revenue enters the picture, a startup makes its most consequential decision. Not a hiring decision. Not a pricing decision. Its brand identity decision: the story it chooses to tell the world about what it is and what it promises to deliver. Get that story wrong, and everything that follows is built on an unstable foundation. Customers who arrive expecting one thing while receiving another don't just churn, they leave disillusioned. Worse, they often can't articulate why. Not because they don't know, but because the failure wasn't in the product itself, it was in the gap between what the brand promised and what the experience actually delivered. In this talk, Jeremy Barger examines the Series Finale Problem: the moment when an audience realizes that the story they were hearing was not the story being told. Drawing on a rage-inducing pop culture case study that most attendees will find unexpectedly familiar, Jeremy reveals how a widely beloved brand sustained almost a decade of loyal engagement on the basis of a promise it never intended to keep, and what happened when that became impossible to ignore. The parallel to early-stage startups is precise and actionable. Founders who haven't done the hard work of defining their brand identity before launch routinely build audiences around the wrong promise, and pay for it at exactly the moment momentum should be accelerating. This talk gives founders the framework to catch that misalignment before it becomes irreversible.",
+    "track": "Leadership",
+    "room": "Room 2D",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T15:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jeremy-barger",
+        "name": "Jeremy Barger"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-series-finale-problem-what-happens-when-your-brand-makes-a-promise-you-can-t-keep-eswxlejrubonipxrs0"
+  },
+  {
+    "id": "building-ai-agents-in-typescript-with-mastra-fahecrkt59bcwtex43",
+    "slug": "building-ai-agents-in-typescript-with-mastra-fahecrkt59bcwtex43",
+    "title": "Building AI Agents in TypeScript with Mastra",
+    "abstract": "This session is about building AI agents that actually hold up in production using Mastra and TypeScript. We\u2019ll go beyond simple prompt chains and look at how to design multi-step workflows, enforce structured outputs with schemas and build memory systems that don\u2019t fall apart at scale. We\u2019ll also cover how to connect agents to real tools using MCP, handle failures and retries and design systems that can reliably take action instead of just generating text. The focus is on practical patterns, real tradeoffs and what it takes to move from demos to systems that actually work.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T15:30:00-05:00",
+    "end": "2026-09-04T15:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "raja-krishna",
+        "name": "Raja Krishna"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/building-ai-agents-in-typescript-with-mastra-fahecrkt59bcwtex43"
+  },
+  {
+    "id": "baseline-magic-the-art-of-intent-driven-css-jxe7qklp61e5bao6vz",
+    "slug": "baseline-magic-the-art-of-intent-driven-css-jxe7qklp61e5bao6vz",
+    "title": "Baseline Magic: The Art of Intent-Driven CSS",
+    "abstract": "Modern CSS has entered a new era where we can express intent directly in our styles, treating the latest baseline features as our new fundamentals. In this session, we\u2019ll craft a design piece by piece using ingredients like container queries, layers, and the :has selector. We\u2019ll see how these pieces build on each other to create a cohesive system that is accessible and maintainable by design. You\u2019ll leave with a refreshed perspective on the platform\u2019s potential and the practical foundation needed to start weaving these modern fundamentals into your own projects today.",
+    "track": "JavaScript",
+    "room": "Room 2B",
+    "start": "2026-09-04T16:00:00-05:00",
+    "end": "2026-09-04T16:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "linda-thompson",
+        "name": "Linda Thompson"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/baseline-magic-the-art-of-intent-driven-css-jxe7qklp61e5bao6vz"
+  },
+  {
+    "id": "prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k",
+    "slug": "prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k",
+    "title": "Prickly by Nature: TanStack in the Wild",
+    "abstract": "The Indio Mountains Research Station (IMRS) is over 40,000 acres of pristine Chihuahuan Desert managed by the University of Texas at El Paso (UTEP). The IMRS Biodiversity Explorer is a data-heavy research tool built for students, researchers, and community members alike, integrating iNaturalist observation data, local species data, points of interest on a map, and five years of local historical weather records. It serves three wildly different audiences on a single interface: researchers who speak in taxonomy, students preparing for their first field biology trip, and curious hikers who just want to know what that bird was. The challenge was designing for an ecologist and a casual nature lover without dumbing it down for one or alienating the other. The answer came from my decade in ecology and teaching. In this talk, I'll walk through how domain expertise shaped real technical decisions such as progressive disclosure patterns, dual-mode data views, scientific data modeling, and the architecture choices behind a TanStack app built to serve a genuinely diverse user base. You will leave with a framework for treating user expertise as a design catalyst, and a new appreciation for what non-traditional backgrounds bring to a codebase.",
+    "track": "JavaScript",
+    "room": "Room 2A",
+    "start": "2026-09-04T16:00:00-05:00",
+    "end": "2026-09-04T16:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "sara-baqla",
+        "name": "Sara Baqla"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k"
+  },
+  {
+    "id": "the-devil-was-never-in-the-details-code-ai-and-the-rise-of-the-deep-generalist-2whpuzlybafrueik1l",
+    "slug": "the-devil-was-never-in-the-details-code-ai-and-the-rise-of-the-deep-generalist-2whpuzlybafrueik1l",
+    "title": "The Devil Was Never in the Details: Code, AI, and the Rise of the Deep Generalist",
+    "abstract": "The rise of AI has quietly elevated one of tech's most undervalued profiles: the Deep Generalist. From LAMP stack administrators who owned everything from bare metal to the application layer, to practitioners today navigating Kubernetes, distributed data pipelines, and observability across cloud providers, the pattern is the same. This talk makes the case for why the seams between systems matter more than the systems themselves, and why AI makes this the Era of the Deep Generalist.",
+    "track": "AI",
+    "room": "Room 2C",
+    "start": "2026-09-04T16:00:00-05:00",
+    "end": "2026-09-04T16:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "tim-banks",
+        "name": "Tim Banks"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-devil-was-never-in-the-details-code-ai-and-the-rise-of-the-deep-generalist-2whpuzlybafrueik1l"
+  },
+  {
+    "id": "building-marvin-what-teaching-a-non-technical-marketer-to-use-mcp-taught-me-about-ai-adoption-1xbefpcbhk2ylaib2z",
+    "slug": "building-marvin-what-teaching-a-non-technical-marketer-to-use-mcp-taught-me-about-ai-adoption-1xbefpcbhk2ylaib2z",
+    "title": "Building MARVIN: What Teaching a Non-Technical Marketer to Use MCP Taught Me About AI Adoption",
+    "abstract": "Over the 2025 holiday break, I built MARVIN, an AI assistant that connects to my email, calendar, Jira, Confluence, and meeting notes through MCP servers. The most surprising lessons came from teaching a non-technical friend in marketing to use it. Within a day, she took a task that typically required 4+ hours and completed it in 30 minutes. In this talk, I'll share practical insights from building and deploying MCP-powered agents in real workflows: - Architecture decisions: How I structured MCP servers for Gmail, Google Calendar, Jira, and other integrations, and where I got it wrong - The \"junior intern\" pattern: Why treating AI agents like trainable assistants drives real usage - The naming problem: Why \"MCP\" is a terrible name for mainstream adoption and what we should call it instead - Curiosity over mandates: Why top-down AI adoption fails, and what ground-up adoption looks like I'll walk through 25 minutes of hard-won lessons from building something real, watching people use it, and iterating based on what actually worked.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T16:00:00-05:00",
+    "end": "2026-09-04T16:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "sterling-chin",
+        "name": "Sterling Chin"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/building-marvin-what-teaching-a-non-technical-marketer-to-use-mcp-taught-me-about-ai-adoption-1xbefpcbhk2ylaib2z"
+  },
+  {
+    "id": "the-death-and-resurrection-of-the-ide-why-agents-need-semantic-understanding-26ed9kkxojdnyhi6j2",
+    "slug": "the-death-and-resurrection-of-the-ide-why-agents-need-semantic-understanding-26ed9kkxojdnyhi6j2",
+    "title": "The Death & Resurrection of the IDE: Why Agents Need Semantic Understanding",
+    "abstract": "In 2026, the narrative has shifted from \"browsers will kill the IDE\" to \"AI agents will make it obsolete.\" Some of the smartest builders, Aaron Francis among them, haven't opened an IDE since November (his words). So is the IDE actually dying? No. It's evolving. The IDE isn't threatened by agents; it's the only thing capable of keeping agents from becoming black boxes of technical debt. I'll show you why text-based AI sees code as strings, while semantic-aware development tools see code as graphs (AST, data flow, dependencies). Then I'll walk through the real-world cost of that blindness, and show how the next generation of IDEs turns development tools from text editors into an agent's sensory system and orchestration hub. If you've ever had an agent break production, or wondered if you even need an IDE in 2026, this talk is for you. The future is now, old man.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-04T16:00:00-05:00",
+    "end": "2026-09-04T16:25:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "jason-torres",
+        "name": "Jason Torres"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-death-and-resurrection-of-the-ide-why-agents-need-semantic-understanding-26ed9kkxojdnyhi6j2"
+  },
+  {
+    "id": "7-leadership-lessons-for-the-engineer-that-ai-can-t-replace-omt55zzdieqhsldnx8",
+    "slug": "7-leadership-lessons-for-the-engineer-that-ai-can-t-replace-omt55zzdieqhsldnx8",
+    "title": "7 Leadership lessons for the engineer that AI can't replace",
+    "abstract": "7 Leadership lessons for the engineer that AI can't replace",
+    "track": "Leadership",
+    "room": "Room 2B",
+    "start": "2026-09-04T16:30:00-05:00",
+    "end": "2026-09-04T16:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "nachiket-desai",
+        "name": "Nachiket Desai"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/7-leadership-lessons-for-the-engineer-that-ai-can-t-replace-omt55zzdieqhsldnx8"
+  },
+  {
+    "id": "building-intelligent-integration-flows-from-natural-language-to-execution-with-ballerina-swzlscsiwryjzkjcu3",
+    "slug": "building-intelligent-integration-flows-from-natural-language-to-execution-with-ballerina-swzlscsiwryjzkjcu3",
+    "title": "Building Intelligent Integration Flows: From Natural Language to Execution with Ballerina",
+    "abstract": "Enterprise integration is entering a new era, one where systems no longer just follow predefined flows but actively reason about what needs to be done. This session explores the shift from traditional integration pipelines to agentic systems powered by AI. By combining Natural Programming, AI Agents, Retrieval-Augmented Generation (RAG), and Model Context Protocol (MCP), we can build systems that understand intent, retrieve context, and execute actions across enterprise environments. With Ballerina as the foundation, we\u2019ll demonstrate how these ideas translate into real-world implementations, where AI orchestrates APIs, interacts with services, and drives business workflows end-to-end. Discover how to design integration platforms where large language models become operational decision-makers, enabling faster development and more intelligent automation.",
+    "track": "AI",
+    "room": "Room 2A",
+    "start": "2026-09-04T16:30:00-05:00",
+    "end": "2026-09-04T16:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "anupama-pathirage",
+        "name": "Anupama Pathirage"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/building-intelligent-integration-flows-from-natural-language-to-execution-with-ballerina-swzlscsiwryjzkjcu3"
+  },
+  {
+    "id": "remote-agents-or-how-i-fixed-our-page-s-performance-without-really-doing-anything-djnxa0lps6ukvhsjcj",
+    "slug": "remote-agents-or-how-i-fixed-our-page-s-performance-without-really-doing-anything-djnxa0lps6ukvhsjcj",
+    "title": "Remote Agents, or: How I Fixed Our Page's Performance Without Really Doing Anything",
+    "abstract": "Improving performance on a frontend, javascript-heavy, React SPA is an uphill (and often losing) battle. The brunt of the work is a long-tail of missed memoization opportunities, inefficient algorithms, and painstaking fixes. It also just so happens to be an outstanding candidate for agentic engineering. The key piece is that fixes here are verifiable: an agent can run a profile, identify a potential bottleneck, make a code change, and verify that the change improved performance! In this talk I'll describe the architecture of the system I orchestrated to continuously submit verified and ready-to-merge PRs, our findings, and some of the challenges and learnings I came across during the project.",
+    "track": "JavaScript",
+    "room": "Room 2D",
+    "start": "2026-09-04T16:30:00-05:00",
+    "end": "2026-09-04T16:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "eric-karschner",
+        "name": "Eric Karschner"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/remote-agents-or-how-i-fixed-our-page-s-performance-without-really-doing-anything-djnxa0lps6ukvhsjcj"
+  },
+  {
+    "id": "the-put-that-sh-t-on-agent-building-multi-agent-ai-systems-that-actually-talk-to-each-other-aor1rd2jyfeuz5r0vf",
+    "slug": "the-put-that-sh-t-on-agent-building-multi-agent-ai-systems-that-actually-talk-to-each-other-aor1rd2jyfeuz5r0vf",
+    "title": "The Put That Sh*t On Agent: Building Multi-Agent AI Systems That Actually Talk to Each Other*",
+    "abstract": "Everyone's building AI agents. But most of them can't talk to each other. They're islands. In this session, we'll walk through a real multi-agent system built with Google's Agent Development Kit and the Agent2Agent (A2A) protocol: a wardrobe recommendation app that pulls live weather data, reasons about what to wear, and coordinates across distributed services. You'll see how A2A enables agents to discover each other's capabilities, communicate across deployments, and scale independently, all without tight coupling. We'll also cover how real-time data pipelines (via Conduit) feed your agents, and how to deploy the whole system to Cloud Run. Whether you're building internal tooling or consumer-facing AI features, this talk gives you a battle-tested blueprint for multi-agent architecture that goes beyond the hype.",
+    "track": "AI",
+    "room": "Room 2E",
+    "start": "2026-09-04T16:30:00-05:00",
+    "end": "2026-09-04T16:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "william-hill",
+        "name": "William Hill"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/the-put-that-sh-t-on-agent-building-multi-agent-ai-systems-that-actually-talk-to-each-other-aor1rd2jyfeuz5r0vf"
+  },
+  {
+    "id": "how-to-use-scaffolding-to-make-your-coding-agents-less-dumb-j6fwrhfmi9xzstnnxb",
+    "slug": "how-to-use-scaffolding-to-make-your-coding-agents-less-dumb-j6fwrhfmi9xzstnnxb",
+    "title": "How to Use Scaffolding to Make Your Coding Agents Less Dumb",
+    "abstract": "Learn how scaffolding can speed up development and reduce your token usage. I'll walk you through the key decisions you should make before sending agents into your codebase. Then I'll demo freeCodeCamp\u2019s new open source create-constellation-app tool.",
+    "track": "JavaScript",
+    "room": "Room 2C",
+    "start": "2026-09-04T16:30:00-05:00",
+    "end": "2026-09-04T16:55:00-05:00",
+    "day": 2,
+    "isSocial": false,
+    "speakers": [
+      {
+        "id": "quincy-larson",
+        "name": "Quincy Larson"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/how-to-use-scaffolding-to-make-your-coding-agents-less-dumb-j6fwrhfmi9xzstnnxb"
+  },
+  {
+    "id": "closing-keynote-osing-keynote-day2",
+    "slug": "closing-keynote-osing-keynote-day2",
+    "title": "Closing Keynote",
+    "abstract": "Join Danny Thompson for brief closing remarks to wrap up the conference.",
+    "track": "Keynote",
+    "room": "Main Hall",
+    "start": "2026-09-04T17:00:00-05:00",
+    "end": "2026-09-04T17:15:00-05:00",
+    "day": 2,
+    "isSocial": true,
+    "speakers": [
+      {
+        "id": "danny-thompson",
+        "name": "Danny Thompson"
+      }
+    ],
+    "url": "https://www.commityourcode.com/sessions/closing-keynote-osing-keynote-day2"
+  }
+]
