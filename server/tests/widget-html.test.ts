@@ -8,6 +8,7 @@ import {
 } from '@modelcontextprotocol/server';
 import {
   buildDevBootstrapHtml,
+  buildProductionWidgetHtml,
   clientMatches,
   getClientIdentity,
   inlineWidgetAssets,
@@ -200,5 +201,31 @@ describe('inlineWidgetAssets', () => {
     const result = inlineWidgetAssets(missing, assetsDir);
 
     expect(result).toContain('src="http://localhost:4444/gone.js"');
+  });
+});
+
+describe('buildProductionWidgetHtml', () => {
+  const html = [
+    '<!doctype html>',
+    '<html><head>',
+    '<link rel="stylesheet" href="https://assets.example.com/echo.css">',
+    '<script type="module" src="https://assets.example.com/echo.js"></script>',
+    '</head><body><div id="echo-root"></div></body></html>',
+  ].join('\n');
+
+  it('can prefix the module graph to invalidate cached cross-origin assets', () => {
+    const result = buildProductionWidgetHtml(
+      html,
+      'echo',
+      'https://assets.example.com',
+      'body{margin:0}',
+      '/release-1/'
+    );
+
+    expect(result).toContain(
+      'import("https://assets.example.com/release-1/echo.js")'
+    );
+    expect(result).toContain('<style>body{margin:0}</style>');
+    expect(result).not.toContain('rel="stylesheet"');
   });
 });
