@@ -38,10 +38,12 @@ const scheduleFile: {
     }>;
   }>;
 } = readJson('schedule.json');
-const events: SocialEvent[] = readJson('events.json').map((event) => ({
-  ...event,
-  day: dayFromEvent(event),
-}));
+const events: SocialEvent[] = readJson<SocialEvent[]>('events.json').map(
+  (event) => ({
+    ...event,
+    day: dayFromEvent(event),
+  })
+);
 const meta: { tracks: TrackInfo[]; rooms: RoomInfo[] } = readJson('tracks.json');
 
 function dayFromEvent(event: SocialEvent): number {
@@ -65,6 +67,12 @@ function matchesTrack(value: string, track?: string): boolean {
   const wanted = normalize(track);
   const have = normalize(value);
   if (have === wanted) return true;
+  if (
+    (have === 'java' && wanted !== 'java') ||
+    (wanted === 'java' && have !== 'java')
+  ) {
+    return false;
+  }
   if (wanted === 'js' && have === 'javascript') return true;
   if (wanted.includes('javascript') && have === 'javascript') return true;
   if (wanted.includes('frontend') && have === 'javascript') return true;
@@ -76,6 +84,17 @@ function matchesTrack(value: string, track?: string): boolean {
     return have === 'leadership';
   }
   return have.includes(wanted) || wanted.includes(have);
+}
+
+function matchesAnyTrack(value: string, tracks: string[]): boolean {
+  if (tracks.length === 0) return true;
+  return tracks.some((track) => matchesTrack(value, track));
+}
+
+function requestedTracks(track?: string | string[]): string[] {
+  if (track == null || track === '') return [];
+  const values = Array.isArray(track) ? track : track.split(/[,|]/);
+  return values.map((value) => value.trim()).filter(Boolean);
 }
 
 function toSpeakerCard(speaker: SpeakerRecord): SpeakerCard {
@@ -101,18 +120,26 @@ function toSessionCard(session: SessionRecord): SessionCard {
     start: session.start,
     end: session.end,
     day: session.day,
+    speakers: session.speakers,
     speakerNames: session.speakers.map((person) => person.name),
   };
 }
 
 export function listSpeakers(options: {
-  track?: string;
+  track?: string | string[];
   query?: string;
   limit?: number;
-}): { speakers: SpeakerCard[]; total: number; showing: number } {
+}): {
+  speakers: SpeakerCard[];
+  total: number;
+  showing: number;
+  tracks: TrackInfo[];
+  appliedTracks: string[];
+} {
   const query = options.query ? normalize(options.query) : '';
+  const appliedTracks = requestedTracks(options.track);
   const filtered = speakers.filter((speaker) => {
-    if (!matchesTrack(speaker.track, options.track)) return false;
+    if (!matchesAnyTrack(speaker.track, appliedTracks)) return false;
     if (!query) return true;
     const haystack = [
       speaker.name,
@@ -130,6 +157,8 @@ export function listSpeakers(options: {
     speakers: filtered.slice(0, limit).map(toSpeakerCard),
     total: filtered.length,
     showing: Math.min(limit, filtered.length),
+    tracks: meta.tracks,
+    appliedTracks,
   };
 }
 
@@ -270,9 +299,10 @@ export function searchSessions(options: {
   };
 }
 
-export function listEvents(day?: number): SocialEvent[] {
-  if (day === undefined) return events;
-  return events.filter((event) => event.day === day);
+export function listEvents(day?: number | string): SocialEvent[] {
+  if (day === undefined || day === null || day === '') return events;
+  const resolved = resolveDay(day);
+  return events.filter((event) => event.day === resolved);
 }
 
 export function listTracks(): { tracks: TrackInfo[]; rooms: RoomInfo[] } {

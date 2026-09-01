@@ -28,6 +28,7 @@ const sample: GetSpeakerOutput = {
       start: '2026-09-03T14:30:00-05:00',
       end: '2026-09-03T14:55:00-05:00',
       day: 1,
+      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
       speakerNames: ['Nick Taylor'],
     },
   ],

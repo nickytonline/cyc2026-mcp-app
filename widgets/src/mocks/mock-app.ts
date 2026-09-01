@@ -6,7 +6,8 @@ interface MockAppOptions<TStructured> {
   callServerTool?: (params: {
     name: string;
     arguments?: Record<string, unknown>;
-  }) => Promise<ToolResultPayload<TStructured>>;
+  }) => Promise<ToolResultPayload<unknown>>;
+  sendMessage?: AppLike<TStructured>['sendMessage'];
 }
 
 export function createMockApp<TStructured>(
@@ -51,7 +52,7 @@ export function createMockApp<TStructured>(
       mode: params.mode!,
     }),
     openLink: async () => ({}),
-    sendMessage: async () => ({}),
+    sendMessage: options.sendMessage ?? (async () => ({})),
     updateModelContext: async () => ({}),
     ontoolresult: undefined as
       ((result: ToolResultPayload<TStructured>) => void) | undefined,
@@ -67,5 +68,8 @@ export function createMockApp<TStructured>(
     },
   };
 
-  return mock;
+  return mock as AppLike<TStructured> & {
+    emitToolResult: (next: TStructured) => void;
+    setHostContext: (next: HostContext) => void;
+  };
 }

@@ -1,63 +1,114 @@
 'use client';
 
+import { useState } from 'react';
 import type { ListSpeakersOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerPhoto } from '../components/cyc/SpeakerPhoto';
+import { SpeakerProfile } from '../components/cyc/speaker-profile';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
 import type { AppLike } from '../types/mcp-app';
+import { TrackFilter } from './TrackFilter';
+
+function isSpeakerList(value: unknown): value is ListSpeakersOutput {
+  return (
+    typeof value === 'object' &&
+    value !== null &&
+    Array.isArray((value as ListSpeakersOutput).speakers)
+  );
+}
 
 export default function SpeakersList({
   app,
 }: {
   app?: AppLike<ListSpeakersOutput>;
 }) {
-  const { toolOutput, hostContext } = useWidgetApp('SpeakersList', app);
-  const speakers = toolOutput?.speakers ?? [];
+  const { toolOutput, hostContext, activeApp } = useWidgetApp(
+    'SpeakersList',
+    app
+  );
+  const [filtered, setFiltered] = useState<ListSpeakersOutput | null>(null);
+  const [applied, setApplied] = useState<string[] | null>(null);
+  const hostList = isSpeakerList(toolOutput) ? toolOutput : null;
+  const list = filtered ?? hostList;
+  const selectedTracks = applied ?? hostList?.appliedTracks ?? [];
+  const speakers = list?.speakers ?? [];
+
+  async function applyTracks(next: string[]) {
+    setApplied(next);
+    const result = await activeApp.callServerTool<ListSpeakersOutput>({
+      name: 'list_speakers',
+      arguments: {
+        ...(next.length > 0 ? { track: next } : {}),
+        limit: 120,
+      },
+    });
+    if (isSpeakerList(result.structuredContent)) {
+      setFiltered(result.structuredContent);
+    }
+  }
 
   return (
-    <WidgetShell
-      kicker="04 / Who you'll learn from"
-      title="This year's speakers"
-      hostContext={hostContext}
-    >
-      <p className="mb-3 font-mono text-[0.75rem] text-[var(--cyc-muted)]">
-        {toolOutput
-          ? `Showing ${toolOutput.showing} of ${toolOutput.total}`
-          : 'Waiting for speaker results'}
-      </p>
-      <ul className="grid gap-2">
-        {speakers.map((speaker) => (
-          <li
-            key={speaker.id}
-            className="grid grid-cols-[72px_minmax(0,1fr)] overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white dark:border-white/10 dark:bg-[var(--cyc-navy)]"
-          >
-            <div className="relative h-[88px] bg-[var(--cyc-navy)]">
-              <SpeakerPhoto
-                name={speaker.name}
-                photoUrl={speaker.photoUrl}
-                className="size-full"
-              />
-              <span className="absolute left-1.5 top-1.5 font-mono text-[0.625rem] font-bold text-white/90">
-                {String(speaker.sequence).padStart(3, '0')}
-              </span>
-            </div>
-            <div className="min-w-0 px-3 py-2">
-              <TrackChip track={speaker.track} />
-              <h2 className="mt-1 truncate text-[0.9375rem] font-bold text-[var(--cyc-ink)] dark:text-white">
-                {speaker.name}
-              </h2>
-              <p className="truncate text-[0.75rem] text-[var(--cyc-muted)]">
-                {speaker.title}
-                {speaker.company ? ` / ${speaker.company}` : ''}
-              </p>
-              <p className="mt-1 line-clamp-2 text-[0.8125rem] text-[var(--cyc-ink)] dark:text-white/90">
-                {speaker.talkTitle}
-              </p>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </WidgetShell>
+    <SpeakerProfile.Host app={activeApp} hostContext={hostContext}>
+      <WidgetShell
+        kicker="04 / Who you'll learn from"
+        title="This year's speakers"
+        hostContext={hostContext}
+        fill
+      >
+        <div className="mb-3 flex shrink-0 items-center justify-between gap-2">
+          <p className="font-mono text-[0.75rem] text-[var(--cyc-muted)]">
+            {list
+              ? `Showing ${list.showing} of ${list.total}`
+              : 'Waiting for speaker results'}
+          </p>
+          <TrackFilter
+            tracks={list?.tracks}
+            selected={selectedTracks}
+            onChange={(next) => {
+              void applyTracks(next);
+            }}
+          />
+        </div>
+        <ul
+          className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
+          tabIndex={0}
+          aria-label="Speakers"
+        >
+          {speakers.map((speaker) => (
+            <li key={speaker.id}>
+              <SpeakerProfile.Open
+                speaker={speaker}
+                className="grid w-full grid-cols-[72px_minmax(0,1fr)] overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+              >
+                <div className="relative h-[88px] bg-[var(--cyc-navy)]">
+                  <SpeakerPhoto
+                    name={speaker.name}
+                    photoUrl={speaker.photoUrl}
+                    className="size-full object-cover"
+                  />
+                  <span className="absolute left-1.5 top-1.5 font-mono text-[0.625rem] font-bold text-white/90">
+                    {String(speaker.sequence).padStart(3, '0')}
+                  </span>
+                </div>
+                <div className="min-w-0 px-3 py-2">
+                  <TrackChip track={speaker.track} />
+                  <h2 className="mt-1 truncate text-[0.9375rem] font-bold text-[var(--cyc-ink)] dark:text-white">
+                    {speaker.name}
+                  </h2>
+                  <p className="truncate text-[0.75rem] text-[var(--cyc-muted)]">
+                    {speaker.title}
+                    {speaker.company ? ` / ${speaker.company}` : ''}
+                  </p>
+                  <p className="mt-1 line-clamp-2 text-[0.8125rem] text-[var(--cyc-ink)] dark:text-white/90">
+                    {speaker.talkTitle}
+                  </p>
+                </div>
+              </SpeakerProfile.Open>
+            </li>
+          ))}
+        </ul>
+      </WidgetShell>
+    </SpeakerProfile.Host>
   );
 }

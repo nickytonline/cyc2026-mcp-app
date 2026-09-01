@@ -5,6 +5,7 @@ import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerPhoto } from '../components/cyc/SpeakerPhoto';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
+import { SpeakerAskPanel } from '../components/cyc/speaker-profile';
 import { formatClock } from '../utils/cyc';
 import type { AppLike } from '../types/mcp-app';
 
@@ -58,6 +59,9 @@ export default function SpeakerDetail({
             </p>
           ) : null}
         </div>
+      </div>
+      <div className="mt-4">
+        <SpeakerAskPanel speaker={speaker} app={activeApp} />
       </div>
       {sessions.length > 0 ? (
         <div className="mt-4 border-t border-[var(--cyc-line)] pt-4 dark:border-white/10">

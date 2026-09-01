@@ -105,6 +105,17 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+
+#speakers-list-root {
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+}
+
 #speakers-list-root,
 #speaker-detail-root,
 #schedule-root,
@@ -112,4 +123,21 @@
 #events-list-root {
   min-height: 100%;
   width: 100%;
+}
+
+.cyc-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyc-line) transparent;
+}
+
+.cyc-scroll:focus-visible {
+  outline: 2px solid var(--cyc-blue);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--cyc-blue);
+  color: white;
 }

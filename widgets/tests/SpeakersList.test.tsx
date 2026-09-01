@@ -1,31 +1,20 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import SpeakersList from '../src/speakers-list/SpeakersList.js';
 import { createMockApp } from '../src/mocks/mock-app.js';
-import type { ListSpeakersOutput } from 'mcp-app-server/types';
+import {
+  mockConferenceTools,
+  nickSpeakersList,
+} from '../src/mocks/sample-speaker.js';
 
 describe('SpeakersList', () => {
   it('renders numbered speaker cards', async () => {
     render(
       <SpeakersList
-        app={createMockApp<ListSpeakersOutput>({
-          toolOutput: {
-            showing: 1,
-            total: 1,
-            speakers: [
-              {
-                id: 'nick-taylor',
-                sequence: 52,
-                isKeynote: false,
-                name: 'Nick Taylor',
-                title: 'Developer Advocate',
-                company: 'Pomerium',
-                track: 'JavaScript',
-                talkTitle: 'Build your First MCP App',
-                photoUrl: null,
-              },
-            ],
-          },
+        app={createMockApp({
+          toolOutput: nickSpeakersList,
+          callServerTool: mockConferenceTools,
         })}
       />
     );
@@ -33,5 +22,48 @@ describe('SpeakersList', () => {
     expect(await screen.findByText('Nick Taylor')).toBeTruthy();
     expect(screen.getByText('Build your First MCP App')).toBeTruthy();
     expect(screen.getByText('052')).toBeTruthy();
+  });
+
+  it('opens a speaker profile with sessions', async () => {
+    const user = userEvent.setup();
+    render(
+      <SpeakersList
+        app={createMockApp({
+          toolOutput: nickSpeakersList,
+          callServerTool: mockConferenceTools,
+          hostContext: {
+            theme: 'light',
+            displayMode: 'inline',
+            containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+          },
+        })}
+      />
+    );
+
+    await user.click(await screen.findByRole('button', { name: /Nick Taylor/i }));
+    expect(
+      await screen.findByText(
+        'Nick is a Microsoft MVP, GitHub Star, and Developer Advocate at Pomerium.'
+      )
+    ).toBeTruthy();
+    expect(screen.getByText('On the program')).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this speaker')).toBeTruthy();
+  });
+
+  it('filters speakers by track', async () => {
+    const user = userEvent.setup();
+    render(
+      <SpeakersList
+        app={createMockApp({
+          toolOutput: nickSpeakersList,
+          callServerTool: mockConferenceTools,
+        })}
+      />
+    );
+
+    await user.click(await screen.findByRole('button', { name: /All tracks/i }));
+    await user.click(await screen.findByRole('menuitemcheckbox', { name: 'AI' }));
+    expect(await screen.findByText('Anupama Pathirage')).toBeTruthy();
+    expect(screen.queryByText('Nick Taylor')).toBeNull();
   });
 });

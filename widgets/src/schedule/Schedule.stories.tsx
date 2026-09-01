@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { createMockApp } from '../mocks/mock-app';
+import { mockConferenceTools } from '../mocks/sample-speaker';
 import Schedule from './Schedule';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
 
@@ -22,6 +23,7 @@ const sample: GetScheduleOutput = {
           start: '2026-09-03T14:30:00-05:00',
           end: '2026-09-03T14:55:00-05:00',
           day: 1,
+          speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
           speakerNames: ['Nick Taylor'],
         },
       ],
@@ -39,6 +41,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <Schedule app={createMockApp<GetScheduleOutput>({ toolOutput: sample })} />
+    <Schedule
+      app={createMockApp<GetScheduleOutput>({
+        toolOutput: sample,
+        callServerTool: mockConferenceTools,
+      })}
+    />
   ),
 };

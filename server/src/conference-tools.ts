@@ -63,7 +63,7 @@ export function registerConferenceTools(
     {
       title: 'List CYC26 speakers',
       description:
-        'List Commit Your Code 2026 speakers. Filter by track (AI, JavaScript, Cloud, Java, Leadership, Workshops) or search by name, company, or talk title.',
+        'List Commit Your Code 2026 speakers. Filter by one or more tracks (AI, JavaScript, Cloud, Java, Leadership, Workshops, Keynote) or search by name, company, or talk title.',
       inputSchema: ListSpeakersInputSchema.shape,
       _meta: { ui: { resourceUri: widgets.speakersList.uri } },
     },

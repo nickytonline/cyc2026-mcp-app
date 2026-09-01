@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { createMockApp } from '../mocks/mock-app';
+import { mockConferenceTools } from '../mocks/sample-speaker';
 import SessionDetail from './SessionDetail';
 import type { ViewScheduleItemOutput } from 'mcp-app-server/types';
 
@@ -45,7 +46,10 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <SessionDetail
-      app={createMockApp<ViewScheduleItemOutput>({ toolOutput: sample })}
+      app={createMockApp<ViewScheduleItemOutput>({
+        toolOutput: sample,
+        callServerTool: mockConferenceTools,
+      })}
     />
   ),
 };

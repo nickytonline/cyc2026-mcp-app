@@ -11,6 +11,15 @@ describe('catalog', () => {
     const ai = listSpeakers({ track: 'AI', limit: 40 });
     expect(ai.total).toBeGreaterThan(10);
     expect(ai.speakers.every((speaker) => speaker.track === 'AI')).toBe(true);
+    expect(ai.appliedTracks).toEqual(['AI']);
+
+    const mixed = listSpeakers({ track: ['AI', 'JavaScript'], limit: 80 });
+    expect(
+      mixed.speakers.every(
+        (speaker) => speaker.track === 'AI' || speaker.track === 'JavaScript'
+      )
+    ).toBe(true);
+    expect(mixed.tracks.length).toBeGreaterThan(0);
   });
 
   it('finds a speaker by name or slug', () => {
@@ -32,6 +41,9 @@ describe('catalog', () => {
 describe('ListSpeakersInputSchema', () => {
   it('accepts optional filters', () => {
     expect(ListSpeakersInputSchema.parse({ track: 'AI' }).track).toBe('AI');
+    expect(
+      ListSpeakersInputSchema.parse({ track: ['AI', 'JavaScript'] }).track
+    ).toEqual(['AI', 'JavaScript']);
     expect(() => ListSpeakersInputSchema.parse({ limit: 0 })).toThrow();
   });
 });

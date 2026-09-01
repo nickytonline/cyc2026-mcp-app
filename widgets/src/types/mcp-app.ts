@@ -36,10 +36,10 @@ export interface ContentBlock {
 export interface AppLike<TStructured = unknown> {
   connect: () => Promise<void>;
   getHostContext: () => HostContext | null;
-  callServerTool: (params: {
+  callServerTool: <TResult = unknown>(params: {
     name: string;
     arguments?: Record<string, unknown>;
-  }) => Promise<ToolResultPayload<TStructured>>;
+  }) => Promise<ToolResultPayload<TResult>>;
   requestDisplayMode: (params: { mode: DisplayMode }) => Promise<{
     mode: DisplayMode;
     [key: string]: unknown;

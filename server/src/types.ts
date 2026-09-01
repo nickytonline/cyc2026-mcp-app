@@ -62,6 +62,7 @@ export interface SessionCard {
   start: string | null;
   end: string | null;
   day: number | null;
+  speakers: SessionSpeaker[];
   speakerNames: string[];
 }
 
@@ -90,9 +91,11 @@ export interface RoomInfo {
 
 export const ListSpeakersInputSchema = z.object({
   track: z
-    .string()
+    .union([z.string(), z.array(z.string())])
     .optional()
-    .describe('Filter by track, e.g. AI, JavaScript, Cloud, Java, Leadership'),
+    .describe(
+      'One track or several: AI, JavaScript, Cloud, Java, Leadership, Workshops, Keynote. Omit for all tracks.'
+    ),
   query: z
     .string()
     .optional()
@@ -101,7 +104,7 @@ export const ListSpeakersInputSchema = z.object({
     .number()
     .int()
     .min(1)
-    .max(40)
+    .max(120)
     .optional()
     .describe('Max speakers to return (default 20)'),
 });
@@ -111,6 +114,8 @@ export interface ListSpeakersOutput {
   speakers: SpeakerCard[];
   total: number;
   showing: number;
+  tracks: TrackInfo[];
+  appliedTracks: string[];
   [key: string]: unknown;
 }
 
