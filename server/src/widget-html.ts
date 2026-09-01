@@ -267,7 +267,8 @@ export function buildProductionWidgetHtml(
   html: string,
   widgetId: string,
   baseUrl: string,
-  css: string
+  css: string,
+  assetPathPrefix = ''
 ): string {
   const scriptMatch = html.match(
     new RegExp('<script[^>]*type="module"[^>]*src="([^"]+)"[^>]*></script>')
@@ -277,12 +278,19 @@ export function buildProductionWidgetHtml(
     return html;
   }
 
-  const scriptUrl = new URL(scriptMatch[1], baseUrl).href;
+  const scriptUrl = new URL(scriptMatch[1], baseUrl);
+  const pathPrefix = assetPathPrefix.trim();
+  const normalizedPrefix = pathPrefix
+    ? '/' + pathPrefix.split('/').filter(Boolean).join('/')
+    : '';
+  if (normalizedPrefix) {
+    scriptUrl.pathname = normalizedPrefix + scriptUrl.pathname;
+  }
   const rootId = widgetId + '-root';
   const bootstrap =
     '<script type="module">\n' +
     'import(' +
-    JSON.stringify(scriptUrl) +
+    JSON.stringify(scriptUrl.href) +
     ').catch((error) => {\n' +
     '  const root = document.getElementById(' +
     JSON.stringify(rootId) +

@@ -612,6 +612,10 @@ Production uses the prebuilt assets from assets/. The server fetches the widget 
 
 BASE_URL is required in production and must be set both when building the image and in the running container. The asset origin must be publicly reachable by the MCP host and should normally be served by a public Pomerium route or a CDN.
 
+Because the production entrypoint is loaded with dynamic import(), the asset server must return Access-Control-Allow-Origin: * (or an explicit MCP host origin) for every JavaScript entrypoint and dependency chunk. Cross-Origin-Resource-Policy: cross-origin is also recommended. These response headers are separate from MCP resource CSP: BASE_URL must still be present in resourceDomains.
+
+If a CDN has cached module responses without those headers, set WIDGET_ASSET_PATH_PREFIX to a new versioned path such as /release-1 and map that prefix to the same asset directory on the static server. The module graph then loads from uncached URLs while BASE_URL remains the asset origin.
+
 ### Inline Widget Assets
 
 Some hosts (e.g. Claude.ai) require fully self-contained HTML — external `<script>` and `<link>` tags won't load inside their sandboxed iframes.
@@ -759,6 +763,9 @@ CORS_ORIGIN=*
 # Dev: a tunnel to the widget dev server (enables HMR through hosts that load external assets)
 # Production: your CDN/static host (required)
 # BASE_URL=https://cdn.example.com/assets
+
+# Optional versioned path for the production module graph (include the leading slash)
+# WIDGET_ASSET_PATH_PREFIX=/release-1
 
 # Clients that get fully inlined widget HTML in dev (comma-separated substring
 # match on client name/title; unidentified clients are always inlined)
@@ -934,6 +941,8 @@ For a Service named cyc2026-mcp-app in the homelab namespace, the Pomerium targe
 
 - MCP route: http://cyc2026-mcp-app.homelab.svc.cluster.local:8080/mcp
 - Public asset route: http://cyc2026-mcp-app.homelab.svc.cluster.local:4444
+
+The asset sidecar must handle GET, HEAD, and OPTIONS and return Access-Control-Allow-Origin: *, Cross-Origin-Resource-Policy: cross-origin, and X-Content-Type-Options: nosniff. If WIDGET_ASSET_PATH_PREFIX is set, strip that prefix before resolving files from the shared asset directory. Keep the prefixed and unprefixed paths available so both MCP widgets and standalone HTML checks work.
 
 Create the MCP route with the authentication policy required by your host. Create the asset route with a public policy so widget CSS, JavaScript, fonts, and images can load without an interactive login. Keeping these as two routes is expected: the sidecar only changes how the assets port is served; it does not merge the routes.
 

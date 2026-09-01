@@ -46,6 +46,9 @@ const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 const WIDGET_PORT = Number(process.env.WIDGET_PORT || '4444');
 const configuredBaseUrl = (process.env.BASE_URL || '').trim();
 const BASE_URL = configuredBaseUrl || `http://localhost:${WIDGET_PORT}`;
+const WIDGET_ASSET_PATH_PREFIX = (
+  process.env.WIDGET_ASSET_PATH_PREFIX || ''
+).trim();
 const INLINE_DEV_MODE = process.env.INLINE_DEV_MODE === 'true';
 const IS_DEV = (process.env.NODE_ENV || 'development') === 'development';
 // Clients that get fully inlined widget HTML in dev (comma-separated,
@@ -231,7 +234,13 @@ async function readWidgetHtml(widgetId: string): Promise<string> {
         .filter((file) => file.endsWith('.css'))
         .map((file) => fs.readFileSync(path.join(ASSETS_DIR, file), 'utf-8'))
         .join('\n');
-      return buildProductionWidgetHtml(html, widgetId, BASE_URL, css);
+      return buildProductionWidgetHtml(
+        html,
+        widgetId,
+        BASE_URL,
+        css,
+        WIDGET_ASSET_PATH_PREFIX
+      );
     }
     return html;
   }
@@ -398,6 +407,7 @@ async function main() {
       logLevel: LOG_LEVEL,
       assetsDir: ASSETS_DIR,
       baseUrl: BASE_URL,
+      widgetAssetPathPrefix: WIDGET_ASSET_PATH_PREFIX,
       inlineDevMode: INLINE_DEV_MODE,
     },
     'Starting CYC26 MCP app server'
