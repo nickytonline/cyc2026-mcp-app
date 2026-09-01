@@ -95,7 +95,7 @@ describe('SpeakersList', () => {
     ).toBeTruthy();
   });
 
-  it('opens a session overlay from On the program on wide screens', async () => {
+  it('expands a talk inline from On the program', async () => {
     const user = userEvent.setup();
     render(
       <SpeakersList
@@ -112,14 +112,22 @@ describe('SpeakersList', () => {
     );
 
     await user.click(await screen.findByRole('button', { name: /Nick Taylor/i }));
+    const speakerDetails = await screen.findByRole('region', {
+      name: 'Speaker details',
+    });
     await user.click(
-      await screen.findByRole('button', { name: /Build your First MCP App/i })
+      within(speakerDetails).getByText('Build your First MCP App')
     );
     expect(
-      await screen.findByText(/Remote Model Context Protocol/)
+      await within(speakerDetails).findByText(/Remote Model Context Protocol/)
     ).toBeTruthy();
-    expect(screen.getByLabelText('Ask about this session')).toBeTruthy();
-    expect(screen.queryByLabelText('Ask about this speaker')).toBeNull();
+    expect(within(speakerDetails).getByLabelText('Ask about this session')).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this speaker')).toBeTruthy();
+    expect(
+      screen.getByText(
+        'Nick is a Microsoft MVP, GitHub Star, and Developer Advocate at Pomerium.'
+      )
+    ).toBeTruthy();
   });
 
   it('filters speakers by track', async () => {

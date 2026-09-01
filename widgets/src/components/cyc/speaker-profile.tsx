@@ -232,16 +232,12 @@ function SpeakerProfileBody({
   sessions,
   status,
   onAsk,
-  onSelectSession,
-  expandInline,
 }: {
   preview: SpeakerPreview;
   speaker?: GetSpeakerOutput['speaker'];
   sessions: SessionCard[];
   status: SpeakerProfileState['status'];
   onAsk: (question: string) => Promise<void>;
-  onSelectSession: (session: SessionCard) => void;
-  expandInline?: boolean;
 }) {
   const askId = useId();
 
@@ -282,11 +278,7 @@ function SpeakerProfileBody({
             <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
               On the program
             </p>
-            <SessionList
-              sessions={sessions}
-              onSelect={expandInline ? undefined : onSelectSession}
-              expandInline={expandInline}
-            />
+            <SessionList sessions={sessions} />
           </div>
         ) : null}
         <div className={speaker?.bio || status === 'ready' ? 'mt-4' : undefined}>
@@ -358,8 +350,6 @@ function SpeakerProfileDialog() {
       sessions={sessions}
       status={status}
       onAsk={actions.ask}
-      onSelectSession={actions.viewSession}
-      expandInline={compact}
     />
   ) : null;
 
@@ -575,15 +565,7 @@ function SessionTalkDetails({ session }: { session: SessionCard }) {
   );
 }
 
-function SessionList({
-  sessions,
-  onSelect,
-  expandInline,
-}: {
-  sessions: SessionCard[];
-  onSelect?: (session: SessionCard) => void;
-  expandInline?: boolean;
-}) {
+function SessionList({ sessions }: { sessions: SessionCard[] }) {
   if (sessions.length === 0) {
     return (
       <p className="text-[0.8125rem] text-[var(--cyc-muted)]">
@@ -594,38 +576,11 @@ function SessionList({
 
   return (
     <ul className="grid gap-2">
-      {sessions.map((session) => {
-        const body = (
-          <>
-            <strong className="block text-[var(--cyc-ink)] dark:text-white">
-              {session.title}
-            </strong>
-            <span className="mt-1 block font-mono text-[0.75rem] text-[var(--cyc-muted)]">
-              {session.day != null ? `Day ${session.day} · ` : ''}
-              {formatClock(session.start)} / {session.room}
-            </span>
-          </>
-        );
-        return (
-          <li key={session.id}>
-            {expandInline ? (
-              <SessionTalkDetails session={session} />
-            ) : onSelect ? (
-              <button
-                type="button"
-                className="w-full rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
-                onClick={() => onSelect(session)}
-              >
-                {body}
-              </button>
-            ) : (
-              <div className="rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 dark:border-white/10 dark:bg-[var(--cyc-navy)]">
-                {body}
-              </div>
-            )}
-          </li>
-        );
-      })}
+      {sessions.map((session) => (
+        <li key={session.id}>
+          <SessionTalkDetails session={session} />
+        </li>
+      ))}
     </ul>
   );
 }
