@@ -59,6 +59,8 @@ describe('catalog', () => {
     expect(day1?.label).toMatch(/day 1/i);
     expect(day1?.slots.length).toBeGreaterThan(0);
     expect(day1?.days).toHaveLength(3);
+    expect(day1?.days[0]?.events.length).toBeGreaterThan(0);
+    expect(day1?.days[2]?.slots.length).toBeGreaterThan(0);
     expect(getSchedule({ day: '2026-09-03' })?.day).toBe(1);
     expect(getSchedule({ day: 9 })).toBeUndefined();
     expect(getSchedule({ day: 'Friday' })).toBeUndefined();

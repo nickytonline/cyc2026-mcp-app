@@ -154,6 +154,8 @@ export interface ScheduleDayOption {
   day: number;
   date: string;
   label: string;
+  slots: ScheduleSlot[];
+  events: SocialEvent[];
 }
 
 export interface GetScheduleOutput {

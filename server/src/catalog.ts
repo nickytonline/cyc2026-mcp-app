@@ -169,12 +169,50 @@ export function listSpeakers(options: {
   };
 }
 
-export function conferenceDays(): GetScheduleOutput['days'] {
-  return scheduleFile.days.map(({ day, date, label }) => ({
-    day,
-    date,
-    label,
-  }));
+export function conferenceDays(options: {
+  track?: string;
+  room?: string;
+} = {}): GetScheduleOutput['days'] {
+  return [0, 1, 2].map((day) => {
+    const agenda = agendaForDay(day, options);
+    return { day, ...agenda };
+  });
+}
+
+function agendaForDay(
+  day: number,
+  options: { track?: string; room?: string }
+): {
+  date: string;
+  label: string;
+  slots: GetScheduleOutput['slots'];
+  events: GetScheduleOutput['events'];
+} {
+  const metaDay = scheduleFile.days.find((entry) => entry.day === day);
+  const roomFilter = options.room ? normalize(options.room) : '';
+  const slots =
+    metaDay?.slots.map((slot) => {
+      const items = slot.sessionIds
+        .map((id) => sessions.find((session) => session.id === id))
+        .filter((session): session is SessionRecord => Boolean(session))
+        .filter((session) => matchesTrack(session.track, options.track))
+        .filter((session) =>
+          roomFilter ? normalize(session.room).includes(roomFilter) : true
+        )
+        .map(toSessionCard);
+      return {
+        start: slot.start,
+        end: slot.end,
+        sessions: items,
+      };
+    }) ?? [];
+
+  return {
+    date: metaDay?.date ?? ['2026-09-02', '2026-09-03', '2026-09-04'][day],
+    label: metaDay?.label ?? `Day ${day}`,
+    slots: slots.filter((slot) => slot.sessions.length > 0),
+    events: events.filter((event) => event.day === day),
+  };
 }
 
 export function getSpeaker(id: string): SpeakerRecord | undefined {
@@ -220,34 +258,21 @@ export function getSchedule(options: {
 }): GetScheduleOutput | undefined {
   const day = parseDay(options.day);
   if (day === undefined) return undefined;
-  const metaDay = scheduleFile.days.find((entry) => entry.day === day);
-  const roomFilter = options.room ? normalize(options.room) : '';
-
-  const slots =
-    metaDay?.slots.map((slot) => {
-      const items = slot.sessionIds
-        .map((id) => sessions.find((session) => session.id === id))
-        .filter((session): session is SessionRecord => Boolean(session))
-        .filter((session) => matchesTrack(session.track, options.track))
-        .filter((session) =>
-          roomFilter ? normalize(session.room).includes(roomFilter) : true
-        )
-        .map(toSessionCard);
-      return {
-        start: slot.start,
-        end: slot.end,
-        sessions: items,
-      };
-    }) ?? [];
+  const days = conferenceDays({
+    track: options.track,
+    room: options.room,
+  });
+  const current = days.find((entry) => entry.day === day);
+  if (!current) return undefined;
 
   return {
     day,
-    date: metaDay?.date ?? ['2026-09-02', '2026-09-03', '2026-09-04'][day],
-    label: metaDay?.label ?? `Day ${day}`,
+    date: current.date,
+    label: current.label,
     timezone: scheduleFile.timezone,
-    days: conferenceDays(),
-    slots: slots.filter((slot) => slot.sessions.length > 0),
-    events: events.filter((event) => event.day === day),
+    days,
+    slots: current.slots,
+    events: current.events,
     appliedTrack: options.track,
     appliedRoom: options.room,
   };

@@ -80,10 +80,73 @@ export const nickSpeakerDetail: GetSpeakerOutput = {
   ],
 };
 
+export const pickleballEvent = {
+  id: 'day-0-pickleball-at-ace',
+  title: 'Day[0] Pickleball at Ace!',
+  when: 'September 2nd 1:00pm - 3:00pm',
+  description: 'Kick off CYC at Ace Pickleball Club in Frisco.',
+  url: 'https://www.commityourcode.com/events',
+  day: 0,
+};
+
+const nickDayOneSlot = {
+  start: '2026-09-03T14:30:00-05:00',
+  end: '2026-09-03T14:55:00-05:00',
+  sessions: [
+    {
+      id: 'build-your-first-mcp-app',
+      title: 'Build your First MCP App',
+      track: 'JavaScript',
+      room: 'Room 2D',
+      start: '2026-09-03T14:30:00-05:00',
+      end: '2026-09-03T14:55:00-05:00',
+      day: 1,
+      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+      speakerNames: ['Nick Taylor'],
+    },
+  ],
+};
+
+const closingDayTwoSlot = {
+  start: '2026-09-04T16:00:00-05:00',
+  end: '2026-09-04T16:30:00-05:00',
+  sessions: [
+    {
+      id: 'closing-ceremony',
+      title: 'Closing Ceremony & Networking',
+      track: 'Keynote',
+      room: 'Main Hall',
+      start: '2026-09-04T16:00:00-05:00',
+      end: '2026-09-04T16:30:00-05:00',
+      day: 2,
+      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+      speakerNames: ['Nick Taylor'],
+    },
+  ],
+};
+
 export const scheduleDays: ScheduleDayOption[] = [
-  { day: 0, date: '2026-09-02', label: 'Day 0' },
-  { day: 1, date: '2026-09-03', label: 'Day 1' },
-  { day: 2, date: '2026-09-04', label: 'Day 2' },
+  {
+    day: 0,
+    date: '2026-09-02',
+    label: 'Day 0',
+    slots: [],
+    events: [pickleballEvent],
+  },
+  {
+    day: 1,
+    date: '2026-09-03',
+    label: 'Day 1',
+    slots: [nickDayOneSlot],
+    events: [],
+  },
+  {
+    day: 2,
+    date: '2026-09-04',
+    label: 'Day 2',
+    slots: [closingDayTwoSlot],
+    events: [],
+  },
 ];
 
 export const nickSchedule: GetScheduleOutput = {
@@ -93,60 +156,7 @@ export const nickSchedule: GetScheduleOutput = {
   timezone: 'America/Chicago',
   days: scheduleDays,
   events: [],
-  slots: [
-    {
-      start: '2026-09-03T14:30:00-05:00',
-      end: '2026-09-03T14:55:00-05:00',
-      sessions: [
-        {
-          id: 'build-your-first-mcp-app',
-          title: 'Build your First MCP App',
-          track: 'JavaScript',
-          room: 'Room 2D',
-          start: '2026-09-03T14:30:00-05:00',
-          end: '2026-09-03T14:55:00-05:00',
-          day: 1,
-          speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
-          speakerNames: ['Nick Taylor'],
-        },
-      ],
-    },
-  ],
-};
-
-export const dayZeroSchedule: GetScheduleOutput = {
-  day: 0,
-  date: '2026-09-02',
-  label: 'Day 0',
-  timezone: 'America/Chicago',
-  days: scheduleDays,
-  slots: [],
-  events: [
-    {
-      id: 'day-0-pickleball-at-ace',
-      title: 'Day[0] Pickleball at Ace!',
-      when: 'September 2nd 1:00pm - 3:00pm',
-      description: 'Kick off CYC at Ace Pickleball Club in Frisco.',
-      url: 'https://www.commityourcode.com/events',
-      day: 0,
-    },
-  ],
-};
-
-export const dayTwoSchedule: GetScheduleOutput = {
-  ...nickSchedule,
-  day: 2,
-  date: '2026-09-04',
-  label: 'Day 2',
-  slots: nickSchedule.slots.map((slot) => ({
-    ...slot,
-    sessions: slot.sessions.map((session) => ({
-      ...session,
-      id: 'closing-ceremony',
-      title: 'Closing Ceremony & Networking',
-      day: 2,
-    })),
-  })),
+  slots: [nickDayOneSlot],
 };
 
 export const nickSessionDetail: ViewScheduleItemOutput = {
@@ -212,9 +222,18 @@ export async function mockConferenceTools(params: {
   }
   if (params.name === 'get_schedule') {
     const day = Number(params.arguments?.day);
-    const schedule =
-      day === 0 ? dayZeroSchedule : day === 2 ? dayTwoSchedule : nickSchedule;
-    return { content: [], structuredContent: schedule };
+    const current = scheduleDays.find((entry) => entry.day === day) ?? scheduleDays[1];
+    return {
+      content: [],
+      structuredContent: {
+        ...nickSchedule,
+        day: current.day,
+        date: current.date,
+        label: current.label,
+        slots: current.slots,
+        events: current.events,
+      } satisfies GetScheduleOutput,
+    };
   }
   return {
     content: [

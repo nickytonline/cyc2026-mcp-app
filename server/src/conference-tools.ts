@@ -243,7 +243,7 @@ export function registerConferenceTools(
           date: '',
           label: `Search: ${parsed.data.query}`,
           timezone: 'America/Chicago',
-          days: conferenceDays(),
+          days: conferenceDays({ track: parsed.data.track }),
           slots: [
             {
               start: null,

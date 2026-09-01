@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerProfile } from '../components/cyc/speaker-profile';
@@ -19,47 +19,25 @@ function isSchedule(value: unknown): value is GetScheduleOutput {
   );
 }
 
-function isSearchAgenda(value: GetScheduleOutput): boolean {
-  return typeof value.query === 'string';
-}
-
 export default function Schedule({
   app,
 }: {
   app?: AppLike<GetScheduleOutput>;
 }) {
   const { toolOutput, hostContext, activeApp } = useWidgetApp('Schedule', app);
-  const [view, setView] = useState<GetScheduleOutput | null>(null);
-  const [pendingDay, setPendingDay] = useState<number | null>(null);
-  const requestRef = useRef(0);
-  const hostSchedule = isSchedule(toolOutput) ? toolOutput : null;
-  const schedule = view ?? hostSchedule;
-  const slots = schedule?.slots ?? [];
-  const events = schedule?.events ?? [];
-  const title = schedule?.label || 'Agenda';
-  const selectedDay = pendingDay ?? schedule?.day ?? 1;
-
-  async function selectDay(day: number) {
-    if (schedule && day === schedule.day && !isSearchAgenda(schedule)) return;
-    const requestId = ++requestRef.current;
-    setPendingDay(day);
-    try {
-      const result = await activeApp.callServerTool<GetScheduleOutput>({
-        name: 'get_schedule',
-        arguments: {
-          day,
-          ...(schedule?.appliedTrack ? { track: schedule.appliedTrack } : {}),
-          ...(schedule?.appliedRoom ? { room: schedule.appliedRoom } : {}),
-        },
-      });
-      if (requestId !== requestRef.current) return;
-      if (isSchedule(result.structuredContent)) {
-        setView(result.structuredContent);
-      }
-    } finally {
-      if (requestId === requestRef.current) setPendingDay(null);
-    }
-  }
+  const [pickedDay, setPickedDay] = useState<number | null>(null);
+  const schedule = isSchedule(toolOutput) ? toolOutput : null;
+  const searching =
+    Boolean(schedule && typeof schedule.query === 'string') && pickedDay === null;
+  const selectedDay = pickedDay ?? (searching ? -1 : (schedule?.day ?? 1));
+  const dayEntry = schedule?.days?.find((entry) => entry.day === selectedDay);
+  const slots = searching
+    ? (schedule?.slots ?? [])
+    : (dayEntry?.slots ?? schedule?.slots ?? []);
+  const events = searching ? [] : (dayEntry?.events ?? schedule?.events ?? []);
+  const title = searching
+    ? (schedule?.label ?? 'Agenda')
+    : (dayEntry?.label ?? schedule?.label ?? 'Agenda');
 
   return (
     <SpeakerProfile.Host app={activeApp} hostContext={hostContext}>
@@ -73,13 +51,11 @@ export default function Schedule({
           <DayPicker
             days={schedule?.days}
             selected={selectedDay}
-            pending={pendingDay !== null}
-            onChange={(day) => {
-              void selectDay(day);
-            }}
+            onChange={setPickedDay}
           />
         </div>
         <div
+          key={searching ? 'search' : `day-${selectedDay}`}
           className="cyc-scroll min-h-0 flex-1 pr-1"
           tabIndex={0}
           aria-label="Agenda"

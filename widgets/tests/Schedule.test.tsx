@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Schedule from '../src/schedule/Schedule.js';
@@ -29,11 +29,12 @@ describe('Schedule', () => {
 
   it('switches the current agenda when a day is picked', async () => {
     const user = userEvent.setup();
+    const callServerTool = vi.fn(mockConferenceTools);
     render(
       <Schedule
         app={createMockApp({
           toolOutput: nickSchedule,
-          callServerTool: mockConferenceTools,
+          callServerTool,
         })}
       />
     );
@@ -45,6 +46,7 @@ describe('Schedule', () => {
     expect(screen.getByRole('radio', { name: /Day 0/i }).getAttribute('aria-checked')).toBe(
       'true'
     );
+    expect(callServerTool).not.toHaveBeenCalled();
   });
 
   it('opens a speaker profile from a session card', async () => {
