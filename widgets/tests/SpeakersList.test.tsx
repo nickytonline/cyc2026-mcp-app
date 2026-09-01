@@ -141,7 +141,9 @@ describe('SpeakersList', () => {
       />
     );
 
-    await user.click(await screen.findByRole('button', { name: /All tracks/i }));
+    const trigger = await screen.findByRole('button', { name: /All tracks/i });
+    expect(trigger.className).toContain('hover:text-[var(--cyc-ink)]');
+    await user.click(trigger);
     await user.click(await screen.findByRole('menuitemcheckbox', { name: 'AI' }));
     expect(await screen.findByText('Anupama Pathirage')).toBeTruthy();
     expect(screen.queryByText('Nick Taylor')).toBeNull();

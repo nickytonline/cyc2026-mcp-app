@@ -33,7 +33,7 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      'relative flex cursor-pointer select-none items-center rounded-[6px] px-2 py-1.5 text-sm outline-none focus:bg-[var(--cyc-cloud)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-white/10',
+      'relative flex cursor-pointer select-none items-center rounded-[6px] px-2 py-1.5 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:data-[highlighted]:bg-white/10 dark:data-[highlighted]:text-white',
       className
     )}
     {...props}
@@ -48,7 +48,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
   <DropdownMenuPrimitive.CheckboxItem
     ref={ref}
     className={cn(
-      'relative flex cursor-pointer select-none items-center rounded-[6px] py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-[var(--cyc-cloud)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-white/10',
+      'relative flex cursor-pointer select-none items-center rounded-[6px] py-1.5 pl-8 pr-2 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:data-[highlighted]:bg-white/10 dark:data-[highlighted]:text-white',
       className
     )}
     checked={checked}
