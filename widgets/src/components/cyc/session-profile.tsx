@@ -11,7 +11,7 @@ import {
 } from 'react';
 import type { SessionCard, ViewScheduleItemOutput } from 'mcp-app-server/types';
 import { useCompactSurface } from '../../hooks/useCompactSurface';
-import { formatClock, roomColor } from '../../utils/cyc';
+import { formatClock } from '../../utils/cyc';
 import type { AppLike, HostContext } from '../../types/mcp-app';
 import {
   Dialog,
@@ -29,7 +29,7 @@ import {
 } from '../ui/drawer';
 import { useCycTheme } from './cyc-theme';
 import { SessionSpeakerByline } from './SpeakerPhoto';
-import { TrackChip } from './TrackChip';
+import { RoomLabel, TrackChip } from './TrackChip';
 
 type SessionAskTarget = Pick<SessionCard, 'id' | 'title' | 'track' | 'room'>;
 
@@ -194,12 +194,7 @@ function SessionProfileBody({
       <div className="shrink-0 border-b border-[var(--cyc-line)] px-4 py-4">
         <div className="flex flex-wrap items-center gap-2">
           <TrackChip track={session?.track ?? preview.track} />
-          <span
-            className="font-mono text-[0.6875rem] font-bold uppercase"
-            style={{ color: roomColor(room) }}
-          >
-            {room}
-          </span>
+          <RoomLabel room={room} />
         </div>
         <p className="mt-2 font-mono text-[0.75rem] text-[var(--cyc-muted)]">
           {preview.day != null ? `Day ${preview.day} · ` : ''}

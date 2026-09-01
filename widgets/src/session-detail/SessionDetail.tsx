@@ -6,10 +6,10 @@ import {
   sessionQuestion,
 } from '../components/cyc/session-profile';
 import { SessionSpeakerByline } from '../components/cyc/SpeakerPhoto';
-import { TrackChip } from '../components/cyc/TrackChip';
+import { RoomLabel, TrackChip } from '../components/cyc/TrackChip';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
-import { formatClock, roomColor } from '../utils/cyc';
+import { formatClock } from '../utils/cyc';
 import type { AppLike } from '../types/mcp-app';
 
 export default function SessionDetail({
@@ -52,12 +52,7 @@ export default function SessionDetail({
       >
         <div className="flex flex-wrap items-center gap-2">
           <TrackChip track={session.track} />
-          <span
-            className="font-mono text-[0.75rem] font-bold uppercase"
-            style={{ color: roomColor(session.room) }}
-          >
-            {session.room}
-          </span>
+          <RoomLabel room={session.room} className="text-[0.75rem]" />
           <span className="font-mono text-[0.75rem] text-[var(--cyc-muted)]">
             {formatClock(session.start)}
             {session.end ? ` – ${formatClock(session.end)}` : ''}
@@ -73,7 +68,9 @@ export default function SessionDetail({
             onAsk={async (question) => {
               await activeApp.sendMessage({
                 role: 'user',
-                content: [{ type: 'text', text: sessionQuestion(session, question) }],
+                content: [
+                  { type: 'text', text: sessionQuestion(session, question) },
+                ],
               });
             }}
           />

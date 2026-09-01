@@ -26,9 +26,11 @@ Use these names, never raw Inter/zinc/purple-gradient defaults:
 - Radius: `--cyc-radius` `8px`
 - Contained widget pane: `--cyc-widget-max` `32rem` (host `maxHeight` wins when set; never `100dvh` as iframe height)
 
-Room colors (agenda dots):
+Room / track **dots** (identity swatch — not label text):
 
 - 1D `#ec4899` · 2A `#0868f7` · 2B `#079455` · 2C `#f97316` · 2D `#ef4444` · 2E `#7c3aed`
+
+Chip and room **labels** use `TRACK_PALETTES` / `ROOM_PALETTES` in `widgets/src/utils/cyc.ts` (`onLight` / `onDark`) so they stay ≥4.5:1 on paper and navy.
 
 ## Type
 
@@ -40,7 +42,7 @@ Room colors (agenda dots):
 ## Patterns that belong
 
 - Hairline rules in `--cyc-line`
-- Track pills with a 4px color dot
+- Track pills with a 4px identity-color dot. Chip/room **label** text uses `onLight` / `onDark` from `widgets/src/utils/cyc.ts` so it stays ≥4.5:1 on paper and navy. Do not paint the raw swatch as small text.
 - Navy chrome for hero/header strips; `--cyc-paper` / `--cyc-cloud` for body
 - Blue CTA (`--cyc-blue`) for primary actions, 8px radius
 - Dark theme remaps paper/cloud/ink/muted/line only — do **not** invert primary/secondary. `.dark` uses navy paper `#031227`, well `#0a2345`, ink `#f5f8fc`, muted `#b4c4d6` (≥4.5:1), line `#3d5a82`, label blue `#7db3ff`. Buttons stay `#0868f7` with white text. Not generic `#171717` or zinc.

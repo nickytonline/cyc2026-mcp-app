@@ -2,13 +2,13 @@
 
 import { useState } from 'react';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
-import { TrackChip } from '../components/cyc/TrackChip';
+import { RoomLabel, TrackChip } from '../components/cyc/TrackChip';
 import { CycHost } from '../components/cyc/cyc-host';
 import { SessionProfile } from '../components/cyc/session-profile';
 import { SessionSpeakerByline } from '../components/cyc/SpeakerPhoto';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
-import { formatClock, roomColor } from '../utils/cyc';
+import { formatClock } from '../utils/cyc';
 import type { AppLike } from '../types/mcp-app';
 import { DayPicker } from './DayPicker';
 
@@ -98,12 +98,7 @@ export default function Schedule({
                         <div className="p-3">
                           <div className="flex flex-wrap items-center gap-2">
                             <TrackChip track={session.track} />
-                            <span
-                              className="font-mono text-[0.6875rem] font-bold uppercase"
-                              style={{ color: roomColor(session.room) }}
-                            >
-                              {session.room}
-                            </span>
+                            <RoomLabel room={session.room} />
                           </div>
                           <h2 className="mt-1 text-[0.9375rem] font-bold leading-snug">
                             {session.title}
