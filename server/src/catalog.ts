@@ -24,6 +24,7 @@ function readJson<T>(name: string): T {
 }
 
 const speakers: SpeakerRecord[] = readJson('speakers.json');
+const speakerById = new Map(speakers.map((speaker) => [speaker.id, speaker]));
 const sessions: SessionRecord[] = readJson('sessions.json');
 const scheduleFile: {
   timezone: string;
@@ -115,7 +116,16 @@ function toSpeakerCard(speaker: SpeakerRecord): SpeakerCard {
   };
 }
 
+function withSpeakerPhoto(person: SessionRecord['speakers'][number]) {
+  return {
+    id: person.id,
+    name: person.name,
+    photoUrl: speakerById.get(person.id)?.photoUrl ?? null,
+  };
+}
+
 function toSessionCard(session: SessionRecord): SessionCard {
+  const people = session.speakers.map(withSpeakerPhoto);
   return {
     id: session.id,
     title: session.title,
@@ -124,8 +134,8 @@ function toSessionCard(session: SessionRecord): SessionCard {
     start: session.start,
     end: session.end,
     day: session.day,
-    speakers: session.speakers,
-    speakerNames: session.speakers.map((person) => person.name),
+    speakers: people,
+    speakerNames: people.map((person) => person.name),
   };
 }
 

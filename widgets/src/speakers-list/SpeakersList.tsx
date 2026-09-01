@@ -4,6 +4,7 @@ import { useState } from 'react';
 import type { ListSpeakersOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerPhoto } from '../components/cyc/SpeakerPhoto';
+import { CycHost } from '../components/cyc/cyc-host';
 import { SpeakerProfile } from '../components/cyc/speaker-profile';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
@@ -51,7 +52,7 @@ export default function SpeakersList({
   }
 
   return (
-    <SpeakerProfile.Host app={activeApp} hostContext={hostContext}>
+    <CycHost app={activeApp} hostContext={hostContext}>
       <WidgetShell
         kicker="04 / Who you'll learn from"
         title="This year's speakers"
@@ -109,6 +110,6 @@ export default function SpeakersList({
           ))}
         </ul>
       </WidgetShell>
-    </SpeakerProfile.Host>
+    </CycHost>
   );
 }

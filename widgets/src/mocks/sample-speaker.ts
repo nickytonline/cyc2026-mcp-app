@@ -42,7 +42,8 @@ export const nickSpeakerCard: SpeakerCard = {
   company: 'Pomerium',
   track: 'JavaScript',
   talkTitle: 'Build your First MCP App',
-  photoUrl: null,
+  photoUrl:
+    'https://images.ctfassets.net/thl6ds8azzpj/3C4oz376JUYcFAhntVVHwb/57ed6ba9bcb0701e4b1633d90e97c3d0/nick-taylor.jpg',
 };
 
 export const anupamaSpeakerCard: SpeakerCard = {
@@ -74,7 +75,13 @@ export const nickSpeakerDetail: GetSpeakerOutput = {
       start: '2026-09-03T14:30:00-05:00',
       end: '2026-09-03T14:55:00-05:00',
       day: 1,
-      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+      speakers: [
+        {
+          id: 'nick-taylor',
+          name: 'Nick Taylor',
+          photoUrl: nickSpeakerCard.photoUrl,
+        },
+      ],
       speakerNames: ['Nick Taylor'],
     },
   ],
@@ -101,7 +108,13 @@ const nickDayOneSlot = {
       start: '2026-09-03T14:30:00-05:00',
       end: '2026-09-03T14:55:00-05:00',
       day: 1,
-      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+      speakers: [
+        {
+          id: 'nick-taylor',
+          name: 'Nick Taylor',
+          photoUrl: nickSpeakerCard.photoUrl,
+        },
+      ],
       speakerNames: ['Nick Taylor'],
     },
   ],
@@ -119,7 +132,13 @@ const closingDayTwoSlot = {
       start: '2026-09-04T16:00:00-05:00',
       end: '2026-09-04T16:30:00-05:00',
       day: 2,
-      speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+      speakers: [
+        {
+          id: 'nick-taylor',
+          name: 'Nick Taylor',
+          photoUrl: nickSpeakerCard.photoUrl,
+        },
+      ],
       speakerNames: ['Nick Taylor'],
     },
   ],
@@ -219,6 +238,9 @@ export async function mockConferenceTools(params: {
         appliedTracks: tracks,
       } satisfies ListSpeakersOutput,
     };
+  }
+  if (params.name === 'view_schedule_item') {
+    return { content: [], structuredContent: nickSessionDetail };
   }
   if (params.name === 'get_schedule') {
     const day = Number(params.arguments?.day);

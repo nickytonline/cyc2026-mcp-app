@@ -55,7 +55,7 @@ interface SpeakerProfileActions {
   open: (preview: SpeakerPreview) => void;
   close: () => void;
   ask: (question: string) => Promise<void>;
-  viewSession: (sessionId: string) => void;
+  viewSession: (session: SessionCard) => void;
 }
 
 interface SpeakerProfileContextValue {
@@ -88,10 +88,12 @@ function speakerQuestion(preview: SpeakerPreview, question: string) {
 function SpeakerProfileProvider({
   app,
   hostContext,
+  onViewSession,
   children,
 }: {
   app: SpeakerApp;
   hostContext?: HostContext | null;
+  onViewSession?: (session: SessionCard) => void;
   children: ReactNode;
 }) {
   const [state, setState] = useState<SpeakerProfileState>({
@@ -154,12 +156,16 @@ function SpeakerProfileProvider({
       requestIdRef.current += 1;
       setState({ preview: null, detail: null, status: 'idle' });
     },
-    viewSession: (sessionId) => {
+    viewSession: (session) => {
       requestIdRef.current += 1;
       setState({ preview: null, detail: null, status: 'idle' });
+      if (onViewSession) {
+        onViewSession(session);
+        return;
+      }
       void app.callServerTool({
         name: 'view_schedule_item',
-        arguments: { id: sessionId },
+        arguments: { id: session.id },
       });
     },
   };
@@ -469,7 +475,7 @@ function SessionList({
   onSelect,
 }: {
   sessions: SessionCard[];
-  onSelect?: (sessionId: string) => void;
+  onSelect?: (session: SessionCard) => void;
 }) {
   if (sessions.length === 0) {
     return (
@@ -499,7 +505,7 @@ function SessionList({
               <button
                 type="button"
                 className="w-full rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
-                onClick={() => onSelect(session.id)}
+                onClick={() => onSelect(session)}
               >
                 {body}
               </button>
@@ -543,14 +549,20 @@ function SpeakerOpen({
 export function SpeakerProfileHost({
   app,
   hostContext,
+  onViewSession,
   children,
 }: {
   app: SpeakerApp;
   hostContext?: HostContext | null;
+  onViewSession?: (session: SessionCard) => void;
   children: ReactNode;
 }) {
   return (
-    <SpeakerProfileProvider app={app} hostContext={hostContext}>
+    <SpeakerProfileProvider
+      app={app}
+      hostContext={hostContext}
+      onViewSession={onViewSession}
+    >
       {children}
       <SpeakerProfileDialog />
     </SpeakerProfileProvider>

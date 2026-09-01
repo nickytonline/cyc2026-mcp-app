@@ -66,6 +66,18 @@ describe('catalog', () => {
     expect(getSchedule({ day: 'Friday' })).toBeUndefined();
   });
 
+  it('includes speaker photos on schedule session cards', () => {
+    const day1 = getSchedule({ day: 1 });
+    const session = day1?.slots
+      .flatMap((slot) => slot.sessions)
+      .find((item) => item.id.includes('build-your-first-mcp-app'));
+    expect(session?.speakers[0]).toMatchObject({
+      id: 'nick-taylor',
+      name: 'Nick Taylor',
+      photoUrl: expect.stringContaining('images.ctfassets.net'),
+    });
+  });
+
   it('finds a session by exact slug', () => {
     const bySlug = getSession(
       'build-your-first-mcp-app-hwylh8wvaanptgcbow'

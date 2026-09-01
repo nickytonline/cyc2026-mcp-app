@@ -60,6 +60,33 @@ describe('SpeakersList', () => {
     expect(details.textContent).toContain('Microsoft MVP');
   });
 
+  it('opens a session overlay from On the program', async () => {
+    const user = userEvent.setup();
+    render(
+      <SpeakersList
+        app={createMockApp({
+          toolOutput: nickSpeakersList,
+          callServerTool: mockConferenceTools,
+          hostContext: {
+            theme: 'light',
+            displayMode: 'inline',
+            containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+          },
+        })}
+      />
+    );
+
+    await user.click(await screen.findByRole('button', { name: /Nick Taylor/i }));
+    await user.click(
+      await screen.findByRole('button', { name: /Build your First MCP App/i })
+    );
+    expect(
+      await screen.findByText(/Remote Model Context Protocol/)
+    ).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this session')).toBeTruthy();
+    expect(screen.queryByLabelText('Ask about this speaker')).toBeNull();
+  });
+
   it('filters speakers by track', async () => {
     const user = userEvent.setup();
     render(

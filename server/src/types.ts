@@ -37,6 +37,7 @@ export interface SpeakerCard {
 export interface SessionSpeaker {
   id: string;
   name: string;
+  photoUrl?: string | null;
 }
 
 export interface SessionRecord {

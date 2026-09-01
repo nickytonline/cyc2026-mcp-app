@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import SessionDetail from '../src/session-detail/SessionDetail.js';
 import { createMockApp } from '../src/mocks/mock-app.js';
 import {
@@ -24,27 +23,23 @@ describe('SessionDetail', () => {
     expect(region.className).toContain('cyc-scroll');
   });
 
-  it('opens a speaker profile from the session', async () => {
-    const user = userEvent.setup();
+  it('shows session info and an ask-about-session field', async () => {
     render(
       <SessionDetail
         app={createMockApp({
           toolOutput: nickSessionDetail,
           callServerTool: mockConferenceTools,
-          hostContext: {
-            theme: 'light',
-            displayMode: 'inline',
-            containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
-          },
         })}
       />
     );
 
-    await user.click(await screen.findByRole('button', { name: /Nick Taylor/i }));
+    expect(await screen.findByText(/Remote Model Context Protocol/)).toBeTruthy();
+    expect(screen.getByText('Nick Taylor')).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this session')).toBeTruthy();
     expect(
-      await screen.findByText(
-        'Nick is a Microsoft MVP, GitHub Star, and Developer Advocate at Pomerium.'
-      )
-    ).toBeTruthy();
+      screen.getByLabelText('Session').querySelector('img')?.getAttribute('src')
+    ).toContain('nick-taylor.jpg');
+    expect(screen.queryByRole('button', { name: /Nick Taylor/i })).toBeNull();
+    expect(screen.queryByLabelText('Ask about this speaker')).toBeNull();
   });
 });

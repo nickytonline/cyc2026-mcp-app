@@ -3,7 +3,9 @@
 import { useState } from 'react';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
-import { SpeakerProfile } from '../components/cyc/speaker-profile';
+import { CycHost } from '../components/cyc/cyc-host';
+import { SessionProfile } from '../components/cyc/session-profile';
+import { SessionSpeakerByline } from '../components/cyc/SpeakerPhoto';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
 import { formatClock, roomColor } from '../utils/cyc';
@@ -40,7 +42,7 @@ export default function Schedule({
     : (dayEntry?.label ?? schedule?.label ?? 'Agenda');
 
   return (
-    <SpeakerProfile.Host app={activeApp} hostContext={hostContext}>
+    <CycHost app={activeApp} hostContext={hostContext}>
       <WidgetShell
         kicker="03 / Two days, six tracks"
         title={title}
@@ -87,50 +89,29 @@ export default function Schedule({
                 </p>
                 <ul className="grid gap-2">
                   {slot.sessions.map((session) => (
-                    <li
-                      key={session.id}
-                      className="overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white shadow-[0_8px_24px_rgba(6,24,48,0.05)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
-                    >
-                      <button
-                        type="button"
-                        className="w-full p-3 text-left hover:bg-[var(--cyc-cloud)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:hover:bg-white/5"
-                        onClick={() => {
-                          void activeApp.callServerTool({
-                            name: 'view_schedule_item',
-                            arguments: { id: session.id },
-                          });
-                        }}
+                    <li key={session.id}>
+                      <SessionProfile.Open
+                        session={session}
+                        className="w-full overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white text-left shadow-[0_8px_24px_rgba(6,24,48,0.05)] hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
                       >
-                        <div className="flex flex-wrap items-center gap-2">
-                          <TrackChip track={session.track} />
-                          <span
-                            className="font-mono text-[0.6875rem] font-bold uppercase"
-                            style={{ color: roomColor(session.room) }}
-                          >
-                            {session.room}
-                          </span>
-                        </div>
-                        <h2 className="mt-1 text-[0.9375rem] font-bold leading-snug">
-                          {session.title}
-                        </h2>
-                      </button>
-                      {session.speakers.length > 0 ? (
-                        <div className="flex flex-wrap gap-1 border-t border-[var(--cyc-line)] px-3 py-2 dark:border-white/10">
-                          {session.speakers.map((speaker) => (
-                            <SpeakerProfile.Open
-                              key={speaker.id}
-                              speaker={speaker}
-                              className="rounded-[8px] px-2 py-1 text-[0.75rem] font-bold text-[var(--cyc-blue)] hover:bg-[var(--cyc-cloud)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:hover:bg-white/5"
+                        <div className="p-3">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <TrackChip track={session.track} />
+                            <span
+                              className="font-mono text-[0.6875rem] font-bold uppercase"
+                              style={{ color: roomColor(session.room) }}
                             >
-                              {speaker.name}
-                            </SpeakerProfile.Open>
-                          ))}
+                              {session.room}
+                            </span>
+                          </div>
+                          <h2 className="mt-1 text-[0.9375rem] font-bold leading-snug">
+                            {session.title}
+                          </h2>
                         </div>
-                      ) : (
-                        <p className="border-t border-[var(--cyc-line)] px-3 py-2 text-[0.75rem] text-[var(--cyc-muted)] dark:border-white/10">
-                          {session.speakerNames.join(', ')}
-                        </p>
-                      )}
+                        <div className="border-t border-[var(--cyc-line)] px-3 py-2 dark:border-white/10">
+                          <SessionSpeakerByline speakers={session.speakers} />
+                        </div>
+                      </SessionProfile.Open>
                     </li>
                   ))}
                 </ul>
@@ -144,6 +125,6 @@ export default function Schedule({
           ) : null}
         </div>
       </WidgetShell>
-    </SpeakerProfile.Host>
+    </CycHost>
   );
 }

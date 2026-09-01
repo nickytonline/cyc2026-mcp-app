@@ -21,12 +21,14 @@ export function WidgetShell({
   const theme = hostContext?.theme ?? 'light';
   const padding = hostPadding(hostContext);
   const hostMax = hostContext?.containerDimensions?.maxHeight;
+  const paneHeight = hostMax
+    ? `${hostMax}px`
+    : 'var(--cyc-widget-max)';
   const style: CSSProperties = fill
     ? {
         ...padding,
-        ...(hostMax
-          ? { height: `${hostMax}px`, maxHeight: `${hostMax}px` }
-          : { maxHeight: 'var(--cyc-widget-max)' }),
+        height: paneHeight,
+        maxHeight: paneHeight,
         overflow: 'hidden',
       }
     : padding;

@@ -25,6 +25,10 @@ describe('Schedule', () => {
     expect(screen.getByRole('radio', { name: /Day 1/i }).getAttribute('aria-checked')).toBe(
       'true'
     );
+    expect(
+      screen.getByRole('button', { name: /Build your First MCP App/i }).querySelector('img')
+        ?.getAttribute('src')
+    ).toContain('nick-taylor.jpg');
   });
 
   it('switches the current agenda when a day is picked', async () => {
@@ -49,7 +53,7 @@ describe('Schedule', () => {
     expect(callServerTool).not.toHaveBeenCalled();
   });
 
-  it('opens a speaker profile from a session card', async () => {
+  it('opens a session overlay from the whole card', async () => {
     const user = userEvent.setup();
     render(
       <Schedule
@@ -66,12 +70,20 @@ describe('Schedule', () => {
     );
 
     await user.click(
-      await screen.findByRole('button', { name: 'Nick Taylor' })
+      await screen.findByRole('button', { name: /Build your First MCP App/i })
     );
     expect(
-      await screen.findByText(
+      await screen.findByText(/Remote Model Context Protocol/)
+    ).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this session')).toBeTruthy();
+    expect(
+      screen.getByRole('dialog').querySelector('img')?.getAttribute('src')
+    ).toContain('nick-taylor.jpg');
+    expect(
+      screen.queryByText(
         'Nick is a Microsoft MVP, GitHub Star, and Developer Advocate at Pomerium.'
       )
-    ).toBeTruthy();
+    ).toBeNull();
+    expect(screen.queryByLabelText('Ask about this speaker')).toBeNull();
   });
 });
