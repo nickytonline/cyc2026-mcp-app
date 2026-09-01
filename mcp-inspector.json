@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "cyc2026": {
-      "type": "streamable-http",
-      "url": "http://localhost:8080/mcp"
-    }
-  }
-}
