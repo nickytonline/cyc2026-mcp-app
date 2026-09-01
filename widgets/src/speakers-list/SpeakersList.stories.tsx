@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { createMockApp } from '../mocks/mock-app';
-import { mockConferenceTools, nickSpeakerCard, nickSpeakersList } from '../mocks/sample-speaker';
+import {
+  mockConferenceTools,
+  nickSpeakerCard,
+  nickSpeakersList,
+} from '../mocks/sample-speaker';
 import SpeakersList from './SpeakersList';
 
 const meta = {
@@ -17,6 +21,22 @@ export const Default: Story = {
       app={createMockApp({
         toolOutput: nickSpeakersList,
         callServerTool: mockConferenceTools,
+      })}
+    />
+  ),
+};
+
+export const Dark: Story = {
+  render: () => (
+    <SpeakersList
+      app={createMockApp({
+        toolOutput: nickSpeakersList,
+        callServerTool: mockConferenceTools,
+        hostContext: {
+          theme: 'dark',
+          displayMode: 'inline',
+          containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+        },
       })}
     />
   ),
@@ -46,7 +66,10 @@ export const Crowded: Story = {
       ...nickSpeakerCard,
       id: `speaker-${index}`,
       sequence: index + 1,
-      name: index === 0 ? nickSpeakerCard.name : `${nickSpeakerCard.name} ${index + 1}`,
+      name:
+        index === 0
+          ? nickSpeakerCard.name
+          : `${nickSpeakerCard.name} ${index + 1}`,
     }));
     return (
       <SpeakersList

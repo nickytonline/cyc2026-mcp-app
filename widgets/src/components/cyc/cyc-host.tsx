@@ -2,6 +2,7 @@
 
 import type { ReactNode } from 'react';
 import type { AppLike, HostContext } from '../../types/mcp-app';
+import { CycThemeProvider } from './cyc-theme';
 import {
   SessionProfile,
   SessionProfileProvider,
@@ -46,10 +47,12 @@ export function CycHost({
   children: ReactNode;
 }) {
   return (
-    <SessionProfileProvider app={app} hostContext={hostContext}>
-      <ProfileBridge app={app} hostContext={hostContext}>
-        {children}
-      </ProfileBridge>
-    </SessionProfileProvider>
+    <CycThemeProvider hostTheme={hostContext?.theme}>
+      <SessionProfileProvider app={app} hostContext={hostContext}>
+        <ProfileBridge app={app} hostContext={hostContext}>
+          {children}
+        </ProfileBridge>
+      </SessionProfileProvider>
+    </CycThemeProvider>
   );
 }

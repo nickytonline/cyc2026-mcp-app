@@ -25,7 +25,7 @@ export function DayPicker({
     <div
       role="radiogroup"
       aria-label="Conference day"
-      className="grid shrink-0 grid-cols-3 gap-1 rounded-[8px] border border-[var(--cyc-line)] bg-white p-1 dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+      className="grid shrink-0 grid-cols-3 gap-1 rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-1"
     >
       {options.map((option) => {
         const checked = option.day === selected;
@@ -42,7 +42,7 @@ export function DayPicker({
               'rounded-[6px] px-2 py-1.5 text-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)]',
               checked
                 ? 'bg-[var(--cyc-navy)] text-white dark:bg-[var(--cyc-blue)]'
-                : 'text-[var(--cyc-ink)] hover:bg-[var(--cyc-cloud)] dark:text-white dark:hover:bg-white/5'
+                : 'text-[var(--cyc-ink)] hover:bg-[var(--cyc-cloud)]'
             )}
           >
             <span className="block font-mono text-[0.6875rem] font-bold uppercase tracking-wider">

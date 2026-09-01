@@ -28,9 +28,9 @@ export default function EventsList({
         {events.map((event) => (
           <li
             key={event.id}
-            className="rounded-[8px] border border-[var(--cyc-line)] bg-white p-4 dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+            className="rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-4"
           >
-            <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.12em] text-[var(--cyc-blue)]">
+            <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.12em] text-[var(--cyc-blue-text)]">
               {event.when}
             </p>
             <h2 className="mt-1 text-lg font-bold">{event.title}</h2>

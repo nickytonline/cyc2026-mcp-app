@@ -29,3 +29,18 @@ export const Default: Story = {
     <EventsList app={createMockApp<ListEventsOutput>({ toolOutput: sample })} />
   ),
 };
+
+export const Dark: Story = {
+  render: () => (
+    <EventsList
+      app={createMockApp<ListEventsOutput>({
+        toolOutput: sample,
+        hostContext: {
+          theme: 'dark',
+          displayMode: 'inline',
+          containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+        },
+      })}
+    />
+  ),
+};

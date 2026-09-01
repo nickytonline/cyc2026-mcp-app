@@ -16,9 +16,10 @@ Source of truth for tokens: `widgets/src/index.css` (`--cyc-*`).
 
 Use these names, never raw Inter/zinc/purple-gradient defaults:
 
-- Navy paper: `--cyc-navy` `#031227`, `--cyc-navy-soft` `#0a2345`
+- Navy paper: `--cyc-navy` `#031227`, `--cyc-navy-soft` `#0a2345`, `--cyc-paper` `#ffffff`
 - Ink: `--cyc-ink` `#07152e`
-- Accent: `--cyc-blue` `#0868f7`, `--cyc-blue-dark` `#0056d8`
+- Accent: `--cyc-blue` `#0868f7` (buttons), `--cyc-blue-dark` `#0056d8`, `--cyc-blue-text` `#0868f7` (labels on paper)
+- Kicker on navy chrome: `--cyc-kicker` `#7db3ff`
 - Cloud / rules: `--cyc-cloud` `#f5f8fc`, `--cyc-line` `#dce5f0`
 - Muted: `--cyc-muted` `#5f6e83`
 - Green: `--cyc-green` `#079455`
@@ -40,9 +41,9 @@ Room colors (agenda dots):
 
 - Hairline rules in `--cyc-line`
 - Track pills with a 4px color dot
-- Navy chrome for hero/header strips; white/`--cyc-cloud` for body
+- Navy chrome for hero/header strips; `--cyc-paper` / `--cyc-cloud` for body
 - Blue CTA (`--cyc-blue`) for primary actions, 8px radius
-- Dark host theme maps to navy paper, not generic `#171717`
+- Dark theme remaps paper/cloud/ink/muted/line only — do **not** invert primary/secondary. `.dark` uses navy paper `#031227`, well `#0a2345`, ink `#f5f8fc`, muted `#b4c4d6` (≥4.5:1), line `#3d5a82`, label blue `#7db3ff`. Buttons stay `#0868f7` with white text. Not generic `#171717` or zinc.
 
 ## Bans
 

@@ -56,7 +56,7 @@ export function TrackFilter({
           type="button"
           variant="outline"
           size="sm"
-          className="h-8 gap-1 rounded-[8px] border-[var(--cyc-line)] bg-white px-2.5 font-mono text-[0.6875rem] font-bold uppercase tracking-wider text-[var(--cyc-ink)] hover:bg-[var(--cyc-cloud)] hover:text-[var(--cyc-ink)] data-[state=open]:bg-[var(--cyc-cloud)] data-[state=open]:text-[var(--cyc-ink)] dark:border-white/10 dark:bg-[var(--cyc-navy)] dark:text-white dark:hover:bg-white/10 dark:hover:text-white dark:data-[state=open]:bg-white/10 dark:data-[state=open]:text-white"
+          className="h-8 gap-1 rounded-[8px] border-[var(--cyc-line)] bg-[var(--cyc-paper)] px-2.5 font-mono text-[0.6875rem] font-bold uppercase tracking-wider text-[var(--cyc-ink)] hover:bg-[var(--cyc-cloud)] hover:text-[var(--cyc-ink)] data-[state=open]:bg-[var(--cyc-cloud)] data-[state=open]:text-[var(--cyc-ink)]"
           aria-label={`Filter by track, ${label}`}
         >
           {label}

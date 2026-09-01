@@ -83,7 +83,7 @@ export default function SpeakersList({
             <li key={speaker.id}>
               <SpeakerProfile.Open
                 speaker={speaker}
-                className="grid w-full grid-cols-[72px_minmax(0,1fr)] overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+                className="grid w-full grid-cols-[72px_minmax(0,1fr)] overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)]"
               >
                 <div className="h-[88px] bg-[var(--cyc-navy)]">
                   <SpeakerPhoto
@@ -94,14 +94,14 @@ export default function SpeakersList({
                 </div>
                 <div className="min-w-0 px-3 py-2">
                   <TrackChip track={speaker.track} />
-                  <h2 className="mt-1 truncate text-[0.9375rem] font-bold text-[var(--cyc-ink)] dark:text-white">
+                  <h2 className="mt-1 truncate text-[0.9375rem] font-bold text-[var(--cyc-ink)]">
                     {speaker.name}
                   </h2>
                   <p className="truncate text-[0.75rem] text-[var(--cyc-muted)]">
                     {speaker.title}
                     {speaker.company ? ` / ${speaker.company}` : ''}
                   </p>
-                  <p className="mt-1 line-clamp-2 text-[0.8125rem] text-[var(--cyc-ink)] dark:text-white/90">
+                  <p className="mt-1 line-clamp-2 text-[0.8125rem] text-[var(--cyc-ink)]">
                     {speaker.talkTitle}
                   </p>
                 </div>

@@ -23,6 +23,22 @@ export const Default: Story = {
   ),
 };
 
+export const Dark: Story = {
+  render: () => (
+    <Schedule
+      app={createMockApp<GetScheduleOutput>({
+        toolOutput: nickSchedule,
+        callServerTool: mockConferenceTools,
+        hostContext: {
+          theme: 'dark',
+          displayMode: 'inline',
+          containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+        },
+      })}
+    />
+  ),
+};
+
 export const CompactDrawer: Story = {
   render: () => (
     <div className="mx-auto max-w-[390px]">

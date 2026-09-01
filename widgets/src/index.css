@@ -1,16 +1,19 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "@fontsource/geist-sans/index.css";
-@import "@fontsource/geist-mono/index.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource/geist-sans/index.css';
+@import '@fontsource/geist-mono/index.css';
 
 @custom-variant dark (&:is(.dark *));
 
 :root {
   --cyc-navy: #031227;
   --cyc-navy-soft: #0a2345;
+  --cyc-paper: #ffffff;
   --cyc-ink: #07152e;
   --cyc-blue: #0868f7;
   --cyc-blue-dark: #0056d8;
+  --cyc-blue-text: #0868f7;
+  --cyc-kicker: #7db3ff;
   --cyc-cloud: #f5f8fc;
   --cyc-line: #dce5f0;
   --cyc-muted: #5f6e83;
@@ -42,6 +45,13 @@
 }
 
 .dark {
+  /* Navy paper, not inverted blue or generic zinc. Buttons stay --cyc-blue. */
+  --cyc-paper: #031227;
+  --cyc-cloud: #0a2345;
+  --cyc-ink: #f5f8fc;
+  --cyc-muted: #b4c4d6;
+  --cyc-line: #3d5a82;
+  --cyc-blue-text: #7db3ff;
   --background: 218 86% 8%;
   --foreground: 210 40% 98%;
   --card: 217 75% 15%;
@@ -64,8 +74,8 @@
 }
 
 @theme inline {
-  --font-sans: "Geist Sans", system-ui, sans-serif;
-  --font-mono: "Geist Mono", monospace;
+  --font-sans: 'Geist Sans', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-card: hsl(var(--card));
@@ -87,8 +97,11 @@
   --color-ring: hsl(var(--ring));
   --color-cyc-navy: var(--cyc-navy);
   --color-cyc-navy-soft: var(--cyc-navy-soft);
+  --color-cyc-paper: var(--cyc-paper);
   --color-cyc-ink: var(--cyc-ink);
   --color-cyc-blue: var(--cyc-blue);
+  --color-cyc-blue-text: var(--cyc-blue-text);
+  --color-cyc-kicker: var(--cyc-kicker);
   --color-cyc-cloud: var(--cyc-cloud);
   --color-cyc-line: var(--cyc-line);
   --color-cyc-muted: var(--cyc-muted);

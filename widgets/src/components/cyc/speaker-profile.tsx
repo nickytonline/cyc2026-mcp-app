@@ -38,6 +38,7 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from '../ui/drawer';
+import { useCycTheme } from './cyc-theme';
 import { SpeakerPhoto } from './SpeakerPhoto';
 import { TrackChip } from './TrackChip';
 
@@ -242,8 +243,8 @@ function SpeakerProfileBody({
   const askId = useId();
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col bg-[var(--cyc-cloud)] text-[var(--cyc-ink)] dark:bg-[var(--cyc-navy-soft)] dark:text-white">
-      <div className="shrink-0 border-b border-[var(--cyc-line)] px-4 py-4 dark:border-white/10">
+    <div className="flex min-h-0 flex-1 flex-col bg-[var(--cyc-cloud)] text-[var(--cyc-ink)]">
+      <div className="shrink-0 border-b border-[var(--cyc-line)] px-4 py-4">
         <SpeakerProfileIdentity preview={preview} speaker={speaker} />
       </div>
       <div
@@ -254,9 +255,9 @@ function SpeakerProfileBody({
       >
         {status === 'loading' ? (
           <div className="grid gap-2" aria-hidden="true">
-            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-            <div className="h-3 w-2/3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)]" />
+            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)]" />
+            <div className="h-3 w-2/3 animate-pulse rounded bg-[var(--cyc-line)]" />
           </div>
         ) : null}
         {status === 'error' ? (
@@ -271,17 +272,19 @@ function SpeakerProfileBody({
           <div
             className={
               speaker?.bio
-                ? 'mt-4 border-t border-[var(--cyc-line)] pt-4 dark:border-white/10'
+                ? 'mt-4 border-t border-[var(--cyc-line)] pt-4'
                 : undefined
             }
           >
-            <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
+            <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue-text)]">
               On the program
             </p>
             <SessionList sessions={sessions} />
           </div>
         ) : null}
-        <div className={speaker?.bio || status === 'ready' ? 'mt-4' : undefined}>
+        <div
+          className={speaker?.bio || status === 'ready' ? 'mt-4' : undefined}
+        >
           <SpeakerAskForm
             id={askId}
             speaker={preview}
@@ -306,7 +309,7 @@ function SpeakerProfileHeader({
   return (
     <div className="flex items-start justify-between gap-3 bg-[var(--cyc-navy)] px-5 py-4 text-white">
       <div className="min-w-0">
-        <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[#7db3ff]">
+        <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-kicker)]">
           CYC26 / Speaker
         </p>
         <p className="mt-1 text-[1.25rem] font-bold leading-tight tracking-tight">
@@ -337,7 +340,7 @@ function SpeakerProfileDialog() {
   const speaker = detail?.speaker;
   const sessions = detail?.sessions ?? [];
   const open = preview !== null;
-  const theme = hostContext?.theme ?? 'light';
+  const { theme } = useCycTheme();
   const title = preview?.name ?? 'Speaker';
   const role = preview?.title
     ? `${preview.title}${preview.company ? ` / ${preview.company}` : ''}`
@@ -386,7 +389,9 @@ function SpeakerProfileDialog() {
     >
       <DialogContent
         showClose={false}
-        className={theme === 'dark' ? 'dark flex flex-col p-0' : 'flex flex-col p-0'}
+        className={
+          theme === 'dark' ? 'dark flex flex-col p-0' : 'flex flex-col p-0'
+        }
         aria-describedby={undefined}
       >
         <DialogHeader className="p-0">
@@ -436,11 +441,11 @@ function SpeakerAskForm({
   return (
     <form
       onSubmit={(event) => void handleSubmit(event)}
-      className="border-t border-[var(--cyc-line)] pt-4 dark:border-white/10"
+      className="border-t border-[var(--cyc-line)] pt-4"
     >
       <label
         htmlFor={id ?? `ask-${speaker.id}`}
-        className="block font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]"
+        className="block font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue-text)]"
       >
         Ask about this speaker
       </label>
@@ -454,7 +459,7 @@ function SpeakerAskForm({
           onChange={(event) => setQuestion(event.target.value)}
           disabled={disabled || sending}
           placeholder="Should I see this talk?"
-          className="min-w-0 flex-1 rounded-[8px] border border-[var(--cyc-line)] bg-white px-3 py-2 text-sm text-[var(--cyc-ink)] outline-none placeholder:text-[var(--cyc-muted)] focus-visible:border-[var(--cyc-blue)] focus-visible:ring-2 focus-visible:ring-[var(--cyc-blue)]/30 disabled:opacity-60 dark:border-white/10 dark:bg-[var(--cyc-navy)] dark:text-white"
+          className="min-w-0 flex-1 rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] px-3 py-2 text-sm text-[var(--cyc-ink)] outline-none placeholder:text-[var(--cyc-muted)] focus-visible:border-[var(--cyc-blue)] focus-visible:ring-2 focus-visible:ring-[var(--cyc-blue)]/30 disabled:opacity-60"
         />
         <button
           type="submit"
@@ -503,12 +508,12 @@ function SessionTalkDetails({ session }: { session: SessionCard }) {
 
   return (
     <details
-      className="group overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white open:border-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+      className="group overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] open:border-[var(--cyc-blue)]"
       onToggle={(event) => void handleToggle(event)}
     >
-      <summary className="flex cursor-pointer list-none items-start gap-2 p-3 text-left marker:content-none hover:bg-[var(--cyc-cloud)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:hover:bg-white/5 [&::-webkit-details-marker]:hidden">
+      <summary className="flex cursor-pointer list-none items-start gap-2 p-3 text-left marker:content-none hover:bg-[var(--cyc-cloud)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] [&::-webkit-details-marker]:hidden">
         <span className="min-w-0 flex-1">
-          <strong className="block text-[var(--cyc-ink)] dark:text-white">
+          <strong className="block text-[var(--cyc-ink)]">
             {session.title}
           </strong>
           <span className="mt-1 block font-mono text-[0.75rem] text-[var(--cyc-muted)]">
@@ -531,11 +536,11 @@ function SessionTalkDetails({ session }: { session: SessionCard }) {
           />
         </svg>
       </summary>
-      <div className="border-t border-[var(--cyc-line)] px-3 py-3 dark:border-white/10">
+      <div className="border-t border-[var(--cyc-line)] px-3 py-3">
         {status === 'loading' ? (
           <div className="grid gap-2" aria-hidden="true">
-            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
-            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)]" />
+            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)]" />
           </div>
         ) : null}
         {status === 'error' ? (

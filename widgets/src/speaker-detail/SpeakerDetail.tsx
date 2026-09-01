@@ -54,7 +54,7 @@ export default function SpeakerDetail({
             {speaker.company ? ` / ${speaker.company}` : ''}
           </p>
           {speaker.bio ? (
-            <p className="mt-3 text-[0.9375rem] leading-7 text-[var(--cyc-ink)] dark:text-white/90">
+            <p className="mt-3 text-[0.9375rem] leading-7 text-[var(--cyc-ink)]">
               {speaker.bio}
             </p>
           ) : null}
@@ -64,8 +64,8 @@ export default function SpeakerDetail({
         <SpeakerAskPanel speaker={speaker} app={activeApp} />
       </div>
       {sessions.length > 0 ? (
-        <div className="mt-4 border-t border-[var(--cyc-line)] pt-4 dark:border-white/10">
-          <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
+        <div className="mt-4 border-t border-[var(--cyc-line)] pt-4">
+          <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue-text)]">
             On the program
           </p>
           <ul className="mt-2 grid gap-2">
@@ -73,7 +73,7 @@ export default function SpeakerDetail({
               <li key={session.id}>
                 <button
                   type="button"
-                  className="w-full rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 text-left dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+                  className="w-full rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-3 text-left"
                   onClick={() => {
                     void activeApp.callServerTool({
                       name: 'view_schedule_item',
@@ -81,7 +81,7 @@ export default function SpeakerDetail({
                     });
                   }}
                 >
-                  <strong className="block text-[var(--cyc-ink)] dark:text-white">
+                  <strong className="block text-[var(--cyc-ink)]">
                     {session.title}
                   </strong>
                   <span className="mt-1 block font-mono text-[0.75rem] text-[var(--cyc-muted)]">

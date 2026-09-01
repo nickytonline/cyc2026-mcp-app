@@ -29,16 +29,14 @@ const preview: Preview = {
       const theme = context.globals.theme;
 
       return (
-        <div className={theme === 'dark' ? 'dark' : ''}>
-          <div
-            className={
-              theme === 'dark'
-                ? 'bg-gray-900 min-h-screen p-8'
-                : 'bg-white min-h-screen p-8'
-            }
-          >
-            <Story />
-          </div>
+        <div
+          className={
+            theme === 'dark'
+              ? 'min-h-screen bg-[var(--cyc-navy)] p-8'
+              : 'min-h-screen bg-[var(--cyc-cloud)] p-8'
+          }
+        >
+          <Story />
         </div>
       );
     },

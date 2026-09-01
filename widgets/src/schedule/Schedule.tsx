@@ -30,7 +30,8 @@ export default function Schedule({
   const [pickedDay, setPickedDay] = useState<number | null>(null);
   const schedule = isSchedule(toolOutput) ? toolOutput : null;
   const searching =
-    Boolean(schedule && typeof schedule.query === 'string') && pickedDay === null;
+    Boolean(schedule && typeof schedule.query === 'string') &&
+    pickedDay === null;
   const selectedDay = pickedDay ?? (searching ? -1 : (schedule?.day ?? 1));
   const dayEntry = schedule?.days?.find((entry) => entry.day === selectedDay);
   const slots = searching
@@ -67,9 +68,9 @@ export default function Schedule({
               {events.map((event) => (
                 <li
                   key={event.id}
-                  className="rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+                  className="rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-3"
                 >
-                  <p className="font-mono text-[0.6875rem] uppercase tracking-wider text-[var(--cyc-blue)]">
+                  <p className="font-mono text-[0.6875rem] uppercase tracking-wider text-[var(--cyc-blue-text)]">
                     Social
                   </p>
                   <h2 className="font-bold">{event.title}</h2>
@@ -83,7 +84,7 @@ export default function Schedule({
           <ol className="grid gap-4">
             {slots.map((slot) => (
               <li key={`${slot.start}-${slot.end}`}>
-                <p className="mb-2 font-mono text-[0.75rem] font-bold text-[var(--cyc-blue)]">
+                <p className="mb-2 font-mono text-[0.75rem] font-bold text-[var(--cyc-blue-text)]">
                   {formatClock(slot.start)}
                   {slot.end ? ` – ${formatClock(slot.end)}` : ''}
                 </p>
@@ -92,7 +93,7 @@ export default function Schedule({
                     <li key={session.id}>
                       <SessionProfile.Open
                         session={session}
-                        className="w-full overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white text-left shadow-[0_8px_24px_rgba(6,24,48,0.05)] hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+                        className="w-full overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] text-left shadow-[0_8px_24px_rgba(6,24,48,0.05)] hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)]"
                       >
                         <div className="p-3">
                           <div className="flex flex-wrap items-center gap-2">
@@ -108,7 +109,7 @@ export default function Schedule({
                             {session.title}
                           </h2>
                         </div>
-                        <div className="border-t border-[var(--cyc-line)] px-3 py-2 dark:border-white/10">
+                        <div className="border-t border-[var(--cyc-line)] px-3 py-2">
                           <SessionSpeakerByline speakers={session.speakers} />
                         </div>
                       </SessionProfile.Open>

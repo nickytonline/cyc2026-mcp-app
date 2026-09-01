@@ -17,7 +17,7 @@ const DropdownMenuContent = React.forwardRef<
       ref={ref}
       sideOffset={sideOffset}
       className={cn(
-        'z-50 min-w-44 overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white p-1 text-[var(--cyc-ink)] shadow-[0_12px_32px_rgba(3,18,39,0.16)] dark:border-white/10 dark:bg-[var(--cyc-navy)] dark:text-white',
+        'z-50 min-w-44 overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-1 text-[var(--cyc-ink)] shadow-[0_12px_32px_rgba(3,18,39,0.16)]',
         className
       )}
       {...props}
@@ -33,7 +33,7 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      'relative flex cursor-pointer select-none items-center rounded-[6px] px-2 py-1.5 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:data-[highlighted]:bg-white/10 dark:data-[highlighted]:text-white',
+      'relative flex cursor-pointer select-none items-center rounded-[6px] px-2 py-1.5 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className
     )}
     {...props}
@@ -48,7 +48,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
   <DropdownMenuPrimitive.CheckboxItem
     ref={ref}
     className={cn(
-      'relative flex cursor-pointer select-none items-center rounded-[6px] py-1.5 pl-8 pr-2 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:data-[highlighted]:bg-white/10 dark:data-[highlighted]:text-white',
+      'relative flex cursor-pointer select-none items-center rounded-[6px] py-1.5 pl-8 pr-2 text-sm outline-none data-[highlighted]:bg-[var(--cyc-cloud)] data-[highlighted]:text-[var(--cyc-ink)] data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className
     )}
     checked={checked}
@@ -56,7 +56,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
   >
     <span className="absolute left-2 flex size-4 items-center justify-center">
       <DropdownMenuPrimitive.ItemIndicator>
-        <Check className="size-3.5 text-[var(--cyc-blue)]" />
+        <Check className="size-3.5 text-[var(--cyc-blue-text)]" />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -86,7 +86,7 @@ const DropdownMenuSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.Separator
     ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-[var(--cyc-line)] dark:bg-white/10', className)}
+    className={cn('-mx-1 my-1 h-px bg-[var(--cyc-line)]', className)}
     {...props}
   />
 ));
