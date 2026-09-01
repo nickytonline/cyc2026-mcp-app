@@ -15,9 +15,7 @@
         {
           "start": "2026-09-03T09:00:00-05:00",
           "end": "2026-09-03T10:00:00-05:00",
-          "sessionIds": [
-            "welcome-and-opening-keynote-ynote-welcome-day1"
-          ]
+          "sessionIds": ["welcome-and-opening-keynote-ynote-welcome-day1"]
         },
         {
           "start": "2026-09-03T11:00:00-05:00",
@@ -152,9 +150,7 @@
         {
           "start": "2026-09-04T09:00:00-05:00",
           "end": "2026-09-04T10:00:00-05:00",
-          "sessionIds": [
-            "keynote-with-kevin-j-scott-scott-keynote-day2"
-          ]
+          "sessionIds": ["keynote-with-kevin-j-scott-scott-keynote-day2"]
         },
         {
           "start": "2026-09-04T11:00:00-05:00",
@@ -194,9 +190,7 @@
         {
           "start": "2026-09-04T13:00:00-05:00",
           "end": "2026-09-04T14:30:00-05:00",
-          "sessionIds": [
-            "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"
-          ]
+          "sessionIds": ["teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"]
         },
         {
           "start": "2026-09-04T13:30:00-05:00",
@@ -245,9 +239,7 @@
         {
           "start": "2026-09-04T15:30:00-05:00",
           "end": "2026-09-04T17:00:00-05:00",
-          "sessionIds": [
-            "zerops-ai-workshop-zerops-ai-workshop"
-          ]
+          "sessionIds": ["zerops-ai-workshop-zerops-ai-workshop"]
         },
         {
           "start": "2026-09-04T16:00:00-05:00",
@@ -274,9 +266,7 @@
         {
           "start": "2026-09-04T17:00:00-05:00",
           "end": "2026-09-04T17:15:00-05:00",
-          "sessionIds": [
-            "closing-keynote-osing-keynote-day2"
-          ]
+          "sessionIds": ["closing-keynote-osing-keynote-day2"]
         }
       ]
     }

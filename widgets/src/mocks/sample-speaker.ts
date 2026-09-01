@@ -244,7 +244,8 @@ export async function mockConferenceTools(params: {
   }
   if (params.name === 'get_schedule') {
     const day = Number(params.arguments?.day);
-    const current = scheduleDays.find((entry) => entry.day === day) ?? scheduleDays[1];
+    const current =
+      scheduleDays.find((entry) => entry.day === day) ?? scheduleDays[1];
     return {
       content: [],
       structuredContent: {

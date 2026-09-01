@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { createMockApp } from '../mocks/mock-app';
-import { mockConferenceTools, nickSessionDetail } from '../mocks/sample-speaker';
+import {
+  mockConferenceTools,
+  nickSessionDetail,
+} from '../mocks/sample-speaker';
 import SessionDetail from './SessionDetail';
 import type { ViewScheduleItemOutput } from 'mcp-app-server/types';
 

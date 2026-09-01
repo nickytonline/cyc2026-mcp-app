@@ -5,6 +5,7 @@ export type DisplayMode = 'inline' | 'pip' | 'fullscreen';
 export interface HostContext {
   theme?: Theme;
   displayMode?: DisplayMode;
+  availableDisplayModes?: DisplayMode[];
   safeAreaInsets?: {
     top: number;
     bottom: number;

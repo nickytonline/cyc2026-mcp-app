@@ -33,7 +33,9 @@ describe('SessionDetail', () => {
       />
     );
 
-    expect(await screen.findByText(/Remote Model Context Protocol/)).toBeTruthy();
+    expect(
+      await screen.findByText(/Remote Model Context Protocol/)
+    ).toBeTruthy();
     expect(screen.getByText('Nick Taylor')).toBeTruthy();
     expect(screen.getByLabelText('Ask about this session')).toBeTruthy();
     expect(

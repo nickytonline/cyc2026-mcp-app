@@ -9,6 +9,7 @@ import {
   useSessionProfile,
 } from './session-profile';
 import { SpeakerProfile } from './speaker-profile';
+import { WidgetChromeProvider, type WidgetChromeValue } from './widget-chrome';
 
 type ProfileApp = Pick<
   AppLike<unknown>,
@@ -40,13 +41,15 @@ function ProfileBridge({
 export function CycHost({
   app,
   hostContext,
+  chrome,
   children,
 }: {
   app: ProfileApp;
   hostContext?: HostContext | null;
+  chrome?: WidgetChromeValue;
   children: ReactNode;
 }) {
-  return (
+  const tree = (
     <CycThemeProvider hostTheme={hostContext?.theme}>
       <SessionProfileProvider app={app} hostContext={hostContext}>
         <ProfileBridge app={app} hostContext={hostContext}>
@@ -55,4 +58,8 @@ export function CycHost({
       </SessionProfileProvider>
     </CycThemeProvider>
   );
+
+  if (!chrome) return tree;
+
+  return <WidgetChromeProvider value={chrome}>{tree}</WidgetChromeProvider>;
 }

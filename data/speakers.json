@@ -30,9 +30,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2GquIGD052oj4R81Jz5yCL/4567caeccf354397240a175706fa6510/qtQW65be_400x400.jpg",
     "url": "https://www.commityourcode.com/speakers/leon-noel",
     "bio": "Leon Noel is the Managing Director of Engineering at Resilient Coders, a nonprofit that trains Black and Brown engineers and places them into software engineering careers. He is best known for creating #100Devs, a free software engineering bootcamp whose global community has grown to more than 50,000 developers. Earlier in his career he co-founded SocialSci, a scientific surveying platform used by over 4,000 academic institutions, and he has guest lectured at Harvard Business School and MIT Sloan.",
-    "sessionIds": [
-      "never-click-apply-get-hired-qylsthryjfcfyntwzd"
-    ]
+    "sessionIds": ["never-click-apply-get-hired-qylsthryjfcfyntwzd"]
   },
   {
     "id": "danny-thompson",
@@ -47,9 +45,7 @@
     "photoUrl": "/staff/danny_thompson.jpeg",
     "url": "https://www.commityourcode.com/speakers/danny-thompson",
     "bio": "Join Danny Thompson for brief closing remarks to wrap up the conference.",
-    "sessionIds": [
-      "closing-keynote-osing-keynote-day2"
-    ]
+    "sessionIds": ["closing-keynote-osing-keynote-day2"]
   },
   {
     "id": "anupama-pathirage",
@@ -81,9 +77,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/33wYpKXTvGaueHavz5Rk8Z/32c1e4a45070732683e1cbc9092ed4f6/miguel-guillen.jpg",
     "url": "https://www.commityourcode.com/speakers/miguel-guillen",
     "bio": "Miguel Guillen Sr Director Technology and Data",
-    "sessionIds": [
-      "data-governance-in-the-ai-age-alpz83ldei8da9qd31"
-    ]
+    "sessionIds": ["data-governance-in-the-ai-age-alpz83ldei8da9qd31"]
   },
   {
     "id": "bree-hall",
@@ -132,9 +126,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3pmTZ7RMul0Og6hV6I4r4V/6fd404f3d122f56bd90cac88a0d55bc4/patrick-hulce.jpg",
     "url": "https://www.commityourcode.com/speakers/patrick-hulce",
     "bio": "Patrick has been working at the intersection of AI, visual media, and the web for nearly 20 years. An avid open source contributor with over 30 million downloads and a dozen projects to his name, Patrick now serves as an ML Architect for Studio Media Algorithms at Netflix where he works on the next generation of content creation tools.",
-    "sessionIds": [
-      "deploy-your-own-videogen-model-j78obsyn5qyjadpxkz"
-    ]
+    "sessionIds": ["deploy-your-own-videogen-model-j78obsyn5qyjadpxkz"]
   },
   {
     "id": "zackary-chapple",
@@ -251,9 +243,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/19nT8JllakNZCSvEaWUNRP/a4f9b5015c187b831bb187ba32948ceb/noah-harris.jpg",
     "url": "https://www.commityourcode.com/speakers/noah-harris",
     "bio": "Noah is the Managing Director at Radial Agency, an AI consulting firm based in Buffalo, NY. He works at the intersection of engineering execution and executive decision-making, helping organizations adopt AI with the governance, ownership, and delivery rigor required in real businesses. His work spans Fortune 500 and high-growth teams across energy, retail, financial services, automotive, and manufacturing.\r\n\r\nOriginally from Atlanta, Noah studied Computer Engineering at Georgia Tech. He began his career in 2014 in defense and government-adjacent environments, moved into startups in 2016, and has since supported teams across the country through consulting and hands-on delivery. Today, he advises leaders, builds high-performing teams, and helps engineers turn skill into career momentum through mentorship and meaningful connections.",
-    "sessionIds": [
-      "is-beauty-only-skin-deep-gkkttmmicu1jjjig8e"
-    ]
+    "sessionIds": ["is-beauty-only-skin-deep-gkkttmmicu1jjjig8e"]
   },
   {
     "id": "soujanya-vummannagari",
@@ -353,9 +343,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5JwpUXczY7ucq8wAsAnEc3/c3dd062058fd2978a8f2e060f9d6cb6a/chris-sean-dabatos__1_.jpg",
     "url": "https://www.commityourcode.com/speakers/chris-sean-dabatos",
     "bio": "Chris is a developer advocate at TiDB with a focus on AI & data infrastructure. He spends a lot of time building AI agents that he actually uses and speaking at meetups and conferences. He’s big on showing, not just telling. So expect real world examples and maybe a few stories about what didn’t work. Outside of work, he runs a YouTube channel, helps organize hackathons, and lives in Las Vegas.",
-    "sessionIds": [
-      "ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f"
-    ]
+    "sessionIds": ["ai-memory-is-broken-and-how-i-fixed-it-jgwyuffmcqcui9wq8f"]
   },
   {
     "id": "dennis-ivy",
@@ -487,9 +475,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1uSomGa2kCemzUccRETzUB/87915674295b9729fcf59b880bb1600b/ramiro-beltran.png",
     "url": "https://www.commityourcode.com/speakers/ramiro-beltran",
     "bio": "Ram is a Senior/Staff/Lead Frontend Engineer with ten years across the full startup spectrum — from pre-product early-stage to enterprise scale. He builds with a single obsession: the end user. That means reliable systems, clean code, and interfaces that don't make people feel stupid.\r\n\r\nHe has also spent a decade watching talented engineers and leaders get quietly destroyed by the environments they were planted in — not by a lack of skill, but by a lack of the right conditions. That pattern became the foundation for his upcoming book, Avocado Serial Killer, a leadership memoir about how tech companies lose their best people and what it takes to stop.\r\n\r\nHe mentors when he can, teaches when he's asked, and is still keeping his avocado trees alive.",
-    "sessionIds": [
-      "build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc"
-    ]
+    "sessionIds": ["build-failed-startups-not-side-projects-ncx7cql4ayco6qrudc"]
   },
   {
     "id": "sara-baqla",
@@ -504,9 +490,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/7aHephtlXTmri0TKeqPbfI/8a663c44acb4b666c2a862526c5da4c6/sara-baqla.jpg",
     "url": "https://www.commityourcode.com/speakers/sara-baqla",
     "bio": "Sara Baqla holds a Bachelor's and Master's in Ecology and Evolutionary Biology and spent years as an educator before making the leap into software development in 2022. Since then, she has worked across a startup, a creative agency, and now runs her own consultancy, Artemis Bytes LLC, where she builds full stack web and mobile applications for a range of clients.",
-    "sessionIds": [
-      "prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k"
-    ]
+    "sessionIds": ["prickly-by-nature-tanstack-in-the-wild-psaxsjhbjrigoj1q3k"]
   },
   {
     "id": "danyal-mahmud",
@@ -742,9 +726,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/4kDztFP2OC3A4RkmkuEzQX/4f51b76b6381b0241fc3a61de993b945/image__79_.png",
     "url": "https://www.commityourcode.com/speakers/corey-weathers",
     "bio": "The to-do list is one of the classic first projects for developers. In this hands-on workshop, we will make it talk back to us. Using JavaScript and Deepgram's Voice Agent API, you'll wire speech-to-text, an LLM, and text-to-speech together over a single WebSocket, then add items by voice, interrupt...",
-    "sessionIds": [
-      "teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"
-    ]
+    "sessionIds": ["teach-your-to-do-list-to-listen-gh56rwof1vsg755cb5"]
   },
   {
     "id": "ojus-save",
@@ -827,9 +809,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/50uvKdlzTN1faWCCy1PUFw/0f55bfbb9efc453d4c875360d48e9f89/jacob-orshalick.png",
     "url": "https://www.commityourcode.com/speakers/jacob-orshalick",
     "bio": "Founder of Focus DEV Solutions with software consulting experience spanning over 2 decades.  Author, speaker, and award winning open source contributor.  Helped launch, grow, turn around, and stabilize software projects during periods of organizational change and market disruption.",
-    "sessionIds": [
-      "claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl"
-    ]
+    "sessionIds": ["claude-skills-automate-the-boring-stuff-mo97qrifuk5ubjdvjl"]
   },
   {
     "id": "michael-gyarmathy",
@@ -878,9 +858,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3C4oz376JUYcFAhntVVHwb/57ed6ba9bcb0701e4b1633d90e97c3d0/nick-taylor.jpg",
     "url": "https://www.commityourcode.com/speakers/nick-taylor",
     "bio": "Nick is a Microsoft MVP, GitHub Star, AWS Community Builder, Software Developer, and Developer Advocate. With over two decades in technology and a decade of open source contributions, plus six years of professional open source work at companies like OpenSauced, dev.to, Netlify and now Pomerium, he brings deep community knowledge to his work. You'll often find him live streaming tech content, either solo or with friends from the community.",
-    "sessionIds": [
-      "build-your-first-mcp-app-hwylh8wvaanptgcbow"
-    ]
+    "sessionIds": ["build-your-first-mcp-app-hwylh8wvaanptgcbow"]
   },
   {
     "id": "mark-mackenzie",
@@ -1029,9 +1007,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/13vUYB0O3lK3I3dOh1Qe1h/5a15323c4afc48454b5a254a693b064b/1f9b-0o0o0-1c-0021-4d6e-af47-0013ecbaeb33.f4c9ca12-a99f-4989-81dc-d20dbbfb8f9b.png",
     "url": "https://www.commityourcode.com/speakers/nathaniel-schutta",
     "bio": "Nathaniel T. Schutta is a software architect and Java Champion focused on cloud computing, developer happiness and building usable applications. A proponent of polyglot programming, Nate has written multiple books, appeared in countless videos and many podcasts. He’s also a seasoned speaker who regularly presents at worldwide conferences, meetups, universities, and user groups. In addition to his day job, Nate is an adjunct professor at the University of Minnesota, where he teaches students to embrace (and evaluate) technical change. Driven to rid the world of bad presentations, he coauthored the book Presentation Patterns with Neal Ford and Matthew McCullough, and he also published Thinking Architecturally and Responsible Microservices available from O’Reilly. His latest book, Fundamentals of Software Engineering is now available.",
-    "sessionIds": [
-      "thinking-architecturally-pf8osckiezzblxgoap"
-    ]
+    "sessionIds": ["thinking-architecturally-pf8osckiezzblxgoap"]
   },
   {
     "id": "jesse-hall",
@@ -1234,9 +1210,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/72SsL9s9vpC0x4Xz8itK4l/6d37fb7e1617bb197817b54733387827/michael-duren.jpg",
     "url": "https://www.commityourcode.com/speakers/michael-duren",
     "bio": "Michael Duren is a Site Reliability Engineer at Target, where he builds Go-based infrastructure tooling for CI/CD pipelines and CDN systems on Kubernetes. Previously at Maximus, he built observability infrastructure from the ground up and engineered Go CLI tools that streamlined deployments across healthcare systems. Michael is a regular presenter at the Go MN meetup, where he's spoken on TinyGo and Go for developer tools. He's passionate about systems programming, lower-level networking, and understanding what's really happening beneath the abstractions we use every day.",
-    "sessionIds": [
-      "writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq"
-    ]
+    "sessionIds": ["writing-a-container-runtime-in-go-ajwkyvfbmlqqifmlpq"]
   },
   {
     "id": "chris-corriere",
@@ -1251,9 +1225,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/5r6895cGPIciQ97inzeutc/e6480038c01598194d60675e3d28a266/chris-corriere.jpg",
     "url": "https://www.commityourcode.com/speakers/chris-corriere",
     "bio": "Chris Corriere has been working with data, phones, networks and writing software for over 20 years. His background in mathematics and engineering has allowed him to adapt to new and industry specific technologies and provided many unique consulting opportunities. As a devOps practitioner Chris is committed to culture, automation, learning, sharing, and having a good time while getting work done.",
-    "sessionIds": [
-      "sociotechnical-platform-engineering-hs8koenyzkbep2s8az"
-    ]
+    "sessionIds": ["sociotechnical-platform-engineering-hs8koenyzkbep2s8az"]
   },
   {
     "id": "sujeeth-reddy-pasham",
@@ -1438,9 +1410,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/2Z1UJpWT1MFZSGjWZYkY3y/5bed682e501298a186d6616e0a87a82f/dan-vega.png",
     "url": "https://www.commityourcode.com/speakers/dan-vega",
     "bio": "Dan Vega is a Spring Developer Advocate at VMware Tanzu. He has been developing software for the web for over 20 years and his superpower is problem-solving. Dan is a blogger, YouTuber, course creator, and speaker. He is a lifelong learner and his passion is sharing his knowledge with the developer community. Dan lives near Cleveland Ohio with his beautiful wife and 2 daughters. When he isn’t writing code or teaching he enjoys spending time with his family, lifting weights, running, or reading a good book.",
-    "sessionIds": [
-      "ai-for-java-developers-b1yca9biu15t9vsxea"
-    ]
+    "sessionIds": ["ai-for-java-developers-b1yca9biu15t9vsxea"]
   },
   {
     "id": "kyle-taylor",
@@ -1557,9 +1527,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/3YAOngE0Wl8xWil2MMDCi9/8cc0523fef9230008175d5eb3d4ef235/chris-griffing.jpg",
     "url": "https://www.commityourcode.com/speakers/chris-griffing",
     "bio": "I like to make things and share them with people.",
-    "sessionIds": [
-      "are-mcp-servers-dead-dnywgwofmtwijmbrup"
-    ]
+    "sessionIds": ["are-mcp-servers-dead-dnywgwofmtwijmbrup"]
   },
   {
     "id": "rishab-kumar",
@@ -1795,9 +1763,7 @@
     "photoUrl": "https://images.ctfassets.net/thl6ds8azzpj/1QpJVE9rpIKv5kqpjDAVMu/ea402f14d0f919dfb5538e813d493af4/joel-hooks.jpg",
     "url": "https://www.commityourcode.com/speakers/joel-hooks",
     "bio": "lvl 16 Half-Orc Nerd - Purveyor of Artisanal Slop working on Badass Courses",
-    "sessionIds": [
-      "the-claw-minions-of-toil-ppbydejkgzhzoj0mf0"
-    ]
+    "sessionIds": ["the-claw-minions-of-toil-ppbydejkgzhzoj0mf0"]
   },
   {
     "id": "david-parry",

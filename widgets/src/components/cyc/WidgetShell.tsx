@@ -1,14 +1,18 @@
 import type { CSSProperties, ReactNode } from 'react';
-import type { HostContext } from '../../types/mcp-app';
+import type { DisplayMode, HostContext } from '../../types/mcp-app';
 import { hostPadding } from '../../hooks/useWidgetApp';
 import { cn } from '../../utils/cn';
 import { CycThemeProvider, useCycTheme, useCycThemeContext } from './cyc-theme';
+import { useWidgetChrome } from './widget-chrome';
 
 interface WidgetShellProps {
   kicker: string;
   title: string;
   hostContext?: HostContext | null;
   fill?: boolean;
+  displayMode?: DisplayMode;
+  canToggleFullscreen?: boolean;
+  onToggleFullscreen?: () => void;
   children: ReactNode;
 }
 
@@ -49,13 +53,53 @@ function SunIcon() {
   );
 }
 
+function MaximizeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
+      <path
+        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function MinimizeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-4" aria-hidden="true">
+      <path
+        d="M4 14h6v6M20 10h-6V4M14 10l7-7M3 21l7-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function WidgetShellChrome({
   kicker,
   title,
   hostContext,
   fill = false,
+  displayMode: displayModeProp,
+  canToggleFullscreen: canToggleFullscreenProp,
+  onToggleFullscreen: onToggleFullscreenProp,
   children,
 }: WidgetShellProps) {
+  const chrome = useWidgetChrome();
+  const displayMode =
+    displayModeProp ?? chrome?.displayMode ?? ('inline' as DisplayMode);
+  const canToggleFullscreen =
+    canToggleFullscreenProp ?? chrome?.canToggleFullscreen ?? false;
+  const onToggleFullscreen =
+    onToggleFullscreenProp ?? chrome?.onToggleFullscreen;
   const { theme, toggle } = useCycTheme();
   const padding = hostPadding(hostContext);
   const hostMax = hostContext?.containerDimensions?.maxHeight;
@@ -70,6 +114,8 @@ function WidgetShellChrome({
     : padding;
   const nextThemeLabel =
     theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme';
+  const fullscreenLabel =
+    displayMode === 'fullscreen' ? 'Exit full screen' : 'Full screen';
 
   return (
     <main
@@ -94,15 +140,34 @@ function WidgetShellChrome({
               {title}
             </h1>
           </div>
-          <button
-            type="button"
-            className="grid size-11 shrink-0 place-items-center rounded-[8px] text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            title={nextThemeLabel}
-            onClick={toggle}
-          >
-            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-            <span className="sr-only">{nextThemeLabel}</span>
-          </button>
+          <div className="flex shrink-0 items-center gap-1">
+            {canToggleFullscreen && onToggleFullscreen ? (
+              <button
+                type="button"
+                className="grid size-11 place-items-center rounded-[8px] text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                title={fullscreenLabel}
+                onClick={() => {
+                  void onToggleFullscreen();
+                }}
+              >
+                {displayMode === 'fullscreen' ? (
+                  <MinimizeIcon />
+                ) : (
+                  <MaximizeIcon />
+                )}
+                <span className="sr-only">{fullscreenLabel}</span>
+              </button>
+            ) : null}
+            <button
+              type="button"
+              className="grid size-11 shrink-0 place-items-center rounded-[8px] text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              title={nextThemeLabel}
+              onClick={toggle}
+            >
+              {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+              <span className="sr-only">{nextThemeLabel}</span>
+            </button>
+          </div>
         </header>
         <div
           className={cn(
