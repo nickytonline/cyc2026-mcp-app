@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import EventsList from '../src/events-list/EventsList.js';
 import { createMockApp } from '../src/mocks/mock-app.js';
 import type { ListEventsOutput } from 'mcp-app-server/types';
@@ -26,5 +27,24 @@ describe('EventsList', () => {
     expect(await screen.findByText('Day[0] Pickleball at Ace!')).toBeTruthy();
     const region = screen.getByRole('list', { name: 'Events' });
     expect(region.className).toContain('cyc-scroll');
+  });
+
+  it('toggles fullscreen from the widget header', async () => {
+    const user = userEvent.setup();
+    const mockApp = createMockApp({
+      toolOutput: sample,
+      hostContext: {
+        theme: 'light',
+        displayMode: 'inline',
+        availableDisplayModes: ['inline', 'fullscreen'],
+        containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+      },
+    });
+
+    render(<EventsList app={mockApp} />);
+    await screen.findByText('Day[0] Pickleball at Ace!');
+
+    await user.click(screen.getByRole('button', { name: 'Full screen' }));
+    expect(mockApp.getHostContext()?.displayMode).toBe('fullscreen');
   });
 });

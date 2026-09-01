@@ -4,6 +4,7 @@ import { useState } from 'react';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
 import { RoomLabel, TrackChip } from '../components/cyc/TrackChip';
 import { CycHost } from '../components/cyc/cyc-host';
+import { widgetChromeFromApp } from '../components/cyc/widget-chrome';
 import { SessionProfile } from '../components/cyc/session-profile';
 import { SessionSpeakerByline } from '../components/cyc/SpeakerPhoto';
 import { WidgetShell } from '../components/cyc/WidgetShell';
@@ -26,14 +27,8 @@ export default function Schedule({
 }: {
   app?: AppLike<GetScheduleOutput>;
 }) {
-  const {
-    toolOutput,
-    hostContext,
-    activeApp,
-    displayMode,
-    canToggleFullscreen,
-    toggleFullscreen,
-  } = useWidgetApp('Schedule', app);
+  const widget = useWidgetApp('Schedule', app);
+  const { toolOutput, hostContext, activeApp } = widget;
   const [pickedDay, setPickedDay] = useState<number | null>(null);
   const schedule = isSchedule(toolOutput) ? toolOutput : null;
   const searching =
@@ -50,15 +45,16 @@ export default function Schedule({
     : (dayEntry?.label ?? schedule?.label ?? 'Agenda');
 
   return (
-    <CycHost app={activeApp} hostContext={hostContext}>
+    <CycHost
+      app={activeApp}
+      hostContext={hostContext}
+      chrome={widgetChromeFromApp(widget)}
+    >
       <WidgetShell
         kicker="03 / Two days, six tracks"
         title={title}
         hostContext={hostContext}
         fill
-        displayMode={displayMode}
-        canToggleFullscreen={canToggleFullscreen}
-        onToggleFullscreen={toggleFullscreen}
       >
         <div className="mb-3 shrink-0">
           <DayPicker

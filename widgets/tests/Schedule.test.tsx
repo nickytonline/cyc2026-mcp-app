@@ -86,4 +86,24 @@ describe('Schedule', () => {
     ).toBeNull();
     expect(screen.queryByLabelText('Ask about this speaker')).toBeNull();
   });
+
+  it('toggles fullscreen from the widget header', async () => {
+    const user = userEvent.setup();
+    const mockApp = createMockApp({
+      toolOutput: nickSchedule,
+      callServerTool: mockConferenceTools,
+      hostContext: {
+        theme: 'light',
+        displayMode: 'inline',
+        availableDisplayModes: ['inline', 'fullscreen'],
+        containerDimensions: { width: 800, maxWidth: 800, maxHeight: 720 },
+      },
+    });
+
+    render(<Schedule app={mockApp} />);
+    await screen.findByText('Build your First MCP App');
+
+    await user.click(screen.getByRole('button', { name: 'Full screen' }));
+    expect(mockApp.getHostContext()?.displayMode).toBe('fullscreen');
+  });
 });

@@ -2,6 +2,10 @@
 
 import type { ListEventsOutput } from 'mcp-app-server/types';
 import { WidgetShell } from '../components/cyc/WidgetShell';
+import {
+  WidgetChromeProvider,
+  widgetChromeFromApp,
+} from '../components/cyc/widget-chrome';
 import { useWidgetApp } from '../hooks/useWidgetApp';
 import type { AppLike } from '../types/mcp-app';
 
@@ -10,25 +14,18 @@ export default function EventsList({
 }: {
   app?: AppLike<ListEventsOutput>;
 }) {
-  const {
-    toolOutput,
-    hostContext,
-    displayMode,
-    canToggleFullscreen,
-    toggleFullscreen,
-  } = useWidgetApp('EventsList', app);
+  const widget = useWidgetApp('EventsList', app);
+  const { toolOutput, hostContext } = widget;
   const events = toolOutput?.events ?? [];
 
   return (
-    <WidgetShell
-      kicker="Included with your ticket"
-      title="Beyond the code."
-      hostContext={hostContext}
-      fill
-      displayMode={displayMode}
-      canToggleFullscreen={canToggleFullscreen}
-      onToggleFullscreen={toggleFullscreen}
-    >
+    <WidgetChromeProvider value={widgetChromeFromApp(widget)}>
+      <WidgetShell
+        kicker="Included with your ticket"
+        title="Beyond the code."
+        hostContext={hostContext}
+        fill
+      >
       <ul
         className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
         tabIndex={0}
@@ -50,5 +47,6 @@ export default function EventsList({
         ))}
       </ul>
     </WidgetShell>
+    </WidgetChromeProvider>
   );
 }

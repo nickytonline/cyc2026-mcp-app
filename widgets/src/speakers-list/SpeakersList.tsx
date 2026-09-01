@@ -5,6 +5,7 @@ import type { ListSpeakersOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerPhoto } from '../components/cyc/SpeakerPhoto';
 import { CycHost } from '../components/cyc/cyc-host';
+import { widgetChromeFromApp } from '../components/cyc/widget-chrome';
 import { SpeakerProfile } from '../components/cyc/speaker-profile';
 import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
@@ -24,14 +25,8 @@ export default function SpeakersList({
 }: {
   app?: AppLike<ListSpeakersOutput>;
 }) {
-  const {
-    toolOutput,
-    hostContext,
-    activeApp,
-    displayMode,
-    canToggleFullscreen,
-    toggleFullscreen,
-  } = useWidgetApp('SpeakersList', app);
+  const widget = useWidgetApp('SpeakersList', app);
+  const { toolOutput, hostContext, activeApp } = widget;
   const [filtered, setFiltered] = useState<ListSpeakersOutput | null>(null);
   const [applied, setApplied] = useState<string[] | null>(null);
   const hostList = isSpeakerList(toolOutput) ? toolOutput : null;
@@ -56,15 +51,16 @@ export default function SpeakersList({
   }
 
   return (
-    <CycHost app={activeApp} hostContext={hostContext}>
+    <CycHost
+      app={activeApp}
+      hostContext={hostContext}
+      chrome={widgetChromeFromApp(widget)}
+    >
       <WidgetShell
         kicker="04 / Who you'll learn from"
         title="This year's speakers"
         hostContext={hostContext}
         fill
-        displayMode={displayMode}
-        canToggleFullscreen={canToggleFullscreen}
-        onToggleFullscreen={toggleFullscreen}
       >
         <div className="mb-3 flex shrink-0 items-center justify-end">
           {list ? (

@@ -3,6 +3,7 @@ import type { DisplayMode, HostContext } from '../../types/mcp-app';
 import { hostPadding } from '../../hooks/useWidgetApp';
 import { cn } from '../../utils/cn';
 import { CycThemeProvider, useCycTheme, useCycThemeContext } from './cyc-theme';
+import { useWidgetChrome } from './widget-chrome';
 
 interface WidgetShellProps {
   kicker: string;
@@ -87,11 +88,18 @@ function WidgetShellChrome({
   title,
   hostContext,
   fill = false,
-  displayMode = 'inline',
-  canToggleFullscreen = false,
-  onToggleFullscreen,
+  displayMode: displayModeProp,
+  canToggleFullscreen: canToggleFullscreenProp,
+  onToggleFullscreen: onToggleFullscreenProp,
   children,
 }: WidgetShellProps) {
+  const chrome = useWidgetChrome();
+  const displayMode =
+    displayModeProp ?? chrome?.displayMode ?? ('inline' as DisplayMode);
+  const canToggleFullscreen =
+    canToggleFullscreenProp ?? chrome?.canToggleFullscreen ?? false;
+  const onToggleFullscreen =
+    onToggleFullscreenProp ?? chrome?.onToggleFullscreen;
   const { theme, toggle } = useCycTheme();
   const padding = hostPadding(hostContext);
   const hostMax = hostContext?.containerDimensions?.maxHeight;

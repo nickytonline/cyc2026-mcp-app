@@ -8,6 +8,10 @@ import {
 import { SessionSpeakerByline } from '../components/cyc/SpeakerPhoto';
 import { RoomLabel, TrackChip } from '../components/cyc/TrackChip';
 import { WidgetShell } from '../components/cyc/WidgetShell';
+import {
+  WidgetChromeProvider,
+  widgetChromeFromApp,
+} from '../components/cyc/widget-chrome';
 import { useWidgetApp } from '../hooks/useWidgetApp';
 import { formatClock } from '../utils/cyc';
 import type { AppLike } from '../types/mcp-app';
@@ -17,44 +21,35 @@ export default function SessionDetail({
 }: {
   app?: AppLike<ViewScheduleItemOutput>;
 }) {
-  const {
-    toolOutput,
-    hostContext,
-    activeApp,
-    displayMode,
-    canToggleFullscreen,
-    toggleFullscreen,
-  } = useWidgetApp('SessionDetail', app);
+  const widget = useWidgetApp('SessionDetail', app);
+  const { toolOutput, hostContext, activeApp } = widget;
   const session = toolOutput?.session;
   const speakers = toolOutput?.speakers ?? session?.speakers ?? [];
 
   if (!session) {
     return (
-      <WidgetShell
-        kicker="CYC26 / Session"
-        title="Session"
-        hostContext={hostContext}
-        displayMode={displayMode}
-        canToggleFullscreen={canToggleFullscreen}
-        onToggleFullscreen={toggleFullscreen}
-      >
+      <WidgetChromeProvider value={widgetChromeFromApp(widget)}>
+        <WidgetShell
+          kicker="CYC26 / Session"
+          title="Session"
+          hostContext={hostContext}
+        >
         <p className="text-sm text-[var(--cyc-muted)]">
           Ask for a session by id to load the abstract.
         </p>
       </WidgetShell>
+      </WidgetChromeProvider>
     );
   }
 
   return (
-    <WidgetShell
-      kicker="CYC26 / Session"
-      title={session.title}
-      hostContext={hostContext}
-      fill
-      displayMode={displayMode}
-      canToggleFullscreen={canToggleFullscreen}
-      onToggleFullscreen={toggleFullscreen}
-    >
+    <WidgetChromeProvider value={widgetChromeFromApp(widget)}>
+      <WidgetShell
+        kicker="CYC26 / Session"
+        title={session.title}
+        hostContext={hostContext}
+        fill
+      >
       <div
         className="cyc-scroll min-h-0 flex-1 pr-1"
         tabIndex={0}
@@ -87,5 +82,6 @@ export default function SessionDetail({
         </div>
       </div>
     </WidgetShell>
+    </WidgetChromeProvider>
   );
 }
