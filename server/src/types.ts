@@ -122,9 +122,8 @@ export interface ListSpeakersOutput {
 export const GetSpeakerInputSchema = z.object({
   id: z
     .string()
-    .optional()
-    .describe('Speaker slug, e.g. nick-taylor'),
-  name: z.string().optional().describe('Speaker full name'),
+    .min(1)
+    .describe('Speaker id or slug from list_speakers, e.g. nick-taylor'),
 });
 export type GetSpeakerInput = z.infer<typeof GetSpeakerInputSchema>;
 

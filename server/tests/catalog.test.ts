@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getSpeaker, listSpeakers, searchSessions } from '../src/catalog.js';
-import { ListSpeakersInputSchema } from '../src/types.js';
+import { GetSpeakerInputSchema, ListSpeakersInputSchema } from '../src/types.js';
 
 describe('catalog', () => {
   it('lists speakers and can filter by track', () => {
@@ -22,11 +22,11 @@ describe('catalog', () => {
     expect(mixed.tracks.length).toBeGreaterThan(0);
   });
 
-  it('finds a speaker by name or slug', () => {
-    const bySlug = getSpeaker({ id: 'nick-taylor' });
+  it('finds a speaker by exact slug', () => {
+    const bySlug = getSpeaker('nick-taylor');
     expect(bySlug?.name).toBe('Nick Taylor');
-    const byName = getSpeaker({ name: 'Nick Taylor' });
-    expect(byName?.talkTitle).toMatch(/MCP App/i);
+    expect(getSpeaker('Nick Taylor')).toBeUndefined();
+    expect(getSpeaker('nick')).toBeUndefined();
   });
 
   it('searches sessions', () => {
@@ -35,6 +35,16 @@ describe('catalog', () => {
     expect(
       found.sessions.some((session) => /mcp/i.test(session.title))
     ).toBe(true);
+  });
+});
+
+describe('GetSpeakerInputSchema', () => {
+  it('requires an id and rejects name-only lookup', () => {
+    expect(GetSpeakerInputSchema.parse({ id: 'nick-taylor' }).id).toBe(
+      'nick-taylor'
+    );
+    expect(() => GetSpeakerInputSchema.parse({})).toThrow();
+    expect(() => GetSpeakerInputSchema.parse({ name: 'Nick Taylor' })).toThrow();
   });
 });
 

@@ -18,7 +18,7 @@ npm workspaces split the codebase: `server/` is the MCP backend and `widgets/` h
 | Tool | Widget | Notes |
 | --- | --- | --- |
 | `list_speakers` | `ui://speakers-list` | Optional `track`, `query`, `limit` |
-| `get_speaker` | `ui://speaker-detail` | `id` or name |
+| `get_speaker` | `ui://speaker-detail` | Required `id` (slug). Widgets call this; test in MCPJam with an id |
 | `get_schedule` | `ui://schedule` | `day` 0/1/2, optional `track` / `room` |
 | `view_schedule_item` | `ui://session-detail` | Session id or slug |
 | `search_sessions` | `ui://schedule` | Full-text across titles, abstracts, speakers |

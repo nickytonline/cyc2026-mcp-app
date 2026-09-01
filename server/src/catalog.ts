@@ -162,33 +162,12 @@ export function listSpeakers(options: {
   };
 }
 
-export function getSpeaker(options: {
-  id?: string;
-  name?: string;
-}): SpeakerRecord | undefined {
-  if (options.id) {
-    const id = normalize(options.id);
-    const exact = speakers.find(
-      (speaker) => speaker.id === options.id || speaker.slug === options.id
-    );
-    if (exact) return exact;
-    const partial = speakers.find(
-      (speaker) =>
-        speaker.id.includes(id) ||
-        speaker.slug.includes(id) ||
-        normalize(speaker.name).includes(id)
-    );
-    if (partial) return partial;
-  }
-  if (options.name) {
-    const name = normalize(options.name);
-    return speakers.find(
-      (speaker) =>
-        normalize(speaker.name) === name ||
-        normalize(speaker.name).includes(name)
-    );
-  }
-  return undefined;
+export function getSpeaker(id: string): SpeakerRecord | undefined {
+  const needle = id.trim();
+  if (!needle) return undefined;
+  return speakers.find(
+    (speaker) => speaker.id === needle || speaker.slug === needle
+  );
 }
 
 export function sessionsForSpeaker(speaker: SpeakerRecord): SessionCard[] {

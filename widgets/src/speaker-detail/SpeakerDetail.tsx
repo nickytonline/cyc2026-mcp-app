@@ -29,7 +29,7 @@ export default function SpeakerDetail({
         hostContext={hostContext}
       >
         <p className="text-sm text-[var(--cyc-muted)]">
-          Ask for a speaker by name to load their card.
+          Ask for a speaker by id to load their card.
         </p>
       </WidgetShell>
     );

@@ -100,7 +100,7 @@ export function registerConferenceTools(
     {
       title: 'Get a CYC26 speaker',
       description:
-        'Get one Commit Your Code speaker by slug (e.g. nick-taylor) or name, including bio and their session.',
+        'Get one speaker by id (slug), including bio and sessions. Widgets call this after list_speakers or from the schedule. Pass the catalog id — names are not unique.',
       inputSchema: GetSpeakerInputSchema.shape,
       _meta: { ui: { resourceUri: widgets.speakerDetail.uri } },
     },
@@ -111,10 +111,7 @@ export function registerConferenceTools(
           parsed.error.issues.map((issue) => issue.message).join(', ')
         );
       }
-      if (!parsed.data.id && !parsed.data.name) {
-        return validationError('Provide id or name');
-      }
-      const speaker = getSpeaker(parsed.data);
+      const speaker = getSpeaker(parsed.data.id);
       if (!speaker) {
         return validationError('Speaker not found');
       }
