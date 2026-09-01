@@ -29,7 +29,7 @@ npm workspaces split the codebase: `server/` is the MCP backend and `widgets/` h
 
 Widgets must look like CYC cards in chat, not a new brand. Tokens live in `widgets/src/index.css` as `--cyc-*`. Before changing widget UI, follow `.agents/skills/cyc-visual-identity/SKILL.md`. Do not invent palettes, do not use Inter, and do not restyle shadcn `primary` back to near-black.
 
-CYC identity owns brand. For craft, anti-slop, a11y, and React quality, also use `.agents/skills/impeccable`, `.agents/skills/hallmark`, `.agents/skills/web-design-guidelines`, `.agents/skills/vercel-react-best-practices`, and `.agents/skills/composition-patterns`.
+CYC identity owns brand. For craft, anti-slop, a11y, and React quality, also use `.agents/skills/impeccable`, `.agents/skills/hallmark`, `.agents/skills/web-design-guidelines`, `.agents/skills/vercel-react-best-practices`, and `.agents/skills/composition-patterns`. For terse chat replies, `.agents/skills/caveman` (`/caveman`); not always-on. Commits, docs, and PRs stay normal prose.
 
 ## Development Commands
 
