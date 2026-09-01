@@ -43,7 +43,8 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const LOG_LEVEL = process.env.LOG_LEVEL || 'info';
 const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 const WIDGET_PORT = Number(process.env.WIDGET_PORT || '4444');
-const { BASE_URL = '' } = process.env;
+const configuredBaseUrl = (process.env.BASE_URL || '').trim();
+const BASE_URL = configuredBaseUrl || `http://localhost:${WIDGET_PORT}`;
 const INLINE_DEV_MODE = process.env.INLINE_DEV_MODE === 'true';
 const IS_DEV = (process.env.NODE_ENV || 'development') === 'development';
 // Clients that get fully inlined widget HTML in dev (comma-separated,
@@ -183,7 +184,7 @@ function watchAssetsForInlining(widgetIds: string[]) {
 async function readWidgetHtml(widgetId: string): Promise<string> {
   if (NODE_ENV === 'development' && !INLINE_DEV_MODE) {
     try {
-      const url = `http://localhost:${WIDGET_PORT}/${widgetId}.html`;
+      const url = new URL(`${widgetId}.html`, BASE_URL).href;
       logger.debug({ url }, 'Fetching widget HTML from Vite dev server');
       const response = await fetch(url);
       if (!response.ok) {
@@ -375,7 +376,7 @@ function createMcpServer(protocolEra: ProtocolEra): McpServer {
  * Main server setup
  */
 async function main() {
-  if (NODE_ENV === 'production' && !BASE_URL) {
+  if (NODE_ENV === 'production' && !configuredBaseUrl) {
     logger.fatal('BASE_URL must be set in production');
     process.exit(1);
   }
