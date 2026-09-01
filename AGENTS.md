@@ -15,15 +15,15 @@ npm workspaces split the codebase: `server/` is the MCP backend and `widgets/` h
 
 ### Conference tools
 
-| Tool                 | Widget                | Notes                                                                                                               |
-| -------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `list_speakers`      | `ui://speakers-list`  | Optional `track`, `query`, `limit`. Alphabetical. Track filter in the widget.                                       |
-| `get_speaker`        | `ui://speaker-detail` | Required `id` (slug). Widgets call this; test in MCPJam with an id                                                  |
+| Tool                 | Widget                | Notes                                                                                                                      |
+| -------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `list_speakers`      | `ui://speakers-list`  | Optional `track`, `query`, `limit`. Alphabetical. Track filter in the widget.                                              |
+| `get_speaker`        | `ui://speaker-detail` | Required `id` (slug). Widgets call this; test in MCPJam with an id                                                         |
 | `get_schedule`       | `ui://schedule`       | Required `day` 0/1/2. Optional `track` / `room`. Day picker swaps this view (payload includes all days). Test with `day=1` |
-| `view_schedule_item` | `ui://session-detail` | Required `id` (slug). Widgets call this; test in MCPJam with an id |
-| `search_sessions`    | `ui://schedule`       | Full-text across titles, abstracts, speakers                                                                        |
-| `list_events`        | `ui://events-list`    | Optional `day`. Contained pane like speakers list                                                                   |
-| `list_tracks`        | text only             | Six technical tracks + keynote                                                                                      |
+| `view_schedule_item` | `ui://session-detail` | Required `id` (slug). Widgets call this; test in MCPJam with an id                                                         |
+| `search_sessions`    | `ui://schedule`       | Full-text across titles, abstracts, speakers                                                                               |
+| `list_events`        | `ui://events-list`    | Optional `day`. Contained pane like speakers list                                                                          |
+| `list_tracks`        | text only             | Six technical tracks + keynote                                                                                             |
 
 ### Visual identity
 
