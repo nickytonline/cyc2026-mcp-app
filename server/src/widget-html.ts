@@ -240,6 +240,8 @@ export function inlineWidgetAssets(
 
   nextHtml = nextHtml
     .replace(/<link[^>]*rel="modulepreload"[^>]*>/g, '')
+    .replace(/<link[^>]*rel="preload"[^>]*as="style"[^>]*>\s*/g, '')
+    .replace(/<link[^>]*rel="stylesheet"[^>]*>\s*/g, '')
     .replace(/<link[^>]*rel="preload"[^>]*as="style"[^>]*>/g, '')
     .replace('</head>', `${GOOGLE_FONTS_LINK}\n</head>`);
 
@@ -252,4 +254,48 @@ export function inlineWidgetAssets(
   );
 
   return nextHtml;
+}
+
+/**
+ * Build production widget HTML for hosts that render resources in srcdoc
+ * iframes. Static external module scripts are not consistently executed by
+ * those hosts, while an inline dynamic import is. The imported production
+ * entrypoint keeps its normal URL, so its relative chunk imports continue to
+ * resolve from the public asset origin.
+ */
+export function buildProductionWidgetHtml(
+  html: string,
+  widgetId: string,
+  baseUrl: string,
+  css: string
+): string {
+  const scriptMatch = html.match(
+    new RegExp('<script[^>]*type="module"[^>]*src="([^"]+)"[^>]*></script>')
+  );
+
+  if (!scriptMatch) {
+    return html;
+  }
+
+  const scriptUrl = new URL(scriptMatch[1], baseUrl).href;
+  const rootId = widgetId + '-root';
+  const bootstrap =
+    '<script type="module">\n' +
+    'import(' +
+    JSON.stringify(scriptUrl) +
+    ').catch((error) => {\n' +
+    '  const root = document.getElementById(' +
+    JSON.stringify(rootId) +
+    ');\n' +
+    '  if (root) root.textContent = "Failed to load widget: " + error;\n' +
+    '});\n' +
+    '</script>';
+
+  const safeCss = css.replace(/<\/style/gi, '<\\/style');
+  return html
+    .replace(/<link[^>]*rel="modulepreload"[^>]*>\s*/g, '')
+    .replace(/<link[^>]*rel="preload"[^>]*as="style"[^>]*>\s*/g, '')
+    .replace(/<link[^>]*rel="stylesheet"[^>]*>\s*/g, '')
+    .replace(scriptMatch[0], bootstrap)
+    .replace('</head>', '<style>' + safeCss + '</style>\n</head>');
 }

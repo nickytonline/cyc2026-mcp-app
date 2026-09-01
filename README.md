@@ -606,13 +606,11 @@ When a tool call renders the widget, the host issues `resources/read` and the se
 
 > **Experimental:** `WIDGET_BOOTSTRAP_CLIENTS` serves matching clients a shell that loads the dev module graph via dynamic `import()` instead of a static script tag — srcdoc-iframe hosts like Claude.ai don't execute static external script tags but may allow dynamic loading from `resourceDomains` origins. If this proves out, Claude.ai can join the HMR pipeline too. Requires `BASE_URL` set to an https tunnel; off by default.
 
-#### Production is unaffected
+#### Production serving
 
-None of this machinery runs in production (`NODE_ENV=production`):
+Production uses the prebuilt assets from assets/. The server fetches the widget HTML from BASE_URL, embeds the generated CSS into the MCP resource, and uses an inline dynamic import bootstrap for hosts that render widgets in sandboxed iframes. The imported JavaScript entrypoint and its relative chunks still load from BASE_URL.
 
-- `npm run build` output is unchanged: hashed bundles in `assets/` plus HTML referencing them via `BASE_URL`
-- The server never inlines, never serves dev-server HTML, and ignores `WIDGET_INLINE_CLIENTS` / `WIDGET_BOOTSTRAP_CLIENTS` — all per-client switching is gated on `NODE_ENV=development`
-- Hosts fetch widget assets from `BASE_URL` (CDN or static host) exactly as before
+BASE_URL is required in production and must be set both when building the image and in the running container. The asset origin must be publicly reachable by the MCP host and should normally be served by a public Pomerium route or a CDN.
 
 ### Inline Widget Assets
 
@@ -628,7 +626,7 @@ Inlined HTML is self-contained:
 
 To force inlining for every client regardless of identity, run `npm run dev:inline` (sets `INLINE_DEV_MODE=true`). To change which clients are inlined, set `WIDGET_INLINE_CLIENTS` (comma-separated, case-insensitive substring match against the client's name/title). The server logs each widget request's `clientInfo` and the chosen mode, so it's easy to see what a host identifies as.
 
-> Inlining is not used in production — once widget assets are deployed to a public URL (`BASE_URL`), hosts fetch them directly via normal URLs.
+> In production, CSS is embedded in MCP resource HTML and JavaScript is loaded through an inline dynamic import from BASE_URL. The standalone asset HTML remains available for direct browser checks.
 
 ### Loading External Resources (Images, APIs, etc.)
 
@@ -906,6 +904,40 @@ This runs:
 
 - `assets/` - Optimized widget bundles (JS/CSS with content hashes)
 - `server/dist/` - Compiled server code
+
+### Kubernetes / K3s Deployment
+
+The production image supports a two-port deployment: port 8080 serves MCP traffic and port 4444 serves the built widget assets. The image starts the MCP server on port 8080. In Kubernetes, a small sidecar can serve /app/assets on port 4444 from a shared emptyDir populated by an init container. This keeps the MCP server and public assets in one Pod while allowing two separate ingress routes.
+
+Build the image with the public asset origin embedded in the widget bundle, and also provide the same value at runtime:
+
+```bash
+docker build --build-arg BASE_URL=https://cyc-assets.example.com -f docker/Dockerfile -t registry.example.com/cyc2026-mcp:latest .
+```
+
+Set these container values in production:
+
+- NODE_ENV=production
+- BASE_URL=https://cyc-assets.example.com
+- CORS_ORIGIN=https://cyc.example.com
+- PORT=8080
+
+Apply a Deployment and Service with both ports, then verify the rollout:
+
+```bash
+kubectl apply -f path/to/cyc2026-mcp-app.yaml
+kubectl -n homelab rollout status deployment/cyc2026-mcp-app
+kubectl -n homelab get pods -l app=cyc2026-mcp-app
+```
+
+For a Service named cyc2026-mcp-app in the homelab namespace, the Pomerium targets are:
+
+- MCP route: http://cyc2026-mcp-app.homelab.svc.cluster.local:8080/mcp
+- Public asset route: http://cyc2026-mcp-app.homelab.svc.cluster.local:4444
+
+Create the MCP route with the authentication policy required by your host. Create the asset route with a public policy so widget CSS, JavaScript, fonts, and images can load without an interactive login. Keeping these as two routes is expected: the sidecar only changes how the assets port is served; it does not merge the routes.
+
+Production MCP resources embed the widget CSS and use an inline dynamic import bootstrap so sandboxed hosts such as ChatGPT and Claude can render the app. The standalone asset HTML also includes a normal stylesheet link for direct browser checks.
 
 ### Manual Deployment
 
