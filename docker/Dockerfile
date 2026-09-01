@@ -13,6 +13,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
+ARG BASE_URL=https://cyc-assets.maisonlab.dev
+ENV BASE_URL=${BASE_URL}
 
 # Copy package files for dependency installation
 COPY package.json package-lock.json ./
@@ -53,6 +55,7 @@ COPY --from=builder /app/server/dist ./server/dist
 COPY --from=builder /app/assets ./assets
 
 # Copy environment file template
+COPY data ./data
 COPY .env.example ./.env.example
 
 # Create non-root user for security
