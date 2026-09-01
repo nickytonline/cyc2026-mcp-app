@@ -10,7 +10,7 @@ metadata:
 
 This app has its own widget build system that differs from the generic ext-apps examples. Before reading the steps below:
 
-1. Read `.agents/skills/cyc-visual-identity/SKILL.md` and apply CYC tokens. Widgets must retain the Commit Your Code conference look and feel.
+1. Read `.agents/skills/cyc-visual-identity/SKILL.md` and apply CYC tokens. Widgets must retain the Commit Your Code conference look and feel. Use impeccable/hallmark for craft, and Vercel web-design-guidelines plus react-best-practices for a11y and React quality — they do not override CYC brand.
 2. Fetch the upstream `create-mcp-app` skill for core SDK patterns, then apply those patterns using the conventions described here:
 
 ```
