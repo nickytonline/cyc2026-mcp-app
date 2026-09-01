@@ -44,7 +44,8 @@ const events: SocialEvent[] = readJson<SocialEvent[]>('events.json').map(
     day: dayFromEvent(event),
   })
 );
-const meta: { tracks: TrackInfo[]; rooms: RoomInfo[] } = readJson('tracks.json');
+const meta: { tracks: TrackInfo[]; rooms: RoomInfo[] } =
+  readJson('tracks.json');
 
 function dayFromEvent(event: SocialEvent): number {
   const when = event.when.toLowerCase();
@@ -53,7 +54,10 @@ function dayFromEvent(event: SocialEvent): number {
   if (when.includes('september 4')) return 2;
   if (event.title.toLowerCase().includes('day[0]')) return 0;
   if (event.title.toLowerCase().includes('day[1]')) return 1;
-  if (event.title.toLowerCase().includes('day[2]') || event.title.toLowerCase().includes('closing'))
+  if (
+    event.title.toLowerCase().includes('day[2]') ||
+    event.title.toLowerCase().includes('closing')
+  )
     return 2;
   return 1;
 }
@@ -181,10 +185,12 @@ export function sessionsForSpeaker(speaker: SpeakerRecord): SessionCard[] {
     .map(toSessionCard);
 }
 
-function resolveDay(day?: number | string): number {
-  if (day === undefined || day === null || day === '') return 1;
-  if (typeof day === 'number') return day;
+function parseDay(day: number | string): number | undefined {
+  if (typeof day === 'number') {
+    return day === 0 || day === 1 || day === 2 ? day : undefined;
+  }
   const trimmed = String(day).trim();
+  if (trimmed === '') return undefined;
   if (trimmed === '0' || trimmed === '1' || trimmed === '2') {
     return Number(trimmed);
   }
@@ -193,15 +199,16 @@ function resolveDay(day?: number | string): number {
   if (trimmed.startsWith('2026-09-04') || /day\s*2/i.test(trimmed)) return 2;
   const numeric = Number(trimmed);
   if (numeric === 0 || numeric === 1 || numeric === 2) return numeric;
-  return 1;
+  return undefined;
 }
 
 export function getSchedule(options: {
-  day?: number | string;
+  day: number | string;
   track?: string;
   room?: string;
-}): GetScheduleOutput {
-  const day = resolveDay(options.day);
+}): GetScheduleOutput | undefined {
+  const day = parseDay(options.day);
+  if (day === undefined) return undefined;
   const metaDay = scheduleFile.days.find((entry) => entry.day === day);
   const roomFilter = options.room ? normalize(options.room) : '';
 
@@ -212,9 +219,7 @@ export function getSchedule(options: {
         .filter((session): session is SessionRecord => Boolean(session))
         .filter((session) => matchesTrack(session.track, options.track))
         .filter((session) =>
-          roomFilter
-            ? normalize(session.room).includes(roomFilter)
-            : true
+          roomFilter ? normalize(session.room).includes(roomFilter) : true
         )
         .map(toSessionCard);
       return {
@@ -280,7 +285,8 @@ export function searchSessions(options: {
 
 export function listEvents(day?: number | string): SocialEvent[] {
   if (day === undefined || day === null || day === '') return events;
-  const resolved = resolveDay(day);
+  const resolved = parseDay(day);
+  if (resolved === undefined) return [];
   return events.filter((event) => event.day === resolved);
 }
 
@@ -288,7 +294,9 @@ export function listTracks(): { tracks: TrackInfo[]; rooms: RoomInfo[] } {
   return { tracks: meta.tracks, rooms: meta.rooms };
 }
 
-export function formatSessionLine(session: SessionCard | SessionRecord): string {
+export function formatSessionLine(
+  session: SessionCard | SessionRecord
+): string {
   const when = session.start
     ? new Date(session.start).toLocaleString('en-US', {
         timeZone: 'America/Chicago',

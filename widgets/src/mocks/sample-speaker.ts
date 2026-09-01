@@ -1,4 +1,5 @@
 import type {
+  GetScheduleOutput,
   GetSpeakerOutput,
   ListSpeakersOutput,
   SpeakerCard,
@@ -73,6 +74,33 @@ export const nickSpeakerDetail: GetSpeakerOutput = {
       day: 1,
       speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
       speakerNames: ['Nick Taylor'],
+    },
+  ],
+};
+
+export const nickSchedule: GetScheduleOutput = {
+  day: 1,
+  date: '2026-09-03',
+  label: 'Day 1',
+  timezone: 'America/Chicago',
+  events: [],
+  slots: [
+    {
+      start: '2026-09-03T14:30:00-05:00',
+      end: '2026-09-03T14:55:00-05:00',
+      sessions: [
+        {
+          id: 'build-your-first-mcp-app',
+          title: 'Build your First MCP App',
+          track: 'JavaScript',
+          room: 'Room 2D',
+          start: '2026-09-03T14:30:00-05:00',
+          end: '2026-09-03T14:55:00-05:00',
+          day: 1,
+          speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+          speakerNames: ['Nick Taylor'],
+        },
+      ],
     },
   ],
 };

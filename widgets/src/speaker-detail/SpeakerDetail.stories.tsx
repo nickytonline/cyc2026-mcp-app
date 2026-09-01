@@ -49,3 +49,20 @@ export const Default: Story = {
     />
   ),
 };
+
+export const Compact: Story = {
+  render: () => (
+    <div className="mx-auto max-w-[390px]">
+      <SpeakerDetail
+        app={createMockApp<GetSpeakerOutput>({
+          toolOutput: sample,
+          hostContext: {
+            theme: 'light',
+            displayMode: 'inline',
+            containerDimensions: { width: 390, maxWidth: 390, maxHeight: 720 },
+          },
+        })}
+      />
+    </div>
+  ),
+};

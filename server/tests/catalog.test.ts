@@ -1,6 +1,15 @@
 import { describe, expect, it } from 'vitest';
-import { getSpeaker, listSpeakers, searchSessions } from '../src/catalog.js';
-import { GetSpeakerInputSchema, ListSpeakersInputSchema } from '../src/types.js';
+import {
+  getSchedule,
+  getSpeaker,
+  listSpeakers,
+  searchSessions,
+} from '../src/catalog.js';
+import {
+  GetScheduleInputSchema,
+  GetSpeakerInputSchema,
+  ListSpeakersInputSchema,
+} from '../src/types.js';
 
 describe('catalog', () => {
   it('lists speakers and can filter by track', () => {
@@ -29,12 +38,33 @@ describe('catalog', () => {
     expect(getSpeaker('nick')).toBeUndefined();
   });
 
+  it('returns a day schedule and rejects unknown days', () => {
+    const day1 = getSchedule({ day: 1 });
+    expect(day1?.label).toMatch(/day 1/i);
+    expect(day1?.slots.length).toBeGreaterThan(0);
+    expect(getSchedule({ day: '2026-09-03' })?.day).toBe(1);
+    expect(getSchedule({ day: 9 })).toBeUndefined();
+    expect(getSchedule({ day: 'Friday' })).toBeUndefined();
+  });
+
   it('searches sessions', () => {
     const found = searchSessions({ query: 'MCP', limit: 10 });
     expect(found.total).toBeGreaterThan(0);
+    expect(found.sessions.some((session) => /mcp/i.test(session.title))).toBe(
+      true
+    );
+  });
+});
+
+describe('GetScheduleInputSchema', () => {
+  it('requires a day and keeps track and room optional', () => {
+    expect(GetScheduleInputSchema.parse({ day: 1 }).day).toBe(1);
+    expect(GetScheduleInputSchema.parse({ day: '0' }).day).toBe('0');
     expect(
-      found.sessions.some((session) => /mcp/i.test(session.title))
-    ).toBe(true);
+      GetScheduleInputSchema.parse({ day: 2, track: 'AI', room: 'Room 2A' })
+        .track
+    ).toBe('AI');
+    expect(() => GetScheduleInputSchema.parse({})).toThrow();
   });
 });
 
@@ -44,7 +74,9 @@ describe('GetSpeakerInputSchema', () => {
       'nick-taylor'
     );
     expect(() => GetSpeakerInputSchema.parse({})).toThrow();
-    expect(() => GetSpeakerInputSchema.parse({ name: 'Nick Taylor' })).toThrow();
+    expect(() =>
+      GetSpeakerInputSchema.parse({ name: 'Nick Taylor' })
+    ).toThrow();
   });
 });
 

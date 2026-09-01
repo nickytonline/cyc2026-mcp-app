@@ -139,7 +139,7 @@ export function registerConferenceTools(
     {
       title: 'Get the CYC26 schedule',
       description:
-        'Get the Commit Your Code agenda for a day. day=0 is Sept 2 (socials), 1 is Sept 3, 2 is Sept 4. Optional track or room filters.',
+        'Get the Commit Your Code agenda for one day. day is required: 0 = Sept 2 (socials), 1 = Sept 3, 2 = Sept 4. Optional track or room filters. Test in MCPJam with day=1.',
       inputSchema: GetScheduleInputSchema.shape,
       _meta: { ui: { resourceUri: widgets.schedule.uri } },
     },
@@ -151,6 +151,11 @@ export function registerConferenceTools(
         );
       }
       const output = getSchedule(parsed.data);
+      if (!output) {
+        return validationError(
+          'Unknown day. Pass 0 (Sept 2), 1 (Sept 3), or 2 (Sept 4).'
+        );
+      }
       const sessionLines = output.slots.flatMap((slot) =>
         slot.sessions.map(formatSessionLine)
       );

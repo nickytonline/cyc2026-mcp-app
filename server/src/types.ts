@@ -135,9 +135,10 @@ export interface GetSpeakerOutput {
 
 export const GetScheduleInputSchema = z.object({
   day: z
-    .union([z.number(), z.string()])
-    .optional()
-    .describe('0 = Day 0 (Sept 2), 1 = Sept 3, 2 = Sept 4, or a date like 2026-09-03'),
+    .union([z.number(), z.string().min(1)])
+    .describe(
+      'Required conference day: 0 = Sept 2 (socials), 1 = Sept 3, 2 = Sept 4, or a date like 2026-09-03'
+    ),
   track: z.string().optional().describe('Filter by track'),
   room: z.string().optional().describe('Filter by room, e.g. Room 2A'),
 });
@@ -171,7 +172,10 @@ export interface ViewScheduleItemOutput {
 }
 
 export const SearchSessionsInputSchema = z.object({
-  query: z.string().min(1).describe('Search titles, abstracts, and speaker names'),
+  query: z
+    .string()
+    .min(1)
+    .describe('Search titles, abstracts, and speaker names'),
   track: z.string().optional().describe('Optional track filter'),
   limit: z
     .number()
