@@ -81,15 +81,12 @@ export default function SpeakersList({
                 speaker={speaker}
                 className="grid w-full grid-cols-[72px_minmax(0,1fr)] overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
               >
-                <div className="relative h-[88px] bg-[var(--cyc-navy)]">
+                <div className="h-[88px] bg-[var(--cyc-navy)]">
                   <SpeakerPhoto
                     name={speaker.name}
                     photoUrl={speaker.photoUrl}
                     className="size-full object-cover"
                   />
-                  <span className="absolute left-1.5 top-1.5 font-mono text-[0.625rem] font-bold text-white/90">
-                    {String(speaker.sequence).padStart(3, '0')}
-                  </span>
                 </div>
                 <div className="min-w-0 px-3 py-2">
                   <TrackChip track={speaker.track} />

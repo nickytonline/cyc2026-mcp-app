@@ -9,7 +9,7 @@ import {
 } from '../src/mocks/sample-speaker.js';
 
 describe('SpeakersList', () => {
-  it('renders numbered speaker cards', async () => {
+  it('renders speaker cards with photos and talks', async () => {
     render(
       <SpeakersList
         app={createMockApp({
@@ -21,7 +21,7 @@ describe('SpeakersList', () => {
 
     expect(await screen.findByText('Nick Taylor')).toBeTruthy();
     expect(screen.getByText('Build your First MCP App')).toBeTruthy();
-    expect(screen.getByText('052')).toBeTruthy();
+    expect(screen.queryByText('052')).toBeNull();
     const region = screen.getByRole('list', { name: 'Speakers' });
     expect(region.className).toContain('cyc-scroll');
   });

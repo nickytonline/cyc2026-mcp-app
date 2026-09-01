@@ -38,7 +38,6 @@ Room colors (agenda dots):
 
 ## Patterns that belong
 
-- Numbered speaker indexes (`001`, `002`)
 - Hairline rules in `--cyc-line`
 - Track pills with a 4px color dot
 - Navy chrome for hero/header strips; white/`--cyc-cloud` for body
