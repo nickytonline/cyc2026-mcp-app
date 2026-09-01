@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import SpeakersList from '../src/speakers-list/SpeakersList.js';
 import { createMockApp } from '../src/mocks/mock-app.js';
@@ -60,7 +60,42 @@ describe('SpeakersList', () => {
     expect(details.textContent).toContain('Microsoft MVP');
   });
 
-  it('opens a session overlay from On the program', async () => {
+  it('expands a talk inline in the compact speaker drawer', async () => {
+    const user = userEvent.setup();
+    render(
+      <SpeakersList
+        app={createMockApp({
+          toolOutput: nickSpeakersList,
+          callServerTool: mockConferenceTools,
+          hostContext: {
+            theme: 'light',
+            displayMode: 'inline',
+            containerDimensions: { width: 390, maxWidth: 390, maxHeight: 720 },
+          },
+        })}
+      />
+    );
+
+    await user.click(await screen.findByRole('button', { name: /Nick Taylor/i }));
+    const speakerDetails = await screen.findByRole('region', {
+      name: 'Speaker details',
+    });
+    await user.click(
+      within(speakerDetails).getByText('Build your First MCP App')
+    );
+    expect(
+      await within(speakerDetails).findByText(/Remote Model Context Protocol/)
+    ).toBeTruthy();
+    expect(within(speakerDetails).getByLabelText('Ask about this session')).toBeTruthy();
+    expect(screen.getByLabelText('Ask about this speaker')).toBeTruthy();
+    expect(
+      screen.getByText(
+        'Nick is a Microsoft MVP, GitHub Star, and Developer Advocate at Pomerium.'
+      )
+    ).toBeTruthy();
+  });
+
+  it('opens a session overlay from On the program on wide screens', async () => {
     const user = userEvent.setup();
     render(
       <SpeakersList

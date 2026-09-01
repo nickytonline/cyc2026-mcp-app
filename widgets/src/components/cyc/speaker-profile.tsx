@@ -8,11 +8,17 @@ import {
   useState,
   type FormEvent,
   type ReactNode,
+  type SyntheticEvent,
 } from 'react';
-import type { GetSpeakerOutput, SessionCard } from 'mcp-app-server/types';
+import type {
+  GetSpeakerOutput,
+  SessionCard,
+  ViewScheduleItemOutput,
+} from 'mcp-app-server/types';
 import { useCompactSurface } from '../../hooks/useCompactSurface';
 import { formatClock } from '../../utils/cyc';
 import type { AppLike, HostContext } from '../../types/mcp-app';
+import { SessionAskForm, sessionQuestion } from './session-profile';
 
 type SpeakerApp = Pick<
   AppLike<unknown>,
@@ -227,13 +233,15 @@ function SpeakerProfileBody({
   status,
   onAsk,
   onSelectSession,
+  expandInline,
 }: {
   preview: SpeakerPreview;
   speaker?: GetSpeakerOutput['speaker'];
   sessions: SessionCard[];
   status: SpeakerProfileState['status'];
   onAsk: (question: string) => Promise<void>;
-  onSelectSession: (sessionId: string) => void;
+  onSelectSession: (session: SessionCard) => void;
+  expandInline?: boolean;
 }) {
   const askId = useId();
 
@@ -274,7 +282,11 @@ function SpeakerProfileBody({
             <p className="mb-2 font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[var(--cyc-blue)]">
               On the program
             </p>
-            <SessionList sessions={sessions} onSelect={onSelectSession} />
+            <SessionList
+              sessions={sessions}
+              onSelect={expandInline ? undefined : onSelectSession}
+              expandInline={expandInline}
+            />
           </div>
         ) : null}
         <div className={speaker?.bio || status === 'ready' ? 'mt-4' : undefined}>
@@ -347,6 +359,7 @@ function SpeakerProfileDialog() {
       status={status}
       onAsk={actions.ask}
       onSelectSession={actions.viewSession}
+      expandInline={compact}
     />
   ) : null;
 
@@ -470,12 +483,106 @@ function SpeakerAskForm({
   );
 }
 
+function SessionTalkDetails({ session }: { session: SessionCard }) {
+  const { actions, meta } = useSpeakerProfile();
+  const [abstract, setAbstract] = useState<string | null>(null);
+  const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>(
+    'idle'
+  );
+
+  async function handleToggle(event: SyntheticEvent<HTMLDetailsElement>) {
+    if (!event.currentTarget.open) return;
+    if (status === 'loading' || status === 'ready') return;
+    setStatus('loading');
+    try {
+      const result = await meta.app.callServerTool<ViewScheduleItemOutput>({
+        name: 'view_schedule_item',
+        arguments: { id: session.id },
+      });
+      const next = result.structuredContent?.session?.abstract ?? null;
+      if (!result.structuredContent?.session) {
+        setStatus('error');
+        return;
+      }
+      setAbstract(next);
+      setStatus('ready');
+    } catch {
+      setStatus('error');
+    }
+  }
+
+  return (
+    <details
+      className="group overflow-hidden rounded-[8px] border border-[var(--cyc-line)] bg-white open:border-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
+      onToggle={(event) => void handleToggle(event)}
+    >
+      <summary className="flex cursor-pointer list-none items-start gap-2 p-3 text-left marker:content-none hover:bg-[var(--cyc-cloud)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:hover:bg-white/5 [&::-webkit-details-marker]:hidden">
+        <span className="min-w-0 flex-1">
+          <strong className="block text-[var(--cyc-ink)] dark:text-white">
+            {session.title}
+          </strong>
+          <span className="mt-1 block font-mono text-[0.75rem] text-[var(--cyc-muted)]">
+            {session.day != null ? `Day ${session.day} · ` : ''}
+            {formatClock(session.start)} / {session.room}
+          </span>
+        </span>
+        <svg
+          viewBox="0 0 24 24"
+          className="mt-1 size-4 shrink-0 text-[var(--cyc-muted)] transition-transform group-open:rotate-180"
+          aria-hidden="true"
+        >
+          <path
+            d="M6 9l6 6 6-6"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </summary>
+      <div className="border-t border-[var(--cyc-line)] px-3 py-3 dark:border-white/10">
+        {status === 'loading' ? (
+          <div className="grid gap-2" aria-hidden="true">
+            <div className="h-3 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+            <div className="h-3 w-5/6 animate-pulse rounded bg-[var(--cyc-line)] dark:bg-white/10" />
+          </div>
+        ) : null}
+        {status === 'error' ? (
+          <p className="text-sm text-[var(--cyc-muted)]" role="alert">
+            Couldn’t load this session. Close and try again.
+          </p>
+        ) : null}
+        {abstract ? (
+          <p className="text-[0.9375rem] leading-7">{abstract}</p>
+        ) : null}
+        {status === 'ready' ? (
+          <SessionAskForm
+            session={session}
+            onAsk={async (question) => {
+              await meta.app.sendMessage({
+                role: 'user',
+                content: [
+                  { type: 'text', text: sessionQuestion(session, question) },
+                ],
+              });
+              actions.close();
+            }}
+          />
+        ) : null}
+      </div>
+    </details>
+  );
+}
+
 function SessionList({
   sessions,
   onSelect,
+  expandInline,
 }: {
   sessions: SessionCard[];
   onSelect?: (session: SessionCard) => void;
+  expandInline?: boolean;
 }) {
   if (sessions.length === 0) {
     return (
@@ -501,7 +608,9 @@ function SessionList({
         );
         return (
           <li key={session.id}>
-            {onSelect ? (
+            {expandInline ? (
+              <SessionTalkDetails session={session} />
+            ) : onSelect ? (
               <button
                 type="button"
                 className="w-full rounded-[8px] border border-[var(--cyc-line)] bg-white p-3 text-left hover:border-[var(--cyc-blue)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--cyc-blue)] dark:border-white/10 dark:bg-[var(--cyc-navy)]"
