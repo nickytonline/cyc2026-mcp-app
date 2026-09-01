@@ -60,7 +60,7 @@ export default function Schedule({
         <div
           key={searching ? 'search' : `day-${selectedDay}`}
           className="cyc-scroll min-h-0 flex-1 pr-1"
-          tabIndex={0}
+          tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex -- keyboard-scrollable overflow
           aria-label="Agenda"
         >
           {events.length > 0 ? (

@@ -7,3 +7,17 @@ package-lock.json
 .next
 .turbo
 coverage
+
+# Copied vendor skills. First-party skills under .agents/skills stay formatted.
+.agents/skills/impeccable
+.agents/skills/hallmark
+.agents/skills/vercel-react-best-practices
+.agents/skills/composition-patterns
+.agents/skills/web-design-guidelines
+.agents/skills/caveman
+.claude/skills/impeccable
+.claude/skills/hallmark
+.claude/skills/vercel-react-best-practices
+.claude/skills/composition-patterns
+.claude/skills/web-design-guidelines
+.claude/skills/caveman

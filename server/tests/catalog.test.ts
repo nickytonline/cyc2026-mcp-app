@@ -42,9 +42,9 @@ describe('catalog', () => {
         left.localeCompare(right, 'en', { sensitivity: 'base' })
       )
     );
-    expect(listSpeakers({ limit: 5 }).speakers.map((speaker) => speaker.name)).toEqual(
-      names.slice(0, 5)
-    );
+    expect(
+      listSpeakers({ limit: 5 }).speakers.map((speaker) => speaker.name)
+    ).toEqual(names.slice(0, 5));
   });
 
   it('finds a speaker by exact slug', () => {
@@ -79,9 +79,7 @@ describe('catalog', () => {
   });
 
   it('finds a session by exact slug', () => {
-    const bySlug = getSession(
-      'build-your-first-mcp-app-hwylh8wvaanptgcbow'
-    );
+    const bySlug = getSession('build-your-first-mcp-app-hwylh8wvaanptgcbow');
     expect(bySlug?.title).toBe('Build your First MCP App');
     expect(getSession('Build your First MCP App')).toBeUndefined();
     expect(getSession('mcp')).toBeUndefined();

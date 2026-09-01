@@ -76,7 +76,7 @@ export default function SpeakersList({
         </div>
         <ul
           className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
-          tabIndex={0}
+          tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex -- keyboard-scrollable overflow
           aria-label="Speakers"
         >
           {speakers.map((speaker) => (

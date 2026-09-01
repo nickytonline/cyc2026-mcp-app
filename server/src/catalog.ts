@@ -179,10 +179,12 @@ export function listSpeakers(options: {
   };
 }
 
-export function conferenceDays(options: {
-  track?: string;
-  room?: string;
-} = {}): GetScheduleOutput['days'] {
+export function conferenceDays(
+  options: {
+    track?: string;
+    room?: string;
+  } = {}
+): GetScheduleOutput['days'] {
   return [0, 1, 2].map((day) => {
     const agenda = agendaForDay(day, options);
     return { day, ...agenda };

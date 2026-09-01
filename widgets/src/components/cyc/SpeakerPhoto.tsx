@@ -43,7 +43,9 @@ export function SessionSpeakerByline({
 }) {
   if (speakers.length === 0) {
     return (
-      <p className={`text-[0.75rem] text-[var(--cyc-muted)] ${className ?? ''}`}>
+      <p
+        className={`text-[0.75rem] text-[var(--cyc-muted)] ${className ?? ''}`}
+      >
         Speakers TBA
       </p>
     );

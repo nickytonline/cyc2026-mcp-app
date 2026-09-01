@@ -205,7 +205,7 @@ function SessionProfileBody({
       </div>
       <div
         className="cyc-scroll min-h-0 flex-1 px-4 py-4"
-        tabIndex={0}
+        tabIndex={0} // eslint-disable-line jsx-a11y/no-noninteractive-tabindex -- keyboard-scrollable overflow
         role="region"
         aria-label="Session details"
       >

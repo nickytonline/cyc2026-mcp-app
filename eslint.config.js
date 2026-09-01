@@ -5,6 +5,15 @@ import tsparser from '@typescript-eslint/parser';
 import eslintReact from '@eslint-react/eslint-plugin';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 
+const vendorSkills = [
+  'impeccable',
+  'hallmark',
+  'vercel-react-best-practices',
+  'composition-patterns',
+  'web-design-guidelines',
+  'caveman',
+];
+
 export default [
   {
     ignores: [
@@ -12,9 +21,22 @@ export default [
       '**/assets/**',
       '**/build/**',
       '**/storybook-static/**',
+      // Copied vendor skills. First-party skills under .agents/skills stay linted.
+      ...vendorSkills.flatMap((skill) => [
+        `.agents/skills/${skill}/**`,
+        `.claude/skills/${skill}/**`,
+      ]),
     ],
   },
   eslint.configs.recommended,
+  {
+    files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
+    languageOptions: {
+      globals: {
+        ...globals.node,
+      },
+    },
+  },
   {
     files: ['**/*.ts', '**/*.tsx'],
     ...eslintReact.configs['recommended-typescript'],
