@@ -249,7 +249,6 @@ function SpeakerProfileBody({
       </div>
       <div
         className="cyc-scroll min-h-0 flex-1 px-4 py-4"
-        tabIndex={0}
         role="region"
         aria-label="Speaker details"
       >

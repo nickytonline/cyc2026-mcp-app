@@ -58,10 +58,7 @@ export function useWidgetApp<T>(
   const canToggleFullscreen = useMemo(() => {
     const available = hostContext?.availableDisplayModes;
     if (!available) return true;
-    return (
-      available.includes('fullscreen') ||
-      displayMode === 'fullscreen'
-    );
+    return available.includes('fullscreen') || displayMode === 'fullscreen';
   }, [displayMode, hostContext?.availableDisplayModes]);
 
   const toggleFullscreen = useCallback(async () => {

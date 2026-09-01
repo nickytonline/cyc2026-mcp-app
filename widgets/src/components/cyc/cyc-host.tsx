@@ -9,10 +9,7 @@ import {
   useSessionProfile,
 } from './session-profile';
 import { SpeakerProfile } from './speaker-profile';
-import {
-  WidgetChromeProvider,
-  type WidgetChromeValue,
-} from './widget-chrome';
+import { WidgetChromeProvider, type WidgetChromeValue } from './widget-chrome';
 
 type ProfileApp = Pick<
   AppLike<unknown>,

@@ -159,14 +159,14 @@ function WidgetShellChrome({
               </button>
             ) : null}
             <button
-            type="button"
-            className="grid size-11 shrink-0 place-items-center rounded-[8px] text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            title={nextThemeLabel}
-            onClick={toggle}
-          >
-            {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
-            <span className="sr-only">{nextThemeLabel}</span>
-          </button>
+              type="button"
+              className="grid size-11 shrink-0 place-items-center rounded-[8px] text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              title={nextThemeLabel}
+              onClick={toggle}
+            >
+              {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+              <span className="sr-only">{nextThemeLabel}</span>
+            </button>
           </div>
         </header>
         <div

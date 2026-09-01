@@ -20,9 +20,7 @@ const sample: ListEventsOutput = {
 
 describe('EventsList', () => {
   it('renders a contained scrolling events list', async () => {
-    render(
-      <EventsList app={createMockApp({ toolOutput: sample })} />
-    );
+    render(<EventsList app={createMockApp({ toolOutput: sample })} />);
 
     expect(await screen.findByText('Day[0] Pickleball at Ace!')).toBeTruthy();
     const region = screen.getByRole('list', { name: 'Events' });

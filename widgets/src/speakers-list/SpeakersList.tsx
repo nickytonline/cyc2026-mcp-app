@@ -79,7 +79,6 @@ export default function SpeakersList({
         </div>
         <ul
           className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
-          tabIndex={0}
           aria-label="Speakers"
         >
           {speakers.map((speaker) => (

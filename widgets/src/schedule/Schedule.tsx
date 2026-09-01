@@ -66,7 +66,6 @@ export default function Schedule({
         <div
           key={searching ? 'search' : `day-${selectedDay}`}
           className="cyc-scroll min-h-0 flex-1 pr-1"
-          tabIndex={0}
           aria-label="Agenda"
         >
           {events.length > 0 ? (

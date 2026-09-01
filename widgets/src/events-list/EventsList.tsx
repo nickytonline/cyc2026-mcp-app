@@ -26,27 +26,26 @@ export default function EventsList({
         hostContext={hostContext}
         fill
       >
-      <ul
-        className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
-        tabIndex={0}
-        aria-label="Events"
-      >
-        {events.map((event) => (
-          <li
-            key={event.id}
-            className="rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-4"
-          >
-            <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.12em] text-[var(--cyc-blue-text)]">
-              {event.when}
-            </p>
-            <h2 className="mt-1 text-lg font-bold">{event.title}</h2>
-            <p className="mt-2 text-sm leading-6 text-[var(--cyc-muted)]">
-              {event.description}
-            </p>
-          </li>
-        ))}
-      </ul>
-    </WidgetShell>
+        <ul
+          className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
+          aria-label="Events"
+        >
+          {events.map((event) => (
+            <li
+              key={event.id}
+              className="rounded-[8px] border border-[var(--cyc-line)] bg-[var(--cyc-paper)] p-4"
+            >
+              <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.12em] text-[var(--cyc-blue-text)]">
+                {event.when}
+              </p>
+              <h2 className="mt-1 text-lg font-bold">{event.title}</h2>
+              <p className="mt-2 text-sm leading-6 text-[var(--cyc-muted)]">
+                {event.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </WidgetShell>
     </WidgetChromeProvider>
   );
 }

@@ -18,20 +18,20 @@ export function WidgetChromeProvider({
   value: WidgetChromeValue;
   children: ReactNode;
 }) {
-  return (
-    <WidgetChromeContext value={value}>{children}</WidgetChromeContext>
-  );
+  return <WidgetChromeContext value={value}>{children}</WidgetChromeContext>;
 }
 
 export function useWidgetChrome(): WidgetChromeValue | null {
   return use(WidgetChromeContext);
 }
 
-export function widgetChromeFromApp<T extends {
-  displayMode: DisplayMode;
-  canToggleFullscreen: boolean;
-  toggleFullscreen: () => Promise<void>;
-}>(widget: T): WidgetChromeValue {
+export function widgetChromeFromApp<
+  T extends {
+    displayMode: DisplayMode;
+    canToggleFullscreen: boolean;
+    toggleFullscreen: () => Promise<void>;
+  },
+>(widget: T): WidgetChromeValue {
   return {
     displayMode: widget.displayMode,
     canToggleFullscreen: widget.canToggleFullscreen,

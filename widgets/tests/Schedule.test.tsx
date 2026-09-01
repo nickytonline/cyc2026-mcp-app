@@ -22,11 +22,13 @@ describe('Schedule', () => {
     expect(await screen.findByText('Build your First MCP App')).toBeTruthy();
     const region = screen.getByLabelText('Agenda');
     expect(region.className).toContain('cyc-scroll');
-    expect(screen.getByRole('radio', { name: /Day 1/i }).getAttribute('aria-checked')).toBe(
-      'true'
-    );
     expect(
-      screen.getByRole('button', { name: /Build your First MCP App/i }).querySelector('img')
+      screen.getByRole('radio', { name: /Day 1/i }).getAttribute('aria-checked')
+    ).toBe('true');
+    expect(
+      screen
+        .getByRole('button', { name: /Build your First MCP App/i })
+        .querySelector('img')
         ?.getAttribute('src')
     ).toContain('nick-taylor.jpg');
   });
@@ -47,9 +49,9 @@ describe('Schedule', () => {
     await user.click(screen.getByRole('radio', { name: /Day 0/i }));
     expect(await screen.findByText('Day[0] Pickleball at Ace!')).toBeTruthy();
     expect(screen.queryByText('Build your First MCP App')).toBeNull();
-    expect(screen.getByRole('radio', { name: /Day 0/i }).getAttribute('aria-checked')).toBe(
-      'true'
-    );
+    expect(
+      screen.getByRole('radio', { name: /Day 0/i }).getAttribute('aria-checked')
+    ).toBe('true');
     expect(callServerTool).not.toHaveBeenCalled();
   });
 

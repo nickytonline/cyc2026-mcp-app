@@ -12,6 +12,8 @@ export default [
       '**/assets/**',
       '**/build/**',
       '**/storybook-static/**',
+      '.agents/**',
+      'scripts/**',
     ],
   },
   eslint.configs.recommended,
