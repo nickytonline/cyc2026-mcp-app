@@ -4,6 +4,7 @@ import type {
   ListSpeakersOutput,
   SpeakerCard,
   TrackInfo,
+  ViewScheduleItemOutput,
 } from 'mcp-app-server/types';
 import type { ToolResultPayload } from '../types/mcp-app';
 
@@ -103,6 +104,25 @@ export const nickSchedule: GetScheduleOutput = {
       ],
     },
   ],
+};
+
+export const nickSessionDetail: ViewScheduleItemOutput = {
+  session: {
+    id: 'build-your-first-mcp-app-hwylh8wvaanptgcbow',
+    slug: 'build-your-first-mcp-app-hwylh8wvaanptgcbow',
+    title: 'Build your First MCP App',
+    abstract:
+      'Remote Model Context Protocol (MCP) servers expose tools, but did you know those tools can return UI, not just text? Using the MCP Apps extension to the MCP protocol, an MCP app can deliver interactive experiences directly inside MCP hosts like Claude.ai and ChatGPT. We will break down what makes an MCP app, how it all comes together, then live code one from scratch.',
+    track: 'JavaScript',
+    room: 'Room 2D',
+    start: '2026-09-03T14:30:00-05:00',
+    end: '2026-09-03T14:55:00-05:00',
+    day: 1,
+    isSocial: false,
+    speakers: [{ id: 'nick-taylor', name: 'Nick Taylor' }],
+    url: 'https://www.commityourcode.com/sessions/build-your-first-mcp-app-hwylh8wvaanptgcbow',
+  },
+  speakers: [nickSpeakerCard],
 };
 
 const allCards = [nickSpeakerCard, anupamaSpeakerCard];

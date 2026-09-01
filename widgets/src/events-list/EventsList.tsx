@@ -18,8 +18,13 @@ export default function EventsList({
       kicker="Included with your ticket"
       title="Beyond the code."
       hostContext={hostContext}
+      fill
     >
-      <ul className="grid gap-2">
+      <ul
+        className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
+        tabIndex={0}
+        aria-label="Events"
+      >
         {events.map((event) => (
           <li
             key={event.id}

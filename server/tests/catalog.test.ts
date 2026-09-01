@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   getSchedule,
+  getSession,
   getSpeaker,
   listSpeakers,
   searchSessions,
@@ -9,6 +10,7 @@ import {
   GetScheduleInputSchema,
   GetSpeakerInputSchema,
   ListSpeakersInputSchema,
+  ViewScheduleItemInputSchema,
 } from '../src/types.js';
 
 describe('catalog', () => {
@@ -47,6 +49,15 @@ describe('catalog', () => {
     expect(getSchedule({ day: 'Friday' })).toBeUndefined();
   });
 
+  it('finds a session by exact slug', () => {
+    const bySlug = getSession(
+      'build-your-first-mcp-app-hwylh8wvaanptgcbow'
+    );
+    expect(bySlug?.title).toBe('Build your First MCP App');
+    expect(getSession('Build your First MCP App')).toBeUndefined();
+    expect(getSession('mcp')).toBeUndefined();
+  });
+
   it('searches sessions', () => {
     const found = searchSessions({ query: 'MCP', limit: 10 });
     expect(found.total).toBeGreaterThan(0);
@@ -65,6 +76,20 @@ describe('GetScheduleInputSchema', () => {
         .track
     ).toBe('AI');
     expect(() => GetScheduleInputSchema.parse({})).toThrow();
+  });
+});
+
+describe('ViewScheduleItemInputSchema', () => {
+  it('requires an id', () => {
+    expect(
+      ViewScheduleItemInputSchema.parse({
+        id: 'build-your-first-mcp-app-hwylh8wvaanptgcbow',
+      }).id
+    ).toBe('build-your-first-mcp-app-hwylh8wvaanptgcbow');
+    expect(() => ViewScheduleItemInputSchema.parse({})).toThrow();
+    expect(() =>
+      ViewScheduleItemInputSchema.parse({ title: 'Build your First MCP App' })
+    ).toThrow();
   });
 });
 

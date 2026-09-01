@@ -240,13 +240,10 @@ export function getSchedule(options: {
 }
 
 export function getSession(id: string): SessionRecord | undefined {
-  const needle = normalize(id);
+  const needle = id.trim();
+  if (!needle) return undefined;
   return sessions.find(
-    (session) =>
-      session.id === id ||
-      session.slug === id ||
-      normalize(session.id).includes(needle) ||
-      normalize(session.title).includes(needle)
+    (session) => session.id === needle || session.slug === needle
   );
 }
 

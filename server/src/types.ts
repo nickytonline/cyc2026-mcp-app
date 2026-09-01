@@ -161,7 +161,12 @@ export interface GetScheduleOutput {
 }
 
 export const ViewScheduleItemInputSchema = z.object({
-  id: z.string().describe('Session id or slug from the catalog'),
+  id: z
+    .string()
+    .min(1)
+    .describe(
+      'Session id or slug from get_schedule, e.g. build-your-first-mcp-app-hwylh8wvaanptgcbow'
+    ),
 });
 export type ViewScheduleItemInput = z.infer<typeof ViewScheduleItemInputSchema>;
 

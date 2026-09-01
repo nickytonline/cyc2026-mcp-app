@@ -181,7 +181,7 @@ export function registerConferenceTools(
     {
       title: 'View a CYC26 session',
       description:
-        'Get one session by id/slug: title, abstract, time, room, track, and speakers.',
+        'Get one session by id (slug), including abstract and speakers. Widgets call this from the schedule. Pass the catalog id — titles are not unique. Test in MCPJam with build-your-first-mcp-app-hwylh8wvaanptgcbow.',
       inputSchema: ViewScheduleItemInputSchema.shape,
       _meta: { ui: { resourceUri: widgets.sessionDetail.uri } },
     },
