@@ -16,6 +16,9 @@
   --cyc-muted: #5f6e83;
   --cyc-green: #079455;
   --cyc-radius: 8px;
+  /* Iframe-safe cap. Do not use 100dvh as height — the host sizes the
+     frame from content, and 100dvh of that frame never settles. */
+  --cyc-widget-max: 32rem;
   --background: 0 0% 100%;
   --foreground: 222 74% 10%;
   --card: 0 0% 100%;
@@ -103,17 +106,6 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
-}
-
-html,
-body {
-  height: 100%;
-}
-
-#speakers-list-root {
-  height: 100dvh;
-  max-height: 100dvh;
-  overflow: hidden;
 }
 
 #speakers-list-root,

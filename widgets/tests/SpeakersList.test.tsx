@@ -22,6 +22,8 @@ describe('SpeakersList', () => {
     expect(await screen.findByText('Nick Taylor')).toBeTruthy();
     expect(screen.getByText('Build your First MCP App')).toBeTruthy();
     expect(screen.getByText('052')).toBeTruthy();
+    const region = screen.getByRole('list', { name: 'Speakers' });
+    expect(region.className).toContain('cyc-scroll');
   });
 
   it('opens a speaker profile with sessions', async () => {

@@ -39,12 +39,12 @@ const DrawerContent = React.forwardRef<
     <DrawerPrimitive.Content
       ref={ref}
       className={cn(
-        'fixed inset-x-0 bottom-0 z-50 mt-16 flex max-h-[92%] flex-col rounded-t-[8px] border border-[var(--cyc-line)] bg-white text-[var(--cyc-ink)] dark:border-white/10 dark:bg-[var(--cyc-navy)] dark:text-white',
+        'fixed inset-x-0 bottom-0 z-50 mt-16 flex max-h-[92%] flex-col overflow-hidden rounded-t-[8px] border border-[var(--cyc-navy)] bg-[var(--cyc-navy)] text-white',
         className
       )}
       {...props}
     >
-      <div className="mx-auto mt-2 h-1.5 w-12 shrink-0 rounded-full bg-[var(--cyc-line)] dark:bg-white/20" />
+      <div className="mx-auto mt-3 mb-1 h-1.5 w-12 shrink-0 rounded-full bg-white/35" />
       {children}
     </DrawerPrimitive.Content>
   </DrawerPortal>
@@ -58,7 +58,7 @@ function DrawerHeader({
   return (
     <div
       className={cn(
-        'bg-[var(--cyc-navy)] px-5 py-3 text-white',
+        'bg-[var(--cyc-navy)] px-5 py-4 text-white',
         className
       )}
       {...props}

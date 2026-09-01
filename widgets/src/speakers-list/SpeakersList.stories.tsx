@@ -39,3 +39,26 @@ export const CompactDrawer: Story = {
     </div>
   ),
 };
+
+export const Crowded: Story = {
+  render: () => {
+    const speakers = Array.from({ length: 24 }, (_, index) => ({
+      ...nickSpeakerCard,
+      id: `speaker-${index}`,
+      sequence: index + 1,
+      name: index === 0 ? nickSpeakerCard.name : `${nickSpeakerCard.name} ${index + 1}`,
+    }));
+    return (
+      <SpeakersList
+        app={createMockApp({
+          toolOutput: {
+            ...nickSpeakersList,
+            speakers,
+            showing: speakers.length,
+          },
+          callServerTool: mockConferenceTools,
+        })}
+      />
+    );
+  },
+};

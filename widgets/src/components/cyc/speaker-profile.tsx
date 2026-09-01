@@ -267,7 +267,7 @@ function SpeakerProfileHeader({
   showClose: boolean;
 }) {
   return (
-    <div className="flex items-start justify-between gap-3 bg-[var(--cyc-navy)] px-5 py-3 text-white">
+    <div className="flex items-start justify-between gap-3 bg-[var(--cyc-navy)] px-5 py-4 text-white">
       <div className="min-w-0">
         <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[#7db3ff]">
           CYC26 / Speaker
@@ -330,7 +330,7 @@ function SpeakerProfileDialog() {
             <SpeakerProfileHeader
               name={title}
               onClose={actions.close}
-              showClose
+              showClose={false}
             />
             <DrawerTitle className="sr-only">{title}</DrawerTitle>
             <DrawerDescription className="sr-only">{role}</DrawerDescription>
@@ -349,15 +349,17 @@ function SpeakerProfileDialog() {
       }}
     >
       <DialogContent
-        showClose
+        showClose={false}
         className={theme === 'dark' ? 'dark flex flex-col p-0' : 'flex flex-col p-0'}
         aria-describedby={undefined}
       >
-        <DialogHeader className="p-0 pr-14">
-          <p className="font-mono text-[0.6875rem] font-bold uppercase tracking-[0.14em] text-[#7db3ff]">
-            CYC26 / Speaker
-          </p>
-          <DialogTitle>{title}</DialogTitle>
+        <DialogHeader className="p-0">
+          <SpeakerProfileHeader
+            name={title}
+            onClose={actions.close}
+            showClose
+          />
+          <DialogTitle className="sr-only">{title}</DialogTitle>
           <DialogDescription className="sr-only">{role}</DialogDescription>
         </DialogHeader>
         {body}

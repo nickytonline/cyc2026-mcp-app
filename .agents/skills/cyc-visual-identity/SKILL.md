@@ -23,6 +23,7 @@ Use these names, never raw Inter/zinc/purple-gradient defaults:
 - Muted: `--cyc-muted` `#5f6e83`
 - Green: `--cyc-green` `#079455`
 - Radius: `--cyc-radius` `8px`
+- Contained widget pane: `--cyc-widget-max` `32rem` (host `maxHeight` wins when set; never `100dvh` as iframe height)
 
 Room colors (agenda dots):
 
