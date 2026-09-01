@@ -157,13 +157,24 @@ export function listSpeakers(options: {
     return haystack.includes(query);
   });
   const limit = options.limit ?? 20;
+  const sorted = filtered.toSorted((left, right) =>
+    left.name.localeCompare(right.name, 'en', { sensitivity: 'base' })
+  );
   return {
-    speakers: filtered.slice(0, limit).map(toSpeakerCard),
-    total: filtered.length,
-    showing: Math.min(limit, filtered.length),
+    speakers: sorted.slice(0, limit).map(toSpeakerCard),
+    total: sorted.length,
+    showing: Math.min(limit, sorted.length),
     tracks: meta.tracks,
     appliedTracks,
   };
+}
+
+export function conferenceDays(): GetScheduleOutput['days'] {
+  return scheduleFile.days.map(({ day, date, label }) => ({
+    day,
+    date,
+    label,
+  }));
 }
 
 export function getSpeaker(id: string): SpeakerRecord | undefined {
@@ -234,8 +245,11 @@ export function getSchedule(options: {
     date: metaDay?.date ?? ['2026-09-02', '2026-09-03', '2026-09-04'][day],
     label: metaDay?.label ?? `Day ${day}`,
     timezone: scheduleFile.timezone,
+    days: conferenceDays(),
     slots: slots.filter((slot) => slot.sessions.length > 0),
     events: events.filter((event) => event.day === day),
+    appliedTrack: options.track,
+    appliedRoom: options.room,
   };
 }
 

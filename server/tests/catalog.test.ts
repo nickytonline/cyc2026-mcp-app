@@ -33,6 +33,20 @@ describe('catalog', () => {
     expect(mixed.tracks.length).toBeGreaterThan(0);
   });
 
+  it('lists speakers alphabetically', () => {
+    const names = listSpeakers({ limit: 200 }).speakers.map(
+      (speaker) => speaker.name
+    );
+    expect(names).toEqual(
+      names.toSorted((left, right) =>
+        left.localeCompare(right, 'en', { sensitivity: 'base' })
+      )
+    );
+    expect(listSpeakers({ limit: 5 }).speakers.map((speaker) => speaker.name)).toEqual(
+      names.slice(0, 5)
+    );
+  });
+
   it('finds a speaker by exact slug', () => {
     const bySlug = getSpeaker('nick-taylor');
     expect(bySlug?.name).toBe('Nick Taylor');
@@ -44,6 +58,7 @@ describe('catalog', () => {
     const day1 = getSchedule({ day: 1 });
     expect(day1?.label).toMatch(/day 1/i);
     expect(day1?.slots.length).toBeGreaterThan(0);
+    expect(day1?.days).toHaveLength(3);
     expect(getSchedule({ day: '2026-09-03' })?.day).toBe(1);
     expect(getSchedule({ day: 9 })).toBeUndefined();
     expect(getSchedule({ day: 'Friday' })).toBeUndefined();

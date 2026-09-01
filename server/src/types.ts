@@ -150,13 +150,22 @@ export interface ScheduleSlot {
   sessions: SessionCard[];
 }
 
+export interface ScheduleDayOption {
+  day: number;
+  date: string;
+  label: string;
+}
+
 export interface GetScheduleOutput {
   day: number;
   date: string;
   label: string;
   timezone: string;
+  days: ScheduleDayOption[];
   slots: ScheduleSlot[];
   events: SocialEvent[];
+  appliedTrack?: string;
+  appliedRoom?: string;
   [key: string]: unknown;
 }
 

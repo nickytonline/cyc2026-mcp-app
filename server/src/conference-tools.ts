@@ -12,6 +12,7 @@ import {
 } from './types.js';
 import { clientCanRenderUi } from './ui-capability.js';
 import {
+  conferenceDays,
   formatSessionLine,
   getSchedule,
   getSession,
@@ -139,7 +140,7 @@ export function registerConferenceTools(
     {
       title: 'Get the CYC26 schedule',
       description:
-        'Get the Commit Your Code agenda for one day. day is required: 0 = Sept 2 (socials), 1 = Sept 3, 2 = Sept 4. Optional track or room filters. Test in MCPJam with day=1.',
+        'Get the Commit Your Code agenda for one day. day is required: 0 = Sept 2 (socials), 1 = Sept 3, 2 = Sept 4. Optional track or room filters. The widget can switch days in place. Test in MCPJam with day=1.',
       inputSchema: GetScheduleInputSchema.shape,
       _meta: { ui: { resourceUri: widgets.schedule.uri } },
     },
@@ -242,6 +243,7 @@ export function registerConferenceTools(
           date: '',
           label: `Search: ${parsed.data.query}`,
           timezone: 'America/Chicago',
+          days: conferenceDays(),
           slots: [
             {
               start: null,
@@ -250,6 +252,7 @@ export function registerConferenceTools(
             },
           ],
           events: [],
+          appliedTrack: parsed.data.track,
         },
         clientCanRenderUi(ctx as unknown as ServerContext)
       );

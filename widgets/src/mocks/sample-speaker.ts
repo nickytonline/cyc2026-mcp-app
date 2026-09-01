@@ -2,6 +2,7 @@ import type {
   GetScheduleOutput,
   GetSpeakerOutput,
   ListSpeakersOutput,
+  ScheduleDayOption,
   SpeakerCard,
   TrackInfo,
   ViewScheduleItemOutput,
@@ -79,11 +80,18 @@ export const nickSpeakerDetail: GetSpeakerOutput = {
   ],
 };
 
+export const scheduleDays: ScheduleDayOption[] = [
+  { day: 0, date: '2026-09-02', label: 'Day 0' },
+  { day: 1, date: '2026-09-03', label: 'Day 1' },
+  { day: 2, date: '2026-09-04', label: 'Day 2' },
+];
+
 export const nickSchedule: GetScheduleOutput = {
   day: 1,
   date: '2026-09-03',
   label: 'Day 1',
   timezone: 'America/Chicago',
+  days: scheduleDays,
   events: [],
   slots: [
     {
@@ -106,6 +114,41 @@ export const nickSchedule: GetScheduleOutput = {
   ],
 };
 
+export const dayZeroSchedule: GetScheduleOutput = {
+  day: 0,
+  date: '2026-09-02',
+  label: 'Day 0',
+  timezone: 'America/Chicago',
+  days: scheduleDays,
+  slots: [],
+  events: [
+    {
+      id: 'day-0-pickleball-at-ace',
+      title: 'Day[0] Pickleball at Ace!',
+      when: 'September 2nd 1:00pm - 3:00pm',
+      description: 'Kick off CYC at Ace Pickleball Club in Frisco.',
+      url: 'https://www.commityourcode.com/events',
+      day: 0,
+    },
+  ],
+};
+
+export const dayTwoSchedule: GetScheduleOutput = {
+  ...nickSchedule,
+  day: 2,
+  date: '2026-09-04',
+  label: 'Day 2',
+  slots: nickSchedule.slots.map((slot) => ({
+    ...slot,
+    sessions: slot.sessions.map((session) => ({
+      ...session,
+      id: 'closing-ceremony',
+      title: 'Closing Ceremony & Networking',
+      day: 2,
+    })),
+  })),
+};
+
 export const nickSessionDetail: ViewScheduleItemOutput = {
   session: {
     id: 'build-your-first-mcp-app-hwylh8wvaanptgcbow',
@@ -125,7 +168,7 @@ export const nickSessionDetail: ViewScheduleItemOutput = {
   speakers: [nickSpeakerCard],
 };
 
-const allCards = [nickSpeakerCard, anupamaSpeakerCard];
+const allCards = [anupamaSpeakerCard, nickSpeakerCard];
 
 export const nickSpeakersList: ListSpeakersOutput = {
   showing: 2,
@@ -149,10 +192,13 @@ export async function mockConferenceTools(params: {
       : raw
         ? [String(raw)]
         : [];
-    const speakers =
+    const speakers = (
       tracks.length === 0
         ? allCards
-        : allCards.filter((speaker) => tracks.includes(speaker.track));
+        : allCards.filter((speaker) => tracks.includes(speaker.track))
+    ).toSorted((left, right) =>
+      left.name.localeCompare(right.name, 'en', { sensitivity: 'base' })
+    );
     return {
       content: [],
       structuredContent: {
@@ -163,6 +209,12 @@ export async function mockConferenceTools(params: {
         appliedTracks: tracks,
       } satisfies ListSpeakersOutput,
     };
+  }
+  if (params.name === 'get_schedule') {
+    const day = Number(params.arguments?.day);
+    const schedule =
+      day === 0 ? dayZeroSchedule : day === 2 ? dayTwoSchedule : nickSchedule;
+    return { content: [], structuredContent: schedule };
   }
   return {
     content: [

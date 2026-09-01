@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef, useState } from 'react';
 import type { GetScheduleOutput } from 'mcp-app-server/types';
 import { TrackChip } from '../components/cyc/TrackChip';
 import { SpeakerProfile } from '../components/cyc/speaker-profile';
@@ -7,6 +8,20 @@ import { WidgetShell } from '../components/cyc/WidgetShell';
 import { useWidgetApp } from '../hooks/useWidgetApp';
 import { formatClock, roomColor } from '../utils/cyc';
 import type { AppLike } from '../types/mcp-app';
+import { DayPicker } from './DayPicker';
+
+function isSchedule(value: unknown): value is GetScheduleOutput {
+  return (
+    typeof value === 'object' &&
+    value !== null &&
+    typeof (value as GetScheduleOutput).day === 'number' &&
+    Array.isArray((value as GetScheduleOutput).slots)
+  );
+}
+
+function isSearchAgenda(value: GetScheduleOutput): boolean {
+  return typeof value.query === 'string';
+}
 
 export default function Schedule({
   app,
@@ -14,9 +29,37 @@ export default function Schedule({
   app?: AppLike<GetScheduleOutput>;
 }) {
   const { toolOutput, hostContext, activeApp } = useWidgetApp('Schedule', app);
-  const slots = toolOutput?.slots ?? [];
-  const events = toolOutput?.events ?? [];
-  const title = toolOutput?.label || 'Agenda';
+  const [view, setView] = useState<GetScheduleOutput | null>(null);
+  const [pendingDay, setPendingDay] = useState<number | null>(null);
+  const requestRef = useRef(0);
+  const hostSchedule = isSchedule(toolOutput) ? toolOutput : null;
+  const schedule = view ?? hostSchedule;
+  const slots = schedule?.slots ?? [];
+  const events = schedule?.events ?? [];
+  const title = schedule?.label || 'Agenda';
+  const selectedDay = pendingDay ?? schedule?.day ?? 1;
+
+  async function selectDay(day: number) {
+    if (schedule && day === schedule.day && !isSearchAgenda(schedule)) return;
+    const requestId = ++requestRef.current;
+    setPendingDay(day);
+    try {
+      const result = await activeApp.callServerTool<GetScheduleOutput>({
+        name: 'get_schedule',
+        arguments: {
+          day,
+          ...(schedule?.appliedTrack ? { track: schedule.appliedTrack } : {}),
+          ...(schedule?.appliedRoom ? { room: schedule.appliedRoom } : {}),
+        },
+      });
+      if (requestId !== requestRef.current) return;
+      if (isSchedule(result.structuredContent)) {
+        setView(result.structuredContent);
+      }
+    } finally {
+      if (requestId === requestRef.current) setPendingDay(null);
+    }
+  }
 
   return (
     <SpeakerProfile.Host app={activeApp} hostContext={hostContext}>
@@ -26,6 +69,16 @@ export default function Schedule({
         hostContext={hostContext}
         fill
       >
+        <div className="mb-3 shrink-0">
+          <DayPicker
+            days={schedule?.days}
+            selected={selectedDay}
+            pending={pendingDay !== null}
+            onChange={(day) => {
+              void selectDay(day);
+            }}
+          />
+        </div>
         <div
           className="cyc-scroll min-h-0 flex-1 pr-1"
           tabIndex={0}

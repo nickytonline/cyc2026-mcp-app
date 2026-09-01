@@ -36,6 +36,15 @@ export function formatClock(iso: string | null): string {
   });
 }
 
+export function formatShortDate(isoDate: string): string {
+  const [year, month, day] = isoDate.split('-').map(Number);
+  if (!year || !month || !day) return isoDate;
+  return new Date(year, month - 1, day).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+  });
+}
+
 export function initials(name: string): string {
   return name
     .split(/\s+/)
