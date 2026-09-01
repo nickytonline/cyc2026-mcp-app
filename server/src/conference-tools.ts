@@ -291,6 +291,8 @@ export function registerConferenceTools(
       description:
         'List the six technical tracks, keynote, and campus rooms for Commit Your Code 2026.',
       inputSchema: ListTracksInputSchema.shape,
+      // registerAppTool reads `_meta.ui`; omit this and initialize 500s.
+      _meta: {},
     },
     async (args) => {
       const parsed = ListTracksInputSchema.safeParse(args ?? {});

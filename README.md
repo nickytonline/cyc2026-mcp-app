@@ -264,10 +264,11 @@ npm run build:storybook
 #### 1. Local Testing with MCP Inspector
 
 ```bash
+# Start the MCP server first (npm run dev), then:
 npm run inspect
 ```
 
-This opens a browser interface to:
+This opens the official MCP Inspector against `http://localhost:8080/mcp` (no account). Use it to:
 
 - List available tools
 - Test tool invocations
@@ -875,7 +876,7 @@ npm run dev:server
 # 2. Build widgets
 npm run build:widgets
 
-# 3. Test with Inspector
+# 3. Open the official MCP Inspector (no account)
 npm run inspect
 
 # 4. Verify:

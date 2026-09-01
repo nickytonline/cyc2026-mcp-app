@@ -67,6 +67,8 @@ registerAppTool(
     title: 'My Tool',
     description: 'Does something useful',
     inputSchema: MyToolInputSchema.shape,
+    // registerAppTool reads `_meta.ui`; omit this and initialize 500s.
+    _meta: {},
   },
   async (args) => {
     serverLogger.info({ toolName: 'my-tool', args }, 'Tool invoked');
@@ -147,5 +149,5 @@ npm run test:server
 npm run dev          # start server + widget dev server
 npm run type-check   # TypeScript across all workspaces
 npm run lint         # ESLint
-npm run inspect      # test the tool with MCP Inspector
+npm run inspect      # official MCP Inspector against localhost:8080/mcp
 ```

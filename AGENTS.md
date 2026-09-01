@@ -374,11 +374,11 @@ npm run dev:server
 # 2. Build widgets (terminal 2)
 npm run build:widgets
 
-# 3. Open inspector
+# 3. Open the official MCP Inspector (no account)
 npm run inspect
 ```
 
-The inspector allows testing tool invocations and verifying widget resources without deploying.
+`npm run inspect` launches `@modelcontextprotocol/inspector` against `http://localhost:8080/mcp`. Use it to invoke tools and verify widget resources without deploying.
 
 #### Connecting from ChatGPT
 
