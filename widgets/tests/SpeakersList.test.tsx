@@ -24,6 +24,11 @@ describe('SpeakersList', () => {
     expect(screen.queryByText('052')).toBeNull();
     const region = screen.getByRole('list', { name: 'Speakers' });
     expect(region.className).toContain('cyc-scroll');
+    expect(screen.queryByText(/Showing \d+ of/)).toBeNull();
+    const names = screen.getAllByRole('heading', { level: 2 }).map((node) =>
+      node.textContent
+    );
+    expect(names.slice(0, 2)).toEqual(['Anupama Pathirage', 'Nick Taylor']);
   });
 
   it('opens a speaker profile with sessions', async () => {

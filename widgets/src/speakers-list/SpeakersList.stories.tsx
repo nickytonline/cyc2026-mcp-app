@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { createMockApp } from '../mocks/mock-app';
-import { mockConferenceTools, nickSpeakersList } from '../mocks/sample-speaker';
+import { mockConferenceTools, nickSpeakerCard, nickSpeakersList } from '../mocks/sample-speaker';
 import SpeakersList from './SpeakersList';
 
 const meta = {

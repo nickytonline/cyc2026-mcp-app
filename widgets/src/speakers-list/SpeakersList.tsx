@@ -32,7 +32,9 @@ export default function SpeakersList({
   const hostList = isSpeakerList(toolOutput) ? toolOutput : null;
   const list = filtered ?? hostList;
   const selectedTracks = applied ?? hostList?.appliedTracks ?? [];
-  const speakers = list?.speakers ?? [];
+  const speakers = (list?.speakers ?? []).toSorted((left, right) =>
+    left.name.localeCompare(right.name, 'en', { sensitivity: 'base' })
+  );
 
   async function applyTracks(next: string[]) {
     setApplied(next);
@@ -56,19 +58,20 @@ export default function SpeakersList({
         hostContext={hostContext}
         fill
       >
-        <div className="mb-3 flex shrink-0 items-center justify-between gap-2">
-          <p className="font-mono text-[0.75rem] text-[var(--cyc-muted)]">
-            {list
-              ? `Showing ${list.showing} of ${list.total}`
-              : 'Waiting for speaker results'}
-          </p>
-          <TrackFilter
-            tracks={list?.tracks}
-            selected={selectedTracks}
-            onChange={(next) => {
-              void applyTracks(next);
-            }}
-          />
+        <div className="mb-3 flex shrink-0 items-center justify-end">
+          {list ? (
+            <TrackFilter
+              tracks={list.tracks}
+              selected={selectedTracks}
+              onChange={(next) => {
+                void applyTracks(next);
+              }}
+            />
+          ) : (
+            <p className="font-mono text-[0.75rem] text-[var(--cyc-muted)]">
+              Waiting for speaker results
+            </p>
+          )}
         </div>
         <ul
           className="cyc-scroll min-h-0 flex-1 grid content-start gap-2 pr-1"
